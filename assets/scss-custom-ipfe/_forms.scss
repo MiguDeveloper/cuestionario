@@ -1,0 +1,48 @@
+$orange-primary: #f26732;
+$blue-primary: #0a537e;
+$gray-borde: #94a3b8;
+$gray-font: #64748b;
+$color-border-default: #d0d7de;
+
+label {
+  font-weight: 500;
+  //color: #06070e;
+  //color: #42526e;
+  color: rgb(55 65 81 / 1);
+}
+
+.desc-bloq {
+  border-left: 3px solid $orange-primary;
+  padding: 0.5rem;
+  color: $blue-primary;
+  font-weight: 500;
+}
+
+.btn-action {
+  border: none;
+  border-radius: 50%;
+  background: none;
+  padding: 10px;
+  transition: 0.3s linear;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &--success {
+    color: #05a34a;
+
+    &:not(.disabled-btn):hover {
+      background: #05a34a;
+      color: white;
+    }
+  }
+
+  &--cancel {
+    color: #ff3366;
+
+    &:hover {
+      background: #ff3366;
+      color: white;
+    }
+  }
+}

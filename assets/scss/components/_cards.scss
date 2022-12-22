@@ -1,0 +1,40 @@
+// Cards
+
+.card {
+  box-shadow: $card-box-shadow;
+  -webkit-box-shadow: $card-box-shadow;
+  -moz-box-shadow: $card-box-shadow;
+  -ms-box-shadow: $card-box-shadow;
+  .card-body {
+    + .card-body {
+      padding-top: 1rem;
+    }
+  }
+  .card-title {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  &--shadow-blue {
+    --shadow-color: hsla(205, 62%, 35%, 0.7);
+    $card-box-shadow: 0 1px 4px 0 var(--shadow-color, hsla(0, 0%, 0%, 0.1)),
+      0 0px 4px 0 var(--shadow-color, hsla(0, 0%, 0%, 0.1));
+    box-shadow: $card-box-shadow;
+  }
+}
+
+.card-group {
+  box-shadow: $card-box-shadow;
+  .card {
+    box-shadow: none;
+  }
+}
+
+.card-link {
+  + .card-link {
+    /*rtl:raw:
+    margin-left: 1.5rem;
+    margin-right: 0;
+    */
+  }
+}

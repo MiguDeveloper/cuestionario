@@ -1,0 +1,41 @@
+.table-record {
+  border-collapse: collapse;
+  border-radius: 5px 5px 0 0;
+  margin: 5px 0 25px;
+  font-size: 0.9em;
+  min-width: 400px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.table-record thead tr {
+  background-color: #0a537e;
+  color: #ffffff;
+  text-align: left;
+}
+
+.table-record th,
+.table-record td {
+  padding: 12px 15px;
+}
+
+.table-record tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table-record tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.table-record tbody tr:last-of-type {
+  border-bottom: 2px solid #0a537e;
+}
+
+.table-record tbody tr.active-row {
+  font-weight: bold;
+  color: #0a537e;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
