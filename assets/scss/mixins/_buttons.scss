@@ -12,7 +12,7 @@
     background: lighten($color, 10%);
     i {
       background: $color;
-      padding: .75rem;
+      padding: 0.75rem;
       display: inline-block;
       margin-right: 1.5rem;
     }
@@ -20,8 +20,8 @@
 }
 
 @mixin social-outline-button($color) {
-border: 1px solid $color;
-color: $color;
+  border: 1px solid $color;
+  color: $color;
   &:hover {
     background: $color;
     color: $white;
@@ -33,7 +33,7 @@ color: $color;
   background-image: none;
   border-color: rgba($color, 0);
   &:not(.btn-inverse-light) {
-    color: $color;      
+    color: $color;
   }
   &:hover,
   &.active,
@@ -45,7 +45,7 @@ color: $color;
 
   &.focus,
   &:focus {
-    box-shadow: 0 0 0 3px rgba($color, .5);
+    box-shadow: 0 0 0 3px rgba($color, 0.5);
   }
 
   &.disabled,
