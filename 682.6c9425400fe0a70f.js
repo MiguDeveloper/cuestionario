@@ -8047,8 +8047,8 @@
               (i.ɵcmp = e.Xpm({
                 type: i,
                 selectors: [["app-questionary-bcp"]],
-                decls: 304,
-                vars: 176,
+                decls: 300,
+                vars: 172,
                 consts: [
                   [1, "container"],
                   [1, "card", "mt-3"],
@@ -9119,12 +9119,7 @@
                       e._uU(298, "ENVIAR"),
                       e.qZA(),
                       e._UZ(299, "img", 89),
-                      e.qZA()()(),
-                      e._uU(300),
-                      e.TgZ(301, "pre"),
-                      e._uU(302),
-                      e.ALo(303, "json"),
-                      e.qZA()()()()),
+                      e.qZA()()()()()()),
                     2 & t)
                   ) {
                     const a = e.MAs(39);
@@ -9699,14 +9694,6 @@
                           (null == (H = n.getControl("momentoEnfamilia"))
                             ? null
                             : H.touched)
-                      ),
-                      e.xp6(5),
-                      e.hij(" ", n.cuestionarioForm.status, " "),
-                      e.xp6(2),
-                      e.hij(
-                        "        ",
-                        e.lcZ(303, 174, n.cuestionarioForm.value),
-                        "\n      "
                       );
                   }
                 },
@@ -9729,7 +9716,6 @@
                   xe,
                   Yn.X,
                   jn,
-                  C.Ts,
                 ],
                 styles: [
                   '@import"https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;400&display=swap";[_nghost-%COMP%]{font-family:Flexo-regular,sans-serif}.form-select[_ngcontent-%COMP%], .form-control[_ngcontent-%COMP%], .ng-select[_ngcontent-%COMP%]   .ng-select-container[_ngcontent-%COMP%]{border:1px solid black}label[_ngcontent-%COMP%]{color:#000;font-weight:500}.hero-cuestionario[_ngcontent-%COMP%]{line-height:1.2}.hero-cuestionario[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin-bottom:18px}.hero-cuestionario[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{font-size:1.3125rem;margin-bottom:1rem;font-family:Flexo-light,sans-serif}.color-orange[_ngcontent-%COMP%]{color:#ff4d00}.color-azul[_ngcontent-%COMP%]{color:#002d74}.cursiva[_ngcontent-%COMP%]{font-style:italic}.textLightIt[_ngcontent-%COMP%]{font-family:Flexo-lightIt,sans-serif}.head-cuestionario[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between;align-items:center;color:#fff;background-color:#002d74;flex-direction:column}@media (min-width: 48rem){.head-cuestionario[_ngcontent-%COMP%]{flex-direction:row}}.head-cuestionario__title[_ngcontent-%COMP%]{font-style:italic;font-size:2.25rem;font-family:Flexo-mediumit,sans-serif;margin-left:1.5rem;order:1;margin-bottom:1rem}@media (min-width: 48rem){.head-cuestionario__title[_ngcontent-%COMP%]{order:0;margin-bottom:0}}.head-cuestionario__img[_ngcontent-%COMP%]{max-width:416px;max-height:136px;margin:2rem 0;order:0}@media (min-width: 48rem){.head-cuestionario__img[_ngcontent-%COMP%]{order:1}}.flex-disposicion[_ngcontent-%COMP%]{flex-direction:column}@media (min-width: 48rem){.flex-disposicion[_ngcontent-%COMP%]{flex-direction:row}}.bloq-text[_ngcontent-%COMP%]{margin-top:1rem}.right-img[_ngcontent-%COMP%]{max-width:151px;max-height:297px;align-self:center;justify-self:center}@media (min-width: 48rem){.right-img[_ngcontent-%COMP%]{max-width:251px}}@media (min-width: 62rem){.right-img[_ngcontent-%COMP%]{max-width:351px}}.btn-cuestionario[_ngcontent-%COMP%]{background:url(./assets/images/cuestionario/btn-bg.svg) no-repeat;background-position:center;color:#fff;font-family:Flexo-bold,sans-serif;font-size:1.125rem;display:inline-block;padding:2rem}.text-submit[_ngcontent-%COMP%]{margin-right:.5rem}',
