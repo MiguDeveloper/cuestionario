@@ -10,14 +10,14 @@
         C = g(6895),
         ne = g(8176),
         I = g(4004),
-        Ie = g(262),
-        Me = g(9646),
+        Me = g(262),
+        we = g(9646),
         e = g(1571),
         D = g(2953),
         v = g(1135),
-        we = g(9751),
+        Ze = g(9751),
         T = g(7579),
-        Ze = (g(9841), g(3900)),
+        Qe = (g(9841), g(3900)),
         h = (g(5698), g(2722));
       const ie = ["*"];
       class x {
@@ -33,8 +33,8 @@
         }
         getLazyEmitter(o) {
           return this._targetStream.pipe(
-            (0, Ze.w)((t) => {
-              const n = new we.y((a) => {
+            (0, Qe.w)((t) => {
+              const n = new Ze.y((a) => {
                 if (!t)
                   return void this._pending.push({
                     observable: n,
@@ -290,11 +290,11 @@
           i
         );
       })();
-      const Qe = /([A-Za-z%]+)$/;
+      const ke = /([A-Za-z%]+)$/;
       function re(i) {
-        return null == i ? "" : Qe.test(i) ? i : `${i}px`;
+        return null == i ? "" : ke.test(i) ? i : `${i}px`;
       }
-      const Se = { position: { lat: 37.421995, lng: -122.084092 } };
+      const qe = { position: { lat: 37.421995, lng: -122.084092 } };
       let K = (() => {
           class i {
             constructor(t, n) {
@@ -441,7 +441,7 @@
               return this._assertInitialized(), this.marker;
             }
             _combineOptions() {
-              const t = this._options || Se;
+              const t = this._options || qe;
               return {
                 ...t,
                 title: this._title || t.title,
@@ -500,7 +500,7 @@
             i
           );
         })(),
-        Ve = (() => {
+        Ge = (() => {
           class i {}
           return (
             (i.ɵfac = function (t) {
@@ -511,7 +511,7 @@
             i
           );
         })();
-      function Ge(i, o) {
+      function He(i, o) {
         if (1 & i) {
           const t = e.EpF();
           e.TgZ(0, "map-marker", 8),
@@ -528,7 +528,7 @@
           e.Q6J("position", t)("options", n.markerOptions);
         }
       }
-      function He(i, o) {
+      function $e(i, o) {
         if (1 & i) {
           const t = e.EpF();
           e.TgZ(0, "div")(1, "google-map", 6),
@@ -537,7 +537,7 @@
               const r = e.oxw();
               return e.KtG(r.addMarker(a));
             }),
-            e.YNc(2, Ge, 1, 2, "map-marker", 7),
+            e.YNc(2, He, 1, 2, "map-marker", 7),
             e.qZA()();
         }
         if (2 & i) {
@@ -548,7 +548,7 @@
             e.Q6J("ngForOf", t.markerPositions);
         }
       }
-      function $e(i, o) {
+      function We(i, o) {
         1 & i &&
           (e.TgZ(0, "ngb-alert", 9),
           e._UZ(1, "i", 10),
@@ -556,7 +556,7 @@
           e.qZA()),
           2 & i && e.Q6J("dismissible", !1)("type", "danger");
       }
-      let We = (() => {
+      let Ke = (() => {
         class i {
           constructor(t, n) {
             (this.activeModal = n),
@@ -575,7 +575,7 @@
                 )
                 .pipe(
                   (0, I.U)(() => !0),
-                  (0, Ie.K)(() => (0, Me.of)(!1))
+                  (0, Me.K)(() => (0, we.of)(!1))
                 ));
           }
           ngOnDestroy() {
@@ -635,11 +635,11 @@
             template: function (t, n) {
               1 & t &&
                 (e.TgZ(0, "div", 0),
-                e.YNc(1, He, 3, 2, "div", 1),
+                e.YNc(1, $e, 3, 2, "div", 1),
                 e.ALo(2, "async"),
                 e.qZA(),
                 e.TgZ(3, "div", 2),
-                e.YNc(4, $e, 3, 2, "ngb-alert", 3),
+                e.YNc(4, We, 3, 2, "ngb-alert", 3),
                 e.TgZ(5, "button", 4),
                 e.NdJ("click", function () {
                   return n.close();
@@ -670,7 +670,7 @@
           Awajun: "Awaj\xfan",
           Otra: "Otra",
         },
-        Ke = [...Object.values(se)],
+        Xe = [...Object.values(se)],
         le = {
           Padre: "Padre",
           Madre: "Madre",
@@ -678,17 +678,17 @@
           Apoderado: "Apoderado/Apoderada",
           Otro: "Otro",
         },
-        Xe = [...Object.values(le)],
+        et = [...Object.values(le)],
         ce = { si: "Si", no: "No" },
-        et = [...Object.values(ce)],
+        tt = [...Object.values(ce)],
         ue = {
           beca: "Beca",
           credito: "Cr\xe9dito",
           otros: "Otras formas de financiamiento (especificar)",
         },
-        tt = [...Object.values(ue)],
+        nt = [...Object.values(ue)],
         pe = { si: "Si", no: "No" },
-        nt = [...Object.values(pe)],
+        it = [...Object.values(pe)],
         de = {
           padres: "Pagada por padres",
           postulante: "Pagada por el mismo postulante",
@@ -696,14 +696,14 @@
           familiar: "Pagado por un familiar o amigo",
           otros: "Otros (especificar)",
         },
-        it = [
+        ot = [
           "1 a 3 meses",
           "3 a 6 meses",
           "6 meses a 1 a\xf1o",
           "M\xe1s de 1 a\xf1o",
         ],
-        ot = [...Object.values(de)],
-        at = [
+        at = [...Object.values(de)],
+        rt = [
           "Universidad del Pac\xedfico (Lima)",
           "Universidad de Piura - Sede Lima",
           "Universidad de Piura - Sede Piura",
@@ -712,7 +712,7 @@
           "Universidad de Lima (Lima)",
           "Pontificia Universidad Cat\xf3lica del Per\xfa (Lima)",
         ],
-        rt = [
+        st = [
           "Matricularlo en una academia",
           "Contratar profesores si requer\xeda la ayuda",
           "Ayudarlo a estudiar",
@@ -736,21 +736,21 @@
           arte: "Arte",
           otros: "Otros (especificar)",
         },
-        st = [...Object.values(ge)],
-        lt = [
+        lt = [...Object.values(ge)],
+        ct = [
           "Diariamente",
           "Interdiario",
           "M\xe1s de 3 d\xedas a la semana",
           "Quincenalmente ",
           "Ocasionalmente",
         ],
-        ct = [
+        ut = [
           "Ha iniciado recientemente - hace menos de 3 meses",
           "Entre 3 y 6 meses atr\xe1s",
           "Entre 6 meses y 1 a\xf1o atr\xe1s",
           "Hace m\xe1s de 1 a\xf1o",
         ],
-        ut = [
+        pt = [
           ...Object.values({
             padres: "Financiadas por padres",
             postulante: "Financiadas por el postulante",
@@ -758,7 +758,7 @@
             otros: "Otros (especificar)",
           }),
         ],
-        pt = [
+        dt = [
           "Menos de 30 minutos",
           "Entre 30 minutos y 1 hora",
           "Entre 1 hora y 1.5 horas",
@@ -766,15 +766,15 @@
           "M\xe1s de 2 horas",
         ],
         _e = { si: "Si", no: "No" },
-        dt = [...Object.values(_e)],
-        gt = [
+        gt = [...Object.values(_e)],
+        _t = [
           "Soltero(a)",
           "Conviviente",
           "Casado(a)",
           "Viudo(a)",
           "Divorciado(a)",
         ],
-        _t = [
+        mt = [
           "Primaria incompleta",
           "Primaria completa",
           "Secundaria incompleta",
@@ -784,15 +784,15 @@
           "Universitario incompleta",
           "Universitario completa",
         ],
-        mt = ["Vive", "Fallecio"],
-        ht = [
+        ht = ["Vive", "Falleci\xf3"],
+        ft = [
           "Independiente",
           "Dependiente",
           "Eventual",
           "Desempleo",
           "Ama de casa",
         ],
-        ft = [
+        vt = [
           { style: { minWidth: 200 }, value: "Parentesco" },
           { style: { minWidth: 250 }, value: "Nombres" },
           { style: { minWidth: 250 }, value: "Apellidos" },
@@ -806,7 +806,7 @@
           { style: { minWidth: 250 }, value: "Vive con el/la postulante" },
           { style: { minWidth: 250 }, value: "Situaci\xf3n laboral" },
         ],
-        vt = [
+        yt = [
           { style: { minWidth: 200 }, value: "Parentesco" },
           { style: { minWidth: 250 }, value: "Nombres" },
           { style: { minWidth: 250 }, value: "Apellidos" },
@@ -835,15 +835,15 @@
           sinResponsabilidadesDomésticas: "Sin responsabilidades dom\xe9sticas",
           otros: "Otros (especificar)",
         },
-        yt = [...Object.values(me)],
-        Ct = [
+        Ct = [...Object.values(me)],
+        bt = [
           "15 minutos o menos",
           "Entre 15 y 30 minutos",
           "Entre 30 minutos y 1 hora",
           "Entre 1 hora y 1.5 horas",
           "M\xe1s de 1.5 horas",
         ],
-        bt = [
+        Tt = [
           "Diariamente",
           "Interdiario",
           "M\xe1s de 3 veces a la semana",
@@ -858,10 +858,10 @@
           hermanos: "Hermanos",
           otros: "Otros (especificar)",
         },
-        Tt = [...Object.values(he)],
-        At = ["0-33%", "33%-66%", "66% a m\xe1s"],
-        xt = ["Actividad", "Apoyo Si/No"],
-        Et = [
+        At = [...Object.values(he)],
+        xt = ["0-33%", "33%-66%", "66% a m\xe1s"],
+        Et = ["Actividad", "Apoyo Si/No"],
+        It = [
           ...Object.values({
             pasajes: "Pasajes",
             alimentación: "Alimentaci\xf3n",
@@ -875,7 +875,7 @@
             salidasRecreacionales: "Salidas recreacionales",
           }),
         ],
-        It = [
+        Mt = [
           "S/. 10.00  a  S/. 25.00",
           "S/. 25.00  a  S/. 50.00",
           "S/. 50.00  a  S/. 75.00",
@@ -894,9 +894,9 @@
             "No conversamos sobre esto. Es decisi\xf3n de mi hijo.",
           otros: "Otros (especificar)",
         },
-        Mt = [...Object.values(fe)],
-        wt = ["Menos de 1 hora", "Entre 1 y 2 horas", "M\xe1s de 2 horas"],
-        Zt = {
+        wt = [...Object.values(fe)],
+        Zt = ["Menos de 1 hora", "Entre 1 y 2 horas", "M\xe1s de 2 horas"],
+        Qt = {
           uno: {
             nro: "1",
             descripcion: "Indicar su lengua materna",
@@ -1124,7 +1124,7 @@
             for: "",
           },
         };
-      var Qt = g(8799),
+      var ve = g(8799),
         kt = g(3601),
         Nt = g(8675),
         Ot = g(8372),
@@ -1159,7 +1159,7 @@
             );
         }
       }
-      const ve = ["*"],
+      const ye = ["*"],
         Ut = ["searchInput"];
       function Jt(i, o) {
         if (1 & i) {
@@ -1483,8 +1483,8 @@
             e.Q6J("ngIf", t.loading && 0 === t.itemsList.filteredItems.length);
         }
       }
-      const ye = /[&<>"']/g,
-        yn = RegExp(ye.source),
+      const Ce = /[&<>"']/g,
+        yn = RegExp(Ce.source),
         Cn = {
           "&": "&amp;",
           "<": "&lt;",
@@ -1509,7 +1509,7 @@
             ngOnChanges(t) {
               this.element.nativeElement.innerHTML = this.escape
                 ? (function bn(i) {
-                    return i && yn.test(i) ? i.replace(ye, (o) => Cn[o]) : i;
+                    return i && yn.test(i) ? i.replace(Ce, (o) => Cn[o]) : i;
                   })(this.ngItemLabel)
                 : this.ngItemLabel;
             }
@@ -1711,7 +1711,7 @@
             i
           );
         })();
-      function Ce() {
+      function be() {
         return "axxxxxxxxxxx".replace(/[x]/g, () =>
           ((16 * Math.random()) | 0).toString(16)
         );
@@ -2858,7 +2858,7 @@
                 parent: null,
                 index: r++,
                 disabled: !this._ngSelect.selectableGroup,
-                htmlId: Ce(),
+                htmlId: be(),
               },
               u = t ? this._ngSelect.bindLabel : this._ngSelect.groupBy,
               p =
@@ -2894,7 +2894,7 @@
         );
         var i;
       })();
-      let be = (() => {
+      let Te = (() => {
         class i {
           constructor() {
             this._dimensions = {
@@ -2954,9 +2954,9 @@
           i
         );
       })();
-      const Te = ["top", "right", "bottom", "left"],
+      const Ae = ["top", "right", "bottom", "left"],
         Sn = typeof requestAnimationFrame < "u" ? Pt.Z : Ft.E;
-      let Ae = (() => {
+      let xe = (() => {
           class i {
             constructor(t, n, a, r, s) {
               (this._renderer = t),
@@ -3055,14 +3055,14 @@
               (this._currentPosition = this._calculateCurrentPosition(
                 this._dropdown
               )),
-                Te.includes(this._currentPosition)
+                Ae.includes(this._currentPosition)
                   ? this._updateDropdownClass(this._currentPosition)
                   : this._updateDropdownClass("bottom"),
                 this.appendTo && this._updateYPosition(),
                 (this._dropdown.style.opacity = "1");
             }
             _updateDropdownClass(t) {
-              Te.forEach((a) => {
+              Ae.forEach((a) => {
                 const r = `ng-select-${a}`;
                 this._renderer.removeClass(this._dropdown, r),
                   this._renderer.removeClass(this._select, r);
@@ -3272,7 +3272,7 @@
               return new (t || i)(
                 e.Y36(e.Qsj),
                 e.Y36(e.R0b),
-                e.Y36(be),
+                e.Y36(Te),
                 e.Y36(e.SBq),
                 e.Y36(C.K0, 8)
               );
@@ -3312,7 +3312,7 @@
                 outsideClick: "outsideClick",
               },
               features: [e.TTD],
-              ngContentSelectors: ve,
+              ngContentSelectors: ye,
               decls: 9,
               vars: 6,
               consts: [
@@ -3355,7 +3355,7 @@
             i
           );
         })(),
-        xe = (() => {
+        Ee = (() => {
           class i {
             constructor(t) {
               (this.elementRef = t),
@@ -3403,7 +3403,7 @@
               selectors: [["ng-option"]],
               inputs: { value: "value", disabled: "disabled" },
               features: [e.TTD],
-              ngContentSelectors: ve,
+              ngContentSelectors: ye,
               decls: 1,
               vars: 0,
               template: function (t, n) {
@@ -3458,7 +3458,7 @@
             i
           );
         })();
-      const Ee = new e.OlP("ng-select-selection-model");
+      const Ie = new e.OlP("ng-select-selection-model");
       let Ln = (() => {
         class i {
           constructor(t, n, a, r, s, c, u) {
@@ -3505,7 +3505,7 @@
               (this.useDefaultClass = !0),
               (this.viewPortItems = []),
               (this.searchTerm = null),
-              (this.dropdownId = Ce()),
+              (this.dropdownId = be()),
               (this.escapeHTML = !0),
               (this._items = []),
               (this._defaultLabel = "label"),
@@ -4082,7 +4082,7 @@
               e.$8M("class"),
               e.$8M("autofocus"),
               e.Y36(qn),
-              e.Y36(Ee),
+              e.Y36(Ie),
               e.Y36(e.SBq),
               e.Y36(e.sBO),
               e.Y36(Dn)
@@ -4105,7 +4105,7 @@
                   e.Suo(a, Nn, 5, e.Rgc),
                   e.Suo(a, On, 5, e.Rgc),
                   e.Suo(a, Bn, 5, e.Rgc),
-                  e.Suo(a, xe, 5)),
+                  e.Suo(a, Ee, 5)),
                 2 & t)
               ) {
                 let r;
@@ -4124,7 +4124,7 @@
               }
             },
             viewQuery: function (t, n) {
-              if ((1 & t && (e.Gf(Ae, 5), e.Gf(Ut, 7)), 2 & t)) {
+              if ((1 & t && (e.Gf(xe, 5), e.Gf(Ut, 7)), 2 & t)) {
                 let a;
                 e.iGM((a = e.CRH())) && (n.dropdownPanel = a.first),
                   e.iGM((a = e.CRH())) && (n.searchInput = a.first);
@@ -4216,7 +4216,7 @@
             features: [
               e._Bn([
                 { provide: l.JU, useExisting: (0, e.Gpc)(() => i), multi: !0 },
-                be,
+                Te,
               ]),
               e.TTD,
             ],
@@ -4443,7 +4443,7 @@
                 e.xp6(3),
                 e.Q6J("ngIf", n.isOpen));
             },
-            dependencies: [C.mk, C.sg, C.O5, C.tP, Ae, An],
+            dependencies: [C.mk, C.sg, C.O5, C.tP, xe, An],
             styles: [
               '@charset "UTF-8";.ng-select{position:relative;display:block;box-sizing:border-box}.ng-select div,.ng-select input,.ng-select span{box-sizing:border-box}.ng-select [hidden]{display:none}.ng-select.ng-select-searchable .ng-select-container .ng-value-container .ng-input{opacity:1}.ng-select.ng-select-opened .ng-select-container{z-index:1001}.ng-select.ng-select-disabled .ng-select-container .ng-value-container .ng-placeholder,.ng-select.ng-select-disabled .ng-select-container .ng-value-container .ng-value{-webkit-user-select:none;user-select:none;cursor:default}.ng-select.ng-select-disabled .ng-arrow-wrapper{cursor:default}.ng-select.ng-select-filtered .ng-placeholder{display:none}.ng-select .ng-select-container{cursor:default;display:flex;outline:none;overflow:hidden;position:relative;width:100%}.ng-select .ng-select-container .ng-value-container{display:flex;flex:1}.ng-select .ng-select-container .ng-value-container .ng-input{opacity:0}.ng-select .ng-select-container .ng-value-container .ng-input>input{box-sizing:content-box;background:none transparent;border:0 none;box-shadow:none;outline:none;padding:0;cursor:default;width:100%}.ng-select .ng-select-container .ng-value-container .ng-input>input::-ms-clear{display:none}.ng-select .ng-select-container .ng-value-container .ng-input>input[readonly]{-webkit-user-select:none;user-select:none;width:0;padding:0}.ng-select.ng-select-single.ng-select-filtered .ng-select-container .ng-value-container .ng-value{visibility:hidden}.ng-select.ng-select-single .ng-select-container .ng-value-container,.ng-select.ng-select-single .ng-select-container .ng-value-container .ng-value{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ng-select.ng-select-single .ng-select-container .ng-value-container .ng-value .ng-value-icon{display:none}.ng-select.ng-select-single .ng-select-container .ng-value-container .ng-input{position:absolute;left:0;width:100%}.ng-select.ng-select-multiple.ng-select-disabled>.ng-select-container .ng-value-container .ng-value .ng-value-icon{display:none}.ng-select.ng-select-multiple .ng-select-container .ng-value-container{flex-wrap:wrap}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-placeholder{position:absolute}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value{white-space:nowrap}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value.ng-value-disabled .ng-value-icon{display:none}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon{cursor:pointer}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-input{flex:1;z-index:2}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-placeholder{z-index:1}.ng-select .ng-clear-wrapper{cursor:pointer;position:relative;width:17px;-webkit-user-select:none;user-select:none}.ng-select .ng-clear-wrapper .ng-clear{display:inline-block;font-size:18px;line-height:1;pointer-events:none}.ng-select .ng-spinner-loader{border-radius:50%;width:17px;height:17px;margin-right:5px;font-size:10px;position:relative;text-indent:-9999em;border-top:2px solid rgba(66,66,66,.2);border-right:2px solid rgba(66,66,66,.2);border-bottom:2px solid rgba(66,66,66,.2);border-left:2px solid #424242;transform:translateZ(0);animation:load8 .8s infinite linear}.ng-select .ng-spinner-loader:after{border-radius:50%;width:17px;height:17px}@keyframes load8{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.ng-select .ng-arrow-wrapper{cursor:pointer;position:relative;text-align:center;-webkit-user-select:none;user-select:none}.ng-select .ng-arrow-wrapper .ng-arrow{pointer-events:none;display:inline-block;height:0;width:0;position:relative}.ng-dropdown-panel{box-sizing:border-box;position:absolute;opacity:0;width:100%;z-index:1050;-webkit-overflow-scrolling:touch}.ng-dropdown-panel .ng-dropdown-panel-items{display:block;height:auto;box-sizing:border-box;max-height:240px;overflow-y:auto}.ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ng-dropdown-panel .ng-dropdown-panel-items .ng-option{box-sizing:border-box;cursor:pointer;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ng-dropdown-panel .ng-dropdown-panel-items .ng-option .ng-option-label:empty:before{content:"\\200b"}.ng-dropdown-panel .ng-dropdown-panel-items .ng-option .highlighted{font-weight:700;text-decoration:underline}.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.disabled{cursor:default}.ng-dropdown-panel .scroll-host{overflow:hidden;overflow-y:auto;position:relative;display:block;-webkit-overflow-scrolling:touch}.ng-dropdown-panel .scrollable-content{top:0;left:0;width:100%;height:100%;position:absolute}.ng-dropdown-panel .total-padding{width:1px;opacity:0}\n',
             ],
@@ -4531,7 +4531,7 @@
           }),
           (i.ɵmod = e.oAB({ type: i })),
           (i.ɵinj = e.cJS({
-            providers: [{ provide: Ee, useValue: zn }],
+            providers: [{ provide: Ie, useValue: zn }],
             imports: [C.ez],
           })),
           i
@@ -7363,41 +7363,41 @@
                 (this.fb = t),
                   (this.modalService = n),
                   (this.title = "Cuestionario de padres de familia"),
-                  (this.lenguajes = Ke),
-                  (this.listParentesco = Xe),
-                  (this.universidades = at),
-                  (this.listApoyo = rt),
-                  (this.beneficios = et),
-                  (this.listBeneficio = tt),
-                  (this.rangosPreparacion = it),
-                  (this.frecuenciaActividades = lt),
-                  (this.tiempoActividades = ct),
-                  (this.listTipoFinanciamiento = ut),
-                  (this.listTiempoTraslado = pt),
-                  (this.listSiNo = dt),
+                  (this.lenguajes = Xe),
+                  (this.listParentesco = et),
+                  (this.universidades = rt),
+                  (this.listApoyo = st),
+                  (this.beneficios = tt),
+                  (this.listBeneficio = nt),
+                  (this.rangosPreparacion = ot),
+                  (this.frecuenciaActividades = ct),
+                  (this.tiempoActividades = ut),
+                  (this.listTipoFinanciamiento = pt),
+                  (this.listTiempoTraslado = dt),
+                  (this.listSiNo = gt),
                   (this.siNoObj = _e),
-                  (this.displayedColumns = ft),
-                  (this.listEstadoCivil = gt),
-                  (this.listNivelEducacion = _t),
-                  (this.listEstadoPersona = mt),
-                  (this.listSituacionLaboral = ht),
-                  (this.displayedColumnsOtrosFam = vt),
-                  (this.listTareaHogar = yt),
+                  (this.displayedColumns = vt),
+                  (this.listEstadoCivil = _t),
+                  (this.listNivelEducacion = mt),
+                  (this.listEstadoPersona = ht),
+                  (this.listSituacionLaboral = ft),
+                  (this.displayedColumnsOtrosFam = yt),
+                  (this.listTareaHogar = Ct),
                   (this.objTareaHogar = me),
-                  (this.listDuracionTarea = Ct),
-                  (this.listFrecuenciaTarea = bt),
-                  (this.listEncargados = Tt),
+                  (this.listDuracionTarea = bt),
+                  (this.listFrecuenciaTarea = Tt),
+                  (this.listEncargados = At),
                   (this.objEncargado = he),
-                  (this.listPorcentajesResponsabilidad = At),
-                  (this.listTipoApoyoEconomico = Et),
-                  (this.displayedColumnsApoyoEcon = xt),
-                  (this.listMontoEstimado = It),
-                  (this.listSignificaEducacion = Mt),
-                  (this.listNroHorasDeApoyo = wt),
-                  (this.objPregunta = Zt),
-                  (this.listPreparacion = nt),
-                  (this.listPagoPreparacion = ot),
-                  (this.actividadesExtracademicas = st),
+                  (this.listPorcentajesResponsabilidad = xt),
+                  (this.listTipoApoyoEconomico = It),
+                  (this.displayedColumnsApoyoEcon = Et),
+                  (this.listMontoEstimado = Mt),
+                  (this.listSignificaEducacion = wt),
+                  (this.listNroHorasDeApoyo = Zt),
+                  (this.objPregunta = Qt),
+                  (this.listPreparacion = it),
+                  (this.listPagoPreparacion = at),
+                  (this.actividadesExtracademicas = lt),
                   (this.objActividades = ge),
                   (this.hasLenguaje = !1),
                   (this.hasParentesco = !1),
@@ -8012,10 +8012,10 @@
                 return this.cuestionarioForm.get(t);
               }
               openDialogErrorform() {
-                const t = this.modalService.open(Qt.b, { backdrop: "static" });
-                (t.componentInstance.title = "Campos Requeridos"),
+                const t = this.modalService.open(ve.b, { backdrop: "static" });
+                (t.componentInstance.title = "IMPORTANTE!!! Campos Requeridos"),
                   (t.componentInstance.message =
-                    "Por favor ingresar todos campos requeridos"),
+                    "Por favor, ingresar todos campos requeridos"),
                   (t.componentInstance.icon = "warning"),
                   (t.componentInstance.showBtnCancel = !1),
                   (t.componentInstance.textBtnSuccess = "Aceptar"),
@@ -8025,7 +8025,7 @@
               }
               openMaps() {
                 this.modalService
-                  .open(We, { backdrop: "static", keyboard: !1 })
+                  .open(Ke, { backdrop: "static", keyboard: !1 })
                   .result.then((n) => {
                     console.log(n);
                     const a = n[0];
@@ -8035,9 +8035,21 @@
                   });
               }
               submitForm() {
-                this.cuestionarioForm.invalid &&
-                  (this.openDialogErrorform(),
-                  this.cuestionarioForm.markAllAsTouched());
+                if (this.cuestionarioForm.invalid)
+                  this.openDialogErrorform(),
+                    this.cuestionarioForm.markAllAsTouched();
+                else {
+                  const t = this.modalService.open(ve.b, {
+                    backdrop: "static",
+                  });
+                  (t.componentInstance.message = `Excelente <b>${
+                    this.getControl("responsable.nombresApellidos")?.value
+                  }</b>, los datos del cuestionario fueron registrados con \xe9xito`),
+                    (t.componentInstance.showBtnCancel = !1),
+                    t.result.then((n) => {
+                      console.log(n);
+                    });
+                }
               }
             }
             return (
@@ -8215,8 +8227,6 @@
                     "text",
                     "id",
                     "carrera",
-                    "placeholder",
-                    "Especificar parentesco",
                     1,
                     "form-control",
                   ],
@@ -9111,7 +9121,7 @@
                       e._UZ(293, "app-label-form", 55)(294, "textarea", 86),
                       e.YNc(295, zr, 2, 1, "ng-container", 20),
                       e.qZA()()(),
-                      e.TgZ(296, "a", 87),
+                      e.TgZ(296, "button", 87),
                       e.NdJ("click", function () {
                         return n.submitForm();
                       }),
@@ -9713,12 +9723,12 @@
                   l.x0,
                   l.CE,
                   Ln,
-                  xe,
+                  Ee,
                   Yn.X,
                   jn,
                 ],
                 styles: [
-                  '@import"https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;400&display=swap";[_nghost-%COMP%]{font-family:Flexo-regular,sans-serif}.form-select[_ngcontent-%COMP%], .form-control[_ngcontent-%COMP%], .ng-select[_ngcontent-%COMP%]   .ng-select-container[_ngcontent-%COMP%]{border:1px solid black}label[_ngcontent-%COMP%]{color:#000;font-weight:500}.hero-cuestionario[_ngcontent-%COMP%]{line-height:1.2}.hero-cuestionario[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin-bottom:18px}.hero-cuestionario[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{font-size:1.3125rem;margin-bottom:1rem;font-family:Flexo-light,sans-serif}.color-orange[_ngcontent-%COMP%]{color:#ff4d00}.color-azul[_ngcontent-%COMP%]{color:#002d74}.cursiva[_ngcontent-%COMP%]{font-style:italic}.textLightIt[_ngcontent-%COMP%]{font-family:Flexo-lightIt,sans-serif}.head-cuestionario[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between;align-items:center;color:#fff;background-color:#002d74;flex-direction:column}@media (min-width: 48rem){.head-cuestionario[_ngcontent-%COMP%]{flex-direction:row}}.head-cuestionario__title[_ngcontent-%COMP%]{font-style:italic;font-size:2.25rem;font-family:Flexo-mediumit,sans-serif;margin-left:1.5rem;order:1;margin-bottom:1rem}@media (min-width: 48rem){.head-cuestionario__title[_ngcontent-%COMP%]{order:0;margin-bottom:0}}.head-cuestionario__img[_ngcontent-%COMP%]{max-width:416px;max-height:136px;margin:2rem 0;order:0}@media (min-width: 48rem){.head-cuestionario__img[_ngcontent-%COMP%]{order:1}}.flex-disposicion[_ngcontent-%COMP%]{flex-direction:column}@media (min-width: 48rem){.flex-disposicion[_ngcontent-%COMP%]{flex-direction:row}}.bloq-text[_ngcontent-%COMP%]{margin-top:1rem}.right-img[_ngcontent-%COMP%]{max-width:151px;max-height:297px;align-self:center;justify-self:center}@media (min-width: 48rem){.right-img[_ngcontent-%COMP%]{max-width:251px}}@media (min-width: 62rem){.right-img[_ngcontent-%COMP%]{max-width:351px}}.btn-cuestionario[_ngcontent-%COMP%]{background:url(./assets/images/cuestionario/btn-bg.svg) no-repeat;background-position:center;color:#fff;font-family:Flexo-bold,sans-serif;font-size:1.125rem;display:inline-block;padding:2rem}.text-submit[_ngcontent-%COMP%]{margin-right:.5rem}',
+                  '@import"https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;400&display=swap";[_nghost-%COMP%]{font-family:Flexo-regular,sans-serif}.form-select[_ngcontent-%COMP%], .form-control[_ngcontent-%COMP%], .ng-select[_ngcontent-%COMP%]   .ng-select-container[_ngcontent-%COMP%]{border:1px solid black}label[_ngcontent-%COMP%]{color:#000;font-weight:500}.hero-cuestionario[_ngcontent-%COMP%]{line-height:1.2}.hero-cuestionario[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin-bottom:18px}.hero-cuestionario[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{font-size:1.3125rem;margin-bottom:1rem;font-family:Flexo-light,sans-serif}.color-orange[_ngcontent-%COMP%]{color:#ff4d00}.color-azul[_ngcontent-%COMP%]{color:#002d74}.cursiva[_ngcontent-%COMP%]{font-style:italic}.textLightIt[_ngcontent-%COMP%]{font-family:Flexo-lightIt,sans-serif}.head-cuestionario[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between;align-items:center;color:#fff;background-color:#002d74;flex-direction:column}@media (min-width: 48rem){.head-cuestionario[_ngcontent-%COMP%]{flex-direction:row}}.head-cuestionario__title[_ngcontent-%COMP%]{font-style:italic;font-size:2.25rem;font-family:Flexo-mediumit,sans-serif;margin-left:1.5rem;order:1;margin-bottom:1rem}@media (min-width: 48rem){.head-cuestionario__title[_ngcontent-%COMP%]{order:0;margin-bottom:0}}.head-cuestionario__img[_ngcontent-%COMP%]{max-width:416px;max-height:136px;margin:2rem 0;order:0}@media (min-width: 48rem){.head-cuestionario__img[_ngcontent-%COMP%]{order:1}}.flex-disposicion[_ngcontent-%COMP%]{flex-direction:column}@media (min-width: 48rem){.flex-disposicion[_ngcontent-%COMP%]{flex-direction:row}}.bloq-text[_ngcontent-%COMP%]{margin-top:1rem}.right-img[_ngcontent-%COMP%]{max-width:151px;max-height:297px;align-self:center;justify-self:center}@media (min-width: 48rem){.right-img[_ngcontent-%COMP%]{max-width:251px}}@media (min-width: 62rem){.right-img[_ngcontent-%COMP%]{max-width:351px}}.btn-cuestionario[_ngcontent-%COMP%]{background:url(./assets/images/cuestionario/btn-bg.svg) no-repeat;background-position:center;color:#fff;font-family:Flexo-bold,sans-serif;font-size:1.125rem;display:inline-block;padding:2rem;border:none}.text-submit[_ngcontent-%COMP%]{margin-right:.5rem}',
                 ],
               })),
               i
@@ -9747,7 +9757,7 @@
           }),
           (i.ɵmod = e.oAB({ type: i })),
           (i.ɵinj = e.cJS({
-            imports: [C.ez, l.u5, l.UX, Ve, $.JF, $.Ed, Jn, D.IJ, Yr.m, Jr],
+            imports: [C.ez, l.u5, l.UX, Ge, $.JF, $.Ed, Jn, D.IJ, Yr.m, Jr],
           })),
           i
         );
