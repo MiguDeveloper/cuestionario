@@ -3,16 +3,16 @@
   self.webpackChunktest_theme_noble || []).push([
   [378],
   {
-    6378: (Qr, oe, b) => {
-      b.r(oe), b.d(oe, { PublicModule: () => Hr });
+    6378: (Zr, oe, b) => {
+      b.r(oe), b.d(oe, { PublicModule: () => wr });
       var W = b(529),
         t = b(433),
         C = b(6895),
         _e = b(8176),
         ae = b(5353),
         P = b(4004),
-        Ie = b(262),
-        Ee = b(9646),
+        Ee = b(262),
+        Ie = b(9646),
         e = b(1571),
         F = b(2953),
         v = b(1135),
@@ -576,7 +576,7 @@
                 )
                 .pipe(
                   (0, P.U)(() => !0),
-                  (0, Ie.K)(() => (0, Ee.of)(!1))
+                  (0, Ee.K)(() => (0, Ie.of)(!1))
                 ));
           }
           ngOnDestroy() {
@@ -700,13 +700,13 @@
         di = ["Menos de 6 meses", "6 meses a 1 a\xf1o", "M\xe1s de 1 a\xf1o"],
         ri = [...Object.values(ce)],
         ui = [
-          "Universidad del Pac\xedfico (Lima)",
-          "Universidad de Piura - Sede Lima",
-          "Universidad de Piura - Sede Piura",
-          "Universidad Peruana de Ciencias Aplicadas (Lima)",
-          "Universidad de Ingenier\xeda y Tecnolog\xeda (Lima)",
-          "Universidad de Lima (Lima)",
-          "Pontificia Universidad Cat\xf3lica del Per\xfa (Lima)",
+          "Universidad del Pac\xedfico - UP (Lima)",
+          "Universidad de Piura - UDEP (Sede Lima)",
+          "Universidad de Piura - UDEP (Sede Piura)",
+          "Universidad Peruana de Ciencias Aplicadas - UPC (Lima)",
+          "Universidad de Ingenier\xeda y Tecnolog\xeda - UTEC (Lima)",
+          "Universidad de Lima - UL (Lima)",
+          "Pontificia Universidad Cat\xf3lica del Per\xfa - PUCP (Lima)",
         ],
         ti = [
           "Matricularlo en una academia",
@@ -719,7 +719,7 @@
           "Alentarlo en momentos dificiles conversando",
           "Preguntarle sobre como va en el proceso",
           "Hablar sobre la importancia de la educaci\xf3n en familia",
-          "Otras",
+          "Otros (especificar)",
         ],
         le = {
           deporte: "Deporte",
@@ -758,7 +758,7 @@
           "Menos de 30 minutos",
           "Entre 30 minutos y 1 hora",
           "Entre 1 hora y 1.5 horas",
-          "EnTre 1.5 horas  y 2 horas",
+          "Entre 1.5 horas  y 2 horas",
           "M\xe1s de 2 horas",
         ],
         me = { si: "Si", no: "No" },
@@ -856,7 +856,7 @@
         },
         Li = [...Object.values(ve)],
         Mi = ["0-33%", "33%-66%", "66% a m\xe1s"],
-        Pi = ["Actividad", "Apoyo Si/No"],
+        Pi = ["Actividad", "Si/No"],
         Si = [
           ...Object.values({
             pasajes: "Pasajes",
@@ -870,21 +870,21 @@
             salidas: "Salidas con amigos",
           }),
         ],
-        Ii = [
+        Ei = [
           "S/. 10.00  a  S/. 25.00",
           "S/. 25.00  a  S/. 50.00",
           "S/. 50.00  a  S/. 75.00",
           "S/. 75.00  a  S/. 100.00",
           "M\xe1s de S/. 100.00",
         ],
-        Ei = [
+        Ii = [
           ...Object.values({
             mejoresRecursos: "Mejores recursos econ\xf3micos",
             primerProfesional: "Primer profesional en la familia",
             cumplirVisión: "Cumplir con su visi\xf3n de vida",
             serAgenteCambio: "Ser un agente de cambio para el pa\xeds",
             tenerCarrera:
-              "Tener una carrera profesional de la que se siente orgulloso",
+              "Tener una carrera profesional de la que se siente orgulloso/a",
             accederTrabajo: "Acceder a un trabajo bien remunerado",
             esCorresponde: "Es lo que le corresponde",
             noConversamos:
@@ -919,7 +919,7 @@
           },
           unoUno: {
             nro: '<i class="mdi mdi-map-marker"></i>',
-            descripcion: "Seleccione su lugar de residencia del/la postulante:",
+            descripcion: "Seleccione el lugar de residencia del/la postulante:",
             datoAdicional: "",
             for: "",
           },
@@ -984,8 +984,8 @@
           diez: {
             nro: "10",
             descripcion:
-              "\xbfQu\xe9 acciones realiz\xf3 como padre para que su hijo/a estuviera preparado para la postulaci\xf3n? (puede seleccionar m\xe1ximo 3)",
-            datoAdicional: "",
+              "\xbfQu\xe9 acciones realiz\xf3 como padre para que su hijo/a estuviera preparado para la postulaci\xf3n?",
+            datoAdicional: "Puede seleccionar m\xe1ximo 3",
             for: "",
           },
           once: {
@@ -1062,8 +1062,7 @@
           veinte: {
             nro: "16",
             descripcion: "\xbfEn qu\xe9 tareas apoya el/la postulante en casa?",
-            datoAdicional:
-              "Marque la/s tarea/as que realiza. Indique adem\xe1s el tiempo de cada tarea y la frecuencia semanal con la cual la realiza.",
+            datoAdicional: "",
             for: "",
           },
           veinteUno: {
@@ -1110,8 +1109,8 @@
           veintiseis: {
             nro: "20",
             descripcion:
-              "\xbfQu\xe9 significa para ustedes que el/la postulante puedan tener acceso a educaci\xf3n superior de calidad? puede seleccionar m\xe1ximo 2",
-            datoAdicional: "",
+              "\xbfQu\xe9 significa para ustedes que el/la postulante puedan tener acceso a educaci\xf3n superior de calidad?",
+            datoAdicional: "Puede seleccionar m\xe1ximo 2 opciones",
             for: "",
           },
           veintisiete: {
@@ -1140,7 +1139,7 @@
             descripcion:
               "A lo largo de la educaci\xf3n del postulante, \xbfQu\xe9 acciones concretas han realizado para que el postulante pueda tener una carrera universitaria?",
             datoAdicional:
-              "(Por ejemplo: lo matricul\xe9 en una academia; segu\xed las recomendaciones de los profesores, averigu\xe9 sobre universidades en las que mi hijo podr\xeda estudiar, le coment\xe9 sobre sus t\xedos que estudiaron) ",
+              "(Por ejemplo: lo matricul\xe9 en una academia; segu\xed las recomendaciones de los profesores, averigu\xe9 sobre universidades en las que mi hijo/a podr\xeda estudiar, le coment\xe9 sobre sus t\xedos que estudiaron) ",
             for: "",
           },
           treintayUno: {
@@ -1160,7 +1159,7 @@
           treintayTres: {
             nro: "26",
             descripcion:
-              "En caso el postulante entre al programa, \xbfC\xf3mo se reorganizar\xedan las tareas en el hogar que se\xf1al\xf3 previemente eran parte de sus deberes en casa? \xbfCu\xe1ntas horas creen que el postulante dedicar\xe1 a estas tareas luego de la reorganizaci\xf3n?",
+              "En caso el/la postulante entre al programa, \xbfC\xf3mo se reorganizar\xedan las tareas en el hogar que se\xf1al\xf3 previemente eran parte de sus deberes en casa? \xbfCu\xe1ntas horas creen que el/la postulante dedicar\xe1 a estas tareas luego de la reorganizaci\xf3n?",
             datoAdicional: "",
             for: "",
           },
@@ -15843,8 +15842,8 @@
         Ni = b(3101),
         k = b(4968),
         ie = b(6451);
-      const Ji = ["content"],
-        Di = ["scroll"],
+      const Di = ["content"],
+        Ji = ["scroll"],
         ji = ["padding"],
         O = function (_) {
           return { searchTerm: _ };
@@ -16211,7 +16210,7 @@
       function N(_) {
         return _ instanceof Function;
       }
-      let Io = (() => {
+      let Eo = (() => {
           class _ {
             constructor(i) {
               (this.element = i), (this.escape = !0);
@@ -16237,7 +16236,7 @@
             _
           );
         })(),
-        Eo = (() => {
+        Io = (() => {
           class _ {
             constructor(i) {
               this.template = i;
@@ -17267,7 +17266,7 @@
         ω: "\u03c9",
         ς: "\u03c3",
       };
-      function J(_) {
+      function D(_) {
         return _.replace(/[^\u0000-\u007E]/g, (i) => ko[i] || i);
       }
       class No {
@@ -17375,16 +17374,16 @@
         }
         findByLabel(a) {
           return (
-            (a = J(a).toLocaleLowerCase()),
+            (a = D(a).toLocaleLowerCase()),
             this.filteredItems.find(
-              (i) => J(i.label).toLocaleLowerCase().substr(0, a.length) === a
+              (i) => D(i.label).toLocaleLowerCase().substr(0, a.length) === a
             )
           );
         }
         filter(a) {
           if (!a) return void this.resetFilteredItems();
           (this._filteredItems = []),
-            (a = this._ngSelect.searchFn ? a : J(a).toLocaleLowerCase());
+            (a = this._ngSelect.searchFn ? a : D(a).toLocaleLowerCase());
           const i = this._ngSelect.searchFn || this._defaultSearchFn,
             o = this._ngSelect.hideSelected;
           for (const d of Array.from(this._groups.keys())) {
@@ -17501,7 +17500,7 @@
                 ));
         }
         _defaultSearchFn(a, i) {
-          return J(i.label).toLocaleLowerCase().indexOf(a) > -1;
+          return D(i.label).toLocaleLowerCase().indexOf(a) > -1;
         }
         _getNextItemIndex(a) {
           return a > 0
@@ -17665,7 +17664,7 @@
         );
       })();
       const Le = ["top", "right", "bottom", "left"],
-        Jo = typeof requestAnimationFrame < "u" ? ki.Z : Ni.E;
+        Do = typeof requestAnimationFrame < "u" ? ki.Z : Ni.E;
       let Me = (() => {
           class _ {
             constructor(i, o, d, r, u) {
@@ -17784,7 +17783,7 @@
             _handleScroll() {
               this._zone.runOutsideAngular(() => {
                 (0, k.R)(this.scrollElementRef.nativeElement, "scroll")
-                  .pipe((0, l.R)(this._destroy$), (0, Qi.e)(0, Jo))
+                  .pipe((0, l.R)(this._destroy$), (0, Qi.e)(0, Do))
                   .subscribe((i) => {
                     const o = i.path || (i.composedPath && i.composedPath());
                     this._onContentScrolled(
@@ -17993,8 +17992,8 @@
               viewQuery: function (i, o) {
                 if (
                   (1 & i &&
-                    (e.Gf(Ji, 7, e.SBq),
-                    e.Gf(Di, 7, e.SBq),
+                    (e.Gf(Di, 7, e.SBq),
+                    e.Gf(Ji, 7, e.SBq),
                     e.Gf(ji, 7, e.SBq)),
                   2 & i)
                 ) {
@@ -18125,7 +18124,7 @@
             _
           );
         })(),
-        Do = (() => {
+        Jo = (() => {
           class _ {
             constructor() {
               (this.notFoundText = "No items found"),
@@ -18791,7 +18790,7 @@
             return new (i || _)(
               e.$8M("class"),
               e.$8M("autofocus"),
-              e.Y36(Do),
+              e.Y36(Jo),
               e.Y36(Se),
               e.Y36(e.SBq),
               e.Y36(e.sBO),
@@ -18804,7 +18803,7 @@
             contentQueries: function (i, o, d) {
               if (
                 (1 & i &&
-                  (e.Suo(d, Eo, 5, e.Rgc),
+                  (e.Suo(d, Io, 5, e.Rgc),
                   e.Suo(d, xo, 5, e.Rgc),
                   e.Suo(d, qo, 5, e.Rgc),
                   e.Suo(d, zo, 5, e.Rgc),
@@ -19153,7 +19152,7 @@
                 e.xp6(3),
                 e.Q6J("ngIf", o.isOpen));
             },
-            dependencies: [C.mk, C.sg, C.O5, C.tP, Me, Io],
+            dependencies: [C.mk, C.sg, C.O5, C.tP, Me, Eo],
             styles: [
               '@charset "UTF-8";.ng-select{position:relative;display:block;box-sizing:border-box}.ng-select div,.ng-select input,.ng-select span{box-sizing:border-box}.ng-select [hidden]{display:none}.ng-select.ng-select-searchable .ng-select-container .ng-value-container .ng-input{opacity:1}.ng-select.ng-select-opened .ng-select-container{z-index:1001}.ng-select.ng-select-disabled .ng-select-container .ng-value-container .ng-placeholder,.ng-select.ng-select-disabled .ng-select-container .ng-value-container .ng-value{-webkit-user-select:none;user-select:none;cursor:default}.ng-select.ng-select-disabled .ng-arrow-wrapper{cursor:default}.ng-select.ng-select-filtered .ng-placeholder{display:none}.ng-select .ng-select-container{cursor:default;display:flex;outline:none;overflow:hidden;position:relative;width:100%}.ng-select .ng-select-container .ng-value-container{display:flex;flex:1}.ng-select .ng-select-container .ng-value-container .ng-input{opacity:0}.ng-select .ng-select-container .ng-value-container .ng-input>input{box-sizing:content-box;background:none transparent;border:0 none;box-shadow:none;outline:none;padding:0;cursor:default;width:100%}.ng-select .ng-select-container .ng-value-container .ng-input>input::-ms-clear{display:none}.ng-select .ng-select-container .ng-value-container .ng-input>input[readonly]{-webkit-user-select:none;user-select:none;width:0;padding:0}.ng-select.ng-select-single.ng-select-filtered .ng-select-container .ng-value-container .ng-value{visibility:hidden}.ng-select.ng-select-single .ng-select-container .ng-value-container,.ng-select.ng-select-single .ng-select-container .ng-value-container .ng-value{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ng-select.ng-select-single .ng-select-container .ng-value-container .ng-value .ng-value-icon{display:none}.ng-select.ng-select-single .ng-select-container .ng-value-container .ng-input{position:absolute;left:0;width:100%}.ng-select.ng-select-multiple.ng-select-disabled>.ng-select-container .ng-value-container .ng-value .ng-value-icon{display:none}.ng-select.ng-select-multiple .ng-select-container .ng-value-container{flex-wrap:wrap}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-placeholder{position:absolute}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value{white-space:nowrap}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value.ng-value-disabled .ng-value-icon{display:none}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon{cursor:pointer}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-input{flex:1;z-index:2}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-placeholder{z-index:1}.ng-select .ng-clear-wrapper{cursor:pointer;position:relative;width:17px;-webkit-user-select:none;user-select:none}.ng-select .ng-clear-wrapper .ng-clear{display:inline-block;font-size:18px;line-height:1;pointer-events:none}.ng-select .ng-spinner-loader{border-radius:50%;width:17px;height:17px;margin-right:5px;font-size:10px;position:relative;text-indent:-9999em;border-top:2px solid rgba(66,66,66,.2);border-right:2px solid rgba(66,66,66,.2);border-bottom:2px solid rgba(66,66,66,.2);border-left:2px solid #424242;transform:translateZ(0);animation:load8 .8s infinite linear}.ng-select .ng-spinner-loader:after{border-radius:50%;width:17px;height:17px}@keyframes load8{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.ng-select .ng-arrow-wrapper{cursor:pointer;position:relative;text-align:center;-webkit-user-select:none;user-select:none}.ng-select .ng-arrow-wrapper .ng-arrow{pointer-events:none;display:inline-block;height:0;width:0;position:relative}.ng-dropdown-panel{box-sizing:border-box;position:absolute;opacity:0;width:100%;z-index:1050;-webkit-overflow-scrolling:touch}.ng-dropdown-panel .ng-dropdown-panel-items{display:block;height:auto;box-sizing:border-box;max-height:240px;overflow-y:auto}.ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ng-dropdown-panel .ng-dropdown-panel-items .ng-option{box-sizing:border-box;cursor:pointer;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ng-dropdown-panel .ng-dropdown-panel-items .ng-option .ng-option-label:empty:before{content:"\\200b"}.ng-dropdown-panel .ng-dropdown-panel-items .ng-option .highlighted{font-weight:700;text-decoration:underline}.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.disabled{cursor:default}.ng-dropdown-panel .scroll-host{overflow:hidden;overflow-y:auto;position:relative;display:block;-webkit-overflow-scrolling:touch}.ng-dropdown-panel .scrollable-content{top:0;left:0;width:100%;height:100%;position:absolute}.ng-dropdown-panel .total-padding{width:1px;opacity:0}\n',
             ],
@@ -19308,17 +19307,17 @@
         );
       })();
       function Wo(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
       function Ko(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
       function Xo(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Ko, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Ko, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19333,11 +19332,11 @@
         }
       }
       function e_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
       function i_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, e_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, e_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -19355,11 +19354,11 @@
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.TgZ(1, "div", 22)(2, "div", 16)(3, "label", 92),
+            e.TgZ(1, "div", 23)(2, "div", 17)(3, "label", 94),
             e._uU(4, "Especifique la lengua:"),
             e.qZA(),
-            e._UZ(5, "input", 93),
-            e.YNc(6, i_, 2, 1, "ng-container", 21),
+            e._UZ(5, "input", 95),
+            e.YNc(6, i_, 2, 1, "ng-container", 22),
             e.qZA()(),
             e.BQk()),
           2 & _)
@@ -19379,7 +19378,7 @@
         }
       }
       function __(_, a) {
-        if ((1 & _ && (e.TgZ(0, "ng-option", 89), e._uU(1), e.qZA()), 2 & _)) {
+        if ((1 & _ && (e.TgZ(0, "ng-option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i.nombre_ubigeo),
             e.xp6(1),
@@ -19387,11 +19386,11 @@
         }
       }
       function a_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
       function d_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, a_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, a_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19405,11 +19404,11 @@
         }
       }
       function r_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
       function u_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, r_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, r_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19424,27 +19423,27 @@
         }
       }
       function t_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
       function g_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " solo numeros "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " solo numeros "), e.qZA());
       }
       function n_(_, a) {
         1 & _ &&
-          (e.TgZ(0, "p", 91), e._uU(1, " M\xednimo 8 digitos "), e.qZA());
+          (e.TgZ(0, "p", 93), e._uU(1, " M\xednimo 8 digitos "), e.qZA());
       }
       function p_(_, a) {
         1 & _ &&
-          (e.TgZ(0, "p", 91), e._uU(1, " M\xe1ximo 8 digitos "), e.qZA());
+          (e.TgZ(0, "p", 93), e._uU(1, " M\xe1ximo 8 digitos "), e.qZA());
       }
       function b_(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.YNc(1, t_, 2, 0, "p", 90),
-            e.YNc(2, g_, 2, 0, "p", 90),
-            e.YNc(3, n_, 2, 0, "p", 90),
-            e.YNc(4, p_, 2, 0, "p", 90),
+            e.YNc(1, t_, 2, 0, "p", 92),
+            e.YNc(2, g_, 2, 0, "p", 92),
+            e.YNc(3, n_, 2, 0, "p", 92),
+            e.YNc(4, p_, 2, 0, "p", 92),
             e.BQk()),
           2 & _)
         ) {
@@ -19481,11 +19480,11 @@
         }
       }
       function s_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
       function c_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, s_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, s_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19500,27 +19499,27 @@
         }
       }
       function l_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
       function m_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " solo numeros "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " solo numeros "), e.qZA());
       }
       function h_(_, a) {
         1 & _ &&
-          (e.TgZ(0, "p", 91), e._uU(1, " M\xednimo 8 digitos "), e.qZA());
+          (e.TgZ(0, "p", 93), e._uU(1, " M\xednimo 8 digitos "), e.qZA());
       }
       function v_(_, a) {
         1 & _ &&
-          (e.TgZ(0, "p", 91), e._uU(1, " M\xe1ximo 8 digitos "), e.qZA());
+          (e.TgZ(0, "p", 93), e._uU(1, " M\xe1ximo 8 digitos "), e.qZA());
       }
       function f_(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.YNc(1, l_, 2, 0, "p", 90),
-            e.YNc(2, m_, 2, 0, "p", 90),
-            e.YNc(3, h_, 2, 0, "p", 90),
-            e.YNc(4, v_, 2, 0, "p", 90),
+            e.YNc(1, l_, 2, 0, "p", 92),
+            e.YNc(2, m_, 2, 0, "p", 92),
+            e.YNc(3, h_, 2, 0, "p", 92),
+            e.YNc(4, v_, 2, 0, "p", 92),
             e.BQk()),
           2 & _)
         ) {
@@ -19557,17 +19556,17 @@
         }
       }
       function C_(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
       function y_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
       function A_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, y_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, y_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19582,11 +19581,11 @@
         }
       }
       function T_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
       function L_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, T_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, T_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -19603,10 +19602,10 @@
       function M_(_, a) {
         if (
           (1 & _ &&
-            (e.ynx(0, 22),
-            e.TgZ(1, "div", 16),
-            e._UZ(2, "app-label-form", 17)(3, "input", 94),
-            e.YNc(4, L_, 2, 1, "ng-container", 21),
+            (e.ynx(0, 23),
+            e.TgZ(1, "div", 17),
+            e._UZ(2, "app-label-form", 18)(3, "input", 96),
+            e.YNc(4, L_, 2, 1, "ng-container", 22),
             e.qZA(),
             e.BQk()),
           2 & _)
@@ -19631,17 +19630,17 @@
         }
       }
       function P_(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
       function S_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function I_(_, a) {
+      function E_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, S_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, S_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19656,12 +19655,12 @@
             );
         }
       }
-      function E_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function I_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
       function x_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, E_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, I_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19676,11 +19675,11 @@
         }
       }
       function q_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
       function z_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, q_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, q_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19695,11 +19694,11 @@
         }
       }
       function w_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
       function Z_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, w_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, w_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19714,17 +19713,17 @@
         }
       }
       function H_(_, a) {
-        if ((1 & _ && (e.TgZ(0, "ng-option", 89), e._uU(1), e.qZA()), 2 & _)) {
+        if ((1 & _ && (e.TgZ(0, "ng-option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
       function Q_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
       function O_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Q_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Q_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19738,11 +19737,79 @@
         }
       }
       function B_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Ingrese detalle "), e.qZA());
       }
       function F_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, B_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, B_, 2, 0, "p", 92), e.BQk()), 2 & _)
+        ) {
+          const i = e.oxw(2).$implicit;
+          let o;
+          e.xp6(1),
+            e.Q6J(
+              "ngIf",
+              null == (o = i.get("tipoAccion.detalle")) || null == o.errors
+                ? null
+                : o.errors.required
+            );
+        }
+      }
+      function k_(_, a) {
+        if (
+          (1 & _ &&
+            (e.ynx(0),
+            e.TgZ(1, "div", 98)(2, "div", 99)(3, "p"),
+            e._uU(4, " Tarea: "),
+            e._UZ(5, "br"),
+            e._uU(6),
+            e.qZA(),
+            e._UZ(7, "input", 100),
+            e.YNc(8, F_, 2, 1, "ng-container", 22),
+            e.qZA()(),
+            e.BQk()),
+          2 & _)
+        ) {
+          const i = e.oxw().$implicit;
+          let o, d;
+          e.xp6(6),
+            e.hij(
+              " ",
+              null == (o = i.get("tipoAccion.accion")) ? null : o.value,
+              " "
+            ),
+            e.xp6(2),
+            e.Q6J(
+              "ngIf",
+              (null == (d = i.get("tipoAccion.detalle")) ? null : d.invalid) &&
+                (null == (d = i.get("tipoAccion.detalle")) ? null : d.touched)
+            );
+        }
+      }
+      function N_(_, a) {
+        if (
+          (1 & _ &&
+            (e.TgZ(0, "div", 97),
+            e.YNc(1, k_, 9, 2, "ng-container", 22),
+            e.qZA()),
+          2 & _)
+        ) {
+          const i = a.$implicit;
+          let d;
+          e.Q6J("formGroupName", a.index),
+            e.xp6(1),
+            e.Q6J(
+              "ngIf",
+              "Otros (especificar)" ===
+                (null == (d = i.get("tipoAccion.accion")) ? null : d.value)
+            );
+        }
+      }
+      function D_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function J_(_, a) {
+        if (
+          (1 & _ && (e.ynx(0), e.YNc(1, D_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19756,12 +19823,12 @@
             );
         }
       }
-      function k_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Seleccione el tipo "), e.qZA());
+      function j_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Seleccione el tipo "), e.qZA());
       }
-      function N_(_, a) {
+      function U_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, k_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, j_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19775,12 +19842,12 @@
             );
         }
       }
-      function J_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function Y_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function D_(_, a) {
+      function R_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, J_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Y_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -19794,15 +19861,15 @@
             );
         }
       }
-      function j_(_, a) {
+      function V_(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.TgZ(1, "label", 95),
+            e.TgZ(1, "label", 101),
             e._uU(2, "11.2 \xbfPor qu\xe9?:"),
             e.qZA(),
-            e._UZ(3, "textarea", 96),
-            e.YNc(4, D_, 2, 1, "ng-container", 21),
+            e._UZ(3, "textarea", 102),
+            e.YNc(4, R_, 2, 1, "ng-container", 22),
             e.BQk()),
           2 & _)
         ) {
@@ -19820,18 +19887,18 @@
             );
         }
       }
-      function U_(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function G_(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Y_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function $_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function R_(_, a) {
+      function W_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Y_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, $_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19845,18 +19912,18 @@
             );
         }
       }
-      function V_(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function K_(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function G_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function X_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function $_(_, a) {
+      function ea(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, G_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, X_, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -19872,12 +19939,12 @@
             );
         }
       }
-      function W_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function ia(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function K_(_, a) {
+      function oa(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, W_, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, ia, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(3);
           let o;
@@ -19893,14 +19960,14 @@
             );
         }
       }
-      function X_(_, a) {
+      function _a(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div")(1, "label", 100),
+            (e.TgZ(0, "div")(1, "label", 106),
             e._uU(2, "12.2 Especificar beneficio:"),
             e.qZA(),
-            e._UZ(3, "input", 101),
-            e.YNc(4, K_, 2, 1, "ng-container", 21),
+            e._UZ(3, "input", 107),
+            e.YNc(4, oa, 2, 1, "ng-container", 22),
             e.qZA()),
           2 & _)
         ) {
@@ -19920,21 +19987,21 @@
             );
         }
       }
-      function ea(_, a) {
+      function aa(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 97)(1, "div", 16)(2, "label", 98),
+            (e.TgZ(0, "div", 103)(1, "div", 17)(2, "label", 104),
             e._uU(3, "12.1 En caso haya marcado S\xed, Este beneficio fue:"),
             e.qZA(),
-            e.TgZ(4, "select", 99)(5, "option", 19),
+            e.TgZ(4, "select", 105)(5, "option", 20),
             e._uU(6, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(7, V_, 2, 2, "option", 20),
+            e.YNc(7, K_, 2, 2, "option", 21),
             e.qZA(),
-            e.YNc(8, $_, 2, 1, "ng-container", 21),
+            e.YNc(8, ea, 2, 1, "ng-container", 22),
             e.qZA(),
-            e.TgZ(9, "div", 16),
-            e.YNc(10, X_, 5, 1, "div", 21),
+            e.TgZ(9, "div", 17),
+            e.YNc(10, _a, 5, 1, "div", 22),
             e.qZA()()),
           2 & _)
         ) {
@@ -19958,18 +20025,18 @@
             e.Q6J("ngIf", i.hasOtroBeneficio);
         }
       }
-      function ia(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function da(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function oa(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function ra(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function _a(_, a) {
+      function ua(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, oa, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, ra, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19983,45 +20050,18 @@
             );
         }
       }
-      function aa(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
-          const i = a.$implicit;
-          e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
-        }
-      }
-      function da(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
-      }
-      function ra(_, a) {
-        if (
-          (1 & _ && (e.ynx(0), e.YNc(1, da, 2, 0, "p", 90), e.BQk()), 2 & _)
-        ) {
-          const i = e.oxw(2);
-          let o;
-          e.xp6(1),
-            e.Q6J(
-              "ngIf",
-              null ==
-                (o = i.getControl(
-                  "preparacionPreUniversitaria.aCargo.periodo"
-                )) || null == o.errors
-                ? null
-                : o.errors.required
-            );
-        }
-      }
-      function ua(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
-          const i = a.$implicit;
-          e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
-        }
-      }
       function ta(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
+          const i = a.$implicit;
+          e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
+        }
       }
       function ga(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function na(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, ta, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, ga, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -20037,12 +20077,12 @@
             );
         }
       }
-      function na(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function pa(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function ba(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, na, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, pa, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(3);
           let o;
@@ -20058,14 +20098,14 @@
             );
         }
       }
-      function ba(_, a) {
+      function sa(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div")(1, "label", 100),
-            e._uU(2, "13.3 Especificar detalle:"),
+            (e.TgZ(0, "div")(1, "label", 106),
+            e._uU(2, "13.1.2 Especificar detalle:"),
             e.qZA(),
-            e._UZ(3, "input", 105),
-            e.YNc(4, pa, 2, 1, "ng-container", 21),
+            e._UZ(3, "input", 111),
+            e.YNc(4, ba, 2, 1, "ng-container", 22),
             e.qZA()),
           2 & _)
         ) {
@@ -20085,96 +20125,120 @@
             );
         }
       }
-      function sa(_, a) {
+      function ca(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
+          const i = a.$implicit;
+          e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
+        }
+      }
+      function la(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function ma(_, a) {
+        if (
+          (1 & _ && (e.ynx(0), e.YNc(1, la, 2, 0, "p", 92), e.BQk()), 2 & _)
+        ) {
+          const i = e.oxw(2);
+          let o;
+          e.xp6(1),
+            e.Q6J(
+              "ngIf",
+              null ==
+                (o = i.getControl(
+                  "preparacionPreUniversitaria.aCargo.periodo"
+                )) || null == o.errors
+                ? null
+                : o.errors.required
+            );
+        }
+      }
+      function ha(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 102)(1, "div", 16)(2, "label", 100),
-            e._uU(
-              3,
-              "13.1 Indicar el tiempo de preparaci\xf3n preuniversitaria:"
-            ),
+            (e.TgZ(0, "div", 108)(1, "div", 17)(2, "label", 104),
+            e._uU(3, "13.1 Esta preparaci\xf3n preuniversitaria fue:"),
             e.qZA(),
-            e.TgZ(4, "select", 103)(5, "option", 19),
+            e.TgZ(4, "select", 109)(5, "option", 20),
             e._uU(6, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(7, aa, 2, 2, "option", 20),
+            e.YNc(7, ta, 2, 2, "option", 21),
             e.qZA(),
-            e.YNc(8, ra, 2, 1, "ng-container", 21),
+            e.YNc(8, na, 2, 1, "ng-container", 22),
             e.qZA(),
-            e.TgZ(9, "div", 16)(10, "label", 98),
+            e.TgZ(9, "div", 17),
+            e.YNc(10, sa, 5, 1, "div", 22),
+            e.qZA(),
+            e.TgZ(11, "div", 17)(12, "label", 106),
             e._uU(
-              11,
-              "13.2 En caso haya marcado S\xed, esta preparaci\xf3n preuniversitaria fue:"
+              13,
+              "13.2 Indicar el tiempo de preparaci\xf3n preuniversitaria:"
             ),
             e.qZA(),
-            e.TgZ(12, "select", 104)(13, "option", 19),
-            e._uU(14, "-Seleccionar-"),
+            e.TgZ(14, "select", 110)(15, "option", 20),
+            e._uU(16, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(15, ua, 2, 2, "option", 20),
+            e.YNc(17, ca, 2, 2, "option", 21),
             e.qZA(),
-            e.YNc(16, ga, 2, 1, "ng-container", 21),
-            e.qZA(),
-            e.TgZ(17, "div", 16),
-            e.YNc(18, ba, 5, 1, "div", 21),
+            e.YNc(18, ma, 2, 1, "ng-container", 22),
             e.qZA()()),
           2 & _)
         ) {
           const i = e.oxw();
           let o, d;
           e.xp6(7),
-            e.Q6J("ngForOf", i.rangosPreparacion),
-            e.xp6(1),
-            e.Q6J(
-              "ngIf",
-              (null ==
-              (o = i.getControl("preparacionPreUniversitaria.aCargo.periodo"))
-                ? null
-                : o.invalid) &&
-                (null ==
-                (o = i.getControl("preparacionPreUniversitaria.aCargo.periodo"))
-                  ? null
-                  : o.touched)
-            ),
-            e.xp6(7),
             e.Q6J("ngForOf", i.listPagoPreparacion),
             e.xp6(1),
             e.Q6J(
               "ngIf",
               (null ==
-              (d = i.getControl("preparacionPreUniversitaria.aCargo.pagadoPor"))
+              (o = i.getControl("preparacionPreUniversitaria.aCargo.pagadoPor"))
                 ? null
-                : d.invalid) &&
+                : o.invalid) &&
                 (null ==
-                (d = i.getControl(
+                (o = i.getControl(
                   "preparacionPreUniversitaria.aCargo.pagadoPor"
                 ))
                   ? null
-                  : d.touched)
+                  : o.touched)
             ),
             e.xp6(2),
-            e.Q6J("ngIf", i.hasOtroPago);
+            e.Q6J("ngIf", i.hasOtroPago),
+            e.xp6(7),
+            e.Q6J("ngForOf", i.rangosPreparacion),
+            e.xp6(1),
+            e.Q6J(
+              "ngIf",
+              (null ==
+              (d = i.getControl("preparacionPreUniversitaria.aCargo.periodo"))
+                ? null
+                : d.invalid) &&
+                (null ==
+                (d = i.getControl("preparacionPreUniversitaria.aCargo.periodo"))
+                  ? null
+                  : d.touched)
+            );
         }
       }
-      function ca(_, a) {
-        if ((1 & _ && (e.TgZ(0, "ng-option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function va(_, a) {
+        if ((1 & _ && (e.TgZ(0, "ng-option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function la(_, a) {
+      function fa(_, a) {
         1 & _ &&
           (e.ynx(0),
-          e.TgZ(1, "p", 91),
+          e.TgZ(1, "p", 93),
           e._uU(2, "Campo requerido"),
           e.qZA(),
           e.BQk());
       }
-      function ma(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Ingrese detalle "), e.qZA());
+      function Ca(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Ingrese detalle "), e.qZA());
       }
-      function ha(_, a) {
+      function ya(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, ma, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Ca, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2).$implicit;
           let o;
@@ -20187,12 +20251,12 @@
             );
         }
       }
-      function va(_, a) {
+      function Aa(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e._UZ(1, "input", 114),
-            e.YNc(2, ha, 2, 1, "ng-container", 21),
+            e._UZ(1, "input", 119),
+            e.YNc(2, ya, 2, 1, "ng-container", 22),
             e.BQk()),
           2 & _)
         ) {
@@ -20210,19 +20274,19 @@
             );
         }
       }
-      function fa(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function Ta(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Ca(_, a) {
+      function La(_, a) {
         1 & _ &&
-          (e.TgZ(0, "p", 91), e._uU(1, " Seleccione financiamiento "), e.qZA());
+          (e.TgZ(0, "p", 93), e._uU(1, " Seleccione financiamiento "), e.qZA());
       }
-      function ya(_, a) {
+      function Ma(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Ca, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, La, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20236,12 +20300,12 @@
             );
         }
       }
-      function Aa(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Ingrese detalle "), e.qZA());
+      function Pa(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Ingrese detalle "), e.qZA());
       }
-      function Ta(_, a) {
+      function Sa(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Aa, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Pa, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2).$implicit;
           let o;
@@ -20254,15 +20318,15 @@
             );
         }
       }
-      function La(_, a) {
+      function Ea(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.TgZ(1, "label", 100),
+            e.TgZ(1, "label", 106),
             e._uU(2, "Especificar:"),
             e.qZA(),
-            e._UZ(3, "input", 115),
-            e.YNc(4, Ta, 2, 1, "ng-container", 21),
+            e._UZ(3, "input", 120),
+            e.YNc(4, Sa, 2, 1, "ng-container", 22),
             e.BQk()),
           2 & _)
         ) {
@@ -20276,29 +20340,29 @@
             );
         }
       }
-      function Ma(_, a) {
+      function Ia(_, a) {
         if (1 & _) {
           const i = e.EpF();
-          e.TgZ(0, "div", 106)(1, "div", 107)(2, "div", 108)(3, "p"),
+          e.TgZ(0, "div", 97)(1, "div", 112)(2, "div", 113)(3, "p"),
             e._uU(4, " Actividad: "),
             e._UZ(5, "br"),
             e._uU(6),
             e.qZA(),
-            e.YNc(7, va, 3, 1, "ng-container", 21),
+            e.YNc(7, Aa, 3, 1, "ng-container", 22),
             e.qZA()(),
-            e.TgZ(8, "div", 109)(9, "div", 110)(10, "label", 111),
+            e.TgZ(8, "div", 114)(9, "div", 115)(10, "label", 116),
             e._uU(11, "Financiamiento"),
             e.qZA(),
-            e.TgZ(12, "select", 112, 113),
+            e.TgZ(12, "select", 117, 118),
             e.NdJ("change", function (d) {
               const u = e.CHM(i).index,
                 g = e.oxw();
               return e.KtG(g.changeFinanciadoPor(d, u));
             }),
-            e.YNc(14, fa, 2, 2, "option", 20),
+            e.YNc(14, Ta, 2, 2, "option", 21),
             e.qZA(),
-            e.YNc(15, ya, 2, 1, "ng-container", 21),
-            e.YNc(16, La, 5, 1, "ng-container", 21),
+            e.YNc(15, Ma, 2, 1, "ng-container", 22),
+            e.YNc(16, Ea, 5, 1, "ng-container", 22),
             e.qZA()()();
         }
         if (2 & _) {
@@ -20337,12 +20401,12 @@
             e.Q6J("ngIf", d.value === r.objActividades.otros);
         }
       }
-      function Pa(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function xa(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function Sa(_, a) {
+      function qa(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Pa, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, xa, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -20356,12 +20420,12 @@
             );
         }
       }
-      function Ia(_, a) {
+      function za(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 6)(1, "div", 40)(2, "div", 16),
-            e._UZ(3, "app-label-form", 23)(4, "input", 116),
-            e.YNc(5, Sa, 2, 1, "ng-container", 21),
+            (e.TgZ(0, "div", 6)(1, "div", 41)(2, "div", 17),
+            e._UZ(3, "app-label-form", 24)(4, "input", 121),
+            e.YNc(5, qa, 2, 1, "ng-container", 22),
             e.qZA()()()),
           2 & _)
         ) {
@@ -20387,12 +20451,12 @@
             );
         }
       }
-      function Ea(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function wa(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function xa(_, a) {
+      function Za(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Ea, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, wa, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -20406,22 +20470,22 @@
             );
         }
       }
-      function qa(_, a) {
+      function Ha(_, a) {
         if (1 & _) {
           const i = e.EpF();
-          e.TgZ(0, "div", 6)(1, "div", 117)(2, "div", 16)(3, "label", 118),
+          e.TgZ(0, "div", 6)(1, "div", 122)(2, "div", 17)(3, "label", 123),
             e._uU(4, "Indicar direcci\xf3n en mapa(bot\xf3n indicar en mapa):"),
             e.qZA(),
-            e._UZ(5, "input", 119),
-            e.YNc(6, xa, 2, 1, "ng-container", 21),
+            e._UZ(5, "input", 124),
+            e.YNc(6, Za, 2, 1, "ng-container", 22),
             e.qZA()(),
-            e.TgZ(7, "div", 120)(8, "button", 121),
+            e.TgZ(7, "div", 125)(8, "button", 126),
             e.NdJ("click", function () {
               e.CHM(i);
               const d = e.oxw();
               return e.KtG(d.openMaps());
             }),
-            e._UZ(9, "i", 122),
+            e._UZ(9, "i", 127),
             e._uU(10, " Indicar en mapa "),
             e.qZA()()();
         }
@@ -20442,18 +20506,18 @@
             );
         }
       }
-      function za(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function Qa(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function wa(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function Oa(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function Za(_, a) {
+      function Ba(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, wa, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Oa, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -20466,15 +20530,15 @@
             );
         }
       }
-      function Ha(_, a) {
+      function Fa(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 6)(1, "div", 22)(2, "div", 16),
-            e._UZ(3, "app-label-form", 17),
-            e.TgZ(4, "select", 123),
-            e.YNc(5, za, 2, 2, "option", 20),
+            (e.TgZ(0, "div", 6)(1, "div", 23)(2, "div", 17),
+            e._UZ(3, "app-label-form", 18),
+            e.TgZ(4, "select", 128),
+            e.YNc(5, Qa, 2, 2, "option", 21),
             e.qZA(),
-            e.YNc(6, Za, 2, 1, "ng-container", 21),
+            e.YNc(6, Ba, 2, 1, "ng-container", 22),
             e.qZA()()()),
           2 & _)
         ) {
@@ -20499,20 +20563,20 @@
             );
         }
       }
-      function Qa(_, a) {
-        if ((1 & _ && (e.TgZ(0, "th", 124), e._uU(1), e.qZA()), 2 & _)) {
+      function ka(_, a) {
+        if ((1 & _ && (e.TgZ(0, "th", 129), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Udp("min-width", i.style.minWidth, "px"),
             e.xp6(1),
             e.hij(" ", i.value, " ");
         }
       }
-      function Oa(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Ingrese parentesco "), e.qZA());
+      function Na(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Ingrese parentesco "), e.qZA());
       }
-      function Ba(_, a) {
+      function Da(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Oa, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Na, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20525,12 +20589,12 @@
             );
         }
       }
-      function Fa(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Ingrese nombres "), e.qZA());
+      function Ja(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Ingrese nombres "), e.qZA());
       }
-      function ka(_, a) {
+      function ja(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Fa, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Ja, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20543,12 +20607,12 @@
             );
         }
       }
-      function Na(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Ingrese apellidos "), e.qZA());
+      function Ua(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Ingrese apellidos "), e.qZA());
       }
-      function Ja(_, a) {
+      function Ya(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Na, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Ua, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20561,12 +20625,12 @@
             );
         }
       }
-      function Da(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Ingrese edad "), e.qZA());
+      function Ra(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Ingrese edad "), e.qZA());
       }
-      function ja(_, a) {
+      function Va(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Da, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Ra, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20579,18 +20643,18 @@
             );
         }
       }
-      function Ua(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function Ga(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Ya(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Seleccione "), e.qZA());
+      function $a(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Seleccione "), e.qZA());
       }
-      function Ra(_, a) {
+      function Wa(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Ya, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, $a, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20603,18 +20667,18 @@
             );
         }
       }
-      function Va(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function Ka(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Ga(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Seleccione "), e.qZA());
+      function Xa(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Seleccione "), e.qZA());
       }
-      function $a(_, a) {
+      function ed(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Ga, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Xa, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20627,18 +20691,18 @@
             );
         }
       }
-      function Wa(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function id(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Ka(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Seleccione "), e.qZA());
+      function od(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Seleccione "), e.qZA());
       }
-      function Xa(_, a) {
+      function _d(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Ka, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, od, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20651,18 +20715,18 @@
             );
         }
       }
-      function ed(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function ad(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function id(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Seleccione "), e.qZA());
+      function dd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Seleccione "), e.qZA());
       }
-      function od(_, a) {
+      function rd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, id, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, dd, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20675,18 +20739,18 @@
             );
         }
       }
-      function _d(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function ud(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function ad(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Seleccione "), e.qZA());
+      function td(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Seleccione "), e.qZA());
       }
-      function dd(_, a) {
+      function gd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, ad, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, td, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20699,75 +20763,75 @@
             );
         }
       }
-      function rd(_, a) {
+      function nd(_, a) {
         if (1 & _) {
           const i = e.EpF();
-          e.TgZ(0, "td")(1, "button", 136),
+          e.TgZ(0, "td")(1, "button", 141),
             e.NdJ("click", function () {
               e.CHM(i);
               const d = e.oxw().index,
                 r = e.oxw();
               return e.KtG(r.deleteFamiliarNuclear(d));
             }),
-            e._UZ(2, "i", 137),
+            e._UZ(2, "i", 142),
             e.qZA()();
         }
       }
-      function ud(_, a) {
+      function pd(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "tr", 125)(1, "td"),
-            e._UZ(2, "input", 126),
-            e.YNc(3, Ba, 2, 1, "ng-container", 21),
+            (e.TgZ(0, "tr", 130)(1, "td"),
+            e._UZ(2, "input", 131),
+            e.YNc(3, Da, 2, 1, "ng-container", 22),
             e.qZA(),
             e.TgZ(4, "td"),
-            e._UZ(5, "input", 127),
-            e.YNc(6, ka, 2, 1, "ng-container", 21),
+            e._UZ(5, "input", 132),
+            e.YNc(6, ja, 2, 1, "ng-container", 22),
             e.qZA(),
             e.TgZ(7, "td"),
-            e._UZ(8, "input", 128),
-            e.YNc(9, Ja, 2, 1, "ng-container", 21),
+            e._UZ(8, "input", 133),
+            e.YNc(9, Ya, 2, 1, "ng-container", 22),
             e.qZA(),
             e.TgZ(10, "td"),
-            e._UZ(11, "input", 129),
-            e.YNc(12, ja, 2, 1, "ng-container", 21),
+            e._UZ(11, "input", 134),
+            e.YNc(12, Va, 2, 1, "ng-container", 22),
             e.qZA(),
-            e.TgZ(13, "td")(14, "select", 130)(15, "option", 19),
+            e.TgZ(13, "td")(14, "select", 135)(15, "option", 20),
             e._uU(16, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(17, Ua, 2, 2, "option", 20),
+            e.YNc(17, Ga, 2, 2, "option", 21),
             e.qZA(),
-            e.YNc(18, Ra, 2, 1, "ng-container", 21),
+            e.YNc(18, Wa, 2, 1, "ng-container", 22),
             e.qZA(),
-            e.TgZ(19, "td")(20, "select", 131)(21, "option", 19),
+            e.TgZ(19, "td")(20, "select", 136)(21, "option", 20),
             e._uU(22, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(23, Va, 2, 2, "option", 20),
+            e.YNc(23, Ka, 2, 2, "option", 21),
             e.qZA(),
-            e.YNc(24, $a, 2, 1, "ng-container", 21),
+            e.YNc(24, ed, 2, 1, "ng-container", 22),
             e.qZA(),
-            e.TgZ(25, "td", 132)(26, "select", 133)(27, "option", 19),
+            e.TgZ(25, "td", 137)(26, "select", 138)(27, "option", 20),
             e._uU(28, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(29, Wa, 2, 2, "option", 20),
+            e.YNc(29, id, 2, 2, "option", 21),
             e.qZA(),
-            e.YNc(30, Xa, 2, 1, "ng-container", 21),
+            e.YNc(30, _d, 2, 1, "ng-container", 22),
             e.qZA(),
-            e.TgZ(31, "td")(32, "select", 134)(33, "option", 19),
+            e.TgZ(31, "td")(32, "select", 139)(33, "option", 20),
             e._uU(34, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(35, ed, 2, 2, "option", 20),
+            e.YNc(35, ad, 2, 2, "option", 21),
             e.qZA(),
-            e.YNc(36, od, 2, 1, "ng-container", 21),
+            e.YNc(36, rd, 2, 1, "ng-container", 22),
             e.qZA(),
-            e.TgZ(37, "td")(38, "select", 135)(39, "option", 19),
+            e.TgZ(37, "td")(38, "select", 140)(39, "option", 20),
             e._uU(40, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(41, _d, 2, 2, "option", 20),
+            e.YNc(41, ud, 2, 2, "option", 21),
             e.qZA(),
-            e.YNc(42, dd, 2, 1, "ng-container", 21),
+            e.YNc(42, gd, 2, 1, "ng-container", 22),
             e.qZA(),
-            e.YNc(43, rd, 3, 0, "td", 21),
+            e.YNc(43, nd, 3, 0, "td", 22),
             e.qZA()),
           2 & _)
         ) {
@@ -20845,26 +20909,26 @@
             e.Q6J("ngIf", !d);
         }
       }
-      function td(_, a) {
-        if ((1 & _ && (e.TgZ(0, "ng-option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function bd(_, a) {
+        if ((1 & _ && (e.TgZ(0, "ng-option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function gd(_, a) {
+      function sd(_, a) {
         1 & _ &&
           (e.ynx(0),
-          e.TgZ(1, "p", 91),
+          e.TgZ(1, "p", 93),
           e._uU(2, "Campo requerido"),
           e.qZA(),
           e.BQk());
       }
-      function nd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Ingrese detalle "), e.qZA());
+      function cd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Ingrese detalle "), e.qZA());
       }
-      function pd(_, a) {
+      function ld(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, nd, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, cd, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2).$implicit;
           let o;
@@ -20877,149 +20941,70 @@
             );
         }
       }
-      function bd(_, a) {
+      function md(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e._UZ(1, "input", 143),
-            e.YNc(2, pd, 2, 1, "ng-container", 21),
-            e.BQk()),
-          2 & _)
-        ) {
-          const i = e.oxw().$implicit;
-          let o;
-          e.xp6(2),
-            e.Q6J(
-              "ngIf",
-              (null == (o = i.get("tipoTarea.detalle")) ? null : o.invalid) &&
-                (null == (o = i.get("tipoTarea.detalle")) ? null : o.touched)
-            );
-        }
-      }
-      function sd(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
-          const i = a.$implicit;
-          e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
-        }
-      }
-      function cd(_, a) {
-        1 & _ &&
-          (e.TgZ(0, "p", 91), e._uU(1, " Seleccione duraci\xf3n "), e.qZA());
-      }
-      function ld(_, a) {
-        if (
-          (1 & _ && (e.ynx(0), e.YNc(1, cd, 2, 0, "p", 90), e.BQk()), 2 & _)
-        ) {
-          const i = e.oxw().$implicit;
-          let o;
-          e.xp6(1),
-            e.Q6J(
-              "ngIf",
-              null == (o = i.get("duracion")) || null == o.errors
-                ? null
-                : o.errors.required
-            );
-        }
-      }
-      function md(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
-          const i = a.$implicit;
-          e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
-        }
-      }
-      function hd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Seleccione tiempo "), e.qZA());
-      }
-      function vd(_, a) {
-        if (
-          (1 & _ && (e.ynx(0), e.YNc(1, hd, 2, 0, "p", 90), e.BQk()), 2 & _)
-        ) {
-          const i = e.oxw().$implicit;
-          let o;
-          e.xp6(1),
-            e.Q6J(
-              "ngIf",
-              null == (o = i.get("frecuencia")) || null == o.errors
-                ? null
-                : o.errors.required
-            );
-        }
-      }
-      function fd(_, a) {
-        if (
-          (1 & _ &&
-            (e.TgZ(0, "div", 106)(1, "div", 107)(2, "div", 138)(3, "p"),
+            e.TgZ(1, "div", 98)(2, "div", 143)(3, "p"),
             e._uU(4, " Tarea: "),
             e._UZ(5, "br"),
             e._uU(6),
             e.qZA(),
-            e.YNc(7, bd, 3, 1, "ng-container", 21),
+            e._UZ(7, "input", 144),
+            e.YNc(8, ld, 2, 1, "ng-container", 22),
             e.qZA()(),
-            e.TgZ(8, "div", 107)(9, "div", 16)(10, "label", 139),
-            e._uU(11, "Duraci\xf3n:"),
-            e.qZA(),
-            e.TgZ(12, "select", 140),
-            e.YNc(13, sd, 2, 2, "option", 20),
-            e.qZA(),
-            e.YNc(14, ld, 2, 1, "ng-container", 21),
-            e.qZA()(),
-            e.TgZ(15, "div", 107)(16, "div", 16)(17, "label", 141),
-            e._uU(18, "Frecuencia:"),
-            e.qZA(),
-            e.TgZ(19, "select", 142),
-            e.YNc(20, md, 2, 2, "option", 20),
-            e.qZA(),
-            e.YNc(21, vd, 2, 1, "ng-container", 21),
-            e.qZA()()()),
+            e.BQk()),
+          2 & _)
+        ) {
+          const i = e.oxw().$implicit;
+          let o, d;
+          e.xp6(6),
+            e.hij(
+              " ",
+              null == (o = i.get("tipoTarea.tarea")) ? null : o.value,
+              " "
+            ),
+            e.xp6(2),
+            e.Q6J(
+              "ngIf",
+              (null == (d = i.get("tipoTarea.detalle")) ? null : d.invalid) &&
+                (null == (d = i.get("tipoTarea.detalle")) ? null : d.touched)
+            );
+        }
+      }
+      function hd(_, a) {
+        if (
+          (1 & _ &&
+            (e.TgZ(0, "div", 97),
+            e.YNc(1, md, 9, 2, "ng-container", 22),
+            e.qZA()),
           2 & _)
         ) {
           const i = a.$implicit,
             o = a.index,
             d = e.oxw();
-          let r, u, g, n;
+          let r;
           e.Q6J("formGroupName", o),
-            e.xp6(6),
-            e.hij(
-              " ",
-              null == (r = i.get("tipoTarea.tarea")) ? null : r.value,
-              " "
-            ),
             e.xp6(1),
             e.Q6J(
               "ngIf",
-              (null == (u = i.get("tipoTarea.tarea")) ? null : u.value) ===
+              (null == (r = i.get("tipoTarea.tarea")) ? null : r.value) ===
                 d.objTareaHogar.otros
-            ),
-            e.xp6(6),
-            e.Q6J("ngForOf", d.listDuracionTarea),
-            e.xp6(1),
-            e.Q6J(
-              "ngIf",
-              (null == (g = i.get("duracion")) ? null : g.invalid) &&
-                (null == (g = i.get("duracion")) ? null : g.touched)
-            ),
-            e.xp6(6),
-            e.Q6J("ngForOf", d.listFrecuenciaTarea),
-            e.xp6(1),
-            e.Q6J(
-              "ngIf",
-              (null == (n = i.get("frecuencia")) ? null : n.invalid) &&
-                (null == (n = i.get("frecuencia")) ? null : n.touched)
             );
         }
       }
-      function Cd(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function vd(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function yd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function fd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function Ad(_, a) {
+      function Cd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, yd, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, fd, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21035,26 +21020,26 @@
             );
         }
       }
-      function Td(_, a) {
-        if ((1 & _ && (e.TgZ(0, "ng-option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function yd(_, a) {
+        if ((1 & _ && (e.TgZ(0, "ng-option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Ld(_, a) {
+      function Ad(_, a) {
         1 & _ &&
           (e.ynx(0),
-          e.TgZ(1, "p", 91),
+          e.TgZ(1, "p", 93),
           e._uU(2, "Campo requerido"),
           e.qZA(),
           e.BQk());
       }
-      function Md(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Ingrese detalle "), e.qZA());
+      function Td(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Ingrese detalle "), e.qZA());
       }
-      function Pd(_, a) {
+      function Ld(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Md, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Td, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2).$implicit;
           let o;
@@ -21067,12 +21052,12 @@
             );
         }
       }
-      function Sd(_, a) {
+      function Md(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e._UZ(1, "input", 147),
-            e.YNc(2, Pd, 2, 1, "ng-container", 21),
+            e._UZ(1, "input", 148),
+            e.YNc(2, Ld, 2, 1, "ng-container", 22),
             e.BQk()),
           2 & _)
         ) {
@@ -21086,19 +21071,19 @@
             );
         }
       }
-      function Id(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function Pd(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Ed(_, a) {
+      function Sd(_, a) {
         1 & _ &&
-          (e.TgZ(0, "p", 91), e._uU(1, " Seleccione duraci\xf3n "), e.qZA());
+          (e.TgZ(0, "p", 93), e._uU(1, " Seleccione duraci\xf3n "), e.qZA());
       }
-      function xd(_, a) {
+      function Ed(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Ed, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Sd, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -21111,23 +21096,23 @@
             );
         }
       }
-      function qd(_, a) {
+      function Id(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 106)(1, "div", 107)(2, "div", 144)(3, "p"),
+            (e.TgZ(0, "div", 97)(1, "div", 112)(2, "div", 145)(3, "p"),
             e._uU(4, " Encargado: "),
             e._UZ(5, "br"),
             e._uU(6),
             e.qZA(),
-            e.YNc(7, Sd, 3, 1, "ng-container", 21),
+            e.YNc(7, Md, 3, 1, "ng-container", 22),
             e.qZA()(),
-            e.TgZ(8, "div", 107)(9, "div", 16)(10, "label", 145),
+            e.TgZ(8, "div", 112)(9, "div", 17)(10, "label", 146),
             e._uU(11, "Porcentaje responsabilidad:"),
             e.qZA(),
-            e.TgZ(12, "select", 146),
-            e.YNc(13, Id, 2, 2, "option", 20),
+            e.TgZ(12, "select", 147),
+            e.YNc(13, Pd, 2, 2, "option", 21),
             e.qZA(),
-            e.YNc(14, xd, 2, 1, "ng-container", 21),
+            e.YNc(14, Ed, 2, 1, "ng-container", 22),
             e.qZA()()()),
           2 & _)
         ) {
@@ -21158,18 +21143,18 @@
             );
         }
       }
-      function zd(_, a) {
-        if ((1 & _ && (e.TgZ(0, "th", 124), e._uU(1), e.qZA()), 2 & _)) {
+      function xd(_, a) {
+        if ((1 & _ && (e.TgZ(0, "th", 129), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function wd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function qd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function Zd(_, a) {
+      function zd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, wd, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, qd, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2).$implicit;
           let o;
@@ -21182,12 +21167,12 @@
             );
         }
       }
-      function Hd(_, a) {
+      function wd(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e._UZ(1, "input", 151),
-            e.YNc(2, Zd, 2, 1, "ng-container", 21),
+            e._UZ(1, "input", 152),
+            e.YNc(2, zd, 2, 1, "ng-container", 22),
             e.BQk()),
           2 & _)
         ) {
@@ -21201,25 +21186,25 @@
             );
         }
       }
-      function Qd(_, a) {
+      function Zd(_, a) {
         if ((1 & _ && (e.TgZ(0, "p"), e._uU(1), e.qZA()), 2 & _)) {
           const i = e.oxw().$implicit;
           let o;
           e.xp6(1), e.Oqu(null == (o = i.get("actividad")) ? null : o.value);
         }
       }
-      function Od(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function Hd(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Bd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Seleccione "), e.qZA());
+      function Qd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Seleccione "), e.qZA());
       }
-      function Fd(_, a) {
+      function Od(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Bd, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Qd, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -21232,38 +21217,38 @@
             );
         }
       }
-      function kd(_, a) {
+      function Bd(_, a) {
         if (1 & _) {
           const i = e.EpF();
           e.ynx(0),
-            e.TgZ(1, "button", 136),
+            e.TgZ(1, "button", 141),
             e.NdJ("click", function () {
               e.CHM(i);
               const d = e.oxw().index,
                 r = e.oxw();
               return e.KtG(r.deletActiviadaApoyo(d));
             }),
-            e._UZ(2, "i", 137),
+            e._UZ(2, "i", 142),
             e.qZA(),
             e.BQk();
         }
       }
-      function Nd(_, a) {
+      function Fd(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "tr", 125)(1, "td"),
-            e.YNc(2, Hd, 3, 1, "ng-container", 148),
-            e.YNc(3, Qd, 2, 1, "ng-template", null, 149, e.W1O),
+            (e.TgZ(0, "tr", 130)(1, "td"),
+            e.YNc(2, wd, 3, 1, "ng-container", 149),
+            e.YNc(3, Zd, 2, 1, "ng-template", null, 150, e.W1O),
             e.qZA(),
-            e.TgZ(5, "td")(6, "select", 150)(7, "option", 19),
+            e.TgZ(5, "td")(6, "select", 151)(7, "option", 20),
             e._uU(8, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(9, Od, 2, 2, "option", 20),
+            e.YNc(9, Hd, 2, 2, "option", 21),
             e.qZA(),
-            e.YNc(10, Fd, 2, 1, "ng-container", 21),
+            e.YNc(10, Od, 2, 1, "ng-container", 22),
             e.qZA(),
             e.TgZ(11, "td"),
-            e.YNc(12, kd, 3, 0, "ng-container", 21),
+            e.YNc(12, Bd, 3, 0, "ng-container", 22),
             e.qZA()()),
           2 & _)
         ) {
@@ -21290,12 +21275,12 @@
             e.Q6J("ngIf", o > r.listTipoApoyoEconomico.length - 1);
         }
       }
-      function Jd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function kd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function Dd(_, a) {
+      function Nd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Jd, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, kd, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21309,26 +21294,26 @@
             );
         }
       }
-      function jd(_, a) {
-        if ((1 & _ && (e.TgZ(0, "ng-option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function Dd(_, a) {
+        if ((1 & _ && (e.TgZ(0, "ng-option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Ud(_, a) {
+      function Jd(_, a) {
         1 & _ &&
           (e.ynx(0),
-          e.TgZ(1, "p", 91),
+          e.TgZ(1, "p", 93),
           e._uU(2, "Campo requerido"),
           e.qZA(),
           e.BQk());
       }
-      function Yd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Ingrese detalle "), e.qZA());
+      function jd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Ingrese detalle "), e.qZA());
       }
-      function Rd(_, a) {
+      function Ud(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Yd, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, jd, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2).$implicit;
           let o;
@@ -21341,7 +21326,7 @@
             );
         }
       }
-      function Vd(_, a) {
+      function Yd(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
@@ -21349,7 +21334,7 @@
             e._uU(2, " Otros (especificar)"),
             e.qZA(),
             e._UZ(3, "input", 155),
-            e.YNc(4, Rd, 2, 1, "ng-container", 21),
+            e.YNc(4, Ud, 2, 1, "ng-container", 22),
             e.BQk()),
           2 & _)
         ) {
@@ -21363,11 +21348,11 @@
             );
         }
       }
-      function Gd(_, a) {
+      function Rd(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 106)(1, "div", 152)(2, "div", 153),
-            e.YNc(3, Vd, 5, 1, "ng-container", 21),
+            (e.TgZ(0, "div", 97)(1, "div", 98)(2, "div", 153),
+            e.YNc(3, Yd, 5, 1, "ng-container", 22),
             e.qZA()()()),
           2 & _)
         ) {
@@ -21384,18 +21369,18 @@
             );
         }
       }
-      function $d(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function Vd(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Wd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function Gd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function Kd(_, a) {
+      function $d(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Wd, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Gd, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21409,12 +21394,12 @@
             );
         }
       }
-      function Xd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function Wd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function er(_, a) {
+      function Kd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Xd, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Wd, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -21428,14 +21413,14 @@
             );
         }
       }
-      function ir(_, a) {
+      function Xd(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 6)(1, "div", 31)(2, "div", 16)(3, "label", 156),
+            (e.TgZ(0, "div", 6)(1, "div", 32)(2, "div", 17)(3, "label", 156),
             e._uU(4, "21.1 Ingresar detalle:"),
             e.qZA(),
-            e._UZ(5, "textarea", 96),
-            e.YNc(6, er, 2, 1, "ng-container", 21),
+            e._UZ(5, "textarea", 102),
+            e.YNc(6, Kd, 2, 1, "ng-container", 22),
             e.qZA()()()),
           2 & _)
         ) {
@@ -21453,18 +21438,18 @@
             );
         }
       }
-      function or(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function er(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function _r(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function ir(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function ar(_, a) {
+      function or(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, _r, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, ir, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21478,12 +21463,12 @@
             );
         }
       }
-      function dr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function _r(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function rr(_, a) {
+      function ar(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, dr, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, _r, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -21497,14 +21482,14 @@
             );
         }
       }
-      function ur(_, a) {
+      function dr(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 6)(1, "div", 31)(2, "div", 16)(3, "label", 156),
+            (e.TgZ(0, "div", 6)(1, "div", 32)(2, "div", 17)(3, "label", 156),
             e._uU(4, "22.1 Ingresar detalle:"),
             e.qZA(),
-            e._UZ(5, "textarea", 96),
-            e.YNc(6, rr, 2, 1, "ng-container", 21),
+            e._UZ(5, "textarea", 102),
+            e.YNc(6, ar, 2, 1, "ng-container", 22),
             e.qZA()()()),
           2 & _)
         ) {
@@ -21522,18 +21507,18 @@
             );
         }
       }
-      function tr(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function rr(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function gr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function ur(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function nr(_, a) {
+      function tr(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, gr, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, ur, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21547,12 +21532,12 @@
             );
         }
       }
-      function pr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function gr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function br(_, a) {
+      function nr(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, pr, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, gr, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -21566,14 +21551,14 @@
             );
         }
       }
-      function sr(_, a) {
+      function pr(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 6)(1, "div", 31)(2, "div", 16)(3, "label", 156),
+            (e.TgZ(0, "div", 6)(1, "div", 32)(2, "div", 17)(3, "label", 156),
             e._uU(4, "23.1 Ingresar detalle:"),
             e.qZA(),
-            e._UZ(5, "textarea", 96),
-            e.YNc(6, br, 2, 1, "ng-container", 21),
+            e._UZ(5, "textarea", 102),
+            e.YNc(6, nr, 2, 1, "ng-container", 22),
             e.qZA()()()),
           2 & _)
         ) {
@@ -21591,18 +21576,18 @@
             );
         }
       }
-      function cr(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function br(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function lr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function sr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function mr(_, a) {
+      function cr(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, lr, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, sr, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21616,12 +21601,12 @@
             );
         }
       }
-      function hr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function lr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function vr(_, a) {
+      function mr(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, hr, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, lr, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -21635,14 +21620,14 @@
             );
         }
       }
-      function fr(_, a) {
+      function hr(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 6)(1, "div", 31)(2, "div", 16)(3, "label", 156),
+            (e.TgZ(0, "div", 6)(1, "div", 32)(2, "div", 17)(3, "label", 156),
             e._uU(4, "24.1 Ingresar detalle:"),
             e.qZA(),
-            e._UZ(5, "textarea", 96),
-            e.YNc(6, vr, 2, 1, "ng-container", 21),
+            e._UZ(5, "textarea", 102),
+            e.YNc(6, mr, 2, 1, "ng-container", 22),
             e.qZA()()()),
           2 & _)
         ) {
@@ -21660,18 +21645,18 @@
             );
         }
       }
-      function Cr(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function vr(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function yr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function fr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function Ar(_, a) {
+      function Cr(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, yr, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, fr, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21685,12 +21670,12 @@
             );
         }
       }
-      function Tr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function yr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function Lr(_, a) {
+      function Ar(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Tr, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, yr, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -21704,14 +21689,14 @@
             );
         }
       }
-      function Mr(_, a) {
+      function Tr(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 6)(1, "div", 31)(2, "div", 16)(3, "label", 156),
+            (e.TgZ(0, "div", 6)(1, "div", 32)(2, "div", 17)(3, "label", 156),
             e._uU(4, "25.1 Ingresar detalle:"),
             e.qZA(),
-            e._UZ(5, "textarea", 96),
-            e.YNc(6, Lr, 2, 1, "ng-container", 21),
+            e._UZ(5, "textarea", 102),
+            e.YNc(6, Ar, 2, 1, "ng-container", 22),
             e.qZA()()()),
           2 & _)
         ) {
@@ -21729,18 +21714,18 @@
             );
         }
       }
-      function Pr(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 89), e._uU(1), e.qZA()), 2 & _)) {
+      function Lr(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 91), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Sr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function Mr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function Ir(_, a) {
+      function Pr(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Sr, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Mr, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21754,12 +21739,12 @@
             );
         }
       }
-      function Er(_, a) {
-        1 & _ && (e.TgZ(0, "p", 91), e._uU(1, " Campo requerido "), e.qZA());
+      function Sr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 93), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function xr(_, a) {
+      function Er(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Er, 2, 0, "p", 90), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Sr, 2, 0, "p", 92), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -21773,14 +21758,14 @@
             );
         }
       }
-      function qr(_, a) {
+      function Ir(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 6)(1, "div", 31)(2, "div", 16)(3, "label", 156),
+            (e.TgZ(0, "div", 6)(1, "div", 32)(2, "div", 17)(3, "label", 156),
             e._uU(4, "26.1 Ingresar detalle:"),
             e.qZA(),
-            e._UZ(5, "textarea", 96),
-            e.YNc(6, xr, 2, 1, "ng-container", 21),
+            e._UZ(5, "textarea", 102),
+            e.YNc(6, Er, 2, 1, "ng-container", 22),
             e.qZA()()()),
           2 & _)
         ) {
@@ -21798,7 +21783,7 @@
             );
         }
       }
-      const zr = [
+      const xr = [
         {
           path: "cuestionario",
           component: (() => {
@@ -21835,8 +21820,8 @@
                   (this.listPorcentajesResponsabilidad = Mi),
                   (this.listTipoApoyoEconomico = Si),
                   (this.displayedColumnsApoyoEcon = Pi),
-                  (this.listMontoEstimado = Ii),
-                  (this.listSignificaEducacion = Ei),
+                  (this.listMontoEstimado = Ei),
+                  (this.listSignificaEducacion = Ii),
                   (this.listNroHorasDeApoyo = xi),
                   (this.objPregunta = Zi),
                   (this.lstOpcionesStandar = qi),
@@ -22286,7 +22271,7 @@
                   }),
                   fortalezasCualidadesPostulante: ["", [t.kI.required]],
                   ayudaProcesoPostulación: ["", [t.kI.required]],
-                  accionesApoyo: ["", [t.kI.required]],
+                  accionesApoyo: this.fb.array([], t.kI.required),
                   eleccionUniCarrera: this.fb.group({
                     motivo: ["", [t.kI.required]],
                     estaDeAcuerdo: ["", [t.kI.required]],
@@ -22392,6 +22377,10 @@
                 console.log(i),
                   this.arrayTareasHogar.push(this.initTareasDelHogar(i));
               }
+              addAccionApoyo(i) {
+                console.log(i),
+                  this.arrayAccionesApoyo.push(this.initAccionApoyo(i));
+              }
               addEncargadoTarea(i) {
                 console.log(i),
                   this.arrayEncargadoTarea.push(
@@ -22416,6 +22405,12 @@
                 );
                 o >= 0 && this.arrayTareasHogar.removeAt(o);
               }
+              deleteAccionApoyo(i) {
+                const o = this.arrayAccionesApoyo.value.findIndex(
+                  (d) => d.tipoAccion.accion === i.value
+                );
+                o >= 0 && this.arrayAccionesApoyo.removeAt(o);
+              }
               deleteEncargadoTarea(i) {
                 const o = this.arrayEncargadoTarea.value.findIndex(
                   (d) => d.encargado.miembro === i.value
@@ -22425,6 +22420,11 @@
               clearActividades() {
                 this.arrayActividades.value.forEach(() =>
                   this.arrayActividades.removeAt(0)
+                );
+              }
+              clearAccionApoyo() {
+                this.arrayAccionesApoyo.value.forEach(() =>
+                  this.arrayAccionesApoyo.removeAt(0)
                 );
               }
               clearSignificadoEducacion() {
@@ -22466,10 +22466,16 @@
                 return this.fb.group({
                   tipoTarea: this.fb.group({
                     tarea: [i, [t.kI.required]],
-                    detalle: [""],
+                    detalle: this.getValidatorsRequired(i),
                   }),
-                  duracion: ["", [t.kI.required]],
-                  frecuencia: ["", [t.kI.required]],
+                });
+              }
+              initAccionApoyo(i = "") {
+                return this.fb.group({
+                  tipoAccion: this.fb.group({
+                    accion: [i, [t.kI.required]],
+                    detalle: this.getValidatorsRequired(i),
+                  }),
                 });
               }
               initEncargadosTareasDelHogar(i = "") {
@@ -22556,6 +22562,9 @@
               get arraySignificadoEducacion() {
                 return this.cuestionarioForm.get("significadoEducacion");
               }
+              get arrayAccionesApoyo() {
+                return this.cuestionarioForm.get("accionesApoyo");
+              }
               get arrayActividades() {
                 return this.cuestionarioForm.get("actividadesExtracademicas");
               }
@@ -22622,8 +22631,8 @@
               (_.ɵcmp = e.Xpm({
                 type: _,
                 selectors: [["app-questionary-bcp"]],
-                decls: 325,
-                vars: 188,
+                decls: 332,
+                vars: 194,
                 consts: [
                   [1, "container"],
                   [1, "card", "mt-3"],
@@ -22645,6 +22654,15 @@
                   [1, "color-orange"],
                   [1, "d-flex", "flex-disposicion"],
                   [1, "bloq-text"],
+                  [
+                    "href",
+                    "https://www.leyes.congreso.gob.pe/Documentos/Leyes/29733.pdf",
+                    "target",
+                    "_blank",
+                    1,
+                    "color-azul",
+                    "txt-underline",
+                  ],
                   [1, "textLightIt", "cursiva", "color-azul"],
                   [
                     "src",
@@ -22793,15 +22811,18 @@
                   ],
                   [1, "col-sm-12", "col-md-8"],
                   [
-                    "formControlName",
-                    "accionesApoyo",
                     "id",
                     "accionesApoyo",
                     3,
                     "multiple",
                     "maxSelectedItems",
                     "closeOnSelect",
+                    "add",
+                    "remove",
+                    "clear",
                   ],
+                  ["formArrayName", "accionesApoyo"],
+                  ["class", "row", 3, "formGroupName", 4, "ngFor", "ngForOf"],
                   ["formGroupName", "eleccionUniCarrera", 1, "row"],
                   ["formControlName", "motivo", "rows", "5", 1, "form-control"],
                   ["formControlName", "estaDeAcuerdo", 1, "form-select"],
@@ -22830,7 +22851,6 @@
                   ],
                   [3, "multiple", "closeOnSelect", "add", "remove", "clear"],
                   ["formArrayName", "actividadesExtracademicas"],
-                  ["class", "row", 3, "formGroupName", 4, "ngFor", "ngForOf"],
                   ["class", "row", 4, "ngIf"],
                   ["formArrayName", "familiaNuclear"],
                   [1, "table-responsive", "col-sm-12", "col-md", "12", "mb-3"],
@@ -22918,6 +22938,19 @@
                     1,
                     "form-control",
                   ],
+                  [1, "row", 3, "formGroupName"],
+                  [1, "col-sm-3", "col-md-6"],
+                  ["formGroupName", "tipoAccion", 1, "mb-3"],
+                  [
+                    "type",
+                    "text",
+                    "formControlName",
+                    "detalle",
+                    "placeholder",
+                    "especificar acci\xf3n",
+                    1,
+                    "form-control",
+                  ],
                   [1, "mt-2"],
                   [
                     "formControlName",
@@ -22957,7 +22990,6 @@
                     "form-control",
                   ],
                   ["formGroupName", "aCargo", 1, "col-sm-12", "col-md-12"],
-                  ["formControlName", "periodo", 1, "form-select"],
                   [
                     "formControlName",
                     "pagadoPor",
@@ -22966,6 +22998,7 @@
                     1,
                     "form-select",
                   ],
+                  ["formControlName", "periodo", 1, "form-select"],
                   [
                     "formControlName",
                     "detalle",
@@ -22978,7 +23011,6 @@
                     1,
                     "form-control",
                   ],
-                  [1, "row", 3, "formGroupName"],
                   [1, "col-sm-3", "col-md-3"],
                   ["formGroupName", "tipoActividad", 1, "mb-3"],
                   [1, "col-sm-3", "col-md-4"],
@@ -23104,24 +23136,6 @@
                   [1, "btn", "btn-outline-danger", "btn-icon", 3, "click"],
                   [1, "btn-icon-prepend", "feather", "icon-trash-2"],
                   ["formGroupName", "tipoTarea", 1, "mb-3"],
-                  ["for", "duracion"],
-                  [
-                    "formControlName",
-                    "duracion",
-                    "id",
-                    "duracion",
-                    1,
-                    "form-select",
-                  ],
-                  ["for", "frecuenciaTarea"],
-                  [
-                    "formControlName",
-                    "frecuencia",
-                    "id",
-                    "frecuenciaTarea",
-                    1,
-                    "form-select",
-                  ],
                   [
                     "type",
                     "text",
@@ -23165,7 +23179,6 @@
                     1,
                     "form-control",
                   ],
-                  [1, "col-sm-3", "col-md-6"],
                   ["formGroupName", "significado", 1, "mb-3"],
                   ["for", "detalleSignificado"],
                   [
@@ -23221,12 +23234,12 @@
                       e.TgZ(22, "p"),
                       e._uU(
                         23,
-                        " Esta informaci\xf3n ser\xe1 tratada con total confidencialidad de acuerdo a "
+                        " Esta informaci\xf3n ser\xe1 tratada con total confidencialidad de acuerdo a la "
                       ),
-                      e.TgZ(24, "b"),
+                      e.TgZ(24, "a", 11),
                       e._uU(
                         25,
-                        "la Ley de Protecci\xf3n de Datos Personales N\xb0 29733."
+                        "Ley de Protecci\xf3n de Datos Personales N\xb0 29733."
                       ),
                       e.qZA()(),
                       e.TgZ(26, "p"),
@@ -23239,7 +23252,7 @@
                       e.TgZ(29, "p"),
                       e._uU(30, "Atentamente,"),
                       e.qZA(),
-                      e.TgZ(31, "p", 11)(32, "b"),
+                      e.TgZ(31, "p", 12)(32, "b"),
                       e._uU(33, "Programa de Becas BCP"),
                       e.qZA()(),
                       e._UZ(34, "br"),
@@ -23251,139 +23264,149 @@
                         " Es necesario que la persona que responda el cuestionario sea el/la principal cuidador(a) del/la postulante. "
                       ),
                       e.qZA()(),
-                      e._UZ(39, "img", 12),
+                      e._UZ(39, "img", 13),
                       e.qZA()()(),
-                      e.TgZ(40, "div", 6)(41, "form", 13, 14)(43, "div", 6)(
+                      e.TgZ(40, "div", 6)(41, "form", 14, 15)(43, "div", 6)(
                         44,
                         "div",
-                        15
-                      )(45, "div", 16),
-                      e._UZ(46, "app-label-form", 17),
-                      e.TgZ(47, "select", 18)(48, "option", 19),
+                        16
+                      )(45, "div", 17),
+                      e._UZ(46, "app-label-form", 18),
+                      e.TgZ(47, "select", 19)(48, "option", 20),
                       e._uU(49, "-Seleccionar-"),
                       e.qZA(),
-                      e.YNc(50, Wo, 2, 2, "option", 20),
+                      e.YNc(50, Wo, 2, 2, "option", 21),
                       e.qZA(),
-                      e.YNc(51, Xo, 2, 1, "ng-container", 21),
+                      e.YNc(51, Xo, 2, 1, "ng-container", 22),
                       e.qZA(),
-                      e.YNc(52, o_, 7, 1, "ng-container", 21),
+                      e.YNc(52, o_, 7, 1, "ng-container", 22),
                       e.qZA(),
-                      e.TgZ(53, "div", 22)(54, "div", 16),
-                      e._UZ(55, "app-label-form", 23),
-                      e.TgZ(56, "ng-select", 24),
+                      e.TgZ(53, "div", 23)(54, "div", 17),
+                      e._UZ(55, "app-label-form", 24),
+                      e.TgZ(56, "ng-select", 25),
                       e.NdJ("change", function (r) {
                         return o.changeUbigeo(r);
                       }),
-                      e.YNc(57, __, 2, 2, "ng-option", 20),
+                      e.YNc(57, __, 2, 2, "ng-option", 21),
                       e.qZA(),
-                      e.YNc(58, d_, 2, 1, "ng-container", 21),
+                      e.YNc(58, d_, 2, 1, "ng-container", 22),
                       e.qZA()()(),
-                      e.TgZ(59, "div", 25)(60, "div", 22)(61, "div", 16),
-                      e._UZ(62, "app-label-form", 17)(63, "input", 26),
-                      e.YNc(64, u_, 2, 1, "ng-container", 21),
+                      e.TgZ(59, "div", 26)(60, "div", 23)(61, "div", 17),
+                      e._UZ(62, "app-label-form", 18)(63, "input", 27),
+                      e.YNc(64, u_, 2, 1, "ng-container", 22),
                       e.qZA()(),
-                      e.TgZ(65, "div", 22)(66, "div", 16),
-                      e._UZ(67, "app-label-form", 17)(68, "input", 27),
-                      e.YNc(69, b_, 5, 4, "ng-container", 21),
+                      e.TgZ(65, "div", 23)(66, "div", 17),
+                      e._UZ(67, "app-label-form", 18)(68, "input", 28),
+                      e.YNc(69, b_, 5, 4, "ng-container", 22),
                       e.qZA()()(),
-                      e.TgZ(70, "div", 28)(71, "div", 22)(72, "div", 16),
-                      e._UZ(73, "app-label-form", 17)(74, "input", 29),
-                      e.YNc(75, c_, 2, 1, "ng-container", 21),
+                      e.TgZ(70, "div", 29)(71, "div", 23)(72, "div", 17),
+                      e._UZ(73, "app-label-form", 18)(74, "input", 30),
+                      e.YNc(75, c_, 2, 1, "ng-container", 22),
                       e.qZA()(),
-                      e.TgZ(76, "div", 22)(77, "div", 16),
-                      e._UZ(78, "app-label-form", 17)(79, "input", 30),
-                      e.YNc(80, f_, 5, 4, "ng-container", 21),
+                      e.TgZ(76, "div", 23)(77, "div", 17),
+                      e._UZ(78, "app-label-form", 18)(79, "input", 31),
+                      e.YNc(80, f_, 5, 4, "ng-container", 22),
                       e.qZA()(),
-                      e.TgZ(81, "div", 31)(82, "div", 32)(83, "div", 22)(
+                      e.TgZ(81, "div", 32)(82, "div", 33)(83, "div", 23)(
                         84,
                         "div",
-                        16
+                        17
                       ),
-                      e._UZ(85, "app-label-form", 17),
-                      e.TgZ(86, "select", 33)(87, "option", 19),
+                      e._UZ(85, "app-label-form", 18),
+                      e.TgZ(86, "select", 34)(87, "option", 20),
                       e._uU(88, "-Seleccionar-"),
                       e.qZA(),
-                      e.YNc(89, C_, 2, 2, "option", 20),
+                      e.YNc(89, C_, 2, 2, "option", 21),
                       e.qZA(),
-                      e.YNc(90, A_, 2, 1, "ng-container", 21),
+                      e.YNc(90, A_, 2, 1, "ng-container", 22),
                       e.qZA()(),
-                      e.TgZ(91, "div", 22),
-                      e.YNc(92, M_, 5, 4, "ng-container", 34),
+                      e.TgZ(91, "div", 23),
+                      e.YNc(92, M_, 5, 4, "ng-container", 35),
                       e.qZA()()()(),
-                      e.TgZ(93, "div", 35)(94, "div", 22)(95, "div", 16),
-                      e._UZ(96, "app-label-form", 17),
-                      e.TgZ(97, "select", 36)(98, "option", 19),
+                      e.TgZ(93, "div", 36)(94, "div", 23)(95, "div", 17),
+                      e._UZ(96, "app-label-form", 18),
+                      e.TgZ(97, "select", 37)(98, "option", 20),
                       e._uU(99, "-Seleccionar-"),
                       e.qZA(),
-                      e.YNc(100, P_, 2, 2, "option", 20),
+                      e.YNc(100, P_, 2, 2, "option", 21),
                       e.qZA(),
-                      e.YNc(101, I_, 2, 1, "ng-container", 21),
+                      e.YNc(101, E_, 2, 1, "ng-container", 22),
                       e.qZA()(),
-                      e.TgZ(102, "div", 22)(103, "div", 16),
-                      e._UZ(104, "app-label-form", 17)(105, "input", 37),
-                      e.YNc(106, x_, 2, 1, "ng-container", 21),
+                      e.TgZ(102, "div", 23)(103, "div", 17),
+                      e._UZ(104, "app-label-form", 18)(105, "input", 38),
+                      e.YNc(106, x_, 2, 1, "ng-container", 22),
                       e.qZA()()(),
-                      e.TgZ(107, "div", 6)(108, "div", 31)(109, "div", 16),
-                      e._UZ(110, "app-label-form", 17)(111, "textarea", 38),
-                      e.YNc(112, z_, 2, 1, "ng-container", 21),
+                      e.TgZ(107, "div", 6)(108, "div", 32)(109, "div", 17),
+                      e._UZ(110, "app-label-form", 18)(111, "textarea", 39),
+                      e.YNc(112, z_, 2, 1, "ng-container", 22),
                       e.qZA()()(),
-                      e.TgZ(113, "div", 6)(114, "div", 31)(115, "div", 16),
-                      e._UZ(116, "app-label-form", 17)(117, "textarea", 39),
-                      e.YNc(118, Z_, 2, 1, "ng-container", 21),
+                      e.TgZ(113, "div", 6)(114, "div", 32)(115, "div", 17),
+                      e._UZ(116, "app-label-form", 18)(117, "textarea", 40),
+                      e.YNc(118, Z_, 2, 1, "ng-container", 22),
                       e.qZA()()(),
-                      e.TgZ(119, "div", 6)(120, "div", 40)(121, "div", 16),
-                      e._UZ(122, "app-label-form", 17),
-                      e.TgZ(123, "ng-select", 41),
-                      e.YNc(124, H_, 2, 2, "ng-option", 20),
+                      e.TgZ(119, "div", 6)(120, "div", 41)(121, "div", 17),
+                      e._UZ(122, "app-label-form", 24),
+                      e.TgZ(123, "ng-select", 42),
+                      e.NdJ("add", function (r) {
+                        return o.addAccionApoyo(r);
+                      })("remove", function (r) {
+                        return o.deleteAccionApoyo(r);
+                      })("clear", function () {
+                        return o.clearAccionApoyo();
+                      }),
+                      e.YNc(124, H_, 2, 2, "ng-option", 21),
                       e.qZA(),
-                      e.YNc(125, O_, 2, 1, "ng-container", 21),
+                      e.YNc(125, O_, 2, 1, "ng-container", 22),
                       e.qZA()()(),
-                      e.TgZ(126, "div", 42)(127, "div", 22)(128, "div", 16),
-                      e._UZ(129, "app-label-form", 17)(130, "textarea", 43),
-                      e.YNc(131, F_, 2, 1, "ng-container", 21),
+                      e.ynx(126, 43),
+                      e.YNc(127, N_, 2, 2, "div", 44),
+                      e.BQk(),
+                      e.TgZ(128, "div", 45)(129, "div", 23)(130, "div", 17),
+                      e._UZ(131, "app-label-form", 18)(132, "textarea", 46),
+                      e.YNc(133, J_, 2, 1, "ng-container", 22),
                       e.qZA()(),
-                      e.TgZ(132, "div", 22)(133, "div", 16),
-                      e._UZ(134, "app-label-form", 17),
-                      e.TgZ(135, "select", 44)(136, "option", 19),
-                      e._uU(137, "-Seleccionar-"),
+                      e.TgZ(134, "div", 23)(135, "div", 17),
+                      e._UZ(136, "app-label-form", 18),
+                      e.TgZ(137, "select", 47)(138, "option", 20),
+                      e._uU(139, "-Seleccionar-"),
                       e.qZA(),
-                      e.TgZ(138, "option", 45),
-                      e._uU(139, "Si"),
+                      e.TgZ(140, "option", 48),
+                      e._uU(141, "Si"),
                       e.qZA(),
-                      e.TgZ(140, "option", 46),
-                      e._uU(141, "No"),
+                      e.TgZ(142, "option", 49),
+                      e._uU(143, "No"),
                       e.qZA(),
-                      e.TgZ(142, "option", 47),
-                      e._uU(143, "No precisa"),
+                      e.TgZ(144, "option", 50),
+                      e._uU(145, "No precisa"),
                       e.qZA()(),
-                      e.YNc(144, N_, 2, 1, "ng-container", 21),
-                      e.YNc(145, j_, 5, 1, "ng-container", 21),
+                      e.YNc(146, U_, 2, 1, "ng-container", 22),
+                      e.YNc(147, V_, 5, 1, "ng-container", 22),
                       e.qZA()()(),
-                      e.TgZ(146, "div", 48)(147, "div", 22)(148, "div", 16),
-                      e._UZ(149, "app-label-form", 17),
-                      e.TgZ(150, "select", 49)(151, "option", 19),
-                      e._uU(152, "-Seleccionar-"),
+                      e.TgZ(148, "div", 51)(149, "div", 23)(150, "div", 17),
+                      e._UZ(151, "app-label-form", 18),
+                      e.TgZ(152, "select", 52)(153, "option", 20),
+                      e._uU(154, "-Seleccionar-"),
                       e.qZA(),
-                      e.YNc(153, U_, 2, 2, "option", 20),
+                      e.YNc(155, G_, 2, 2, "option", 21),
                       e.qZA(),
-                      e.YNc(154, R_, 2, 1, "ng-container", 21),
+                      e.YNc(156, W_, 2, 1, "ng-container", 22),
                       e.qZA()(),
-                      e.YNc(155, ea, 11, 3, "div", 50),
+                      e.YNc(157, aa, 11, 3, "div", 53),
                       e.qZA(),
-                      e.TgZ(156, "div", 51)(157, "div", 22)(158, "div", 16),
-                      e._UZ(159, "app-label-form", 17),
-                      e.TgZ(160, "select", 52)(161, "option", 19),
-                      e._uU(162, "-Seleccionar-"),
+                      e.TgZ(158, "div", 54)(159, "div", 23)(160, "div", 17),
+                      e._UZ(161, "app-label-form", 18),
+                      e.TgZ(162, "select", 55)(163, "option", 20),
+                      e._uU(164, "-Seleccionar-"),
                       e.qZA(),
-                      e.YNc(163, ia, 2, 2, "option", 20),
+                      e.YNc(165, da, 2, 2, "option", 21),
                       e.qZA(),
-                      e.YNc(164, _a, 2, 1, "ng-container", 21),
+                      e.YNc(166, ua, 2, 1, "ng-container", 22),
                       e.qZA()(),
-                      e.YNc(165, sa, 19, 5, "div", 53),
+                      e.YNc(167, ha, 19, 5, "div", 56),
                       e.qZA(),
-                      e.TgZ(166, "div", 6)(167, "div", 31)(168, "div", 16),
-                      e._UZ(169, "app-label-form", 23),
-                      e.TgZ(170, "ng-select", 54),
+                      e.TgZ(168, "div", 6)(169, "div", 32)(170, "div", 17),
+                      e._UZ(171, "app-label-form", 24),
+                      e.TgZ(172, "ng-select", 57),
                       e.NdJ("add", function (r) {
                         return o.addActividad(r);
                       })("remove", function (r) {
@@ -23391,45 +23414,45 @@
                       })("clear", function () {
                         return o.clearActividades();
                       }),
-                      e.YNc(171, ca, 2, 2, "ng-option", 20),
+                      e.YNc(173, va, 2, 2, "ng-option", 21),
                       e.qZA(),
-                      e.YNc(172, la, 3, 0, "ng-container", 21),
+                      e.YNc(174, fa, 3, 0, "ng-container", 22),
                       e.qZA()()(),
-                      e.TgZ(173, "div", 55),
-                      e.YNc(174, Ma, 17, 6, "div", 56),
+                      e.TgZ(175, "div", 58),
+                      e.YNc(176, Ia, 17, 6, "div", 44),
                       e.qZA(),
-                      e.YNc(175, Ia, 6, 5, "div", 57),
-                      e.YNc(176, qa, 11, 2, "div", 57),
-                      e.YNc(177, Ha, 7, 5, "div", 57),
-                      e.TgZ(178, "div", 16),
-                      e._UZ(179, "app-label-form", 17),
+                      e.YNc(177, za, 6, 5, "div", 59),
+                      e.YNc(178, Ha, 11, 2, "div", 59),
+                      e.YNc(179, Fa, 7, 5, "div", 59),
+                      e.TgZ(180, "div", 17),
+                      e._UZ(181, "app-label-form", 18),
                       e.qZA(),
-                      e.ynx(180, 58),
-                      e.TgZ(181, "div", 59)(182, "table", 60)(183, "thead")(
-                        184,
+                      e.ynx(182, 60),
+                      e.TgZ(183, "div", 61)(184, "table", 62)(185, "thead")(
+                        186,
                         "tr"
                       ),
-                      e.YNc(185, Qa, 2, 3, "th", 61),
-                      e._UZ(186, "th"),
+                      e.YNc(187, ka, 2, 3, "th", 63),
+                      e._UZ(188, "th"),
                       e.qZA()(),
-                      e.TgZ(187, "tbody"),
-                      e.YNc(188, ud, 44, 16, "tr", 62),
+                      e.TgZ(189, "tbody"),
+                      e.YNc(190, pd, 44, 16, "tr", 64),
                       e.qZA()()(),
-                      e.TgZ(189, "div", 63)(190, "p", 8),
-                      e._uU(191, " Revisar campos a la derecha "),
-                      e._UZ(192, "i", 64),
+                      e.TgZ(191, "div", 65)(192, "p", 8),
+                      e._uU(193, " Revisar campos a la derecha "),
+                      e._UZ(194, "i", 66),
                       e.qZA()(),
-                      e.TgZ(193, "div", 6)(194, "div", 65)(195, "button", 66),
+                      e.TgZ(195, "div", 6)(196, "div", 67)(197, "button", 68),
                       e.NdJ("click", function () {
                         return o.addFamiliarNuclear();
                       }),
-                      e._UZ(196, "i", 67),
-                      e._uU(197, " Agregar familiar "),
+                      e._UZ(198, "i", 69),
+                      e._uU(199, " Agregar familiar "),
                       e.qZA()()(),
                       e.BQk(),
-                      e.TgZ(198, "div", 6)(199, "div", 31)(200, "div", 16),
-                      e._UZ(201, "app-label-form", 23),
-                      e.TgZ(202, "ng-select", 54),
+                      e.TgZ(200, "div", 6)(201, "div", 32)(202, "div", 17),
+                      e._UZ(203, "app-label-form", 24),
+                      e.TgZ(204, "ng-select", 57),
                       e.NdJ("add", function (r) {
                         return o.addTareaHogar(r);
                       })("remove", function (r) {
@@ -23437,25 +23460,25 @@
                       })("clear", function () {
                         return o.clearTareasHogar();
                       }),
-                      e.YNc(203, td, 2, 2, "ng-option", 20),
+                      e.YNc(205, bd, 2, 2, "ng-option", 21),
                       e.qZA(),
-                      e.YNc(204, gd, 3, 0, "ng-container", 21),
+                      e.YNc(206, sd, 3, 0, "ng-container", 22),
                       e.qZA()()(),
-                      e.ynx(205, 68),
-                      e.YNc(206, fd, 22, 7, "div", 56),
+                      e.ynx(207, 70),
+                      e.YNc(208, hd, 2, 2, "div", 44),
                       e.BQk(),
-                      e.TgZ(207, "div", 6)(208, "div", 31)(209, "div", 16),
-                      e._UZ(210, "app-label-form", 17),
-                      e.TgZ(211, "select", 69)(212, "option", 19),
-                      e._uU(213, "-Seleccionar-"),
+                      e.TgZ(209, "div", 6)(210, "div", 32)(211, "div", 17),
+                      e._UZ(212, "app-label-form", 18),
+                      e.TgZ(213, "select", 71)(214, "option", 20),
+                      e._uU(215, "-Seleccionar-"),
                       e.qZA(),
-                      e.YNc(214, Cd, 2, 2, "option", 20),
+                      e.YNc(216, vd, 2, 2, "option", 21),
                       e.qZA(),
-                      e.YNc(215, Ad, 2, 1, "ng-container", 21),
+                      e.YNc(217, Cd, 2, 1, "ng-container", 22),
                       e.qZA()()(),
-                      e.TgZ(216, "div", 6)(217, "div", 31)(218, "div", 16),
-                      e._UZ(219, "app-label-form", 23),
-                      e.TgZ(220, "ng-select", 54),
+                      e.TgZ(218, "div", 6)(219, "div", 32)(220, "div", 17),
+                      e._UZ(221, "app-label-form", 24),
+                      e.TgZ(222, "ng-select", 57),
                       e.NdJ("add", function (r) {
                         return o.addEncargadoTarea(r);
                       })("remove", function (r) {
@@ -23463,42 +23486,42 @@
                       })("clear", function () {
                         return o.clearResponsablesTarea();
                       }),
-                      e.YNc(221, Td, 2, 2, "ng-option", 20),
+                      e.YNc(223, yd, 2, 2, "ng-option", 21),
                       e.qZA(),
-                      e.YNc(222, Ld, 3, 0, "ng-container", 21),
+                      e.YNc(224, Ad, 3, 0, "ng-container", 22),
                       e.qZA()()(),
-                      e.ynx(223, 70),
-                      e.YNc(224, qd, 15, 5, "div", 56),
+                      e.ynx(225, 72),
+                      e.YNc(226, Id, 15, 5, "div", 44),
                       e.BQk(),
-                      e.TgZ(225, "div", 6)(226, "div", 71),
-                      e._UZ(227, "app-label-form", 23),
+                      e.TgZ(227, "div", 6)(228, "div", 73),
+                      e._UZ(229, "app-label-form", 24),
                       e.qZA()(),
-                      e.ynx(228, 72),
-                      e.TgZ(229, "div", 73)(230, "table", 60)(231, "thead")(
-                        232,
+                      e.ynx(230, 74),
+                      e.TgZ(231, "div", 75)(232, "table", 62)(233, "thead")(
+                        234,
                         "tr"
                       ),
-                      e.YNc(233, zd, 2, 1, "th", 74),
-                      e._UZ(234, "th"),
+                      e.YNc(235, xd, 2, 1, "th", 76),
+                      e._UZ(236, "th"),
                       e.qZA()(),
-                      e.TgZ(235, "tbody"),
-                      e.YNc(236, Nd, 13, 6, "tr", 62),
+                      e.TgZ(237, "tbody"),
+                      e.YNc(238, Fd, 13, 6, "tr", 64),
                       e.qZA()(),
-                      e.TgZ(237, "button", 66),
+                      e.TgZ(239, "button", 68),
                       e.NdJ("click", function () {
                         return o.addActividadApoyo();
                       }),
-                      e._UZ(238, "i", 67),
-                      e._uU(239, " Agregar otra actividad "),
+                      e._UZ(240, "i", 69),
+                      e._uU(241, " Agregar otra actividad "),
                       e.qZA()(),
                       e.BQk(),
-                      e.TgZ(240, "div", 6)(241, "div", 31)(242, "div", 16),
-                      e._UZ(243, "app-label-form", 23)(244, "textarea", 75),
-                      e.YNc(245, Dd, 2, 1, "ng-container", 21),
+                      e.TgZ(242, "div", 6)(243, "div", 32)(244, "div", 17),
+                      e._UZ(245, "app-label-form", 24)(246, "textarea", 77),
+                      e.YNc(247, Nd, 2, 1, "ng-container", 22),
                       e.qZA()()(),
-                      e.TgZ(246, "div", 6)(247, "div", 31)(248, "div", 16),
-                      e._UZ(249, "app-label-form", 23),
-                      e.TgZ(250, "ng-select", 76),
+                      e.TgZ(248, "div", 6)(249, "div", 32)(250, "div", 17),
+                      e._UZ(251, "app-label-form", 24),
+                      e.TgZ(252, "ng-select", 78),
                       e.NdJ("add", function (r) {
                         return o.addSignificadoEducacion(r);
                       })("remove", function (r) {
@@ -23506,94 +23529,101 @@
                       })("clear", function () {
                         return o.clearSignificadoEducacion();
                       }),
-                      e.YNc(251, jd, 2, 2, "ng-option", 20),
+                      e.YNc(253, Dd, 2, 2, "ng-option", 21),
                       e.qZA(),
-                      e.YNc(252, Ud, 3, 0, "ng-container", 21),
+                      e.YNc(254, Jd, 3, 0, "ng-container", 22),
                       e.qZA()()(),
-                      e.TgZ(253, "div", 77),
-                      e.YNc(254, Gd, 4, 2, "div", 56),
+                      e.TgZ(255, "div", 79),
+                      e.YNc(256, Rd, 4, 2, "div", 44),
                       e.qZA(),
-                      e.ynx(255, 78),
-                      e.TgZ(256, "div", 6)(257, "div", 31)(258, "div", 16),
-                      e._UZ(259, "app-label-form", 23),
-                      e.TgZ(260, "select", 79)(261, "option", 19),
-                      e._uU(262, "-Seleccionar-"),
+                      e.ynx(257, 80),
+                      e.TgZ(258, "div", 6)(259, "div", 32)(260, "div", 17),
+                      e._UZ(261, "app-label-form", 24),
+                      e.TgZ(262, "select", 81)(263, "option", 20),
+                      e._uU(264, "-Seleccionar-"),
                       e.qZA(),
-                      e.YNc(263, $d, 2, 2, "option", 20),
+                      e.YNc(265, Vd, 2, 2, "option", 21),
                       e.qZA(),
-                      e.YNc(264, Kd, 2, 1, "ng-container", 21),
+                      e.YNc(266, $d, 2, 1, "ng-container", 22),
                       e.qZA()()(),
-                      e.YNc(265, ir, 7, 1, "div", 57),
+                      e.YNc(267, Xd, 7, 1, "div", 59),
                       e.BQk(),
-                      e.ynx(266, 80),
-                      e.TgZ(267, "div", 6)(268, "div", 31)(269, "div", 16),
-                      e._UZ(270, "app-label-form", 23),
-                      e.TgZ(271, "select", 81)(272, "option", 19),
-                      e._uU(273, "-Seleccionar-"),
+                      e.ynx(268, 82),
+                      e.TgZ(269, "div", 6)(270, "div", 32)(271, "div", 17),
+                      e._UZ(272, "app-label-form", 24),
+                      e.TgZ(273, "select", 83)(274, "option", 20),
+                      e._uU(275, "-Seleccionar-"),
                       e.qZA(),
-                      e.YNc(274, or, 2, 2, "option", 20),
+                      e.YNc(276, er, 2, 2, "option", 21),
                       e.qZA(),
-                      e.YNc(275, ar, 2, 1, "ng-container", 21),
+                      e.YNc(277, or, 2, 1, "ng-container", 22),
                       e.qZA()()(),
-                      e.YNc(276, ur, 7, 1, "div", 57),
+                      e.YNc(278, dr, 7, 1, "div", 59),
                       e.BQk(),
-                      e.ynx(277, 82),
-                      e.TgZ(278, "div", 6)(279, "div", 31)(280, "div", 16),
-                      e._UZ(281, "app-label-form", 23),
-                      e.TgZ(282, "select", 81)(283, "option", 19),
-                      e._uU(284, "-Seleccionar-"),
+                      e.ynx(279, 84),
+                      e.TgZ(280, "div", 6)(281, "div", 32)(282, "div", 17),
+                      e._UZ(283, "app-label-form", 24),
+                      e.TgZ(284, "select", 83)(285, "option", 20),
+                      e._uU(286, "-Seleccionar-"),
                       e.qZA(),
-                      e.YNc(285, tr, 2, 2, "option", 20),
+                      e.YNc(287, rr, 2, 2, "option", 21),
                       e.qZA(),
-                      e.YNc(286, nr, 2, 1, "ng-container", 21),
+                      e.YNc(288, tr, 2, 1, "ng-container", 22),
                       e.qZA()()(),
-                      e.YNc(287, sr, 7, 1, "div", 57),
+                      e.YNc(289, pr, 7, 1, "div", 59),
                       e.BQk(),
-                      e.ynx(288, 83),
-                      e.TgZ(289, "div", 6)(290, "div", 31)(291, "div", 16),
-                      e._UZ(292, "app-label-form", 23),
-                      e.TgZ(293, "select", 81)(294, "option", 19),
-                      e._uU(295, "-Seleccionar-"),
+                      e.ynx(290, 85),
+                      e.TgZ(291, "div", 6)(292, "div", 32)(293, "div", 17),
+                      e._UZ(294, "app-label-form", 24),
+                      e.TgZ(295, "select", 83)(296, "option", 20),
+                      e._uU(297, "-Seleccionar-"),
                       e.qZA(),
-                      e.YNc(296, cr, 2, 2, "option", 20),
+                      e.YNc(298, br, 2, 2, "option", 21),
                       e.qZA(),
-                      e.YNc(297, mr, 2, 1, "ng-container", 21),
+                      e.YNc(299, cr, 2, 1, "ng-container", 22),
                       e.qZA()()(),
-                      e.YNc(298, fr, 7, 1, "div", 57),
+                      e.YNc(300, hr, 7, 1, "div", 59),
                       e.BQk(),
-                      e.ynx(299, 84),
-                      e.TgZ(300, "div", 6)(301, "div", 31)(302, "div", 16),
-                      e._UZ(303, "app-label-form", 23),
-                      e.TgZ(304, "select", 81)(305, "option", 19),
-                      e._uU(306, "-Seleccionar-"),
+                      e.ynx(301, 86),
+                      e.TgZ(302, "div", 6)(303, "div", 32)(304, "div", 17),
+                      e._UZ(305, "app-label-form", 24),
+                      e.TgZ(306, "select", 83)(307, "option", 20),
+                      e._uU(308, "-Seleccionar-"),
                       e.qZA(),
-                      e.YNc(307, Cr, 2, 2, "option", 20),
+                      e.YNc(309, vr, 2, 2, "option", 21),
                       e.qZA(),
-                      e.YNc(308, Ar, 2, 1, "ng-container", 21),
+                      e.YNc(310, Cr, 2, 1, "ng-container", 22),
                       e.qZA()()(),
-                      e.YNc(309, Mr, 7, 1, "div", 57),
+                      e.YNc(311, Tr, 7, 1, "div", 59),
                       e.BQk(),
-                      e.ynx(310, 85),
-                      e.TgZ(311, "div", 6)(312, "div", 31)(313, "div", 16),
-                      e._UZ(314, "app-label-form", 23),
-                      e.TgZ(315, "select", 81)(316, "option", 19),
-                      e._uU(317, "-Seleccionar-"),
+                      e.ynx(312, 87),
+                      e.TgZ(313, "div", 6)(314, "div", 32)(315, "div", 17),
+                      e._UZ(316, "app-label-form", 24),
+                      e.TgZ(317, "select", 83)(318, "option", 20),
+                      e._uU(319, "-Seleccionar-"),
                       e.qZA(),
-                      e.YNc(318, Pr, 2, 2, "option", 20),
+                      e.YNc(320, Lr, 2, 2, "option", 21),
                       e.qZA(),
-                      e.YNc(319, Ir, 2, 1, "ng-container", 21),
+                      e.YNc(321, Pr, 2, 1, "ng-container", 22),
                       e.qZA()()(),
-                      e.YNc(320, qr, 7, 1, "div", 57),
+                      e.YNc(322, Ir, 7, 1, "div", 59),
                       e.BQk(),
-                      e.TgZ(321, "button", 86),
+                      e.TgZ(323, "button", 88),
                       e.NdJ("click", function () {
                         return o.submitForm();
                       }),
-                      e.TgZ(322, "span", 87),
-                      e._uU(323, "ENVIAR"),
+                      e.TgZ(324, "span", 89),
+                      e._uU(325, "ENVIAR"),
                       e.qZA(),
-                      e._UZ(324, "img", 88),
-                      e.qZA()()()()()()),
+                      e._UZ(326, "img", 90),
+                      e.qZA()(),
+                      e.TgZ(327, "p"),
+                      e._uU(328),
+                      e.qZA(),
+                      e.TgZ(329, "pre"),
+                      e._uU(330),
+                      e.ALo(331, "json"),
+                      e.qZA()()()()()),
                     2 & i)
                   ) {
                     const d = e.MAs(42);
@@ -23607,13 +23637,13 @@
                       c,
                       f,
                       T,
-                      I,
                       E,
+                      I,
                       x,
                       q,
                       z,
                       w,
-                      D,
+                      J,
                       j,
                       U,
                       Y,
@@ -23820,19 +23850,22 @@
                       e.Q6J(
                         "ngIf",
                         (null ==
-                        (I = o.getControl("ayudaProcesoPostulaci\xf3n"))
+                        (E = o.getControl("ayudaProcesoPostulaci\xf3n"))
                           ? null
-                          : I.invalid) &&
+                          : E.invalid) &&
                           (null ==
-                          (I = o.getControl("ayudaProcesoPostulaci\xf3n"))
+                          (E = o.getControl("ayudaProcesoPostulaci\xf3n"))
                             ? null
-                            : I.touched)
+                            : E.touched)
                       ),
                       e.xp6(4),
                       e.Q6J("numero", o.objPregunta.diez.nro)(
                         "descripcion",
                         o.objPregunta.diez.descripcion
-                      )("for", o.objPregunta.diez.for),
+                      )("textoAdicional", o.objPregunta.diez.datoAdicional)(
+                        "for",
+                        o.objPregunta.diez.for
+                      ),
                       e.xp6(1),
                       e.Q6J("multiple", !0)("maxSelectedItems", 3)(
                         "closeOnSelect",
@@ -23843,13 +23876,15 @@
                       e.xp6(1),
                       e.Q6J(
                         "ngIf",
-                        (null == (E = o.getControl("accionesApoyo"))
+                        (null == (I = o.getControl("accionesApoyo"))
                           ? null
-                          : E.invalid) &&
-                          (null == (E = o.getControl("accionesApoyo"))
+                          : I.invalid) &&
+                          (null == (I = o.getControl("accionesApoyo"))
                             ? null
-                            : E.touched)
+                            : I.touched)
                       ),
+                      e.xp6(2),
+                      e.Q6J("ngForOf", o.arrayAccionesApoyo.controls),
                       e.xp6(4),
                       e.Q6J("numero", o.objPregunta.once.nro)(
                         "descripcion",
@@ -23991,17 +24026,17 @@
                       e.Q6J(
                         "ngIf",
                         (null ==
-                        (D = o.getControl(
+                        (J = o.getControl(
                           "horasDiariasApoyoTareasDelHogarPostulante"
                         ))
                           ? null
-                          : D.invalid) &&
+                          : J.invalid) &&
                           (null ==
-                          (D = o.getControl(
+                          (J = o.getControl(
                             "horasDiariasApoyoTareasDelHogarPostulante"
                           ))
                             ? null
-                            : D.touched)
+                            : J.touched)
                       ),
                       e.xp6(4),
                       e.Q6J("numero", o.objPregunta.veintiuno.nro)(
@@ -24214,7 +24249,11 @@
                             : $.touched)
                       ),
                       e.xp6(1),
-                      e.Q6J("ngIf", o.hasReorganizarTareas);
+                      e.Q6J("ngIf", o.hasReorganizarTareas),
+                      e.xp6(6),
+                      e.Oqu(o.cuestionarioForm.status),
+                      e.xp6(2),
+                      e.Oqu(e.lcZ(331, 192, o.cuestionarioForm.value));
                   }
                 },
                 dependencies: [
@@ -24235,9 +24274,10 @@
                   Pe,
                   Go.X,
                   $o,
+                  C.Ts,
                 ],
                 styles: [
-                  '@import"https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;400&display=swap";[_nghost-%COMP%]{font-family:Flexo-regular,sans-serif}.form-select[_ngcontent-%COMP%], .form-control[_ngcontent-%COMP%], .ng-select[_ngcontent-%COMP%]   .ng-select-container[_ngcontent-%COMP%]{border:1px solid black}label[_ngcontent-%COMP%]{color:#000;font-weight:500}.hero-cuestionario[_ngcontent-%COMP%]{line-height:1.2}.hero-cuestionario[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin-bottom:18px}.hero-cuestionario[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{font-size:1.3125rem;margin-bottom:1rem;font-family:Flexo-light,sans-serif}.color-orange[_ngcontent-%COMP%]{color:#ff4d00}.color-azul[_ngcontent-%COMP%]{color:#002d74}.cursiva[_ngcontent-%COMP%]{font-style:italic}.textLightIt[_ngcontent-%COMP%]{font-family:Flexo-lightIt,sans-serif}.head-cuestionario[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between;align-items:center;color:#fff;background-color:#002d74;flex-direction:column}@media (min-width: 48rem){.head-cuestionario[_ngcontent-%COMP%]{flex-direction:row}}.head-cuestionario__title[_ngcontent-%COMP%]{font-style:italic;font-size:2.25rem;font-family:Flexo-mediumit,sans-serif;margin-left:1.5rem;order:1;margin-bottom:1rem}@media (min-width: 48rem){.head-cuestionario__title[_ngcontent-%COMP%]{order:0;margin-bottom:0}}.head-cuestionario__img[_ngcontent-%COMP%]{max-width:416px;max-height:136px;margin:2rem 0;order:0}@media (min-width: 48rem){.head-cuestionario__img[_ngcontent-%COMP%]{order:1}}.flex-disposicion[_ngcontent-%COMP%]{flex-direction:column}@media (min-width: 48rem){.flex-disposicion[_ngcontent-%COMP%]{flex-direction:row}}.bloq-text[_ngcontent-%COMP%]{margin-top:1rem}.right-img[_ngcontent-%COMP%]{max-width:151px;max-height:297px;align-self:center;justify-self:center}@media (min-width: 48rem){.right-img[_ngcontent-%COMP%]{max-width:251px}}@media (min-width: 62rem){.right-img[_ngcontent-%COMP%]{max-width:351px}}.btn-cuestionario[_ngcontent-%COMP%]{background:url(./assets/images/cuestionario/btn-bg.svg) no-repeat;background-position:center;color:#fff;font-family:Flexo-bold,sans-serif;font-size:1.125rem;display:inline-block;padding:2rem;border:none}.text-submit[_ngcontent-%COMP%]{margin-right:.5rem}',
+                  '@import"https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;400&display=swap";[_nghost-%COMP%]{font-family:Flexo-regular,sans-serif}.txt-underline[_ngcontent-%COMP%]{text-decoration:underline}.form-select[_ngcontent-%COMP%], .form-control[_ngcontent-%COMP%], .ng-select[_ngcontent-%COMP%]   .ng-select-container[_ngcontent-%COMP%]{border:1px solid black}label[_ngcontent-%COMP%]{color:#000;font-weight:500}.hero-cuestionario[_ngcontent-%COMP%]{line-height:1.2}.hero-cuestionario[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin-bottom:18px}.hero-cuestionario[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{font-size:1.3125rem;margin-bottom:1rem;font-family:Flexo-light,sans-serif}.color-orange[_ngcontent-%COMP%]{color:#ff4d00}.color-azul[_ngcontent-%COMP%]{color:#002d74}.cursiva[_ngcontent-%COMP%]{font-style:italic}.textLightIt[_ngcontent-%COMP%]{font-family:Flexo-lightIt,sans-serif}.head-cuestionario[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between;align-items:center;color:#fff;background-color:#002d74;flex-direction:column}@media (min-width: 48rem){.head-cuestionario[_ngcontent-%COMP%]{flex-direction:row}}.head-cuestionario__title[_ngcontent-%COMP%]{font-style:italic;font-size:2.25rem;font-family:Flexo-mediumit,sans-serif;margin-left:1.5rem;order:1;margin-bottom:1rem}@media (min-width: 48rem){.head-cuestionario__title[_ngcontent-%COMP%]{order:0;margin-bottom:0}}.head-cuestionario__img[_ngcontent-%COMP%]{max-width:416px;max-height:136px;margin:2rem 0;order:0}@media (min-width: 48rem){.head-cuestionario__img[_ngcontent-%COMP%]{order:1}}.flex-disposicion[_ngcontent-%COMP%]{flex-direction:column}@media (min-width: 48rem){.flex-disposicion[_ngcontent-%COMP%]{flex-direction:row}}.bloq-text[_ngcontent-%COMP%]{margin-top:1rem}.right-img[_ngcontent-%COMP%]{max-width:151px;max-height:297px;align-self:center;justify-self:center}@media (min-width: 48rem){.right-img[_ngcontent-%COMP%]{max-width:251px}}@media (min-width: 62rem){.right-img[_ngcontent-%COMP%]{max-width:351px}}.btn-cuestionario[_ngcontent-%COMP%]{background:url(./assets/images/cuestionario/btn-bg.svg) no-repeat;background-position:center;color:#fff;font-family:Flexo-bold,sans-serif;font-size:1.125rem;display:inline-block;padding:2rem;border:none}.text-submit[_ngcontent-%COMP%]{margin-right:.5rem}',
                 ],
               })),
               _
@@ -24246,6 +24286,18 @@
         },
         { path: "", redirectTo: "cuestionario", pathMatch: "full" },
       ];
+      let qr = (() => {
+        class _ {}
+        return (
+          (_.ɵfac = function (i) {
+            return new (i || _)();
+          }),
+          (_.ɵmod = e.oAB({ type: _ })),
+          (_.ɵinj = e.cJS({ imports: [_e.Bz.forChild(xr), _e.Bz] })),
+          _
+        );
+      })();
+      var zr = b(2276);
       let wr = (() => {
         class _ {}
         return (
@@ -24253,20 +24305,8 @@
             return new (i || _)();
           }),
           (_.ɵmod = e.oAB({ type: _ })),
-          (_.ɵinj = e.cJS({ imports: [_e.Bz.forChild(zr), _e.Bz] })),
-          _
-        );
-      })();
-      var Zr = b(2276);
-      let Hr = (() => {
-        class _ {}
-        return (
-          (_.ɵfac = function (i) {
-            return new (i || _)();
-          }),
-          (_.ɵmod = e.oAB({ type: _ })),
           (_.ɵinj = e.cJS({
-            imports: [C.ez, t.u5, t.UX, Ge, W.JF, W.Ed, Vo, F.IJ, Zr.m, wr],
+            imports: [C.ez, t.u5, t.UX, Ge, W.JF, W.Ed, Vo, F.IJ, zr.m, qr],
           })),
           _
         );
