@@ -682,7 +682,7 @@
           Otro: "Otro",
         },
         oi = [...Object.values(pe)],
-        be = { si: "Si", no: "No" },
+        be = { si: "S\xed", no: "No" },
         _i = [...Object.values(be)],
         se = {
           beca: "Beca",
@@ -690,7 +690,7 @@
           otros: "Otras formas de financiamiento (especificar)",
         },
         ai = [...Object.values(se)],
-        ce = { si: "Si", no: "No" },
+        ce = { si: "S\xed", no: "No" },
         di = [...Object.values(ce)],
         le = {
           padres: "Pagada por padres",
@@ -763,7 +763,7 @@
           "Entre 1.5 horas  y 2 horas",
           "M\xe1s de 2 horas",
         ],
-        he = { si: "Si", no: "No" },
+        he = { si: "S\xed", no: "No" },
         li = [...Object.values(he)],
         mi = [
           "Soltero(a)",
@@ -814,6 +814,7 @@
           { style: { minWidth: 200 }, value: "Situaci\xf3n laboral" },
         ],
         ve = {
+          sinResponsabilidadesDomésticas: "Sin responsabilidades dom\xe9sticas",
           prepararDesayuno: "Preparar desayuno",
           prepararAlmuerzo: "Preparar Almuerzo",
           prepararCena: "Preparar Cena",
@@ -830,7 +831,6 @@
           ordenarCuarto: "Ordenar su cuarto",
           ponerLaMesa: "Poner/Recoger la mesa",
           trabajosEventuales: 'Trabajos eventuales/"cachuelos"',
-          sinResponsabilidadesDomésticas: "Sin responsabilidades dom\xe9sticas",
           otros: "Otros (especificar)",
         },
         Ai = [...Object.values(ve)],
@@ -858,7 +858,7 @@
         },
         Li = [...Object.values(fe)],
         Mi = ["0-33%", "33%-66%", "66% a m\xe1s"],
-        Si = ["Actividad", "Si/No"],
+        Si = ["Actividad", "S\xed/No"],
         Ii = [
           ...Object.values({
             pasajes: "Pasajes",
@@ -959,34 +959,35 @@
           siete: {
             nro: "7",
             descripcion:
-              "\xbfA qu\xe9 universidad est\xe1 postulando su hijo/a?",
+              "\xbfA qu\xe9 universidad est\xe1 postulando el/la candidato/a?",
             datoAdicional: "",
             for: "",
           },
           sieteUno: {
             nro: "7.1",
-            descripcion: "\xbfA qu\xe9 carrera est\xe1 postulando su hijo/a?:",
+            descripcion:
+              "\xbfA qu\xe9 carrera est\xe1 postulando el/la candidato/a?:",
             datoAdicional: "",
             for: "",
           },
           ocho: {
             nro: "8",
             descripcion:
-              "Considerando el inicio de la vida universitaria del postulante, describa brevemente cu\xe1les son las principales fortalezas y cualidades que su hijo/a demostrar\xeda. \xbfQu\xe9 recursos o soportes necesitar\xeda para adaptarse a esta nueva etapa y con cu\xe1les ya cuenta? ",
+              "Considerando el inicio de la vida universitaria del postulante, describa brevemente cu\xe1les son sus principales fortalezas y cualidades. \xbfQu\xe9 recursos o soportes necesitar\xeda para adaptarse a esta nueva etapa y con cu\xe1les ya cuenta?",
             datoAdicional: "",
             for: "",
           },
           nueve: {
             nro: "9",
             descripcion:
-              "Usted como padre de familia, \xbfc\xf3mo considera que ayud\xf3 al postulante en el proceso de postulaci\xf3n a la beca?",
+              "\xbfC\xf3mo considera que usted ayud\xf3 al/la candidato/a en su proceso de postulaci\xf3n a la beca?",
             datoAdicional: "",
             for: "",
           },
           diez: {
             nro: "10",
             descripcion:
-              "\xbfQu\xe9 acciones realiz\xf3 como padre para que su hijo/a estuviera preparado para la postulaci\xf3n?",
+              "\xbfQu\xe9 acciones realiz\xf3 usted para que el/la candidato/a estuviera preparado/a para postular a la universidad a la que quiere acudir?",
             datoAdicional: "Puede seleccionar m\xe1ximo 3",
             for: "",
           },
@@ -1063,7 +1064,8 @@
           },
           veinte: {
             nro: "16",
-            descripcion: "\xbfEn qu\xe9 tareas apoya el/la postulante en casa?",
+            descripcion:
+              "\xbfEn qu\xe9 tareas apoya el/la postulante en casa? Marcar todas las tareas en las que apoya el/la postulante en casa. En caso el/la postulante no tenga responsabilidades marcar la opci\xf3n: Sin responsabilidades dom\xe9sticas.",
             datoAdicional: "",
             for: "",
           },
@@ -1097,7 +1099,7 @@
           veinticuatro: {
             nro: "18",
             descripcion:
-              "\xbfEn qu\xe9 actividades o gastos ha tenido que apoyar al postulante en los \xfaltimos tres a\xf1os?",
+              "\xbfEn qu\xe9 actividades o gastos ha tenido que apoyar al/la postulante en los \xfaltimos tres a\xf1os?",
             datoAdicional: "",
             for: "",
           },
@@ -1111,14 +1113,14 @@
           veintiseis: {
             nro: "20",
             descripcion:
-              "\xbfQu\xe9 significa para ustedes que el/la postulante puedan tener acceso a educaci\xf3n superior de calidad?",
+              "\xbfQu\xe9 significa para usted que el/la postulante pueda tener acceso a educaci\xf3n superior de calidad?",
             datoAdicional: "Puede seleccionar m\xe1ximo 2 opciones",
             for: "",
           },
           veintisiete: {
             nro: "22",
             descripcion:
-              "\xbfCu\xe1l ha sido la situaci\xf3n m\xe1s complicada o problema que ha tenido que enfrentar el/la postulante? Presente un ejemplo. \xbfC\xf3mo lo/la ayudaron en ese momento?  \xbfQui\xe9nes se involucraron y c\xf3mo? \xbfLa soluci\xf3n fue efectiva? \xbfPor qu\xe9?",
+              "\xbfCu\xe1l ha sido la situaci\xf3n m\xe1s complicada o problema que ha tenido que enfrentar el/la postulante? Presente un ejemplo. \xbfC\xf3mo lo/la ayud\xf3 en ese momento? \xbfQui\xe9nes se involucraron y c\xf3mo? \xbfLa soluci\xf3n fue efectiva? \xbfPor qu\xe9?",
             datoAdicional: "",
             for: "",
           },
@@ -1139,7 +1141,7 @@
           treinta: {
             nro: "21",
             descripcion:
-              "A lo largo de la educaci\xf3n del postulante, \xbfQu\xe9 acciones concretas han realizado para que el postulante pueda tener una carrera universitaria?",
+              "A lo largo de la educaci\xf3n del/la postulante, \xbfQu\xe9 acciones concretas ha realizado para que el/la postulante pueda tener una carrera universitaria?",
             datoAdicional:
               "(Por ejemplo: lo matricul\xe9 en una academia; segu\xed las recomendaciones de los profesores, averigu\xe9 sobre universidades en las que mi hijo/a podr\xeda estudiar, le coment\xe9 sobre sus t\xedos que estudiaron) ",
             for: "",
@@ -1147,21 +1149,22 @@
           treintayUno: {
             nro: "23",
             descripcion:
-              "\xbfQu\xe9 problemas suele presentar la familia con frecuencia?",
-            datoAdicional: "",
+              "\xbfQu\xe9 problemas suelen presentarse en la familia con frecuencia? ",
+            datoAdicional:
+              "Marcar todas las opciones que consideren pertinentes.",
             for: "",
           },
           treintayDos: {
             nro: "24",
             descripcion:
-              "\xbfCu\xe1les creen que son las principales fortalezas familiares para afrontar los problemas que seleccionaron previamente? (Econ\xf3micos, salud, conflictos familiares, temas laborales, etc.) \xbfC\xf3mo creen que estos problemas afectan al postulante y c\xf3mo los manejan?",
+              "\xbfCu\xe1les creen que son las principales fortalezas familiares para afrontar los problemas que seleccionaron previamente? (Econ\xf3micos, salud, conflictos familiares, temas laborales, etc.) \xbfC\xf3mo creen que estos problemas afectan al/la postulante y c\xf3mo los manejan?",
             datoAdicional: "",
             for: "",
           },
           treintayTres: {
             nro: "26",
             descripcion:
-              "En caso el/la postulante entre al programa, \xbfC\xf3mo se reorganizar\xedan las tareas en el hogar que se\xf1al\xf3 previemente eran parte de sus deberes en casa? \xbfCu\xe1ntas horas creen que el/la postulante dedicar\xe1 a estas tareas luego de la reorganizaci\xf3n?",
+              "En caso el/la postulante logre ingresar al programa, \xbfc\xf3mo se reorganizar\xedan las tareas en el hogar que se\xf1al\xf3 previamente eran parte de sus deberes en casa? \xbfcu\xe1ntas horas cree que el/la postulante dedicar\xe1 a estas tareas luego de la reorganizaci\xf3n?",
             datoAdicional: "",
             for: "",
           },
@@ -19315,7 +19318,7 @@
                   e.hij(" ", o.textoAdicional, "\n"));
             },
             styles: [
-              "label[_ngcontent-%COMP%]{color:#000;font-family:Flexo-regular,sans-serif}.numeracion[_ngcontent-%COMP%]{background:url(./assets/images/cuestionario/bg-numeracion.svg);background-repeat:no-repeat;background-size:contain;font-size:12px;min-width:27px;height:27px;color:#fff;font-family:Flexo-bold,sans-serif}.text-secondary-question[_ngcontent-%COMP%]{font-family:JetBrains Mono,monospace;font-size:12px}",
+              "label[_ngcontent-%COMP%]{color:#42526e;font-family:Flexo-regular,sans-serif;font-weight:600}.numeracion[_ngcontent-%COMP%]{background:url(./assets/images/cuestionario/bg-numeracion.svg);background-repeat:no-repeat;background-size:contain;font-size:12px;min-width:27px;height:27px;color:#fff;font-family:Flexo-bold,sans-serif}.text-secondary-question[_ngcontent-%COMP%]{font-family:JetBrains Mono,monospace;font-size:12px}",
             ],
           })),
           _
@@ -23476,7 +23479,7 @@
                       e._uU(139, "-Seleccionar-"),
                       e.qZA(),
                       e.TgZ(140, "option", 48),
-                      e._uU(141, "Si"),
+                      e._uU(141, "S\xed"),
                       e.qZA(),
                       e.TgZ(142, "option", 49),
                       e._uU(143, "No"),
