@@ -3,30 +3,30 @@
   self.webpackChunktest_theme_noble || []).push([
   [378],
   {
-    6378: (Or, _e, b) => {
-      b.r(_e), b.d(_e, { PublicModule: () => Br });
-      var K = b(529),
-        t = b(433),
-        C = b(6895),
-        ae = b(8176),
-        de = b(5353),
-        M = b(4004),
-        Ee = b(262),
-        xe = b(9646),
-        e = b(1571),
-        F = b(2953),
-        v = b(1135),
-        qe = b(9751),
-        A = b(7579),
-        ze = (b(9841), b(3900)),
-        l = (b(5698), b(2722));
-      const re = ["*"];
-      class P {
+    6378: (Nr, ae, c) => {
+      c.r(ae), c.d(ae, { PublicModule: () => kr });
+      var ee = c(529),
+        t = c(433),
+        C = c(6895),
+        de = c(8176),
+        re = c(5353),
+        S = c(4004),
+        xe = c(262),
+        qe = c(9646),
+        e = c(1571),
+        k = c(2953),
+        f = c(1135),
+        ze = c(9751),
+        T = c(7579),
+        we = (c(9841), c(3900)),
+        m = (c(5698), c(2722));
+      const ue = ["*"];
+      class M {
         constructor(a) {
           (this._ngZone = a),
             (this._pending = []),
             (this._listeners = []),
-            (this._targetStream = new v.X(void 0));
+            (this._targetStream = new f.X(void 0));
         }
         _clearListeners() {
           for (const a of this._listeners) a.remove();
@@ -34,8 +34,8 @@
         }
         getLazyEmitter(a) {
           return this._targetStream.pipe(
-            (0, ze.w)((i) => {
-              const o = new qe.y((d) => {
+            (0, we.w)((i) => {
+              const o = new ze.y((d) => {
                 if (!i)
                   return void this._pending.push({
                     observable: o,
@@ -64,21 +64,21 @@
             this._targetStream.complete();
         }
       }
-      const H = {
+      const Z = {
         center: { lat: 37.421995, lng: -122.084092 },
         zoom: 17,
         mapTypeId: "roadmap",
       };
-      let y = (() => {
+      let A = (() => {
         class _ {
           constructor(i, o, d) {
             if (
               ((this._elementRef = i),
               (this._ngZone = o),
-              (this._eventManager = new P(this._ngZone)),
+              (this._eventManager = new M(this._ngZone)),
               (this.height = "500px"),
               (this.width = "500px"),
-              (this._options = H),
+              (this._options = Z),
               (this.mapInitialized = new e.vpe()),
               (this.authFailure = new e.vpe()),
               (this.boundsChanged =
@@ -132,7 +132,7 @@
             this._zoom = i;
           }
           set options(i) {
-            this._options = i || H;
+            this._options = i || Z;
           }
           ngOnChanges(i) {
             (i.height || i.width) && this._setSize();
@@ -223,18 +223,18 @@
             if (this._mapEl) {
               const i = this._mapEl.style;
               (i.height =
-                null === this.height ? "" : ge(this.height) || "500px"),
+                null === this.height ? "" : ne(this.height) || "500px"),
                 (i.width =
-                  null === this.width ? "" : ge(this.width) || "500px");
+                  null === this.width ? "" : ne(this.width) || "500px");
             }
           }
           _combineOptions() {
             const i = this._options || {};
             return {
               ...i,
-              center: this._center || i.center || H.center,
-              zoom: this._zoom ?? i.zoom ?? H.zoom,
-              mapTypeId: this.mapTypeId || i.mapTypeId || H.mapTypeId,
+              center: this._center || i.center || Z.center,
+              zoom: this._zoom ?? i.zoom ?? Z.zoom,
+              mapTypeId: this.mapTypeId || i.mapTypeId || Z.mapTypeId,
             };
           }
           _assertInitialized() {}
@@ -278,7 +278,7 @@
             },
             exportAs: ["googleMap"],
             features: [e.TTD],
-            ngContentSelectors: re,
+            ngContentSelectors: ue,
             decls: 2,
             vars: 0,
             consts: [[1, "map-container"]],
@@ -291,17 +291,17 @@
           _
         );
       })();
-      const we = /([A-Za-z%]+)$/;
-      function ge(_) {
-        return null == _ ? "" : we.test(_) ? _ : `${_}px`;
+      const Qe = /([A-Za-z%]+)$/;
+      function ne(_) {
+        return null == _ ? "" : Qe.test(_) ? _ : `${_}px`;
       }
-      const ke = { position: { lat: 37.421995, lng: -122.084092 } };
-      let ee = (() => {
+      const Ne = { position: { lat: 37.421995, lng: -122.084092 } };
+      let oe = (() => {
           class _ {
             constructor(i, o) {
               (this._googleMap = i),
                 (this._ngZone = o),
-                (this._eventManager = new P(this._ngZone)),
+                (this._eventManager = new M(this._ngZone)),
                 (this.animationChanged =
                   this._eventManager.getLazyEmitter("animation_changed")),
                 (this.mapClick = this._eventManager.getLazyEmitter("click")),
@@ -380,8 +380,8 @@
                 _position: r,
                 _label: u,
                 _clickable: g,
-                _icon: n,
-                _visible: p,
+                _icon: p,
+                _visible: b,
               } = this;
               o &&
                 (i.options && o.setOptions(this._combineOptions()),
@@ -389,8 +389,8 @@
                 i.position && r && o.setPosition(r),
                 i.label && void 0 !== u && o.setLabel(u),
                 i.clickable && void 0 !== g && o.setClickable(g),
-                i.icon && n && o.setIcon(n),
-                i.visible && void 0 !== p && o.setVisible(p));
+                i.icon && p && o.setIcon(p),
+                i.visible && void 0 !== b && o.setVisible(b));
             }
             ngOnDestroy() {
               this._eventManager.destroy(),
@@ -442,7 +442,7 @@
               return this._assertInitialized(), this.marker;
             }
             _combineOptions() {
-              const i = this._options || ke;
+              const i = this._options || Ne;
               return {
                 ...i,
                 title: this._title || i.title,
@@ -458,7 +458,7 @@
           }
           return (
             (_.ɵfac = function (i) {
-              return new (i || _)(e.Y36(y), e.Y36(e.R0b));
+              return new (i || _)(e.Y36(A), e.Y36(e.R0b));
             }),
             (_.ɵdir = e.lG2({
               type: _,
@@ -501,7 +501,7 @@
             _
           );
         })(),
-        $e = (() => {
+        We = (() => {
           class _ {}
           return (
             (_.ɵfac = function (i) {
@@ -512,7 +512,7 @@
             _
           );
         })();
-      function We(_, a) {
+      function Ke(_, a) {
         if (1 & _) {
           const i = e.EpF();
           e.TgZ(0, "map-marker", 8),
@@ -529,7 +529,7 @@
           e.Q6J("position", i)("options", o.markerOptions);
         }
       }
-      function Ke(_, a) {
+      function Xe(_, a) {
         if (1 & _) {
           const i = e.EpF();
           e.TgZ(0, "div")(1, "google-map", 6),
@@ -538,7 +538,7 @@
               const r = e.oxw();
               return e.KtG(r.addMarker(d));
             }),
-            e.YNc(2, We, 1, 2, "map-marker", 7),
+            e.YNc(2, Ke, 1, 2, "map-marker", 7),
             e.qZA()();
         }
         if (2 & _) {
@@ -549,7 +549,7 @@
             e.Q6J("ngForOf", i.markerPositions);
         }
       }
-      function Xe(_, a) {
+      function ei(_, a) {
         1 & _ &&
           (e.TgZ(0, "ngb-alert", 9),
           e._UZ(1, "i", 10),
@@ -557,7 +557,7 @@
           e.qZA()),
           2 & _ && e.Q6J("dismissible", !1)("type", "danger");
       }
-      let ei = (() => {
+      let ii = (() => {
         class _ {
           constructor(i, o) {
             (this.activeModal = o),
@@ -575,8 +575,8 @@
                   "callback"
                 )
                 .pipe(
-                  (0, M.U)(() => !0),
-                  (0, Ee.K)(() => (0, xe.of)(!1))
+                  (0, S.U)(() => !0),
+                  (0, xe.K)(() => (0, qe.of)(!1))
                 ));
           }
           ngOnDestroy() {
@@ -603,7 +603,7 @@
         }
         return (
           (_.ɵfac = function (i) {
-            return new (i || _)(e.Y36(K.eN), e.Y36(F.Kz));
+            return new (i || _)(e.Y36(ee.eN), e.Y36(k.Kz));
           }),
           (_.ɵcmp = e.Xpm({
             type: _,
@@ -636,13 +636,13 @@
             template: function (i, o) {
               1 & i &&
                 (e.TgZ(0, "div", 0),
-                e.YNc(1, Ke, 3, 2, "div", 1),
+                e.YNc(1, Xe, 3, 2, "div", 1),
                 e.ALo(2, "async"),
                 e.qZA(),
                 e.TgZ(3, "div", 2)(4, "p"),
                 e._uU(5, "Haga click en la ubicaci\xf3n correspondiente"),
                 e.qZA(),
-                e.YNc(6, Xe, 3, 2, "ngb-alert", 3),
+                e.YNc(6, ei, 3, 2, "ngb-alert", 3),
                 e.TgZ(7, "button", 4),
                 e.NdJ("click", function () {
                   return o.close();
@@ -658,14 +658,14 @@
                   e.xp6(1),
                   e.Q6J("disabled", o.disableBtn));
             },
-            dependencies: [C.sg, C.O5, y, ee, F.xm, C.Ov],
+            dependencies: [C.sg, C.O5, A, oe, k.xm, C.Ov],
           })),
           _
         );
       })();
-      var Z = b(727),
-        ie = b(8505);
-      const ne = {
+      var O = c(727),
+        N = c(8505);
+      const pe = {
           Castellano: "Castellano",
           Quechua: "Quechua",
           Aymara: "Aymara",
@@ -673,35 +673,35 @@
           Awajun: "Awaj\xfan",
           Otra: "Otra",
         },
-        ii = [...Object.values(ne)],
-        pe = {
+        oi = [...Object.values(pe)],
+        be = {
           Padre: "Padre",
           Madre: "Madre",
           Hermano: "Hermano/Hermana",
           Apoderado: "Apoderado/Apoderada",
           Otro: "Otro",
         },
-        oi = [...Object.values(pe)],
-        be = { si: "S\xed", no: "No" },
         _i = [...Object.values(be)],
-        se = {
+        se = { si: "S\xed", no: "No" },
+        ai = [...Object.values(se)],
+        ce = {
           beca: "Beca",
           credito: "Cr\xe9dito",
           otros: "Otras formas de financiamiento (especificar)",
         },
-        ai = [...Object.values(se)],
-        ce = { si: "S\xed", no: "No" },
         di = [...Object.values(ce)],
-        le = {
+        le = { si: "S\xed", no: "No" },
+        ri = [...Object.values(le)],
+        me = {
           padres: "Pagada por padres",
           postulante: "Pagada por el mismo postulante",
           academia: "Becado por centro de estudios preuniversitarios",
           familiar: "Pagado por un familiar o amigo",
           otros: "Otros (especificar)",
         },
-        ri = ["Menos de 6 meses", "6 meses a 1 a\xf1o", "M\xe1s de 1 a\xf1o"],
-        ui = [...Object.values(le)],
-        ti = [
+        ui = ["Menos de 6 meses", "6 meses a 1 a\xf1o", "M\xe1s de 1 a\xf1o"],
+        ti = [...Object.values(me)],
+        gi = [
           "Universidad del Pac\xedfico - UP (Lima)",
           "Universidad de Piura - UDEP (Sede Lima)",
           "Universidad de Piura - UDEP (Sede Piura)",
@@ -710,7 +710,7 @@
           "Universidad de Lima - UL (Lima)",
           "Pontificia Universidad Cat\xf3lica del Per\xfa - PUCP (Lima)",
         ],
-        gi = [
+        ni = [
           "Matricularlo en una academia",
           "Contratar profesores si requer\xeda la ayuda",
           "Ayudarlo a estudiar",
@@ -723,7 +723,7 @@
           "Hablar sobre la importancia de la educaci\xf3n en familia",
           "Otros (especificar)",
         ],
-        me = {
+        he = {
           deporte: "Deporte",
           baile: "Baile",
           comunidad: "Comunidad religiosa",
@@ -734,21 +734,21 @@
           arte: "Arte",
           otros: "Otros (especificar)",
         },
-        ni = [...Object.values(me)],
-        pi = [
+        pi = [...Object.values(he)],
+        bi = [
           "Diariamente",
           "Interdiario",
           "M\xe1s de 3 d\xedas a la semana",
           "Quincenalmente ",
           "Ocasionalmente",
         ],
-        bi = [
+        si = [
           "Ha iniciado recientemente - hace menos de 3 meses",
           "Entre 3 y 6 meses atr\xe1s",
           "Entre 6 meses y 1 a\xf1o atr\xe1s",
           "Hace m\xe1s de 1 a\xf1o",
         ],
-        si = [
+        ci = [
           ...Object.values({
             padres: "Financiadas por padres",
             postulante: "Financiadas por el postulante",
@@ -756,23 +756,23 @@
             otros: "Otros (especificar)",
           }),
         ],
-        ci = [
+        li = [
           "Menos de 30 minutos",
           "Entre 30 minutos y 1 hora",
           "Entre 1 hora y 1.5 horas",
           "Entre 1.5 horas  y 2 horas",
           "M\xe1s de 2 horas",
         ],
-        he = { si: "S\xed", no: "No" },
-        li = [...Object.values(he)],
-        mi = [
+        ve = { si: "S\xed", no: "No" },
+        mi = [...Object.values(ve)],
+        hi = [
           "Soltero(a)",
           "Conviviente",
           "Casado(a)",
           "Viudo(a)",
           "Divorciado(a)",
         ],
-        hi = [
+        vi = [
           "Primaria incompleta",
           "Primaria completa",
           "Secundaria incompleta",
@@ -782,15 +782,15 @@
           "Universitario incompleta",
           "Universitario completa",
         ],
-        vi = ["Vive", "Falleci\xf3"],
-        fi = [
+        fi = ["Vive", "Falleci\xf3"],
+        Ci = [
           "Independiente",
           "Dependiente",
           "Eventual",
           "Desempleo",
           "Ama de casa",
         ],
-        Ci = [
+        yi = [
           { style: { minWidth: 200 }, value: "Parentesco" },
           { style: { minWidth: 250 }, value: "Nombres" },
           { style: { minWidth: 250 }, value: "Apellidos" },
@@ -804,7 +804,7 @@
           { style: { minWidth: 250 }, value: "Vive con el/la postulante" },
           { style: { minWidth: 250 }, value: "Situaci\xf3n laboral" },
         ],
-        yi = [
+        Ai = [
           { style: { minWidth: 200 }, value: "Parentesco" },
           { style: { minWidth: 250 }, value: "Nombres" },
           { style: { minWidth: 250 }, value: "Apellidos" },
@@ -813,7 +813,7 @@
           { style: { minWidth: 200 }, value: "Nivel de educaci\xf3n" },
           { style: { minWidth: 200 }, value: "Situaci\xf3n laboral" },
         ],
-        ve = {
+        fe = {
           sinResponsabilidadesDomésticas: "Sin responsabilidades dom\xe9sticas",
           prepararDesayuno: "Preparar desayuno",
           prepararAlmuerzo: "Preparar Almuerzo",
@@ -833,8 +833,8 @@
           trabajosEventuales: 'Trabajos eventuales/"cachuelos"',
           otros: "Otros (especificar)",
         },
-        Ai = [...Object.values(ve)],
-        Ti = [
+        Ti = [...Object.values(fe)],
+        Mi = [
           "15 minutos o menos",
           "Entre 15 y 30 minutos",
           "Entre 30 minutos y 1 hora",
@@ -848,7 +848,7 @@
           "Quincenalmente",
           "Ocasionalmente",
         ],
-        fe = {
+        Ce = {
           papa: "Pap\xe1",
           mama: "Mam\xe1",
           postulante: "Postulante",
@@ -856,9 +856,9 @@
           hermanos: "Hermanos",
           otros: "Otros (especificar)",
         },
-        Li = [...Object.values(fe)],
-        Mi = ["0-33%", "33%-66%", "66% a m\xe1s"],
-        Si = ["Actividad", "S\xed/No"],
+        Si = [...Object.values(Ce)],
+        Li = ["0-33%", "33%-66%", "66% a m\xe1s"],
+        Ei = ["Actividad", "S\xed/No"],
         Ii = [
           ...Object.values({
             pasajes: "Pasajes",
@@ -872,14 +872,14 @@
             salidas: "Salidas con amigos",
           }),
         ],
-        Ei = [
+        xi = [
           "S/. 10.00  a  S/. 25.00",
           "S/. 25.00  a  S/. 50.00",
           "S/. 50.00  a  S/. 75.00",
           "S/. 75.00  a  S/. 100.00",
           "M\xe1s de S/. 100.00",
         ],
-        xi = [
+        qi = [
           ...Object.values({
             mejoresRecursos: "Mejores recursos econ\xf3micos",
             primerProfesional: "Primer profesional en la familia",
@@ -894,9 +894,9 @@
             otros: "Otros (especificar)",
           }),
         ],
-        qi = ["Menos de 1 hora", "Entre 1 y 2 horas", "M\xe1s de 2 horas"],
-        zi = ["Detallar", "No precisa"],
-        wi = [
+        zi = ["Menos de 1 hora", "Entre 1 y 2 horas", "M\xe1s de 2 horas"],
+        wi = ["Detallar", "No precisa"],
+        Qi = [
           "Problemas econ\xf3micos",
           "Problemas de salud",
           "Conflictos dentro de la familia cercana",
@@ -906,13 +906,13 @@
           "Problemas legales",
           "Otros (especificar)",
         ],
-        Qi = [
+        Hi = [
           "No hay necesidad de reorganizarnos",
           "Las tareas se mantendr\xe1n iguales",
           "No precisa",
           "Otros (especificar)",
         ],
-        Hi = {
+        Zi = {
           uno: {
             nro: "1",
             descripcion: "Indicar su lengua materna",
@@ -1175,8 +1175,8 @@
             for: "",
           },
         };
-      var Ce = b(8799);
-      const Zi = [
+      var ye = c(8799);
+      const Oi = [
         {
           id_ubigeo: "2534-2557-2559",
           nombre_ubigeo: "Amazonas - Bagua - Aramango",
@@ -15845,21 +15845,21 @@
           id_padre_ubigeo_dst: "4585",
         },
       ];
-      var Bi = b(3601),
-        Oi = b(8675),
-        Fi = b(8372),
-        ki = b(9300),
-        Ni = b(6406),
-        Ji = b(3101),
-        k = b(4968),
-        oe = b(6451);
-      const Di = ["content"],
-        ji = ["scroll"],
-        Ui = ["padding"],
+      var Bi = c(3601),
+        Fi = c(8675),
+        ki = c(8372),
+        Ni = c(9300),
+        Ji = c(6406),
+        Di = c(3101),
+        J = c(4968),
+        _e = c(6451);
+      const ji = ["content"],
+        Ui = ["scroll"],
+        Yi = ["padding"],
         B = function (_) {
           return { searchTerm: _ };
         };
-      function Yi(_, a) {
+      function Ri(_, a) {
         if ((1 & _ && (e.TgZ(0, "div", 6), e.GkF(1, 7), e.qZA()), 2 & _)) {
           const i = e.oxw();
           e.xp6(1),
@@ -15869,7 +15869,7 @@
             );
         }
       }
-      function Ri(_, a) {
+      function Vi(_, a) {
         if ((1 & _ && (e.TgZ(0, "div", 8), e.GkF(1, 7), e.qZA()), 2 & _)) {
           const i = e.oxw();
           e.xp6(1),
@@ -15879,9 +15879,9 @@
             );
         }
       }
-      const ye = ["*"],
-        Vi = ["searchInput"];
-      function Gi(_, a) {
+      const Ae = ["*"],
+        Gi = ["searchInput"];
+      function $i(_, a) {
         if (1 & _) {
           const i = e.EpF();
           e.TgZ(0, "span", 15),
@@ -15901,16 +15901,16 @@
           e.xp6(2), e.Q6J("ngItemLabel", i.label)("escape", o.escapeHTML);
         }
       }
-      function $i(_, a) {}
-      const Wi = function (_, a, i) {
+      function Wi(_, a) {}
+      const Ki = function (_, a, i) {
         return { item: _, clear: a, label: i };
       };
-      function Ki(_, a) {
+      function Xi(_, a) {
         if (
           (1 & _ &&
             (e.TgZ(0, "div", 12),
-            e.YNc(1, Gi, 3, 2, "ng-template", null, 13, e.W1O),
-            e.YNc(3, $i, 0, 0, "ng-template", 14),
+            e.YNc(1, $i, 3, 2, "ng-template", null, 13, e.W1O),
+            e.YNc(3, Wi, 0, 0, "ng-template", 14),
             e.qZA()),
           2 & _)
         ) {
@@ -15921,42 +15921,42 @@
             e.xp6(3),
             e.Q6J("ngTemplateOutlet", d.labelTemplate || o)(
               "ngTemplateOutletContext",
-              e.kEZ(4, Wi, i.value, d.clearItem, i.label)
+              e.kEZ(4, Ki, i.value, d.clearItem, i.label)
             );
         }
       }
-      function Xi(_, a) {
+      function eo(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Ki, 4, 8, "div", 11), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Xi, 4, 8, "div", 11), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           e.xp6(1),
             e.Q6J("ngForOf", i.selectedItems)("ngForTrackBy", i.trackByOption);
         }
       }
-      function eo(_, a) {}
-      const io = function (_, a) {
+      function io(_, a) {}
+      const oo = function (_, a) {
         return { items: _, clear: a };
       };
-      function oo(_, a) {
-        if ((1 & _ && e.YNc(0, eo, 0, 0, "ng-template", 14), 2 & _)) {
+      function _o(_, a) {
+        if ((1 & _ && e.YNc(0, io, 0, 0, "ng-template", 14), 2 & _)) {
           const i = e.oxw();
           e.Q6J("ngTemplateOutlet", i.multiLabelTemplate)(
             "ngTemplateOutletContext",
-            e.WLB(2, io, i.selectedValues, i.clearItem)
+            e.WLB(2, oo, i.selectedValues, i.clearItem)
           );
         }
       }
-      function _o(_, a) {
+      function ao(_, a) {
         1 & _ && e._UZ(0, "div", 19);
       }
-      function ao(_, a) {}
-      function ro(_, a) {
+      function ro(_, a) {}
+      function uo(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.YNc(1, _o, 1, 0, "ng-template", null, 17, e.W1O),
-            e.YNc(3, ao, 0, 0, "ng-template", 18),
+            e.YNc(1, ao, 1, 0, "ng-template", null, 17, e.W1O),
+            e.YNc(3, ro, 0, 0, "ng-template", 18),
             e.BQk()),
           2 & _)
         ) {
@@ -15965,7 +15965,7 @@
           e.xp6(3), e.Q6J("ngTemplateOutlet", o.loadingSpinnerTemplate || i);
         }
       }
-      function uo(_, a) {
+      function to(_, a) {
         if (
           (1 & _ &&
             (e.TgZ(0, "span", 20)(1, "span", 21), e._uU(2, "\xd7"), e.qZA()()),
@@ -15975,18 +15975,18 @@
           e.s9C("title", i.clearAllText);
         }
       }
-      function to(_, a) {
+      function go(_, a) {
         if ((1 & _ && e._UZ(0, "span", 27), 2 & _)) {
           const i = e.oxw().$implicit,
             o = e.oxw(2);
           e.Q6J("ngItemLabel", i.label)("escape", o.escapeHTML);
         }
       }
-      function go(_, a) {}
-      const no = function (_, a, i, o) {
+      function no(_, a) {}
+      const po = function (_, a, i, o) {
         return { item: _, item$: a, index: i, searchTerm: o };
       };
-      function po(_, a) {
+      function bo(_, a) {
         if (1 & _) {
           const i = e.EpF();
           e.TgZ(0, "div", 25),
@@ -15999,8 +15999,8 @@
                 u = e.oxw(2);
               return e.KtG(u.onItemHover(r));
             }),
-            e.YNc(1, to, 1, 2, "ng-template", null, 26, e.W1O),
-            e.YNc(3, go, 0, 0, "ng-template", 14),
+            e.YNc(1, go, 1, 2, "ng-template", null, 26, e.W1O),
+            e.YNc(3, no, 0, 0, "ng-template", 14),
             e.qZA();
         }
         if (2 & _) {
@@ -16024,11 +16024,11 @@
               i.children ? d.optgroupTemplate || o : d.optionTemplate || o
             )(
               "ngTemplateOutletContext",
-              e.l5B(17, no, i.value, i, i.index, d.searchTerm)
+              e.l5B(17, po, i.value, i, i.index, d.searchTerm)
             );
         }
       }
-      function bo(_, a) {
+      function so(_, a) {
         if (
           (1 & _ &&
             (e.TgZ(0, "span")(1, "span", 30),
@@ -16045,8 +16045,8 @@
             e.hij('"', i.searchTerm, '"');
         }
       }
-      function so(_, a) {}
-      function co(_, a) {
+      function co(_, a) {}
+      function lo(_, a) {
         if (1 & _) {
           const i = e.EpF();
           e.TgZ(0, "div", 28),
@@ -16059,8 +16059,8 @@
               const d = e.oxw(2);
               return e.KtG(d.selectTag());
             }),
-            e.YNc(1, bo, 4, 2, "ng-template", null, 29, e.W1O),
-            e.YNc(3, so, 0, 0, "ng-template", 14),
+            e.YNc(1, so, 4, 2, "ng-template", null, 29, e.W1O),
+            e.YNc(3, co, 0, 0, "ng-template", 14),
             e.qZA();
         }
         if (2 & _) {
@@ -16074,19 +16074,19 @@
             );
         }
       }
-      function lo(_, a) {
+      function mo(_, a) {
         if ((1 & _ && (e.TgZ(0, "div", 32), e._uU(1), e.qZA()), 2 & _)) {
           const i = e.oxw(3);
           e.xp6(1), e.Oqu(i.notFoundText);
         }
       }
-      function mo(_, a) {}
-      function ho(_, a) {
+      function ho(_, a) {}
+      function vo(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.YNc(1, lo, 2, 1, "ng-template", null, 31, e.W1O),
-            e.YNc(3, mo, 0, 0, "ng-template", 14),
+            e.YNc(1, mo, 2, 1, "ng-template", null, 31, e.W1O),
+            e.YNc(3, ho, 0, 0, "ng-template", 14),
             e.BQk()),
           2 & _)
         ) {
@@ -16099,19 +16099,19 @@
             );
         }
       }
-      function vo(_, a) {
+      function fo(_, a) {
         if ((1 & _ && (e.TgZ(0, "div", 32), e._uU(1), e.qZA()), 2 & _)) {
           const i = e.oxw(3);
           e.xp6(1), e.Oqu(i.typeToSearchText);
         }
       }
-      function fo(_, a) {}
-      function Co(_, a) {
+      function Co(_, a) {}
+      function yo(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.YNc(1, vo, 2, 1, "ng-template", null, 33, e.W1O),
-            e.YNc(3, fo, 0, 0, "ng-template", 18),
+            e.YNc(1, fo, 2, 1, "ng-template", null, 33, e.W1O),
+            e.YNc(3, Co, 0, 0, "ng-template", 18),
             e.BQk()),
           2 & _)
         ) {
@@ -16120,19 +16120,19 @@
           e.xp6(3), e.Q6J("ngTemplateOutlet", o.typeToSearchTemplate || i);
         }
       }
-      function yo(_, a) {
+      function Ao(_, a) {
         if ((1 & _ && (e.TgZ(0, "div", 32), e._uU(1), e.qZA()), 2 & _)) {
           const i = e.oxw(3);
           e.xp6(1), e.Oqu(i.loadingText);
         }
       }
-      function Ao(_, a) {}
-      function To(_, a) {
+      function To(_, a) {}
+      function Mo(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.YNc(1, yo, 2, 1, "ng-template", null, 34, e.W1O),
-            e.YNc(3, Ao, 0, 0, "ng-template", 14),
+            e.YNc(1, Ao, 2, 1, "ng-template", null, 34, e.W1O),
+            e.YNc(3, To, 0, 0, "ng-template", 14),
             e.BQk()),
           2 & _)
         ) {
@@ -16167,12 +16167,12 @@
               return e.KtG(d.close());
             }),
             e.ynx(1),
-            e.YNc(2, po, 4, 22, "div", 23),
-            e.YNc(3, co, 4, 6, "div", 24),
+            e.YNc(2, bo, 4, 22, "div", 23),
+            e.YNc(3, lo, 4, 6, "div", 24),
             e.BQk(),
-            e.YNc(4, ho, 4, 4, "ng-container", 3),
-            e.YNc(5, Co, 4, 1, "ng-container", 3),
-            e.YNc(6, To, 4, 4, "ng-container", 3),
+            e.YNc(4, vo, 4, 4, "ng-container", 3),
+            e.YNc(5, yo, 4, 1, "ng-container", 3),
+            e.YNc(6, Mo, 4, 4, "ng-container", 3),
             e.qZA();
         }
         if (2 & _) {
@@ -16203,33 +16203,33 @@
             e.Q6J("ngIf", i.loading && 0 === i.itemsList.filteredItems.length);
         }
       }
-      const Ae = /[&<>"']/g,
-        Lo = RegExp(Ae.source),
-        Mo = {
+      const Te = /[&<>"']/g,
+        So = RegExp(Te.source),
+        Lo = {
           "&": "&amp;",
           "<": "&lt;",
           ">": "&gt;",
           '"': "&quot;",
           "'": "&#39;",
         };
-      function h(_) {
+      function v(_) {
         return null != _;
       }
-      function O(_) {
-        return "object" == typeof _ && h(_);
+      function F(_) {
+        return "object" == typeof _ && v(_);
       }
-      function N(_) {
+      function D(_) {
         return _ instanceof Function;
       }
-      let Eo = (() => {
+      let xo = (() => {
           class _ {
             constructor(i) {
               (this.element = i), (this.escape = !0);
             }
             ngOnChanges(i) {
               this.element.nativeElement.innerHTML = this.escape
-                ? (function So(_) {
-                    return _ && Lo.test(_) ? _.replace(Ae, (a) => Mo[a]) : _;
+                ? (function Eo(_) {
+                    return _ && So.test(_) ? _.replace(Te, (a) => Lo[a]) : _;
                   })(this.ngItemLabel)
                 : this.ngItemLabel;
             }
@@ -16247,7 +16247,7 @@
             _
           );
         })(),
-        xo = (() => {
+        qo = (() => {
           class _ {
             constructor(i) {
               this.template = i;
@@ -16264,7 +16264,7 @@
             _
           );
         })(),
-        qo = (() => {
+        zo = (() => {
           class _ {
             constructor(i) {
               this.template = i;
@@ -16281,7 +16281,7 @@
             _
           );
         })(),
-        zo = (() => {
+        wo = (() => {
           class _ {
             constructor(i) {
               this.template = i;
@@ -16298,7 +16298,7 @@
             _
           );
         })(),
-        wo = (() => {
+        Qo = (() => {
           class _ {
             constructor(i) {
               this.template = i;
@@ -16315,7 +16315,7 @@
             _
           );
         })(),
-        Qo = (() => {
+        Ho = (() => {
           class _ {
             constructor(i) {
               this.template = i;
@@ -16332,7 +16332,7 @@
             _
           );
         })(),
-        Ho = (() => {
+        Zo = (() => {
           class _ {
             constructor(i) {
               this.template = i;
@@ -16349,7 +16349,7 @@
             _
           );
         })(),
-        Zo = (() => {
+        Oo = (() => {
           class _ {
             constructor(i) {
               this.template = i;
@@ -16383,7 +16383,7 @@
             _
           );
         })(),
-        Oo = (() => {
+        Fo = (() => {
           class _ {
             constructor(i) {
               this.template = i;
@@ -16400,7 +16400,7 @@
             _
           );
         })(),
-        Fo = (() => {
+        ko = (() => {
           class _ {
             constructor(i) {
               this.template = i;
@@ -16414,7 +16414,7 @@
             _
           );
         })(),
-        ko = (() => {
+        No = (() => {
           class _ {
             constructor(i) {
               this.template = i;
@@ -16431,12 +16431,12 @@
             _
           );
         })();
-      function Te() {
+      function Me() {
         return "axxxxxxxxxxx".replace(/[x]/g, () =>
           ((16 * Math.random()) | 0).toString(16)
         );
       }
-      const No = {
+      const Jo = {
         "\u24b6": "A",
         Ａ: "A",
         À: "A",
@@ -17277,10 +17277,10 @@
         ω: "\u03c9",
         ς: "\u03c3",
       };
-      function J(_) {
-        return _.replace(/[^\u0000-\u007E]/g, (i) => No[i] || i);
+      function j(_) {
+        return _.replace(/[^\u0000-\u007E]/g, (i) => Jo[i] || i);
       }
-      class Jo {
+      class Do {
         constructor(a, i) {
           (this._ngSelect = a),
             (this._selectionModel = i),
@@ -17350,7 +17350,7 @@
           !a.selected ||
             (this._selectionModel.unselect(a, this._ngSelect.multiple),
             this._ngSelect.hideSelected &&
-              h(a.index) &&
+              v(a.index) &&
               this._ngSelect.multiple &&
               this._showSelected(a));
         }
@@ -17385,16 +17385,16 @@
         }
         findByLabel(a) {
           return (
-            (a = J(a).toLocaleLowerCase()),
+            (a = j(a).toLocaleLowerCase()),
             this.filteredItems.find(
-              (i) => J(i.label).toLocaleLowerCase().substr(0, a.length) === a
+              (i) => j(i.label).toLocaleLowerCase().substr(0, a.length) === a
             )
           );
         }
         filter(a) {
           if (!a) return void this.resetFilteredItems();
           (this._filteredItems = []),
-            (a = this._ngSelect.searchFn ? a : J(a).toLocaleLowerCase());
+            (a = this._ngSelect.searchFn ? a : j(a).toLocaleLowerCase());
           const i = this._ngSelect.searchFn || this._defaultSearchFn,
             o = this._ngSelect.hideSelected;
           for (const d of Array.from(this._groups.keys())) {
@@ -17405,7 +17405,7 @@
             if (r.length > 0) {
               const [u] = r.slice(-1);
               if (u.parent) {
-                const g = this._items.find((n) => n === u.parent);
+                const g = this._items.find((p) => p === u.parent);
                 this._filteredItems.push(g);
               }
               this._filteredItems.push(...r);
@@ -17442,7 +17442,7 @@
               : -1;
         }
         resolveNested(a, i) {
-          if (!O(a)) return a;
+          if (!F(a)) return a;
           if (-1 === i.indexOf(".")) return a[i];
           {
             const o = i.split(".");
@@ -17455,13 +17455,13 @@
           }
         }
         mapItem(a, i) {
-          const o = h(a.$ngOptionLabel)
+          const o = v(a.$ngOptionLabel)
               ? a.$ngOptionLabel
               : this.resolveNested(a, this._ngSelect.bindLabel),
-            d = h(a.$ngOptionValue) ? a.$ngOptionValue : a;
+            d = v(a.$ngOptionValue) ? a.$ngOptionValue : a;
           return {
             index: i,
-            label: h(o) ? o.toString() : "",
+            label: v(o) ? o.toString() : "",
             value: d,
             disabled: a.disabled,
             htmlId: `${this._ngSelect.dropdownId}-${i}`,
@@ -17473,7 +17473,7 @@
             const o = this._ngSelect.bindValue
                 ? this.resolveNested(i.value, this._ngSelect.bindValue)
                 : i.value,
-              d = h(o) ? this.findItem(o) : null;
+              d = v(o) ? this.findItem(o) : null;
             this._selectionModel.unselect(i, a),
               this._selectionModel.select(
                 d || i,
@@ -17511,7 +17511,7 @@
                 ));
         }
         _defaultSearchFn(a, i) {
-          return J(i.label).toLocaleLowerCase().indexOf(a) > -1;
+          return j(i.label).toLocaleLowerCase().indexOf(a) > -1;
         }
         _getNextItemIndex(a) {
           return a > 0
@@ -17544,73 +17544,73 @@
           if (0 === a.length) return o;
           if (Array.isArray(a[0].value[i])) {
             for (const u of a) {
-              const g = (u.value[i] || []).map((n, p) => this.mapItem(n, p));
+              const g = (u.value[i] || []).map((p, b) => this.mapItem(p, b));
               o.set(u, g);
             }
             return o;
           }
-          const d = N(this._ngSelect.groupBy),
+          const d = D(this._ngSelect.groupBy),
             r = (u) => {
               const g = d ? i(u.value) : u.value[i];
-              return h(g) ? g : void 0;
+              return v(g) ? g : void 0;
             };
           for (const u of a) {
             const g = r(u),
-              n = o.get(g);
-            n ? n.push(u) : o.set(g, [u]);
+              p = o.get(g);
+            p ? p.push(u) : o.set(g, [u]);
           }
           return o;
         }
         _flatten(a) {
-          const i = N(this._ngSelect.groupBy),
+          const i = D(this._ngSelect.groupBy),
             o = [];
           for (const d of Array.from(a.keys())) {
             let r = o.length;
             if (void 0 === d) {
-              const s = a.get(void 0) || [];
-              o.push(...s.map((c) => ((c.index = r++), c)));
+              const l = a.get(void 0) || [];
+              o.push(...l.map((n) => ((n.index = r++), n)));
               continue;
             }
-            const u = O(d),
+            const u = F(d),
               g = {
                 label: u ? "" : String(d),
                 children: void 0,
                 parent: null,
                 index: r++,
                 disabled: !this._ngSelect.selectableGroup,
-                htmlId: Te(),
+                htmlId: Me(),
               },
-              n = i ? this._ngSelect.bindLabel : this._ngSelect.groupBy,
-              p =
-                this._ngSelect.groupValue || (() => (u ? d.value : { [n]: d })),
-              m = a
+              p = i ? this._ngSelect.bindLabel : this._ngSelect.groupBy,
+              b =
+                this._ngSelect.groupValue || (() => (u ? d.value : { [p]: d })),
+              h = a
                 .get(d)
                 .map(
-                  (s) => (
-                    (s.parent = g), (s.children = void 0), (s.index = r++), s
+                  (l) => (
+                    (l.parent = g), (l.children = void 0), (l.index = r++), l
                   )
                 );
-            (g.children = m),
-              (g.value = p(
+            (g.children = h),
+              (g.value = b(
                 d,
-                m.map((s) => s.value)
+                h.map((l) => l.value)
               )),
               o.push(g),
-              o.push(...m);
+              o.push(...h);
           }
           return o;
         }
       }
-      var L = (() => {
+      var P = (() => {
         return (
-          ((_ = L || (L = {}))[(_.Tab = 9)] = "Tab"),
+          ((_ = P || (P = {}))[(_.Tab = 9)] = "Tab"),
           (_[(_.Enter = 13)] = "Enter"),
           (_[(_.Esc = 27)] = "Esc"),
           (_[(_.Space = 32)] = "Space"),
           (_[(_.ArrowUp = 38)] = "ArrowUp"),
           (_[(_.ArrowDown = 40)] = "ArrowDown"),
           (_[(_.Backspace = 8)] = "Backspace"),
-          L
+          P
         );
         var _;
       })();
@@ -17629,20 +17629,20 @@
           calculateItems(i, o, d) {
             const r = this._dimensions,
               u = r.itemHeight * o,
-              n = (Math.max(0, i) / u) * o;
-            let p = Math.min(o, Math.ceil(n) + (r.itemsPerViewport + 1));
-            const s = Math.max(0, p - r.itemsPerViewport);
-            let c = Math.min(s, Math.floor(n)),
-              f = r.itemHeight * Math.ceil(c) - r.itemHeight * Math.min(c, d);
+              p = (Math.max(0, i) / u) * o;
+            let b = Math.min(o, Math.ceil(p) + (r.itemsPerViewport + 1));
+            const l = Math.max(0, b - r.itemsPerViewport);
+            let n = Math.min(l, Math.floor(p)),
+              s = r.itemHeight * Math.ceil(n) - r.itemHeight * Math.min(n, d);
             return (
-              (f = isNaN(f) ? 0 : f),
-              (c = isNaN(c) ? -1 : c),
-              (p = isNaN(p) ? -1 : p),
-              (c -= d),
-              (c = Math.max(0, c)),
-              (p += d),
-              (p = Math.min(o, p)),
-              { topPadding: f, scrollHeight: u, start: c, end: p }
+              (s = isNaN(s) ? 0 : s),
+              (n = isNaN(n) ? -1 : n),
+              (b = isNaN(b) ? -1 : b),
+              (n -= d),
+              (n = Math.max(0, n)),
+              (b += d),
+              (b = Math.min(o, b)),
+              { topPadding: s, scrollHeight: u, start: n, end: b }
             );
           }
           setDimensions(i, o) {
@@ -17656,11 +17656,11 @@
           getScrollTo(i, o, d) {
             const { panelHeight: r } = this.dimensions,
               u = i + o,
-              n = d + r;
+              p = d + r;
             return r >= u && d === i
               ? null
-              : u > n
-              ? d + u - n
+              : u > p
+              ? d + u - p
               : i <= d
               ? i
               : null;
@@ -17674,9 +17674,9 @@
           _
         );
       })();
-      const Le = ["top", "right", "bottom", "left"],
-        Do = typeof requestAnimationFrame < "u" ? Ni.Z : Ji.E;
-      let Me = (() => {
+      const Se = ["top", "right", "bottom", "left"],
+        jo = typeof requestAnimationFrame < "u" ? Ji.Z : Di.E;
+      let Le = (() => {
           class _ {
             constructor(i, o, d, r, u) {
               (this._renderer = i),
@@ -17691,7 +17691,7 @@
                 (this.scroll = new e.vpe()),
                 (this.scrollToEnd = new e.vpe()),
                 (this.outsideClick = new e.vpe()),
-                (this._destroy$ = new A.x()),
+                (this._destroy$ = new T.x()),
                 (this._scrollToEndFired = !1),
                 (this._updateScrollHeight = !1),
                 (this._lastScrollPosition = 0),
@@ -17762,7 +17762,7 @@
                   o ? u.offsetTop : this._lastScrollPosition
                 );
               }
-              h(r) && (this._scrollablePanel.scrollTop = r);
+              v(r) && (this._scrollablePanel.scrollTop = r);
             }
             scrollToTag() {
               const i = this._scrollablePanel;
@@ -17775,14 +17775,14 @@
               (this._currentPosition = this._calculateCurrentPosition(
                 this._dropdown
               )),
-                Le.includes(this._currentPosition)
+                Se.includes(this._currentPosition)
                   ? this._updateDropdownClass(this._currentPosition)
                   : this._updateDropdownClass("bottom"),
                 this.appendTo && this._updateYPosition(),
                 (this._dropdown.style.opacity = "1");
             }
             _updateDropdownClass(i) {
-              Le.forEach((d) => {
+              Se.forEach((d) => {
                 const r = `ng-select-${d}`;
                 this._renderer.removeClass(this._dropdown, r),
                   this._renderer.removeClass(this._select, r);
@@ -17793,8 +17793,8 @@
             }
             _handleScroll() {
               this._zone.runOutsideAngular(() => {
-                (0, k.R)(this.scrollElementRef.nativeElement, "scroll")
-                  .pipe((0, l.R)(this._destroy$), (0, Bi.e)(0, Do))
+                (0, J.R)(this.scrollElementRef.nativeElement, "scroll")
+                  .pipe((0, m.R)(this._destroy$), (0, Bi.e)(0, jo))
                   .subscribe((i) => {
                     const o = i.path || (i.composedPath && i.composedPath());
                     this._onContentScrolled(
@@ -17806,11 +17806,11 @@
             _handleOutsideClick() {
               !this._document ||
                 this._zone.runOutsideAngular(() => {
-                  (0, oe.T)(
-                    (0, k.R)(this._document, "touchstart", { capture: !0 }),
-                    (0, k.R)(this._document, "mousedown", { capture: !0 })
+                  (0, _e.T)(
+                    (0, J.R)(this._document, "touchstart", { capture: !0 }),
+                    (0, J.R)(this._document, "mousedown", { capture: !0 })
                   )
-                    .pipe((0, l.R)(this._destroy$))
+                    .pipe((0, m.R)(this._destroy$))
                     .subscribe((i) => this._checkToClose(i));
                 });
             }
@@ -17890,7 +17890,7 @@
                   this.update.emit(this.items.slice(o.start, o.end)),
                     this.scroll.emit({ start: o.start, end: o.end });
                 }),
-                h(i) &&
+                v(i) &&
                   0 === this._lastScrollPosition &&
                   ((this._scrollablePanel.scrollTop = i),
                   (this._lastScrollPosition = i));
@@ -17979,8 +17979,8 @@
             }
             _setupMousedownListener() {
               this._zone.runOutsideAngular(() => {
-                (0, k.R)(this._dropdown, "mousedown")
-                  .pipe((0, l.R)(this._destroy$))
+                (0, J.R)(this._dropdown, "mousedown")
+                  .pipe((0, m.R)(this._destroy$))
                   .subscribe((i) => {
                     "INPUT" !== i.target.tagName && i.preventDefault();
                   });
@@ -18003,9 +18003,9 @@
               viewQuery: function (i, o) {
                 if (
                   (1 & i &&
-                    (e.Gf(Di, 7, e.SBq),
-                    e.Gf(ji, 7, e.SBq),
-                    e.Gf(Ui, 7, e.SBq)),
+                    (e.Gf(ji, 7, e.SBq),
+                    e.Gf(Ui, 7, e.SBq),
+                    e.Gf(Yi, 7, e.SBq)),
                   2 & i)
                 ) {
                   let d;
@@ -18032,7 +18032,7 @@
                 outsideClick: "outsideClick",
               },
               features: [e.TTD],
-              ngContentSelectors: ye,
+              ngContentSelectors: Ae,
               decls: 9,
               vars: 6,
               consts: [
@@ -18049,13 +18049,13 @@
               template: function (i, o) {
                 1 & i &&
                   (e.F$t(),
-                  e.YNc(0, Yi, 2, 4, "div", 0),
+                  e.YNc(0, Ri, 2, 4, "div", 0),
                   e.TgZ(1, "div", 1, 2),
                   e._UZ(3, "div", null, 3),
                   e.TgZ(5, "div", null, 4),
                   e.Hsn(7),
                   e.qZA()(),
-                  e.YNc(8, Ri, 2, 4, "div", 5)),
+                  e.YNc(8, Vi, 2, 4, "div", 5)),
                   2 & i &&
                     (e.Q6J("ngIf", o.headerTemplate),
                     e.xp6(3),
@@ -18075,11 +18075,11 @@
             _
           );
         })(),
-        Se = (() => {
+        Ee = (() => {
           class _ {
             constructor(i) {
               (this.elementRef = i),
-                (this.stateChange$ = new A.x()),
+                (this.stateChange$ = new T.x()),
                 (this._disabled = !1);
             }
             get disabled() {
@@ -18123,7 +18123,7 @@
               selectors: [["ng-option"]],
               inputs: { value: "value", disabled: "disabled" },
               features: [e.TTD],
-              ngContentSelectors: ye,
+              ngContentSelectors: Ae,
               decls: 1,
               vars: 0,
               template: function (i, o) {
@@ -18135,7 +18135,7 @@
             _
           );
         })(),
-        jo = (() => {
+        Uo = (() => {
           class _ {
             constructor() {
               (this.notFoundText = "No items found"),
@@ -18160,7 +18160,7 @@
             _
           );
         })(),
-        Uo = (() => {
+        Yo = (() => {
           class _ {
             warn(i) {
               console.warn(i);
@@ -18179,14 +18179,14 @@
           );
         })();
       const Ie = new e.OlP("ng-select-selection-model");
-      let Yo = (() => {
+      let Ro = (() => {
         class _ {
-          constructor(i, o, d, r, u, g, n) {
+          constructor(i, o, d, r, u, g, p) {
             (this.classes = i),
               (this.autoFocus = o),
               (this.config = d),
               (this._cd = g),
-              (this._console = n),
+              (this._console = p),
               (this.markFirst = !0),
               (this.dropdownPosition = "auto"),
               (this.loading = !1),
@@ -18205,7 +18205,7 @@
               (this.searchWhileComposing = !0),
               (this.minTermLength = 0),
               (this.editableSearchTerm = !1),
-              (this.keyDownFn = (p) => !0),
+              (this.keyDownFn = (b) => !0),
               (this.multiple = !1),
               (this.addTag = !1),
               (this.searchable = !0),
@@ -18225,24 +18225,24 @@
               (this.useDefaultClass = !0),
               (this.viewPortItems = []),
               (this.searchTerm = null),
-              (this.dropdownId = Te()),
+              (this.dropdownId = Me()),
               (this.escapeHTML = !0),
               (this._items = []),
               (this._defaultLabel = "label"),
               (this._pressedKeys = []),
               (this._isComposing = !1),
-              (this._destroy$ = new A.x()),
-              (this._keyPress$ = new A.x()),
-              (this._onChange = (p) => {}),
+              (this._destroy$ = new T.x()),
+              (this._keyPress$ = new T.x()),
+              (this._onChange = (b) => {}),
               (this._onTouched = () => {}),
-              (this.clearItem = (p) => {
-                const m = this.selectedItems.find((s) => s.value === p);
-                this.unselect(m);
+              (this.clearItem = (b) => {
+                const h = this.selectedItems.find((l) => l.value === b);
+                this.unselect(h);
               }),
-              (this.trackByOption = (p, m) =>
-                this.trackByFn ? this.trackByFn(m.value) : m),
+              (this.trackByOption = (b, h) =>
+                this.trackByFn ? this.trackByFn(h.value) : h),
               this._mergeGlobalConfig(d),
-              (this.itemsList = new Jo(this, r())),
+              (this.itemsList = new Do(this, r())),
               (this.element = u.nativeElement);
           }
           get items() {
@@ -18257,14 +18257,14 @@
             return this._compareWith;
           }
           set compareWith(i) {
-            if (null != i && !N(i))
+            if (null != i && !D(i))
               throw Error("`compareWith` must be a function.");
             this._compareWith = i;
           }
           get clearSearchOnAdd() {
-            return h(this._clearSearchOnAdd)
+            return v(this._clearSearchOnAdd)
               ? this._clearSearchOnAdd
-              : h(this.config.clearSearchOnAdd)
+              : v(this.config.clearSearchOnAdd)
               ? this.config.clearSearchOnAdd
               : this.closeOnSelect;
           }
@@ -18301,18 +18301,18 @@
           ngOnChanges(i) {
             i.multiple && this.itemsList.clearSelected(),
               i.items && this._setItems(i.items.currentValue || []),
-              i.isOpen && (this._manualOpen = h(i.isOpen.currentValue));
+              i.isOpen && (this._manualOpen = v(i.isOpen.currentValue));
           }
           ngAfterViewInit() {
             this._itemsAreUsed ||
               ((this.escapeHTML = !1), this._setItemsFromNgOptions()),
-              h(this.autoFocus) && this.focus();
+              v(this.autoFocus) && this.focus();
           }
           ngOnDestroy() {
             this._destroy$.next(), this._destroy$.complete();
           }
           handleKeyDown(i) {
-            if (L[i.which]) {
+            if (P[i.which]) {
               if (!1 === this.keyDownFn(i)) return;
               this.handleKeyCode(i);
             } else
@@ -18322,25 +18322,25 @@
           }
           handleKeyCode(i) {
             switch (i.which) {
-              case L.ArrowDown:
+              case P.ArrowDown:
                 this._handleArrowDown(i);
                 break;
-              case L.ArrowUp:
+              case P.ArrowUp:
                 this._handleArrowUp(i);
                 break;
-              case L.Space:
+              case P.Space:
                 this._handleSpace(i);
                 break;
-              case L.Enter:
+              case P.Enter:
                 this._handleEnter(i);
                 break;
-              case L.Tab:
+              case P.Tab:
                 this._handleTab(i);
                 break;
-              case L.Esc:
+              case P.Esc:
                 this.close(), i.preventDefault();
                 break;
-              case L.Backspace:
+              case P.Backspace:
                 this._handleBackspace();
             }
           }
@@ -18447,7 +18447,7 @@
           }
           selectTag() {
             let i;
-            i = N(this.addTag)
+            i = D(this.addTag)
               ? this.addTag(this.searchTerm)
               : this._primitive
               ? this.searchTerm
@@ -18548,15 +18548,15 @@
           _setItems(i) {
             const o = i[0];
             (this.bindLabel = this.bindLabel || this._defaultLabel),
-              (this._primitive = h(o)
-                ? !O(o)
+              (this._primitive = v(o)
+                ? !F(o)
                 : this._primitive || this.bindLabel === this._defaultLabel),
               this.itemsList.setItems(i),
               i.length > 0 &&
                 this.hasValue &&
                 this.itemsList.mapSelectedItems(),
               this.isOpen &&
-                h(this.searchTerm) &&
+                v(this.searchTerm) &&
                 !this._isTypeahead &&
                 this.itemsList.filter(this.searchTerm),
               (this._isTypeahead || this.isOpen) &&
@@ -18574,9 +18574,9 @@
                   this.detectChanges();
               },
               o = () => {
-                const d = (0, oe.T)(this.ngOptions.changes, this._destroy$);
-                (0, oe.T)(...this.ngOptions.map((r) => r.stateChange$))
-                  .pipe((0, l.R)(d))
+                const d = (0, _e.T)(this.ngOptions.changes, this._destroy$);
+                (0, _e.T)(...this.ngOptions.map((r) => r.stateChange$))
+                  .pipe((0, m.R)(d))
                   .subscribe((r) => {
                     const u = this.itemsList.findItem(r.value);
                     (u.disabled = r.disabled),
@@ -18585,22 +18585,22 @@
                   });
               };
             this.ngOptions.changes
-              .pipe((0, Oi.O)(this.ngOptions), (0, l.R)(this._destroy$))
+              .pipe((0, Fi.O)(this.ngOptions), (0, m.R)(this._destroy$))
               .subscribe((d) => {
                 (this.bindLabel = this._defaultLabel), i(d), o();
               });
           }
           _isValidWriteValue(i) {
             if (
-              !h(i) ||
+              !v(i) ||
               (this.multiple && "" === i) ||
               (Array.isArray(i) && 0 === i.length)
             )
               return !1;
             const o = (d) =>
               !(
-                !h(this.compareWith) &&
-                O(d) &&
+                !v(this.compareWith) &&
+                F(d) &&
                 this.bindValue &&
                 (this._console.warn(
                   `Setting object(${JSON.stringify(
@@ -18624,7 +18624,7 @@
               let r = this.itemsList.findItem(d);
               if (r) this.itemsList.select(r);
               else {
-                const u = O(d),
+                const u = F(d),
                   g = !u && !this.bindValue;
                 u || g
                   ? this.itemsList.select(this.itemsList.mapItem(d, null))
@@ -18639,11 +18639,11 @@
             this.searchable ||
               this._keyPress$
                 .pipe(
-                  (0, l.R)(this._destroy$),
-                  (0, ie.b)((i) => this._pressedKeys.push(i)),
-                  (0, Fi.b)(200),
-                  (0, ki.h)(() => this._pressedKeys.length > 0),
-                  (0, M.U)(() => this._pressedKeys.join(""))
+                  (0, m.R)(this._destroy$),
+                  (0, N.b)((i) => this._pressedKeys.push(i)),
+                  (0, ki.b)(200),
+                  (0, Ni.h)(() => this._pressedKeys.length > 0),
+                  (0, S.U)(() => this._pressedKeys.join(""))
                 )
                 .subscribe((i) => {
                   const o = this.itemsList.findByLabel(i);
@@ -18683,7 +18683,7 @@
             const o = this.selectedItems.map((d) => d.value);
             this.multiple
               ? (this._onChange(i), this.changeEvent.emit(o))
-              : (this._onChange(h(i[0]) ? i[0] : null),
+              : (this._onChange(v(i[0]) ? i[0] : null),
                 this.changeEvent.emit(o[0])),
               this._cd.markForCheck();
           }
@@ -18784,10 +18784,10 @@
               (this.addTagText = this.addTagText || i.addTagText),
               (this.loadingText = this.loadingText || i.loadingText),
               (this.clearAllText = this.clearAllText || i.clearAllText),
-              (this.virtualScroll = h(this.virtualScroll)
+              (this.virtualScroll = v(this.virtualScroll)
                 ? this.virtualScroll
-                : !!h(i.disableVirtualScroll) && !i.disableVirtualScroll),
-              (this.openOnEnter = h(this.openOnEnter)
+                : !!v(i.disableVirtualScroll) && !i.disableVirtualScroll),
+              (this.openOnEnter = v(this.openOnEnter)
                 ? this.openOnEnter
                 : i.openOnEnter),
               (this.appendTo = this.appendTo || i.appendTo),
@@ -18801,11 +18801,11 @@
             return new (i || _)(
               e.$8M("class"),
               e.$8M("autofocus"),
-              e.Y36(jo),
+              e.Y36(Uo),
               e.Y36(Ie),
               e.Y36(e.SBq),
               e.Y36(e.sBO),
-              e.Y36(Uo)
+              e.Y36(Yo)
             );
           }),
           (_.ɵcmp = e.Xpm({
@@ -18814,18 +18814,18 @@
             contentQueries: function (i, o, d) {
               if (
                 (1 & i &&
-                  (e.Suo(d, xo, 5, e.Rgc),
-                  e.Suo(d, qo, 5, e.Rgc),
+                  (e.Suo(d, qo, 5, e.Rgc),
                   e.Suo(d, zo, 5, e.Rgc),
                   e.Suo(d, wo, 5, e.Rgc),
                   e.Suo(d, Qo, 5, e.Rgc),
                   e.Suo(d, Ho, 5, e.Rgc),
                   e.Suo(d, Zo, 5, e.Rgc),
-                  e.Suo(d, Bo, 5, e.Rgc),
                   e.Suo(d, Oo, 5, e.Rgc),
+                  e.Suo(d, Bo, 5, e.Rgc),
                   e.Suo(d, Fo, 5, e.Rgc),
                   e.Suo(d, ko, 5, e.Rgc),
-                  e.Suo(d, Se, 5)),
+                  e.Suo(d, No, 5, e.Rgc),
+                  e.Suo(d, Ee, 5)),
                 2 & i)
               ) {
                 let r;
@@ -18844,7 +18844,7 @@
               }
             },
             viewQuery: function (i, o) {
-              if ((1 & i && (e.Gf(Me, 5), e.Gf(Vi, 7)), 2 & i)) {
+              if ((1 & i && (e.Gf(Le, 5), e.Gf(Gi, 7)), 2 & i)) {
                 let d;
                 e.iGM((d = e.CRH())) && (o.dropdownPanel = d.first),
                   e.iGM((d = e.CRH())) && (o.searchInput = d.first);
@@ -19087,8 +19087,8 @@
                   e.TgZ(1, "div", 1)(2, "div", 2),
                   e._uU(3),
                   e.qZA(),
-                  e.YNc(4, Xi, 2, 2, "ng-container", 3),
-                  e.YNc(5, oo, 1, 5, null, 3),
+                  e.YNc(4, eo, 2, 2, "ng-container", 3),
+                  e.YNc(5, _o, 1, 5, null, 3),
                   e.TgZ(6, "div", 4)(7, "input", 5, 6),
                   e.NdJ("input", function () {
                     e.CHM(d);
@@ -19108,8 +19108,8 @@
                     return u.stopPropagation();
                   }),
                   e.qZA()()(),
-                  e.YNc(9, ro, 4, 1, "ng-container", 3),
-                  e.YNc(10, uo, 3, 1, "span", 7),
+                  e.YNc(9, uo, 4, 1, "ng-container", 3),
+                  e.YNc(10, to, 3, 1, "span", 7),
                   e.TgZ(11, "span", 8),
                   e._UZ(12, "span", 9),
                   e.qZA()(),
@@ -19163,7 +19163,7 @@
                 e.xp6(3),
                 e.Q6J("ngIf", o.isOpen));
             },
-            dependencies: [C.mk, C.sg, C.O5, C.tP, Me, Eo],
+            dependencies: [C.mk, C.sg, C.O5, C.tP, Le, xo],
             styles: [
               '@charset "UTF-8";.ng-select{position:relative;display:block;box-sizing:border-box}.ng-select div,.ng-select input,.ng-select span{box-sizing:border-box}.ng-select [hidden]{display:none}.ng-select.ng-select-searchable .ng-select-container .ng-value-container .ng-input{opacity:1}.ng-select.ng-select-opened .ng-select-container{z-index:1001}.ng-select.ng-select-disabled .ng-select-container .ng-value-container .ng-placeholder,.ng-select.ng-select-disabled .ng-select-container .ng-value-container .ng-value{-webkit-user-select:none;user-select:none;cursor:default}.ng-select.ng-select-disabled .ng-arrow-wrapper{cursor:default}.ng-select.ng-select-filtered .ng-placeholder{display:none}.ng-select .ng-select-container{cursor:default;display:flex;outline:none;overflow:hidden;position:relative;width:100%}.ng-select .ng-select-container .ng-value-container{display:flex;flex:1}.ng-select .ng-select-container .ng-value-container .ng-input{opacity:0}.ng-select .ng-select-container .ng-value-container .ng-input>input{box-sizing:content-box;background:none transparent;border:0 none;box-shadow:none;outline:none;padding:0;cursor:default;width:100%}.ng-select .ng-select-container .ng-value-container .ng-input>input::-ms-clear{display:none}.ng-select .ng-select-container .ng-value-container .ng-input>input[readonly]{-webkit-user-select:none;user-select:none;width:0;padding:0}.ng-select.ng-select-single.ng-select-filtered .ng-select-container .ng-value-container .ng-value{visibility:hidden}.ng-select.ng-select-single .ng-select-container .ng-value-container,.ng-select.ng-select-single .ng-select-container .ng-value-container .ng-value{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ng-select.ng-select-single .ng-select-container .ng-value-container .ng-value .ng-value-icon{display:none}.ng-select.ng-select-single .ng-select-container .ng-value-container .ng-input{position:absolute;left:0;width:100%}.ng-select.ng-select-multiple.ng-select-disabled>.ng-select-container .ng-value-container .ng-value .ng-value-icon{display:none}.ng-select.ng-select-multiple .ng-select-container .ng-value-container{flex-wrap:wrap}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-placeholder{position:absolute}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value{white-space:nowrap}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value.ng-value-disabled .ng-value-icon{display:none}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon{cursor:pointer}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-input{flex:1;z-index:2}.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-placeholder{z-index:1}.ng-select .ng-clear-wrapper{cursor:pointer;position:relative;width:17px;-webkit-user-select:none;user-select:none}.ng-select .ng-clear-wrapper .ng-clear{display:inline-block;font-size:18px;line-height:1;pointer-events:none}.ng-select .ng-spinner-loader{border-radius:50%;width:17px;height:17px;margin-right:5px;font-size:10px;position:relative;text-indent:-9999em;border-top:2px solid rgba(66,66,66,.2);border-right:2px solid rgba(66,66,66,.2);border-bottom:2px solid rgba(66,66,66,.2);border-left:2px solid #424242;transform:translateZ(0);animation:load8 .8s infinite linear}.ng-select .ng-spinner-loader:after{border-radius:50%;width:17px;height:17px}@keyframes load8{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.ng-select .ng-arrow-wrapper{cursor:pointer;position:relative;text-align:center;-webkit-user-select:none;user-select:none}.ng-select .ng-arrow-wrapper .ng-arrow{pointer-events:none;display:inline-block;height:0;width:0;position:relative}.ng-dropdown-panel{box-sizing:border-box;position:absolute;opacity:0;width:100%;z-index:1050;-webkit-overflow-scrolling:touch}.ng-dropdown-panel .ng-dropdown-panel-items{display:block;height:auto;box-sizing:border-box;max-height:240px;overflow-y:auto}.ng-dropdown-panel .ng-dropdown-panel-items .ng-optgroup{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ng-dropdown-panel .ng-dropdown-panel-items .ng-option{box-sizing:border-box;cursor:pointer;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ng-dropdown-panel .ng-dropdown-panel-items .ng-option .ng-option-label:empty:before{content:"\\200b"}.ng-dropdown-panel .ng-dropdown-panel-items .ng-option .highlighted{font-weight:700;text-decoration:underline}.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.disabled{cursor:default}.ng-dropdown-panel .scroll-host{overflow:hidden;overflow-y:auto;position:relative;display:block;-webkit-overflow-scrolling:touch}.ng-dropdown-panel .scrollable-content{top:0;left:0;width:100%;height:100%;position:absolute}.ng-dropdown-panel .total-padding{width:1px;opacity:0}\n',
             ],
@@ -19173,10 +19173,10 @@
           _
         );
       })();
-      function Ro() {
-        return new Vo();
+      function Vo() {
+        return new Go();
       }
-      class Vo {
+      class Go {
         constructor() {
           this._selected = [];
         }
@@ -19243,7 +19243,7 @@
           return a.children.every((i) => !i.disabled || i.selected);
         }
       }
-      let Go = (() => {
+      let $o = (() => {
         class _ {}
         return (
           (_.ɵfac = function (i) {
@@ -19251,14 +19251,14 @@
           }),
           (_.ɵmod = e.oAB({ type: _ })),
           (_.ɵinj = e.cJS({
-            providers: [{ provide: Ie, useValue: Ro }],
+            providers: [{ provide: Ie, useValue: Vo }],
             imports: [C.ez],
           })),
           _
         );
       })();
-      var $o = b(3117);
-      let Wo = (() => {
+      var Wo = c(3117);
+      let Ko = (() => {
         class _ {
           constructor() {
             (this.numero = ""),
@@ -19324,18 +19324,18 @@
           _
         );
       })();
-      function Ko(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function Xo(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Xo(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function e_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function i_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Xo, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, e_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19349,12 +19349,12 @@
             );
         }
       }
-      function i_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function o_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function __(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, i_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, o_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -19368,15 +19368,15 @@
             );
         }
       }
-      function __(_, a) {
+      function a_(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.TgZ(1, "div", 23)(2, "div", 17)(3, "label", 95),
+            e.TgZ(1, "div", 24)(2, "div", 18)(3, "label", 97),
             e._uU(4, "Especifique la lengua:"),
             e.qZA(),
-            e._UZ(5, "input", 96),
-            e.YNc(6, o_, 2, 1, "ng-container", 22),
+            e._UZ(5, "input", 98),
+            e.YNc(6, __, 2, 1, "ng-container", 23),
             e.qZA()(),
             e.BQk()),
           2 & _)
@@ -19395,20 +19395,20 @@
             );
         }
       }
-      function a_(_, a) {
-        if ((1 & _ && (e.TgZ(0, "ng-option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function d_(_, a) {
+        if ((1 & _ && (e.TgZ(0, "ng-option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i.nombre_ubigeo),
             e.xp6(1),
             e.hij(" ", i.nombre_ubigeo, " ");
         }
       }
-      function d_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function r_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function u_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, d_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, r_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19421,12 +19421,12 @@
             );
         }
       }
-      function u_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function t_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function g_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, u_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, t_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19440,28 +19440,28 @@
             );
         }
       }
-      function g_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function n_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " solo numeros "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
       }
       function p_(_, a) {
-        1 & _ &&
-          (e.TgZ(0, "p", 94), e._uU(1, " M\xednimo 8 digitos "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " solo numeros "), e.qZA());
       }
       function b_(_, a) {
         1 & _ &&
-          (e.TgZ(0, "p", 94), e._uU(1, " M\xe1ximo 8 digitos "), e.qZA());
+          (e.TgZ(0, "p", 96), e._uU(1, " M\xednimo 8 digitos "), e.qZA());
       }
       function s_(_, a) {
+        1 & _ &&
+          (e.TgZ(0, "p", 96), e._uU(1, " M\xe1ximo 8 digitos "), e.qZA());
+      }
+      function c_(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.YNc(1, g_, 2, 0, "p", 93),
-            e.YNc(2, n_, 2, 0, "p", 93),
-            e.YNc(3, p_, 2, 0, "p", 93),
-            e.YNc(4, b_, 2, 0, "p", 93),
+            e.YNc(1, n_, 2, 0, "p", 95),
+            e.YNc(2, p_, 2, 0, "p", 95),
+            e.YNc(3, b_, 2, 0, "p", 95),
+            e.YNc(4, s_, 2, 0, "p", 95),
             e.BQk()),
           2 & _)
         ) {
@@ -19497,12 +19497,12 @@
             );
         }
       }
-      function c_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function l_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function m_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, c_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, l_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19516,28 +19516,28 @@
             );
         }
       }
-      function m_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function h_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " solo numeros "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
       }
       function v_(_, a) {
-        1 & _ &&
-          (e.TgZ(0, "p", 94), e._uU(1, " M\xednimo 8 digitos "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " solo numeros "), e.qZA());
       }
       function f_(_, a) {
         1 & _ &&
-          (e.TgZ(0, "p", 94), e._uU(1, " M\xe1ximo 8 digitos "), e.qZA());
+          (e.TgZ(0, "p", 96), e._uU(1, " M\xednimo 8 digitos "), e.qZA());
       }
       function C_(_, a) {
+        1 & _ &&
+          (e.TgZ(0, "p", 96), e._uU(1, " M\xe1ximo 8 digitos "), e.qZA());
+      }
+      function y_(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.YNc(1, m_, 2, 0, "p", 93),
-            e.YNc(2, h_, 2, 0, "p", 93),
-            e.YNc(3, v_, 2, 0, "p", 93),
-            e.YNc(4, f_, 2, 0, "p", 93),
+            e.YNc(1, h_, 2, 0, "p", 95),
+            e.YNc(2, v_, 2, 0, "p", 95),
+            e.YNc(3, f_, 2, 0, "p", 95),
+            e.YNc(4, C_, 2, 0, "p", 95),
             e.BQk()),
           2 & _)
         ) {
@@ -19573,18 +19573,18 @@
             );
         }
       }
-      function y_(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function A_(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function A_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function T_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function M_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, A_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, T_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19599,11 +19599,11 @@
         }
       }
       function P_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function L_(_, a) {
+      function S_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, P_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, P_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -19617,13 +19617,13 @@
             );
         }
       }
-      function M_(_, a) {
+      function L_(_, a) {
         if (
           (1 & _ &&
-            (e.ynx(0, 23),
-            e.TgZ(1, "div", 17),
-            e._UZ(2, "app-label-form", 18)(3, "input", 97),
-            e.YNc(4, L_, 2, 1, "ng-container", 22),
+            (e.ynx(0, 24),
+            e.TgZ(1, "div", 18),
+            e._UZ(2, "app-label-form", 19)(3, "input", 99),
+            e.YNc(4, S_, 2, 1, "ng-container", 23),
             e.qZA(),
             e.BQk()),
           2 & _)
@@ -19647,18 +19647,18 @@
             );
         }
       }
-      function S_(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function E_(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
       function I_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function E_(_, a) {
+      function x_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, I_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, I_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19673,12 +19673,12 @@
             );
         }
       }
-      function x_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function q_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function z_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, x_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, q_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19692,12 +19692,12 @@
             );
         }
       }
-      function z_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function w_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function Q_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, z_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, w_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19711,12 +19711,12 @@
             );
         }
       }
-      function Q_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function H_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function Z_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Q_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, H_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19730,18 +19730,18 @@
             );
         }
       }
-      function Z_(_, a) {
-        if ((1 & _ && (e.TgZ(0, "ng-option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function O_(_, a) {
+        if ((1 & _ && (e.TgZ(0, "ng-option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
       function B_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function O_(_, a) {
+      function F_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, B_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, B_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19754,12 +19754,12 @@
             );
         }
       }
-      function F_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Ingrese detalle "), e.qZA());
-      }
       function k_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Ingrese detalle "), e.qZA());
+      }
+      function N_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, F_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, k_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2).$implicit;
           let o;
@@ -19772,17 +19772,17 @@
             );
         }
       }
-      function N_(_, a) {
+      function J_(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.TgZ(1, "div", 99)(2, "div", 100)(3, "p"),
+            e.TgZ(1, "div", 101)(2, "div", 102)(3, "p"),
             e._uU(4, " Acci\xf3n: "),
             e._UZ(5, "br"),
             e._uU(6),
             e.qZA(),
-            e._UZ(7, "input", 101),
-            e.YNc(8, k_, 2, 1, "ng-container", 22),
+            e._UZ(7, "input", 103),
+            e.YNc(8, N_, 2, 1, "ng-container", 23),
             e.qZA()(),
             e.BQk()),
           2 & _)
@@ -19803,11 +19803,11 @@
             );
         }
       }
-      function J_(_, a) {
+      function D_(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 98),
-            e.YNc(1, N_, 9, 2, "ng-container", 22),
+            (e.TgZ(0, "div", 100),
+            e.YNc(1, J_, 9, 2, "ng-container", 23),
             e.qZA()),
           2 & _)
         ) {
@@ -19822,12 +19822,12 @@
             );
         }
       }
-      function D_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function j_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function U_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, D_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, j_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19841,12 +19841,12 @@
             );
         }
       }
-      function U_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Seleccione el tipo "), e.qZA());
-      }
       function Y_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Seleccione el tipo "), e.qZA());
+      }
+      function R_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, U_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Y_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19860,12 +19860,12 @@
             );
         }
       }
-      function R_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function V_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function G_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, R_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, V_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -19879,12 +19879,12 @@
             );
         }
       }
-      function G_(_, a) {
+      function $_(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e._UZ(1, "app-label-form", 84)(2, "textarea", 102),
-            e.YNc(3, V_, 2, 1, "ng-container", 22),
+            e._UZ(1, "app-label-form", 85)(2, "textarea", 104),
+            e.YNc(3, G_, 2, 1, "ng-container", 23),
             e.BQk()),
           2 & _)
         ) {
@@ -19904,18 +19904,18 @@
             );
         }
       }
-      function $_(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function W_(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function W_(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function K_(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function X_(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, W_, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, K_, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -19929,18 +19929,18 @@
             );
         }
       }
-      function X_(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function ea(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function ea(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function ia(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function oa(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, ea, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, ia, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -19956,12 +19956,12 @@
             );
         }
       }
-      function oa(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function _a(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function aa(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, oa, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, _a, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(3);
           let o;
@@ -19977,12 +19977,12 @@
             );
         }
       }
-      function aa(_, a) {
+      function da(_, a) {
         if (
           (1 & _ &&
             (e.TgZ(0, "div"),
-            e._UZ(1, "app-label-form", 84)(2, "input", 105),
-            e.YNc(3, _a, 2, 1, "ng-container", 22),
+            e._UZ(1, "app-label-form", 85)(2, "input", 107),
+            e.YNc(3, aa, 2, 1, "ng-container", 23),
             e.qZA()),
           2 & _)
         ) {
@@ -20004,20 +20004,20 @@
             );
         }
       }
-      function da(_, a) {
+      function ra(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 103)(1, "div", 17),
-            e._UZ(2, "app-label-form", 84),
-            e.TgZ(3, "select", 104)(4, "option", 20),
+            (e.TgZ(0, "div", 105)(1, "div", 18),
+            e._UZ(2, "app-label-form", 85),
+            e.TgZ(3, "select", 106)(4, "option", 21),
             e._uU(5, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(6, X_, 2, 2, "option", 21),
+            e.YNc(6, ea, 2, 2, "option", 22),
             e.qZA(),
-            e.YNc(7, ia, 2, 1, "ng-container", 22),
+            e.YNc(7, oa, 2, 1, "ng-container", 23),
             e.qZA(),
-            e.TgZ(8, "div", 17),
-            e.YNc(9, aa, 4, 3, "div", 22),
+            e.TgZ(8, "div", 18),
+            e.YNc(9, da, 4, 3, "div", 23),
             e.qZA()()),
           2 & _)
         ) {
@@ -20046,18 +20046,18 @@
             e.Q6J("ngIf", i.hasOtroBeneficio);
         }
       }
-      function ra(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function ua(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function ua(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function ta(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function ga(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, ua, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, ta, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -20071,18 +20071,18 @@
             );
         }
       }
-      function ga(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function na(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function na(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function pa(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function ba(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, na, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, pa, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -20098,12 +20098,12 @@
             );
         }
       }
-      function ba(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function sa(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function ca(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, ba, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, sa, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(3);
           let o;
@@ -20119,12 +20119,12 @@
             );
         }
       }
-      function ca(_, a) {
+      function la(_, a) {
         if (
           (1 & _ &&
             (e.TgZ(0, "div"),
-            e._UZ(1, "app-label-form", 84)(2, "input", 109),
-            e.YNc(3, sa, 2, 1, "ng-container", 22),
+            e._UZ(1, "app-label-form", 85)(2, "input", 111),
+            e.YNc(3, ca, 2, 1, "ng-container", 23),
             e.qZA()),
           2 & _)
         ) {
@@ -20146,18 +20146,18 @@
             );
         }
       }
-      function la(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function ma(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function ma(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function ha(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function va(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, ma, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, ha, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -20173,29 +20173,29 @@
             );
         }
       }
-      function va(_, a) {
+      function fa(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 106)(1, "div", 17),
-            e._UZ(2, "app-label-form", 84),
-            e.TgZ(3, "select", 107)(4, "option", 20),
+            (e.TgZ(0, "div", 108)(1, "div", 18),
+            e._UZ(2, "app-label-form", 85),
+            e.TgZ(3, "select", 109)(4, "option", 21),
             e._uU(5, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(6, ga, 2, 2, "option", 21),
+            e.YNc(6, na, 2, 2, "option", 22),
             e.qZA(),
-            e.YNc(7, pa, 2, 1, "ng-container", 22),
+            e.YNc(7, ba, 2, 1, "ng-container", 23),
             e.qZA(),
-            e.TgZ(8, "div", 17),
-            e.YNc(9, ca, 4, 3, "div", 22),
+            e.TgZ(8, "div", 18),
+            e.YNc(9, la, 4, 3, "div", 23),
             e.qZA(),
-            e.TgZ(10, "div", 17),
-            e._UZ(11, "app-label-form", 84),
-            e.TgZ(12, "select", 108)(13, "option", 20),
+            e.TgZ(10, "div", 18),
+            e._UZ(11, "app-label-form", 85),
+            e.TgZ(12, "select", 110)(13, "option", 21),
             e._uU(14, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(15, la, 2, 2, "option", 21),
+            e.YNc(15, ma, 2, 2, "option", 22),
             e.qZA(),
-            e.YNc(16, ha, 2, 1, "ng-container", 22),
+            e.YNc(16, va, 2, 1, "ng-container", 23),
             e.qZA()()),
           2 & _)
         ) {
@@ -20227,7 +20227,7 @@
             e.xp6(2),
             e.Q6J("numero", "13.2")(
               "descripcion",
-              "EIndicar el tiempo de preparaci\xf3n preuniversitaria:"
+              "Indicar el tiempo de preparaci\xf3n preuniversitaria:"
             ),
             e.xp6(4),
             e.Q6J("ngForOf", i.rangosPreparacion),
@@ -20245,26 +20245,26 @@
             );
         }
       }
-      function fa(_, a) {
-        if ((1 & _ && (e.TgZ(0, "ng-option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function Ca(_, a) {
+        if ((1 & _ && (e.TgZ(0, "ng-option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Ca(_, a) {
+      function ya(_, a) {
         1 & _ &&
           (e.ynx(0),
-          e.TgZ(1, "p", 94),
+          e.TgZ(1, "p", 96),
           e._uU(2, "Campo requerido"),
           e.qZA(),
           e.BQk());
       }
-      function ya(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Ingrese detalle "), e.qZA());
-      }
       function Aa(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Ingrese detalle "), e.qZA());
+      }
+      function Ta(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, ya, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Aa, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2).$implicit;
           let o;
@@ -20277,12 +20277,12 @@
             );
         }
       }
-      function Ta(_, a) {
+      function Ma(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e._UZ(1, "input", 117),
-            e.YNc(2, Aa, 2, 1, "ng-container", 22),
+            e._UZ(1, "input", 119),
+            e.YNc(2, Ta, 2, 1, "ng-container", 23),
             e.BQk()),
           2 & _)
         ) {
@@ -20301,18 +20301,18 @@
         }
       }
       function Pa(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function La(_, a) {
+      function Sa(_, a) {
         1 & _ &&
-          (e.TgZ(0, "p", 94), e._uU(1, " Seleccione financiamiento "), e.qZA());
+          (e.TgZ(0, "p", 96), e._uU(1, " Seleccione financiamiento "), e.qZA());
       }
-      function Ma(_, a) {
+      function La(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, La, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Sa, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20326,12 +20326,12 @@
             );
         }
       }
-      function Sa(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Ingrese detalle "), e.qZA());
+      function Ea(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Ingrese detalle "), e.qZA());
       }
       function Ia(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Sa, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Ea, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2).$implicit;
           let o;
@@ -20344,15 +20344,15 @@
             );
         }
       }
-      function Ea(_, a) {
+      function xa(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.TgZ(1, "label", 118),
+            e.TgZ(1, "label", 120),
             e._uU(2, "Especificar:"),
             e.qZA(),
-            e._UZ(3, "input", 119),
-            e.YNc(4, Ia, 2, 1, "ng-container", 22),
+            e._UZ(3, "input", 121),
+            e.YNc(4, Ia, 2, 1, "ng-container", 23),
             e.BQk()),
           2 & _)
         ) {
@@ -20366,73 +20366,77 @@
             );
         }
       }
-      function xa(_, a) {
+      function qa(_, a) {
         if (1 & _) {
           const i = e.EpF();
-          e.TgZ(0, "div", 98)(1, "div", 110)(2, "div", 111)(3, "p"),
+          e.TgZ(0, "div", 100)(1, "div", 112)(2, "div", 113)(3, "p"),
             e._uU(4, " Actividad: "),
             e._UZ(5, "br"),
             e._uU(6),
             e.qZA(),
-            e.YNc(7, Ta, 3, 1, "ng-container", 22),
+            e.YNc(7, Ma, 3, 1, "ng-container", 23),
             e.qZA()(),
-            e.TgZ(8, "div", 112)(9, "div", 113)(10, "label", 114),
+            e.TgZ(8, "div", 114)(9, "div", 115)(10, "label", 116),
             e._uU(11, "Financiamiento"),
             e.qZA(),
-            e.TgZ(12, "select", 115, 116),
+            e.TgZ(12, "select", 117, 118),
             e.NdJ("change", function (d) {
               const u = e.CHM(i).index,
                 g = e.oxw();
               return e.KtG(g.changeFinanciadoPor(d, u));
             }),
-            e.YNc(14, Pa, 2, 2, "option", 21),
+            e.YNc(14, Pa, 2, 2, "option", 22),
             e.qZA(),
-            e.YNc(15, Ma, 2, 1, "ng-container", 22),
-            e.YNc(16, Ea, 5, 1, "ng-container", 22),
+            e.YNc(15, La, 2, 1, "ng-container", 23),
+            e.YNc(16, xa, 5, 1, "ng-container", 23),
             e.qZA()()();
         }
         if (2 & _) {
           const i = a.$implicit,
             o = a.index,
-            d = e.MAs(13),
-            r = e.oxw();
-          let u, g, n;
+            d = e.oxw();
+          let r, u, g, p;
           e.Q6J("formGroupName", o),
             e.xp6(6),
             e.hij(
               " ",
-              null == (u = i.get("tipoActividad.actividad")) ? null : u.value,
+              null == (r = i.get("tipoActividad.actividad")) ? null : r.value,
               " "
             ),
             e.xp6(1),
             e.Q6J(
               "ngIf",
-              (null == (g = i.get("tipoActividad.actividad"))
+              (null == (u = i.get("tipoActividad.actividad"))
                 ? null
-                : g.value) === r.objActividades.otros
+                : u.value) === d.objActividades.otros
             ),
             e.xp6(7),
-            e.Q6J("ngForOf", r.listTipoFinanciamiento),
+            e.Q6J("ngForOf", d.listTipoFinanciamiento),
             e.xp6(1),
             e.Q6J(
               "ngIf",
-              (null == (n = i.get("financiado.financiadoPor"))
+              (null == (g = i.get("financiado.financiadoPor"))
                 ? null
-                : n.invalid) &&
-                (null == (n = i.get("financiado.financiadoPor"))
+                : g.invalid) &&
+                (null == (g = i.get("financiado.financiadoPor"))
                   ? null
-                  : n.touched)
+                  : g.touched)
             ),
             e.xp6(1),
-            e.Q6J("ngIf", d.value === r.objActividades.otros);
+            e.Q6J(
+              "ngIf",
+              (null == (p = i.get("financiado.financiadoPor"))
+                ? null
+                : p.value) === d.objActividades.otros
+            );
         }
       }
-      function qa(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function za(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function wa(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, qa, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, za, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -20446,12 +20450,12 @@
             );
         }
       }
-      function wa(_, a) {
+      function Qa(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 6)(1, "div", 41)(2, "div", 17),
-            e._UZ(3, "app-label-form", 24)(4, "input", 120),
-            e.YNc(5, za, 2, 1, "ng-container", 22),
+            (e.TgZ(0, "div", 6)(1, "div", 42)(2, "div", 18),
+            e._UZ(3, "app-label-form", 25)(4, "input", 122),
+            e.YNc(5, wa, 2, 1, "ng-container", 23),
             e.qZA()()()),
           2 & _)
         ) {
@@ -20477,12 +20481,12 @@
             );
         }
       }
-      function Qa(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function Ha(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function Za(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Qa, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Ha, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -20496,22 +20500,22 @@
             );
         }
       }
-      function Za(_, a) {
+      function Oa(_, a) {
         if (1 & _) {
           const i = e.EpF();
-          e.TgZ(0, "div", 6)(1, "div", 121)(2, "div", 17)(3, "label", 122),
+          e.TgZ(0, "div", 6)(1, "div", 123)(2, "div", 18)(3, "label", 124),
             e._uU(4, "Indicar direcci\xf3n en mapa(bot\xf3n indicar en mapa):"),
             e.qZA(),
-            e._UZ(5, "input", 123),
-            e.YNc(6, Ha, 2, 1, "ng-container", 22),
+            e._UZ(5, "input", 125),
+            e.YNc(6, Za, 2, 1, "ng-container", 23),
             e.qZA()(),
-            e.TgZ(7, "div", 124)(8, "button", 125),
+            e.TgZ(7, "div", 126)(8, "button", 127),
             e.NdJ("click", function () {
               e.CHM(i);
               const d = e.oxw();
               return e.KtG(d.openMaps());
             }),
-            e._UZ(9, "i", 126),
+            e._UZ(9, "i", 128),
             e._uU(10, " Indicar en mapa "),
             e.qZA()()();
         }
@@ -20533,17 +20537,17 @@
         }
       }
       function Ba(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Oa(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function Fa(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function ka(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Oa, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Fa, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -20556,15 +20560,15 @@
             );
         }
       }
-      function ka(_, a) {
+      function Na(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 6)(1, "div", 23)(2, "div", 17),
-            e._UZ(3, "app-label-form", 18),
-            e.TgZ(4, "select", 127),
-            e.YNc(5, Ba, 2, 2, "option", 21),
+            (e.TgZ(0, "div", 6)(1, "div", 24)(2, "div", 18),
+            e._UZ(3, "app-label-form", 19),
+            e.TgZ(4, "select", 129),
+            e.YNc(5, Ba, 2, 2, "option", 22),
             e.qZA(),
-            e.YNc(6, Fa, 2, 1, "ng-container", 22),
+            e.YNc(6, ka, 2, 1, "ng-container", 23),
             e.qZA()()()),
           2 & _)
         ) {
@@ -20589,20 +20593,20 @@
             );
         }
       }
-      function Na(_, a) {
-        if ((1 & _ && (e.TgZ(0, "th", 128), e._uU(1), e.qZA()), 2 & _)) {
+      function Ja(_, a) {
+        if ((1 & _ && (e.TgZ(0, "th", 130), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Udp("min-width", i.style.minWidth, "px"),
             e.xp6(1),
             e.hij(" ", i.value, " ");
         }
       }
-      function Ja(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Ingrese parentesco "), e.qZA());
-      }
       function Da(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Ingrese parentesco "), e.qZA());
+      }
+      function ja(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Ja, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Da, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20615,12 +20619,12 @@
             );
         }
       }
-      function ja(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Ingrese nombres "), e.qZA());
-      }
       function Ua(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Ingrese nombres "), e.qZA());
+      }
+      function Ya(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, ja, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Ua, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20633,12 +20637,12 @@
             );
         }
       }
-      function Ya(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Ingrese apellidos "), e.qZA());
-      }
       function Ra(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Ingrese apellidos "), e.qZA());
+      }
+      function Va(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Ya, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Ra, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20651,12 +20655,12 @@
             );
         }
       }
-      function Va(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Ingrese edad "), e.qZA());
-      }
       function Ga(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Ingrese edad "), e.qZA());
+      }
+      function $a(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Va, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Ga, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20669,18 +20673,18 @@
             );
         }
       }
-      function $a(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function Wa(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Wa(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Seleccione "), e.qZA());
-      }
       function Ka(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Seleccione "), e.qZA());
+      }
+      function Xa(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Wa, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Ka, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20693,18 +20697,18 @@
             );
         }
       }
-      function Xa(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function ed(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function ed(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Seleccione "), e.qZA());
-      }
       function id(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Seleccione "), e.qZA());
+      }
+      function od(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, ed, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, id, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20717,18 +20721,18 @@
             );
         }
       }
-      function od(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function _d(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function _d(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Seleccione "), e.qZA());
-      }
       function ad(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Seleccione "), e.qZA());
+      }
+      function dd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, _d, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, ad, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20741,18 +20745,18 @@
             );
         }
       }
-      function dd(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function rd(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function rd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Seleccione "), e.qZA());
-      }
       function ud(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Seleccione "), e.qZA());
+      }
+      function td(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, rd, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, ud, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20765,18 +20769,18 @@
             );
         }
       }
-      function td(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function gd(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function gd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Seleccione "), e.qZA());
-      }
       function nd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Seleccione "), e.qZA());
+      }
+      function pd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, gd, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, nd, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -20789,75 +20793,75 @@
             );
         }
       }
-      function pd(_, a) {
+      function bd(_, a) {
         if (1 & _) {
           const i = e.EpF();
-          e.TgZ(0, "td")(1, "button", 140),
+          e.TgZ(0, "td")(1, "button", 142),
             e.NdJ("click", function () {
               e.CHM(i);
               const d = e.oxw().index,
                 r = e.oxw();
               return e.KtG(r.deleteFamiliarNuclear(d));
             }),
-            e._UZ(2, "i", 141),
+            e._UZ(2, "i", 143),
             e.qZA()();
         }
       }
-      function bd(_, a) {
+      function sd(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "tr", 129)(1, "td"),
-            e._UZ(2, "input", 130),
-            e.YNc(3, Da, 2, 1, "ng-container", 22),
+            (e.TgZ(0, "tr", 131)(1, "td"),
+            e._UZ(2, "input", 132),
+            e.YNc(3, ja, 2, 1, "ng-container", 23),
             e.qZA(),
             e.TgZ(4, "td"),
-            e._UZ(5, "input", 131),
-            e.YNc(6, Ua, 2, 1, "ng-container", 22),
+            e._UZ(5, "input", 133),
+            e.YNc(6, Ya, 2, 1, "ng-container", 23),
             e.qZA(),
             e.TgZ(7, "td"),
-            e._UZ(8, "input", 132),
-            e.YNc(9, Ra, 2, 1, "ng-container", 22),
+            e._UZ(8, "input", 134),
+            e.YNc(9, Va, 2, 1, "ng-container", 23),
             e.qZA(),
             e.TgZ(10, "td"),
-            e._UZ(11, "input", 133),
-            e.YNc(12, Ga, 2, 1, "ng-container", 22),
+            e._UZ(11, "input", 135),
+            e.YNc(12, $a, 2, 1, "ng-container", 23),
             e.qZA(),
-            e.TgZ(13, "td")(14, "select", 134)(15, "option", 20),
+            e.TgZ(13, "td")(14, "select", 136)(15, "option", 21),
             e._uU(16, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(17, $a, 2, 2, "option", 21),
+            e.YNc(17, Wa, 2, 2, "option", 22),
             e.qZA(),
-            e.YNc(18, Ka, 2, 1, "ng-container", 22),
+            e.YNc(18, Xa, 2, 1, "ng-container", 23),
             e.qZA(),
-            e.TgZ(19, "td")(20, "select", 135)(21, "option", 20),
+            e.TgZ(19, "td")(20, "select", 137)(21, "option", 21),
             e._uU(22, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(23, Xa, 2, 2, "option", 21),
+            e.YNc(23, ed, 2, 2, "option", 22),
             e.qZA(),
-            e.YNc(24, id, 2, 1, "ng-container", 22),
+            e.YNc(24, od, 2, 1, "ng-container", 23),
             e.qZA(),
-            e.TgZ(25, "td", 136)(26, "select", 137)(27, "option", 20),
+            e.TgZ(25, "td", 138)(26, "select", 139)(27, "option", 21),
             e._uU(28, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(29, od, 2, 2, "option", 21),
+            e.YNc(29, _d, 2, 2, "option", 22),
             e.qZA(),
-            e.YNc(30, ad, 2, 1, "ng-container", 22),
+            e.YNc(30, dd, 2, 1, "ng-container", 23),
             e.qZA(),
-            e.TgZ(31, "td")(32, "select", 138)(33, "option", 20),
+            e.TgZ(31, "td")(32, "select", 140)(33, "option", 21),
             e._uU(34, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(35, dd, 2, 2, "option", 21),
+            e.YNc(35, rd, 2, 2, "option", 22),
             e.qZA(),
-            e.YNc(36, ud, 2, 1, "ng-container", 22),
+            e.YNc(36, td, 2, 1, "ng-container", 23),
             e.qZA(),
-            e.TgZ(37, "td")(38, "select", 139)(39, "option", 20),
+            e.TgZ(37, "td")(38, "select", 141)(39, "option", 21),
             e._uU(40, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(41, td, 2, 2, "option", 21),
+            e.YNc(41, gd, 2, 2, "option", 22),
             e.qZA(),
-            e.YNc(42, nd, 2, 1, "ng-container", 22),
+            e.YNc(42, pd, 2, 1, "ng-container", 23),
             e.qZA(),
-            e.YNc(43, pd, 3, 0, "td", 22),
+            e.YNc(43, bd, 3, 0, "td", 23),
             e.qZA()),
           2 & _)
         ) {
@@ -20865,7 +20869,7 @@
             o = a.index,
             d = a.first,
             r = e.oxw();
-          let u, g, n, p, m, s, c, f, T;
+          let u, g, p, b, h, l, n, s, y;
           e.Q6J("formGroupName", o),
             e.xp6(3),
             e.Q6J(
@@ -20882,79 +20886,79 @@
             e.xp6(3),
             e.Q6J(
               "ngIf",
-              (null == (n = i.get("apellidos")) ? null : n.invalid) &&
-                (null == (n = i.get("apellidos")) ? null : n.touched)
+              (null == (p = i.get("apellidos")) ? null : p.invalid) &&
+                (null == (p = i.get("apellidos")) ? null : p.touched)
             ),
             e.xp6(3),
             e.Q6J(
               "ngIf",
-              (null == (p = i.get("edad")) ? null : p.invalid) &&
-                (null == (p = i.get("edad")) ? null : p.touched)
+              (null == (b = i.get("edad")) ? null : b.invalid) &&
+                (null == (b = i.get("edad")) ? null : b.touched)
             ),
             e.xp6(5),
             e.Q6J("ngForOf", r.listEstadoCivil),
             e.xp6(1),
             e.Q6J(
               "ngIf",
-              (null == (m = i.get("estadoCivil")) ? null : m.invalid) &&
-                (null == (m = i.get("estadoCivil")) ? null : m.touched)
+              (null == (h = i.get("estadoCivil")) ? null : h.invalid) &&
+                (null == (h = i.get("estadoCivil")) ? null : h.touched)
             ),
             e.xp6(5),
             e.Q6J("ngForOf", r.listNivelEducacion),
             e.xp6(1),
             e.Q6J(
               "ngIf",
-              (null == (s = i.get("nivelEducacion")) ? null : s.invalid) &&
-                (null == (s = i.get("nivelEducacion")) ? null : s.touched)
+              (null == (l = i.get("nivelEducacion")) ? null : l.invalid) &&
+                (null == (l = i.get("nivelEducacion")) ? null : l.touched)
             ),
             e.xp6(5),
             e.Q6J("ngForOf", r.listEstadoPersona),
             e.xp6(1),
             e.Q6J(
               "ngIf",
-              (null == (c = i.get("viveoFallecido")) ? null : c.invalid) &&
-                (null == (c = i.get("viveoFallecido")) ? null : c.touched)
+              (null == (n = i.get("viveoFallecido")) ? null : n.invalid) &&
+                (null == (n = i.get("viveoFallecido")) ? null : n.touched)
             ),
             e.xp6(5),
             e.Q6J("ngForOf", r.listSiNo),
             e.xp6(1),
             e.Q6J(
               "ngIf",
-              (null == (f = i.get("viveConElPostulante")) ? null : f.invalid) &&
-                (null == (f = i.get("viveConElPostulante")) ? null : f.touched)
+              (null == (s = i.get("viveConElPostulante")) ? null : s.invalid) &&
+                (null == (s = i.get("viveConElPostulante")) ? null : s.touched)
             ),
             e.xp6(5),
             e.Q6J("ngForOf", r.listSituacionLaboral),
             e.xp6(1),
             e.Q6J(
               "ngIf",
-              (null == (T = i.get("situacionLaboral")) ? null : T.invalid) &&
-                (null == (T = i.get("situacionLaboral")) ? null : T.touched)
+              (null == (y = i.get("situacionLaboral")) ? null : y.invalid) &&
+                (null == (y = i.get("situacionLaboral")) ? null : y.touched)
             ),
             e.xp6(1),
             e.Q6J("ngIf", !d);
         }
       }
-      function sd(_, a) {
-        if ((1 & _ && (e.TgZ(0, "ng-option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function cd(_, a) {
+        if ((1 & _ && (e.TgZ(0, "ng-option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function cd(_, a) {
+      function ld(_, a) {
         1 & _ &&
           (e.ynx(0),
-          e.TgZ(1, "p", 94),
+          e.TgZ(1, "p", 96),
           e._uU(2, "Campo requerido"),
           e.qZA(),
           e.BQk());
       }
-      function ld(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Ingrese detalle "), e.qZA());
-      }
       function md(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Ingrese detalle "), e.qZA());
+      }
+      function hd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, ld, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, md, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2).$implicit;
           let o;
@@ -20967,17 +20971,17 @@
             );
         }
       }
-      function hd(_, a) {
+      function vd(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.TgZ(1, "div", 99)(2, "div", 142)(3, "p"),
+            e.TgZ(1, "div", 101)(2, "div", 144)(3, "p"),
             e._uU(4, " Tarea: "),
             e._UZ(5, "br"),
             e._uU(6),
             e.qZA(),
-            e._UZ(7, "input", 143),
-            e.YNc(8, md, 2, 1, "ng-container", 22),
+            e._UZ(7, "input", 145),
+            e.YNc(8, hd, 2, 1, "ng-container", 23),
             e.qZA()(),
             e.BQk()),
           2 & _)
@@ -20998,11 +21002,11 @@
             );
         }
       }
-      function vd(_, a) {
+      function fd(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 98),
-            e.YNc(1, hd, 9, 2, "ng-container", 22),
+            (e.TgZ(0, "div", 100),
+            e.YNc(1, vd, 9, 2, "ng-container", 23),
             e.qZA()),
           2 & _)
         ) {
@@ -21019,18 +21023,18 @@
             );
         }
       }
-      function fd(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function Cd(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Cd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function yd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function Ad(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Cd, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, yd, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21046,26 +21050,26 @@
             );
         }
       }
-      function Ad(_, a) {
-        if ((1 & _ && (e.TgZ(0, "ng-option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function Td(_, a) {
+        if ((1 & _ && (e.TgZ(0, "ng-option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Td(_, a) {
+      function Md(_, a) {
         1 & _ &&
           (e.ynx(0),
-          e.TgZ(1, "p", 94),
+          e.TgZ(1, "p", 96),
           e._uU(2, "Campo requerido"),
           e.qZA(),
           e.BQk());
       }
       function Pd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Ingrese detalle "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Ingrese detalle "), e.qZA());
       }
-      function Ld(_, a) {
+      function Sd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Pd, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Pd, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2).$implicit;
           let o;
@@ -21078,12 +21082,12 @@
             );
         }
       }
-      function Md(_, a) {
+      function Ld(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e._UZ(1, "input", 147),
-            e.YNc(2, Ld, 2, 1, "ng-container", 22),
+            e._UZ(1, "input", 149),
+            e.YNc(2, Sd, 2, 1, "ng-container", 23),
             e.BQk()),
           2 & _)
         ) {
@@ -21097,19 +21101,19 @@
             );
         }
       }
-      function Sd(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function Ed(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
       function Id(_, a) {
         1 & _ &&
-          (e.TgZ(0, "p", 94), e._uU(1, " Seleccione duraci\xf3n "), e.qZA());
+          (e.TgZ(0, "p", 96), e._uU(1, " Seleccione duraci\xf3n "), e.qZA());
       }
-      function Ed(_, a) {
+      function xd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Id, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Id, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -21122,23 +21126,23 @@
             );
         }
       }
-      function xd(_, a) {
+      function qd(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 98)(1, "div", 110)(2, "div", 144)(3, "p"),
+            (e.TgZ(0, "div", 100)(1, "div", 112)(2, "div", 146)(3, "p"),
             e._uU(4, " Encargado: "),
             e._UZ(5, "br"),
             e._uU(6),
             e.qZA(),
-            e.YNc(7, Md, 3, 1, "ng-container", 22),
+            e.YNc(7, Ld, 3, 1, "ng-container", 23),
             e.qZA()(),
-            e.TgZ(8, "div", 110)(9, "div", 17)(10, "label", 145),
+            e.TgZ(8, "div", 112)(9, "div", 18)(10, "label", 147),
             e._uU(11, "Porcentaje responsabilidad:"),
             e.qZA(),
-            e.TgZ(12, "select", 146),
-            e.YNc(13, Sd, 2, 2, "option", 21),
+            e.TgZ(12, "select", 148),
+            e.YNc(13, Ed, 2, 2, "option", 22),
             e.qZA(),
-            e.YNc(14, Ed, 2, 1, "ng-container", 22),
+            e.YNc(14, xd, 2, 1, "ng-container", 23),
             e.qZA()()()),
           2 & _)
         ) {
@@ -21169,18 +21173,18 @@
             );
         }
       }
-      function qd(_, a) {
-        if ((1 & _ && (e.TgZ(0, "th", 128), e._uU(1), e.qZA()), 2 & _)) {
+      function zd(_, a) {
+        if ((1 & _ && (e.TgZ(0, "th", 130), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function zd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function wd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function Qd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, zd, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, wd, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2).$implicit;
           let o;
@@ -21193,12 +21197,12 @@
             );
         }
       }
-      function Qd(_, a) {
+      function Hd(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e._UZ(1, "input", 151),
-            e.YNc(2, wd, 2, 1, "ng-container", 22),
+            e._UZ(1, "input", 153),
+            e.YNc(2, Qd, 2, 1, "ng-container", 23),
             e.BQk()),
           2 & _)
         ) {
@@ -21212,25 +21216,25 @@
             );
         }
       }
-      function Hd(_, a) {
+      function Zd(_, a) {
         if ((1 & _ && (e.TgZ(0, "p"), e._uU(1), e.qZA()), 2 & _)) {
           const i = e.oxw().$implicit;
           let o;
           e.xp6(1), e.Oqu(null == (o = i.get("actividad")) ? null : o.value);
         }
       }
-      function Zd(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function Od(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
       function Bd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Seleccione "), e.qZA());
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Seleccione "), e.qZA());
       }
-      function Od(_, a) {
+      function Fd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Bd, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Bd, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
@@ -21243,38 +21247,38 @@
             );
         }
       }
-      function Fd(_, a) {
+      function kd(_, a) {
         if (1 & _) {
           const i = e.EpF();
           e.ynx(0),
-            e.TgZ(1, "button", 140),
+            e.TgZ(1, "button", 142),
             e.NdJ("click", function () {
               e.CHM(i);
               const d = e.oxw().index,
                 r = e.oxw();
               return e.KtG(r.deletActiviadaApoyo(d));
             }),
-            e._UZ(2, "i", 141),
+            e._UZ(2, "i", 143),
             e.qZA(),
             e.BQk();
         }
       }
-      function kd(_, a) {
+      function Nd(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "tr", 129)(1, "td"),
-            e.YNc(2, Qd, 3, 1, "ng-container", 148),
-            e.YNc(3, Hd, 2, 1, "ng-template", null, 149, e.W1O),
+            (e.TgZ(0, "tr", 131)(1, "td"),
+            e.YNc(2, Hd, 3, 1, "ng-container", 150),
+            e.YNc(3, Zd, 2, 1, "ng-template", null, 151, e.W1O),
             e.qZA(),
-            e.TgZ(5, "td")(6, "select", 150)(7, "option", 20),
+            e.TgZ(5, "td")(6, "select", 152)(7, "option", 21),
             e._uU(8, "-Seleccionar-"),
             e.qZA(),
-            e.YNc(9, Zd, 2, 2, "option", 21),
+            e.YNc(9, Od, 2, 2, "option", 22),
             e.qZA(),
-            e.YNc(10, Od, 2, 1, "ng-container", 22),
+            e.YNc(10, Fd, 2, 1, "ng-container", 23),
             e.qZA(),
             e.TgZ(11, "td"),
-            e.YNc(12, Fd, 3, 0, "ng-container", 22),
+            e.YNc(12, kd, 3, 0, "ng-container", 23),
             e.qZA()()),
           2 & _)
         ) {
@@ -21301,12 +21305,12 @@
             e.Q6J("ngIf", o > r.listTipoApoyoEconomico.length - 1);
         }
       }
-      function Nd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function Jd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function Dd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Nd, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Jd, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21320,26 +21324,26 @@
             );
         }
       }
-      function Dd(_, a) {
-        if ((1 & _ && (e.TgZ(0, "ng-option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function jd(_, a) {
+        if ((1 & _ && (e.TgZ(0, "ng-option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function jd(_, a) {
+      function Ud(_, a) {
         1 & _ &&
           (e.ynx(0),
-          e.TgZ(1, "p", 94),
+          e.TgZ(1, "p", 96),
           e._uU(2, "Campo requerido"),
           e.qZA(),
           e.BQk());
       }
-      function Ud(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Ingrese detalle "), e.qZA());
-      }
       function Yd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Ingrese detalle "), e.qZA());
+      }
+      function Rd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Ud, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Yd, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2).$implicit;
           let o;
@@ -21352,21 +21356,22 @@
             );
         }
       }
-      function Rd(_, a) {
+      function Vd(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.TgZ(1, "label", 153),
-            e._uU(2, " Otros (especificar)"),
+            e.TgZ(1, "div", 101)(2, "div", 154)(3, "label", 155),
+            e._uU(4, " Otros (especificar)"),
             e.qZA(),
-            e._UZ(3, "input", 154),
-            e.YNc(4, Yd, 2, 1, "ng-container", 22),
+            e._UZ(5, "input", 156),
+            e.YNc(6, Rd, 2, 1, "ng-container", 23),
+            e.qZA()(),
             e.BQk()),
           2 & _)
         ) {
           const i = e.oxw().$implicit;
           let o;
-          e.xp6(4),
+          e.xp6(6),
             e.Q6J(
               "ngIf",
               (null == (o = i.get("significado.detalle")) ? null : o.invalid) &&
@@ -21374,12 +21379,12 @@
             );
         }
       }
-      function Vd(_, a) {
+      function Gd(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 98)(1, "div", 99)(2, "div", 152),
-            e.YNc(3, Rd, 5, 1, "ng-container", 22),
-            e.qZA()()()),
+            (e.TgZ(0, "div", 100),
+            e.YNc(1, Vd, 7, 1, "ng-container", 23),
+            e.qZA()),
           2 & _)
         ) {
           const i = a.$implicit,
@@ -21387,7 +21392,7 @@
             d = e.oxw();
           let r;
           e.Q6J("formGroupName", o),
-            e.xp6(3),
+            e.xp6(1),
             e.Q6J(
               "ngIf",
               (null == (r = i.get("significado.rpta")) ? null : r.value) ===
@@ -21395,18 +21400,18 @@
             );
         }
       }
-      function Gd(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function $d(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function $d(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function Wd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function Kd(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, $d, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Wd, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21420,12 +21425,12 @@
             );
         }
       }
-      function Kd(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function Xd(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function er(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Kd, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Xd, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -21439,12 +21444,12 @@
             );
         }
       }
-      function er(_, a) {
+      function ir(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 6)(1, "div", 32)(2, "div", 17),
-            e._UZ(3, "app-label-form", 84)(4, "textarea", 102),
-            e.YNc(5, Xd, 2, 1, "ng-container", 22),
+            (e.TgZ(0, "div", 6)(1, "div", 33)(2, "div", 18),
+            e._UZ(3, "app-label-form", 85)(4, "textarea", 104),
+            e.YNc(5, er, 2, 1, "ng-container", 23),
             e.qZA()()()),
           2 & _)
         ) {
@@ -21464,18 +21469,18 @@
             );
         }
       }
-      function ir(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function or(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function or(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function _r(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function ar(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, or, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, _r, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21489,12 +21494,12 @@
             );
         }
       }
-      function ar(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function dr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function rr(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, ar, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, dr, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -21508,12 +21513,12 @@
             );
         }
       }
-      function rr(_, a) {
+      function ur(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 6)(1, "div", 32)(2, "div", 17),
-            e._UZ(3, "app-label-form", 84)(4, "textarea", 102),
-            e.YNc(5, dr, 2, 1, "ng-container", 22),
+            (e.TgZ(0, "div", 6)(1, "div", 33)(2, "div", 18),
+            e._UZ(3, "app-label-form", 85)(4, "textarea", 104),
+            e.YNc(5, rr, 2, 1, "ng-container", 23),
             e.qZA()()()),
           2 & _)
         ) {
@@ -21533,18 +21538,18 @@
             );
         }
       }
-      function ur(_, a) {
-        if ((1 & _ && (e.TgZ(0, "ng-option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function tr(_, a) {
+        if ((1 & _ && (e.TgZ(0, "ng-option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function tr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function gr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function nr(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, tr, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, gr, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21558,12 +21563,12 @@
             );
         }
       }
-      function nr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Ingrese detalle "), e.qZA());
-      }
       function pr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Ingrese detalle "), e.qZA());
+      }
+      function br(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, nr, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, pr, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2).$implicit;
           let o;
@@ -21576,17 +21581,17 @@
             );
         }
       }
-      function br(_, a) {
+      function sr(_, a) {
         if (
           (1 & _ &&
             (e.ynx(0),
-            e.TgZ(1, "div", 99)(2, "div", 155)(3, "p"),
+            e.TgZ(1, "div", 101)(2, "div", 157)(3, "p"),
             e._uU(4, " Problema: "),
             e._UZ(5, "br"),
             e._uU(6),
             e.qZA(),
-            e._UZ(7, "input", 156),
-            e.YNc(8, pr, 2, 1, "ng-container", 22),
+            e._UZ(7, "input", 158),
+            e.YNc(8, br, 2, 1, "ng-container", 23),
             e.qZA()(),
             e.BQk()),
           2 & _)
@@ -21609,11 +21614,11 @@
             );
         }
       }
-      function sr(_, a) {
+      function cr(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 98),
-            e.YNc(1, br, 9, 2, "ng-container", 22),
+            (e.TgZ(0, "div", 100),
+            e.YNc(1, sr, 9, 2, "ng-container", 23),
             e.qZA()),
           2 & _)
         ) {
@@ -21628,12 +21633,12 @@
             );
         }
       }
-      function cr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function lr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function mr(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, cr, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, lr, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21647,18 +21652,18 @@
             );
         }
       }
-      function mr(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function hr(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function hr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function vr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function fr(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, hr, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, vr, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21672,12 +21677,12 @@
             );
         }
       }
-      function fr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function Cr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function yr(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, fr, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Cr, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -21691,12 +21696,12 @@
             );
         }
       }
-      function yr(_, a) {
+      function Ar(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 6)(1, "div", 32)(2, "div", 17),
-            e._UZ(3, "app-label-form", 84)(4, "textarea", 102),
-            e.YNc(5, Cr, 2, 1, "ng-container", 22),
+            (e.TgZ(0, "div", 6)(1, "div", 33)(2, "div", 18),
+            e._UZ(3, "app-label-form", 85)(4, "textarea", 104),
+            e.YNc(5, yr, 2, 1, "ng-container", 23),
             e.qZA()()()),
           2 & _)
         ) {
@@ -21716,18 +21721,18 @@
             );
         }
       }
-      function Ar(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+      function Tr(_, a) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Tr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
+      function Mr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
       }
       function Pr(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Tr, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Mr, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21741,12 +21746,12 @@
             );
         }
       }
-      function Lr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
+      function Sr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
       }
-      function Mr(_, a) {
+      function Lr(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Lr, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, Sr, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -21760,12 +21765,12 @@
             );
         }
       }
-      function Sr(_, a) {
+      function Er(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 6)(1, "div", 32)(2, "div", 17),
-            e._UZ(3, "app-label-form", 84)(4, "textarea", 102),
-            e.YNc(5, Mr, 2, 1, "ng-container", 22),
+            (e.TgZ(0, "div", 6)(1, "div", 33)(2, "div", 18),
+            e._UZ(3, "app-label-form", 85)(4, "textarea", 104),
+            e.YNc(5, Lr, 2, 1, "ng-container", 23),
             e.qZA()()()),
           2 & _)
         ) {
@@ -21786,17 +21791,17 @@
         }
       }
       function Ir(_, a) {
-        if ((1 & _ && (e.TgZ(0, "option", 92), e._uU(1), e.qZA()), 2 & _)) {
+        if ((1 & _ && (e.TgZ(0, "option", 94), e._uU(1), e.qZA()), 2 & _)) {
           const i = a.$implicit;
           e.Q6J("value", i), e.xp6(1), e.hij(" ", i, " ");
         }
       }
-      function Er(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function xr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function qr(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, Er, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, xr, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw();
           let o;
@@ -21810,12 +21815,12 @@
             );
         }
       }
-      function qr(_, a) {
-        1 & _ && (e.TgZ(0, "p", 94), e._uU(1, " Campo requerido "), e.qZA());
-      }
       function zr(_, a) {
+        1 & _ && (e.TgZ(0, "p", 96), e._uU(1, " Campo requerido "), e.qZA());
+      }
+      function wr(_, a) {
         if (
-          (1 & _ && (e.ynx(0), e.YNc(1, qr, 2, 0, "p", 93), e.BQk()), 2 & _)
+          (1 & _ && (e.ynx(0), e.YNc(1, zr, 2, 0, "p", 95), e.BQk()), 2 & _)
         ) {
           const i = e.oxw(2);
           let o;
@@ -21829,12 +21834,12 @@
             );
         }
       }
-      function wr(_, a) {
+      function Qr(_, a) {
         if (
           (1 & _ &&
-            (e.TgZ(0, "div", 6)(1, "div", 32)(2, "div", 17),
-            e._UZ(3, "app-label-form", 84)(4, "textarea", 102),
-            e.YNc(5, zr, 2, 1, "ng-container", 22),
+            (e.TgZ(0, "div", 6)(1, "div", 33)(2, "div", 18),
+            e._UZ(3, "app-label-form", 85)(4, "textarea", 104),
+            e.YNc(5, wr, 2, 1, "ng-container", 23),
             e.qZA()()()),
           2 & _)
         ) {
@@ -21854,2573 +21859,2821 @@
             );
         }
       }
-      const Qr = [
-        {
-          path: "cuestionario",
-          component: (() => {
-            class _ {
-              constructor(i, o) {
-                (this.fb = i),
-                  (this.modalService = o),
-                  (this.title = "Cuestionario de padres de familia"),
-                  (this.lenguajes = ii),
-                  (this.listParentesco = oi),
-                  (this.universidades = ti),
-                  (this.listApoyo = gi),
-                  (this.beneficios = _i),
-                  (this.listBeneficio = ai),
-                  (this.rangosPreparacion = ri),
-                  (this.frecuenciaActividades = pi),
-                  (this.tiempoActividades = bi),
-                  (this.listTipoFinanciamiento = si),
-                  (this.listTiempoTraslado = ci),
-                  (this.listSiNo = li),
-                  (this.siNoObj = he),
-                  (this.displayedColumns = Ci),
-                  (this.listEstadoCivil = mi),
-                  (this.listNivelEducacion = hi),
-                  (this.listEstadoPersona = vi),
-                  (this.listSituacionLaboral = fi),
-                  (this.displayedColumnsOtrosFam = yi),
-                  (this.listTareaHogar = Ai),
-                  (this.objTareaHogar = ve),
-                  (this.listDuracionTarea = Ti),
-                  (this.listFrecuenciaTarea = Pi),
-                  (this.listEncargados = Li),
-                  (this.objEncargado = fe),
-                  (this.listPorcentajesResponsabilidad = Mi),
-                  (this.listTipoApoyoEconomico = Ii),
-                  (this.displayedColumnsApoyoEcon = Si),
-                  (this.listMontoEstimado = Ei),
-                  (this.listSignificaEducacion = xi),
-                  (this.listNroHorasDeApoyo = qi),
-                  (this.objPregunta = Hi),
-                  (this.lstOpcionesStandar = zi),
-                  (this.lstTipoProblemas = wi),
-                  (this.lstReorganizacion = Qi),
-                  (this.lstUbigeo = Zi),
-                  (this.listPreparacion = di),
-                  (this.listPagoPreparacion = ui),
-                  (this.actividadesExtracademicas = ni),
-                  (this.objActividades = me),
-                  (this.hasLenguaje = !1),
-                  (this.hasParentesco = !1),
-                  (this.hasBeneficio = !1),
-                  (this.hasOtroBeneficio = !1),
-                  (this.hasPreparacion = !1),
-                  (this.hasOtroPago = !1),
-                  (this.hasAcciones = !1),
-                  (this.hasSituacionComplicada = !1),
-                  (this.hasFortalezaFamiliar = !1),
-                  (this.hasMomentoFamilia = !1),
-                  (this.hasReorganizarTareas = !1),
-                  (this.hasDeAcuerdo = !1),
-                  (this.hasDetalleViaje = !1),
-                  (this.isFromLima = !1),
-                  this.initForm();
-              }
-              ngOnInit() {
-                this.initActividadesApoyoEconomico(),
-                  this.changeLengua(),
-                  this.changeParentesco(),
-                  this.changeBeneficio(),
-                  this.changeTipoBeneficio(),
-                  this.changePreUniversitario(),
-                  this.changeTipoPago(),
-                  this.changeAccionesConcretas(),
-                  this.changeSituacionComplicada(),
-                  this.changeFortalezaFamiliar(),
-                  this.changeMomentoEnFamilia(),
-                  this.changeReorganizarTareas(),
-                  this.changeEstaDeAcuerdo();
-              }
-              addValidatorRequired(i) {
-                this.getControl(i)?.addValidators(t.kI.required),
-                  this.getControl(i)?.updateValueAndValidity({ emitEvent: !1 });
-              }
-              clearValidatorRequired(i) {
-                this.getControl(i)?.clearValidators(),
-                  this.getControl(i)?.updateValueAndValidity({ emitEvent: !1 }),
-                  this.getControl(i)?.setValue("", { emitEvent: !1 });
-              }
-              changeLengua() {
-                const i =
-                  this.cuestionarioForm.controls.lenguaMaterna.valueChanges.subscribe(
-                    ({ lengua: o }) => {
-                      if (o === ne.Otra)
-                        return (
-                          (this.hasLenguaje = !0),
-                          void this.addValidatorRequired(
-                            "lenguaMaterna.detalle"
-                          )
-                        );
-                      this.clearValidatorRequired("lenguaMaterna.detalle"),
-                        (this.hasLenguaje = !1);
-                    }
-                  );
-                i || this.subscriptions.push(i);
-              }
-              changeEstaDeAcuerdo() {
-                const i =
-                  this.cuestionarioForm.controls.eleccionUniCarrera.valueChanges.subscribe(
-                    ({ estaDeAcuerdo: o }) => {
-                      if (["No", "No precisa"].includes(o))
-                        return (
-                          (this.hasDeAcuerdo = !0),
-                          void this.addValidatorRequired(
-                            "eleccionUniCarrera.detalle"
-                          )
-                        );
-                      this.clearValidatorRequired("eleccionUniCarrera.detalle"),
-                        (this.hasDeAcuerdo = !1);
-                    }
-                  );
-                i || this.subscriptions.push(i);
-              }
-              changeParentesco() {
-                const i =
-                  this.cuestionarioForm
-                    .get("postulante.parentesco")
-                    ?.valueChanges.subscribe(({ tipo: o }) => {
-                      if (o === pe.Otro)
-                        return (
-                          (this.hasParentesco = !0),
-                          void this.addValidatorRequired(
-                            "postulante.parentesco.detalle"
-                          )
-                        );
-                      this.clearValidatorRequired(
-                        "postulante.parentesco.detalle"
-                      ),
-                        (this.hasParentesco = !1);
-                    }) || new Z.w0();
-                i || this.subscriptions.push(i);
-              }
-              changeBeneficio() {
-                const i =
-                  this.cuestionarioForm
-                    .get("beneficioEconomico")
-                    ?.valueChanges.subscribe(({ fueAcreedor: o }) => {
-                      if (o === be.si)
-                        return (
-                          (this.hasBeneficio = !0),
-                          this.getControl(
-                            "beneficioEconomico.tipoBeneficio.beneficio"
-                          )?.addValidators(t.kI.required),
-                          void this.getControl(
-                            "beneficioEconomico.tipoBeneficio.beneficio"
-                          )?.updateValueAndValidity({ emitEvent: !1 })
-                        );
-                      this.getControl(
-                        "beneficioEconomico.tipoBeneficio.beneficio"
-                      )?.clearValidators(),
+      function Hr(_, a) {
+        1 & _ && e._UZ(0, "span", 159);
+      }
+      const H = function () {
+          return { standalone: !0 };
+        },
+        Zr = function (_) {
+          return { "btn-cuestionario--disabled": _ };
+        },
+        Or = [
+          {
+            path: "cuestionario",
+            component: (() => {
+              class _ {
+                constructor(i, o) {
+                  (this.fb = i),
+                    (this.modalService = o),
+                    (this.title = "Cuestionario de padres de familia"),
+                    (this.btnSubmitStatus = !1),
+                    (this.lenguajes = oi),
+                    (this.listParentesco = _i),
+                    (this.universidades = gi),
+                    (this.listApoyo = ni),
+                    (this.beneficios = ai),
+                    (this.listBeneficio = di),
+                    (this.rangosPreparacion = ui),
+                    (this.frecuenciaActividades = bi),
+                    (this.tiempoActividades = si),
+                    (this.listTipoFinanciamiento = ci),
+                    (this.listTiempoTraslado = li),
+                    (this.listSiNo = mi),
+                    (this.siNoObj = ve),
+                    (this.displayedColumns = yi),
+                    (this.listEstadoCivil = hi),
+                    (this.listNivelEducacion = vi),
+                    (this.listEstadoPersona = fi),
+                    (this.listSituacionLaboral = Ci),
+                    (this.displayedColumnsOtrosFam = Ai),
+                    (this.listTareaHogar = Ti),
+                    (this.objTareaHogar = fe),
+                    (this.listDuracionTarea = Mi),
+                    (this.listFrecuenciaTarea = Pi),
+                    (this.listEncargados = Si),
+                    (this.objEncargado = Ce),
+                    (this.listPorcentajesResponsabilidad = Li),
+                    (this.listTipoApoyoEconomico = Ii),
+                    (this.displayedColumnsApoyoEcon = Ei),
+                    (this.listMontoEstimado = xi),
+                    (this.listSignificaEducacion = qi),
+                    (this.listNroHorasDeApoyo = zi),
+                    (this.objPregunta = Zi),
+                    (this.lstOpcionesStandar = wi),
+                    (this.lstTipoProblemas = Qi),
+                    (this.lstReorganizacion = Hi),
+                    (this.lstUbigeo = Oi),
+                    (this.listPreparacion = ri),
+                    (this.listPagoPreparacion = ti),
+                    (this.actividadesExtracademicas = pi),
+                    (this.objActividades = he),
+                    (this.hasLenguaje = !1),
+                    (this.hasParentesco = !1),
+                    (this.hasBeneficio = !1),
+                    (this.hasOtroBeneficio = !1),
+                    (this.hasPreparacion = !1),
+                    (this.hasOtroPago = !1),
+                    (this.hasAcciones = !1),
+                    (this.hasSituacionComplicada = !1),
+                    (this.hasFortalezaFamiliar = !1),
+                    (this.hasMomentoFamilia = !1),
+                    (this.hasReorganizarTareas = !1),
+                    (this.hasDeAcuerdo = !1),
+                    (this.hasDetalleViaje = !1),
+                    (this.isFromLima = !1),
+                    (this.listaAccionesSelected = []),
+                    (this.listaActividadesExtracademicasSelected = []),
+                    (this.listaTareasHogarSelected = []),
+                    (this.listaResponsablesSelected = []),
+                    (this.listaSignificadosSelected = []),
+                    (this.listaProblemasSelected = []),
+                    this.initForm(),
+                    this.changeLengua(),
+                    this.changeUbigeo(),
+                    this.changeParentesco(),
+                    this.changeEstaDeAcuerdo(),
+                    this.changeBeneficio(),
+                    this.changeTipoBeneficio(),
+                    this.changePreUniversitario(),
+                    this.changeTipoPago(),
+                    this.changeAccionesConcretas(),
+                    this.changeSituacionComplicada(),
+                    this.changeReorganizarTareas(),
+                    this.changeMomentoEnFamilia(),
+                    this.changeFortalezaFamiliar();
+                }
+                ngOnInit() {
+                  this.initLoadDataForm();
+                }
+                addValidatorRequired(i) {
+                  this.getControl(i)?.addValidators(t.kI.required),
+                    this.getControl(i)?.updateValueAndValidity({
+                      emitEvent: !1,
+                    });
+                }
+                clearValidatorRequired(i) {
+                  this.getControl(i)?.clearValidators(),
+                    this.getControl(i)?.updateValueAndValidity({
+                      emitEvent: !1,
+                    }),
+                    this.getControl(i)?.setValue("", { emitEvent: !1 });
+                }
+                changeLengua() {
+                  const i =
+                    this.cuestionarioForm.controls.lenguaMaterna.valueChanges.subscribe(
+                      ({ lengua: o }) => {
+                        if (o === pe.Otra)
+                          return (
+                            (this.hasLenguaje = !0),
+                            void this.addValidatorRequired(
+                              "lenguaMaterna.detalle"
+                            )
+                          );
+                        this.clearValidatorRequired("lenguaMaterna.detalle"),
+                          (this.hasLenguaje = !1);
+                      }
+                    );
+                  i || this.subscriptions.push(i);
+                }
+                changeEstaDeAcuerdo() {
+                  const i =
+                    this.cuestionarioForm.controls.eleccionUniCarrera.valueChanges.subscribe(
+                      ({ estaDeAcuerdo: o }) => {
+                        if (["No", "No precisa"].includes(o))
+                          return (
+                            (this.hasDeAcuerdo = !0),
+                            void this.addValidatorRequired(
+                              "eleccionUniCarrera.detalle"
+                            )
+                          );
+                        this.clearValidatorRequired(
+                          "eleccionUniCarrera.detalle"
+                        ),
+                          (this.hasDeAcuerdo = !1);
+                      }
+                    );
+                  i || this.subscriptions.push(i);
+                }
+                changeParentesco() {
+                  const i =
+                    this.cuestionarioForm
+                      .get("postulante.parentesco")
+                      ?.valueChanges.subscribe(({ tipo: o }) => {
+                        if (o === be.Otro)
+                          return (
+                            (this.hasParentesco = !0),
+                            void this.addValidatorRequired(
+                              "postulante.parentesco.detalle"
+                            )
+                          );
+                        this.clearValidatorRequired(
+                          "postulante.parentesco.detalle"
+                        ),
+                          (this.hasParentesco = !1);
+                      }) || new O.w0();
+                  i || this.subscriptions.push(i);
+                }
+                changeBeneficio() {
+                  const i =
+                    this.cuestionarioForm
+                      .get("beneficioEconomico")
+                      ?.valueChanges.subscribe(({ fueAcreedor: o }) => {
+                        if (o === se.si)
+                          return (
+                            (this.hasBeneficio = !0),
+                            this.getControl(
+                              "beneficioEconomico.tipoBeneficio.beneficio"
+                            )?.addValidators(t.kI.required),
+                            void this.getControl(
+                              "beneficioEconomico.tipoBeneficio.beneficio"
+                            )?.updateValueAndValidity({ emitEvent: !1 })
+                          );
                         this.getControl(
                           "beneficioEconomico.tipoBeneficio.beneficio"
-                        )?.updateValueAndValidity({ emitEvent: !1 }),
-                        this.getControl(
-                          "beneficioEconomico.tipoBeneficio.beneficio"
-                        )?.setValue("", { emitEvent: !1 }),
-                        this.getControl(
-                          "beneficioEconomico.tipoBeneficio.detalle"
-                        )?.setValue("", { emitEvent: !1 }),
-                        (this.hasBeneficio = !1);
-                    }) || new Z.w0();
-                i || this.subscriptions.push(i);
-              }
-              changeTipoBeneficio() {
-                const i =
-                  this.cuestionarioForm
-                    .get("beneficioEconomico.tipoBeneficio")
-                    ?.valueChanges.pipe((0, ie.b)((o) => console.log(o)))
-                    .subscribe(({ beneficio: o }) => {
-                      if (o === se.otros)
-                        return (
-                          (this.hasOtroBeneficio = !0),
+                        )?.clearValidators(),
+                          this.getControl(
+                            "beneficioEconomico.tipoBeneficio.beneficio"
+                          )?.updateValueAndValidity({ emitEvent: !1 }),
+                          this.getControl(
+                            "beneficioEconomico.tipoBeneficio.beneficio"
+                          )?.setValue("", { emitEvent: !1 }),
                           this.getControl(
                             "beneficioEconomico.tipoBeneficio.detalle"
-                          )?.addValidators(t.kI.required),
-                          void this.getControl(
-                            "beneficioEconomico.tipoBeneficio.detalle"
-                          )?.updateValueAndValidity({ emitEvent: !1 })
-                        );
-                      this.getControl(
-                        "beneficioEconomico.tipoBeneficio.detalle"
-                      )?.clearValidators(),
+                          )?.setValue("", { emitEvent: !1 }),
+                          (this.hasBeneficio = !1);
+                      }) || new O.w0();
+                  i || this.subscriptions.push(i);
+                }
+                changeTipoBeneficio() {
+                  const i =
+                    this.cuestionarioForm
+                      .get("beneficioEconomico.tipoBeneficio")
+                      ?.valueChanges.pipe((0, N.b)((o) => console.log(o)))
+                      .subscribe(({ beneficio: o }) => {
+                        if (o === ce.otros)
+                          return (
+                            (this.hasOtroBeneficio = !0),
+                            this.getControl(
+                              "beneficioEconomico.tipoBeneficio.detalle"
+                            )?.addValidators(t.kI.required),
+                            void this.getControl(
+                              "beneficioEconomico.tipoBeneficio.detalle"
+                            )?.updateValueAndValidity({ emitEvent: !1 })
+                          );
                         this.getControl(
                           "beneficioEconomico.tipoBeneficio.detalle"
-                        )?.updateValueAndValidity({ emitEvent: !1 }),
-                        this.getControl(
-                          "beneficioEconomico.tipoBeneficio.detalle"
-                        )?.setValue("", { emitEvent: !1 }),
-                        (this.hasOtroBeneficio = !1);
-                    }) || new Z.w0();
-                i || this.subscriptions.push(i);
-              }
-              changePreUniversitario() {
-                const i =
-                  this.cuestionarioForm
-                    .get("preparacionPreUniversitaria")
-                    ?.valueChanges.subscribe(({ tuvo: o }) => {
-                      if (o === ce.si)
-                        return (
-                          (this.hasPreparacion = !0),
+                        )?.clearValidators(),
                           this.getControl(
-                            "preparacionPreUniversitaria.aCargo.periodo"
-                          )?.addValidators(t.kI.required),
+                            "beneficioEconomico.tipoBeneficio.detalle"
+                          )?.updateValueAndValidity({ emitEvent: !1 }),
+                          this.getControl(
+                            "beneficioEconomico.tipoBeneficio.detalle"
+                          )?.setValue("", { emitEvent: !1 }),
+                          (this.hasOtroBeneficio = !1);
+                      }) || new O.w0();
+                  i || this.subscriptions.push(i);
+                }
+                changePreUniversitario() {
+                  const i =
+                    this.cuestionarioForm
+                      .get("preparacionPreUniversitaria")
+                      ?.valueChanges.subscribe(({ tuvo: o }) => {
+                        if (o === le.si)
+                          return (
+                            (this.hasPreparacion = !0),
+                            this.getControl(
+                              "preparacionPreUniversitaria.aCargo.periodo"
+                            )?.addValidators(t.kI.required),
+                            this.getControl(
+                              "preparacionPreUniversitaria.aCargo.periodo"
+                            )?.updateValueAndValidity({ emitEvent: !1 }),
+                            this.getControl(
+                              "preparacionPreUniversitaria.aCargo.pagadoPor"
+                            )?.addValidators(t.kI.required),
+                            void this.getControl(
+                              "preparacionPreUniversitaria.aCargo.pagadoPor"
+                            )?.updateValueAndValidity({ emitEvent: !1 })
+                          );
+                        this.getControl(
+                          "preparacionPreUniversitaria.aCargo.periodo"
+                        )?.clearValidators(),
                           this.getControl(
                             "preparacionPreUniversitaria.aCargo.periodo"
                           )?.updateValueAndValidity({ emitEvent: !1 }),
                           this.getControl(
+                            "preparacionPreUniversitaria.aCargo.periodo"
+                          )?.setValue("", { emitEvent: !1 }),
+                          this.getControl(
                             "preparacionPreUniversitaria.aCargo.pagadoPor"
-                          )?.addValidators(t.kI.required),
-                          void this.getControl(
+                          )?.clearValidators(),
+                          this.getControl(
                             "preparacionPreUniversitaria.aCargo.pagadoPor"
-                          )?.updateValueAndValidity({ emitEvent: !1 })
-                        );
-                      this.getControl(
-                        "preparacionPreUniversitaria.aCargo.periodo"
-                      )?.clearValidators(),
+                          )?.updateValueAndValidity({ emitEvent: !1 }),
+                          this.getControl(
+                            "preparacionPreUniversitaria.aCargo.pagadoPor"
+                          )?.setValue("", { emitEvent: !1 }),
+                          (this.hasPreparacion = !1);
+                      }) || new O.w0();
+                  i || this.subscriptions.push(i);
+                }
+                changeTipoPago() {
+                  const i =
+                    this.cuestionarioForm
+                      .get("preparacionPreUniversitaria.aCargo")
+                      ?.valueChanges.pipe((0, N.b)((o) => console.log(o)))
+                      .subscribe(({ pagadoPor: o }) => {
+                        if (o === me.otros)
+                          return (
+                            (this.hasOtroPago = !0),
+                            this.getControl(
+                              "preparacionPreUniversitaria.aCargo.detalle"
+                            )?.addValidators(t.kI.required),
+                            void this.getControl(
+                              "preparacionPreUniversitaria.aCargo.detalle"
+                            )?.updateValueAndValidity({ emitEvent: !1 })
+                          );
                         this.getControl(
-                          "preparacionPreUniversitaria.aCargo.periodo"
-                        )?.updateValueAndValidity({ emitEvent: !1 }),
-                        this.getControl(
-                          "preparacionPreUniversitaria.aCargo.periodo"
-                        )?.setValue("", { emitEvent: !1 }),
-                        this.getControl(
-                          "preparacionPreUniversitaria.aCargo.pagadoPor"
+                          "preparacionPreUniversitaria.aCargo.detalle"
                         )?.clearValidators(),
-                        this.getControl(
-                          "preparacionPreUniversitaria.aCargo.pagadoPor"
-                        )?.updateValueAndValidity({ emitEvent: !1 }),
-                        this.getControl(
-                          "preparacionPreUniversitaria.aCargo.pagadoPor"
-                        )?.setValue("", { emitEvent: !1 }),
-                        (this.hasPreparacion = !1);
-                    }) || new Z.w0();
-                i || this.subscriptions.push(i);
-              }
-              changeTipoPago() {
-                const i =
-                  this.cuestionarioForm
-                    .get("preparacionPreUniversitaria.aCargo")
-                    ?.valueChanges.pipe((0, ie.b)((o) => console.log(o)))
-                    .subscribe(({ pagadoPor: o }) => {
-                      if (o === le.otros)
-                        return (
-                          (this.hasOtroPago = !0),
                           this.getControl(
                             "preparacionPreUniversitaria.aCargo.detalle"
-                          )?.addValidators(t.kI.required),
-                          void this.getControl(
-                            "preparacionPreUniversitaria.aCargo.detalle"
-                          )?.updateValueAndValidity({ emitEvent: !1 })
-                        );
-                      this.getControl(
-                        "preparacionPreUniversitaria.aCargo.detalle"
-                      )?.clearValidators(),
-                        this.getControl(
-                          "preparacionPreUniversitaria.aCargo.detalle"
-                        )?.updateValueAndValidity({ emitEvent: !1 }),
-                        this.getControl(
-                          "preparacionPreUniversitaria.aCargo.detalle"
-                        )?.setValue("", { emitEvent: !1 }),
-                        (this.hasOtroPago = !1);
-                    }) || new Z.w0();
-                i || this.subscriptions.push(i);
-              }
-              changeAccionesConcretas() {
-                const i =
-                  this.cuestionarioForm.controls.accionesConcretas.valueChanges.subscribe(
-                    ({ accion: o }) => {
-                      if ((console.log(o), o === this.lstOpcionesStandar[0]))
-                        return (
-                          (this.hasAcciones = !0),
+                          )?.updateValueAndValidity({ emitEvent: !1 }),
                           this.getControl(
-                            "accionesConcretas.detalle"
-                          )?.addValidators(t.kI.required),
-                          void this.getControl(
-                            "accionesConcretas.detalle"
-                          )?.updateValueAndValidity({ emitEvent: !1 })
-                        );
-                      this.getControl(
-                        "accionesConcretas.detalle"
-                      )?.clearValidators(),
+                            "preparacionPreUniversitaria.aCargo.detalle"
+                          )?.setValue("", { emitEvent: !1 }),
+                          (this.hasOtroPago = !1);
+                      }) || new O.w0();
+                  i || this.subscriptions.push(i);
+                }
+                changeAccionesConcretas() {
+                  const i =
+                    this.cuestionarioForm.controls.accionesConcretas.valueChanges.subscribe(
+                      ({ accion: o }) => {
+                        if ((console.log(o), o === this.lstOpcionesStandar[0]))
+                          return (
+                            (this.hasAcciones = !0),
+                            this.getControl(
+                              "accionesConcretas.detalle"
+                            )?.addValidators(t.kI.required),
+                            void this.getControl(
+                              "accionesConcretas.detalle"
+                            )?.updateValueAndValidity({ emitEvent: !1 })
+                          );
                         this.getControl(
                           "accionesConcretas.detalle"
-                        )?.updateValueAndValidity({ emitEvent: !1 }),
-                        this.getControl("accionesConcretas.detalle")?.setValue(
-                          "",
-                          { emitEvent: !1 }
-                        ),
-                        (this.hasAcciones = !1);
-                    }
-                  );
-                i || this.subscriptions.push(i);
-              }
-              changeSituacionComplicada() {
-                const i =
-                  this.cuestionarioForm.controls.situacionComplicada.valueChanges.subscribe(
-                    ({ rpta: o }) => {
-                      if ((console.log(o), o === this.lstOpcionesStandar[0]))
-                        return (
-                          (this.hasSituacionComplicada = !0),
+                        )?.clearValidators(),
                           this.getControl(
-                            "situacionComplicada.detalle"
-                          )?.addValidators(t.kI.required),
-                          void this.getControl(
-                            "situacionComplicada.detalle"
-                          )?.updateValueAndValidity({ emitEvent: !1 })
-                        );
-                      this.getControl(
-                        "situacionComplicada.detalle"
-                      )?.clearValidators(),
+                            "accionesConcretas.detalle"
+                          )?.updateValueAndValidity({ emitEvent: !1 }),
+                          this.getControl(
+                            "accionesConcretas.detalle"
+                          )?.setValue("", { emitEvent: !1 }),
+                          (this.hasAcciones = !1);
+                      }
+                    );
+                  i || this.subscriptions.push(i);
+                }
+                changeSituacionComplicada() {
+                  const i =
+                    this.cuestionarioForm.controls.situacionComplicada.valueChanges.subscribe(
+                      ({ rpta: o }) => {
+                        if ((console.log(o), o === this.lstOpcionesStandar[0]))
+                          return (
+                            (this.hasSituacionComplicada = !0),
+                            this.getControl(
+                              "situacionComplicada.detalle"
+                            )?.addValidators(t.kI.required),
+                            void this.getControl(
+                              "situacionComplicada.detalle"
+                            )?.updateValueAndValidity({ emitEvent: !1 })
+                          );
                         this.getControl(
                           "situacionComplicada.detalle"
-                        )?.updateValueAndValidity({ emitEvent: !1 }),
-                        this.getControl(
-                          "situacionComplicada.detalle"
-                        )?.setValue("", { emitEvent: !1 }),
-                        (this.hasSituacionComplicada = !1);
-                    }
-                  );
-                i || this.subscriptions.push(i);
-              }
-              changeFortalezaFamiliar() {
-                const i =
-                  this.cuestionarioForm.controls.fortalezasFamiliares.valueChanges.subscribe(
-                    ({ rpta: o }) => {
-                      if ((console.log(o), o === this.lstOpcionesStandar[0]))
-                        return (
-                          (this.hasFortalezaFamiliar = !0),
+                        )?.clearValidators(),
                           this.getControl(
-                            "fortalezasFamiliares.detalle"
-                          )?.addValidators(t.kI.required),
-                          void this.getControl(
-                            "fortalezasFamiliares.detalle"
-                          )?.updateValueAndValidity({ emitEvent: !1 })
-                        );
-                      this.getControl(
-                        "fortalezasFamiliares.detalle"
-                      )?.clearValidators(),
+                            "situacionComplicada.detalle"
+                          )?.updateValueAndValidity({ emitEvent: !1 }),
+                          this.getControl(
+                            "situacionComplicada.detalle"
+                          )?.setValue("", { emitEvent: !1 }),
+                          (this.hasSituacionComplicada = !1);
+                      }
+                    );
+                  i || this.subscriptions.push(i);
+                }
+                changeFortalezaFamiliar() {
+                  const i =
+                    this.cuestionarioForm.controls.fortalezasFamiliares.valueChanges.subscribe(
+                      ({ rpta: o }) => {
+                        if ((console.log(o), o === this.lstOpcionesStandar[0]))
+                          return (
+                            (this.hasFortalezaFamiliar = !0),
+                            this.getControl(
+                              "fortalezasFamiliares.detalle"
+                            )?.addValidators(t.kI.required),
+                            void this.getControl(
+                              "fortalezasFamiliares.detalle"
+                            )?.updateValueAndValidity({ emitEvent: !1 })
+                          );
                         this.getControl(
                           "fortalezasFamiliares.detalle"
-                        )?.updateValueAndValidity({ emitEvent: !1 }),
-                        this.getControl(
-                          "fortalezasFamiliares.detalle"
-                        )?.setValue("", { emitEvent: !1 }),
-                        (this.hasFortalezaFamiliar = !1);
-                    }
-                  );
-                i || this.subscriptions.push(i);
-              }
-              changeMomentoEnFamilia() {
-                const i =
-                  this.cuestionarioForm.controls.momentoEnFamilia.valueChanges.subscribe(
-                    ({ rpta: o }) => {
-                      if ((console.log(o), o === this.lstOpcionesStandar[0]))
-                        return (
-                          (this.hasMomentoFamilia = !0),
+                        )?.clearValidators(),
                           this.getControl(
-                            "momentoEnFamilia.detalle"
-                          )?.addValidators(t.kI.required),
-                          void this.getControl(
-                            "momentoEnFamilia.detalle"
-                          )?.updateValueAndValidity({ emitEvent: !1 })
-                        );
-                      this.getControl(
-                        "momentoEnFamilia.detalle"
-                      )?.clearValidators(),
+                            "fortalezasFamiliares.detalle"
+                          )?.updateValueAndValidity({ emitEvent: !1 }),
+                          this.getControl(
+                            "fortalezasFamiliares.detalle"
+                          )?.setValue("", { emitEvent: !1 }),
+                          (this.hasFortalezaFamiliar = !1);
+                      }
+                    );
+                  i || this.subscriptions.push(i);
+                }
+                changeMomentoEnFamilia() {
+                  const i =
+                    this.cuestionarioForm.controls.momentoEnFamilia.valueChanges.subscribe(
+                      ({ rpta: o }) => {
+                        if ((console.log(o), o === this.lstOpcionesStandar[0]))
+                          return (
+                            (this.hasMomentoFamilia = !0),
+                            this.getControl(
+                              "momentoEnFamilia.detalle"
+                            )?.addValidators(t.kI.required),
+                            void this.getControl(
+                              "momentoEnFamilia.detalle"
+                            )?.updateValueAndValidity({ emitEvent: !1 })
+                          );
                         this.getControl(
                           "momentoEnFamilia.detalle"
-                        )?.updateValueAndValidity({ emitEvent: !1 }),
-                        this.getControl("momentoEnFamilia.detalle")?.setValue(
-                          "",
-                          { emitEvent: !1 }
-                        ),
-                        (this.hasMomentoFamilia = !1);
-                    }
-                  );
-                i || this.subscriptions.push(i);
-              }
-              changeReorganizarTareas() {
-                const i =
-                  this.cuestionarioForm.controls.reorganizacionTareas.valueChanges.subscribe(
-                    ({ rpta: o }) => {
-                      if ((console.log(o), "Otros (especificar)" === o))
-                        return (
-                          (this.hasReorganizarTareas = !0),
+                        )?.clearValidators(),
+                          this.getControl(
+                            "momentoEnFamilia.detalle"
+                          )?.updateValueAndValidity({ emitEvent: !1 }),
+                          this.getControl("momentoEnFamilia.detalle")?.setValue(
+                            "",
+                            { emitEvent: !1 }
+                          ),
+                          (this.hasMomentoFamilia = !1);
+                      }
+                    );
+                  i || this.subscriptions.push(i);
+                }
+                changeReorganizarTareas() {
+                  const i =
+                    this.cuestionarioForm.controls.reorganizacionTareas.valueChanges.subscribe(
+                      ({ rpta: o }) => {
+                        if ((console.log(o), "Otros (especificar)" === o))
+                          return (
+                            (this.hasReorganizarTareas = !0),
+                            this.getControl(
+                              "reorganizacionTareas.detalle"
+                            )?.addValidators(t.kI.required),
+                            void this.getControl(
+                              "reorganizacionTareas.detalle"
+                            )?.updateValueAndValidity({ emitEvent: !1 })
+                          );
+                        this.getControl(
+                          "reorganizacionTareas.detalle"
+                        )?.clearValidators(),
                           this.getControl(
                             "reorganizacionTareas.detalle"
-                          )?.addValidators(t.kI.required),
-                          void this.getControl(
+                          )?.updateValueAndValidity({ emitEvent: !1 }),
+                          this.getControl(
                             "reorganizacionTareas.detalle"
-                          )?.updateValueAndValidity({ emitEvent: !1 })
-                        );
-                      this.getControl(
-                        "reorganizacionTareas.detalle"
-                      )?.clearValidators(),
-                        this.getControl(
-                          "reorganizacionTareas.detalle"
-                        )?.updateValueAndValidity({ emitEvent: !1 }),
-                        this.getControl(
-                          "reorganizacionTareas.detalle"
-                        )?.setValue("", { emitEvent: !1 }),
-                        (this.hasReorganizarTareas = !1);
-                    }
-                  );
-                i || this.subscriptions.push(i);
-              }
-              initForm() {
-                this.cuestionarioForm = this.fb.group({
-                  lenguaMaterna: this.fb.group({
-                    lengua: ["", [t.kI.required]],
-                    detalle: [""],
-                  }),
-                  ubigeo: ["", [t.kI.required]],
-                  responsable: this.fb.group({
-                    nombresApellidos: ["", [t.kI.required]],
-                    dni: [
-                      "",
-                      [
-                        t.kI.required,
-                        t.kI.pattern(de.I.onlyNumber),
-                        t.kI.minLength(8),
-                        t.kI.maxLength(8),
-                      ],
-                    ],
-                  }),
-                  postulante: this.fb.group({
-                    nombresApellidos: ["", [t.kI.required]],
-                    dni: [
-                      "",
-                      [
-                        t.kI.required,
-                        t.kI.pattern(de.I.onlyNumber),
-                        t.kI.minLength(8),
-                        t.kI.maxLength(8),
-                      ],
-                    ],
-                    parentesco: this.fb.group({
-                      tipo: ["", [t.kI.required]],
-                      detalle: [""],
-                    }),
-                  }),
-                  universidadAlaQuePostula: this.fb.group({
-                    universidad: ["", [t.kI.required]],
-                    carrera: ["", [t.kI.required]],
-                  }),
-                  fortalezasCualidadesPostulante: ["", [t.kI.required]],
-                  ayudaProcesoPostulación: ["", [t.kI.required]],
-                  accionesApoyo: this.fb.array([], t.kI.required),
-                  eleccionUniCarrera: this.fb.group({
-                    motivo: ["", [t.kI.required]],
-                    estaDeAcuerdo: ["", [t.kI.required]],
-                    detalle: [""],
-                  }),
-                  beneficioEconomico: this.fb.group({
-                    fueAcreedor: ["", [t.kI.required]],
-                    tipoBeneficio: this.fb.group({
-                      beneficio: [""],
-                      detalle: [""],
-                    }),
-                  }),
-                  preparacionPreUniversitaria: this.fb.group({
-                    tuvo: ["", [t.kI.required]],
-                    aCargo: this.fb.group({
-                      periodo: [""],
-                      pagadoPor: [""],
-                      detalle: [""],
-                    }),
-                  }),
-                  actividadesExtracademicas: this.fb.array([], t.kI.required),
-                  direccionVivienda: [""],
-                  coordenadasVivienda: [{ value: "", disabled: !1 }],
-                  tiempoTraslado: [""],
-                  familiaNuclear: this.fb.array([this.initFamiliaNuclear()]),
-                  tareasQueApoyaElPostulante: this.fb.array([], t.kI.required),
-                  horasDiariasApoyoTareasDelHogarPostulante: [
-                    "",
-                    [t.kI.required],
-                  ],
-                  encargadosTareasDelHogar: this.fb.array([], t.kI.required),
-                  actividadesApoyoEconomico: this.fb.array([]),
-                  principalesReglasCasa: ["", [t.kI.required]],
-                  significadoEducacion: this.fb.array([], t.kI.required),
-                  accionesConcretas: this.fb.group({
-                    accion: ["", [t.kI.required]],
-                    detalle: [""],
-                  }),
-                  situacionComplicada: this.fb.group({
-                    rpta: ["", [t.kI.required]],
-                    detalle: [""],
-                  }),
-                  problemasQuePresenta: this.fb.array([], t.kI.required),
-                  estrategiasResolverProblema: ["", [t.kI.required]],
-                  fortalezasFamiliares: this.fb.group({
-                    rpta: ["", [t.kI.required]],
-                    detalle: [""],
-                  }),
-                  momentoEnFamilia: this.fb.group({
-                    rpta: ["", [t.kI.required]],
-                    detalle: [""],
-                  }),
-                  reorganizacionTareas: this.fb.group({
-                    rpta: ["", [t.kI.required]],
-                    detalle: [""],
-                  }),
-                });
-              }
-              addActividad(i) {
-                console.log(i),
-                  this.arrayActividades.push(
-                    this.initActividadExtracademica(i)
-                  );
-              }
-              addSignificadoEducacion(i) {
-                this.arraySignificadoEducacion.length < 2 &&
-                  this.arraySignificadoEducacion.push(
-                    this.initSignificadoEducacion(i)
-                  );
-              }
-              changeUbigeo(i) {
-                console.log(i);
-                const o = ["Lima", "Callao"];
-                if (i.length) {
-                  const d = [
-                      "direccionVivienda",
-                      "coordenadasVivienda",
-                      "tiempoTraslado",
-                    ],
-                    u = i[0].split("-").map((g) => g.trim());
-                  if ("Lima" === u[0] && o.includes(u[1]))
-                    return (
-                      console.log("es lima"),
-                      d.forEach((g) => {
-                        this.getControl(g)?.addValidators(t.kI.required),
-                          this.getControl(g)?.updateValueAndValidity({
-                            emitEvent: !1,
-                          });
-                      }),
-                      void (this.isFromLima = !0)
+                          )?.setValue("", { emitEvent: !1 }),
+                          (this.hasReorganizarTareas = !1);
+                      }
                     );
-                  d.forEach((g) => {
-                    this.getControl(g)?.clearValidators(),
-                      this.getControl(g)?.updateValueAndValidity({
-                        emitEvent: !1,
+                  i || this.subscriptions.push(i);
+                }
+                initForm() {
+                  this.cuestionarioForm = this.fb.group({
+                    lenguaMaterna: this.fb.group({
+                      lengua: ["", [t.kI.required]],
+                      detalle: [""],
+                    }),
+                    ubigeo: ["", [t.kI.required]],
+                    responsable: this.fb.group({
+                      nombresApellidos: ["", [t.kI.required]],
+                      dni: [
+                        "",
+                        [
+                          t.kI.required,
+                          t.kI.pattern(re.I.onlyNumber),
+                          t.kI.minLength(8),
+                          t.kI.maxLength(8),
+                        ],
+                      ],
+                    }),
+                    postulante: this.fb.group({
+                      nombresApellidos: ["", [t.kI.required]],
+                      dni: [
+                        "",
+                        [
+                          t.kI.required,
+                          t.kI.pattern(re.I.onlyNumber),
+                          t.kI.minLength(8),
+                          t.kI.maxLength(8),
+                        ],
+                      ],
+                      parentesco: this.fb.group({
+                        tipo: ["", [t.kI.required]],
+                        detalle: [""],
                       }),
-                      this.getControl(g)?.setValue("", { emitEvent: !1 });
-                  }),
-                    (this.isFromLima = !1);
-                } else this.isFromLima = !1;
-              }
-              addTareaHogar(i) {
-                console.log(i),
-                  this.arrayTareasHogar.push(this.initTareasDelHogar(i));
-              }
-              addAccionApoyo(i) {
-                console.log(i),
-                  this.arrayAccionesApoyo.push(this.initAccionApoyo(i));
-              }
-              addProblemasQuePresenta(i) {
-                console.log(i),
-                  this.arrayProblemasQuePresenta.push(
-                    this.initProblemaQuePresenta(i)
-                  );
-              }
-              addEncargadoTarea(i) {
-                console.log(i),
-                  this.arrayEncargadoTarea.push(
-                    this.initEncargadosTareasDelHogar(i)
-                  );
-              }
-              deleteActividad(i) {
-                const o = this.arrayActividades.value.findIndex(
-                  (d) => d.tipoActividad.actividad === i.value
-                );
-                o >= 0 && this.arrayActividades.removeAt(o);
-              }
-              deleteSignificadoEducacion(i) {
-                const o = this.arraySignificadoEducacion.value.findIndex(
-                  (d) => d.significado.rpta === i.value
-                );
-                o >= 0 && this.arraySignificadoEducacion.removeAt(o);
-              }
-              deleteTareaHogar(i) {
-                const o = this.arrayTareasHogar.value.findIndex(
-                  (d) => d.tipoTarea.tarea === i.value
-                );
-                o >= 0 && this.arrayTareasHogar.removeAt(o);
-              }
-              deleteAccionApoyo(i) {
-                const o = this.arrayAccionesApoyo.value.findIndex(
-                  (d) => d.tipoAccion.accion === i.value
-                );
-                o >= 0 && this.arrayAccionesApoyo.removeAt(o);
-              }
-              deleteProblemaQuePresenta(i) {
-                const o = this.arrayProblemasQuePresenta.value.findIndex(
-                  (d) => d.tipoProblema.problema === i.value
-                );
-                o >= 0 && this.arrayProblemasQuePresenta.removeAt(o);
-              }
-              deleteEncargadoTarea(i) {
-                const o = this.arrayEncargadoTarea.value.findIndex(
-                  (d) => d.encargado.miembro === i.value
-                );
-                o >= 0 && this.arrayEncargadoTarea.removeAt(o);
-              }
-              clearActividades() {
-                this.arrayActividades.value.forEach(() =>
-                  this.arrayActividades.removeAt(0)
-                );
-              }
-              clearAccionApoyo() {
-                this.arrayAccionesApoyo.value.forEach(() =>
-                  this.arrayAccionesApoyo.removeAt(0)
-                );
-              }
-              clearProblemasQuePresenta() {
-                this.arrayProblemasQuePresenta.value.forEach(() =>
-                  this.arrayProblemasQuePresenta.removeAt(0)
-                );
-              }
-              clearSignificadoEducacion() {
-                this.arraySignificadoEducacion.value.forEach(() =>
-                  this.arraySignificadoEducacion.removeAt(0)
-                );
-              }
-              clearTareasHogar() {
-                this.arrayTareasHogar.value.forEach(() =>
-                  this.arrayTareasHogar.removeAt(0)
-                );
-              }
-              clearResponsablesTarea() {
-                this.arrayEncargadoTarea.value.forEach(() =>
-                  this.arrayEncargadoTarea.removeAt(0)
-                );
-              }
-              initActividadExtracademica(i = "") {
-                return this.fb.group({
-                  tipoActividad: this.fb.group({
-                    actividad: [i, [t.kI.required]],
-                    detalle: this.getValidatorsRequired(i),
-                  }),
-                  financiado: this.fb.group({
-                    financiadoPor: ["", [t.kI.required]],
-                    detalle: ["", []],
-                  }),
-                });
-              }
-              initSignificadoEducacion(i = "") {
-                return this.fb.group({
-                  significado: this.fb.group({
-                    rpta: [i, [t.kI.required]],
-                    detalle: this.getValidatorsRequired(i),
-                  }),
-                });
-              }
-              initTareasDelHogar(i = "") {
-                return this.fb.group({
-                  tipoTarea: this.fb.group({
-                    tarea: [i, [t.kI.required]],
-                    detalle: this.getValidatorsRequired(i),
-                  }),
-                });
-              }
-              initAccionApoyo(i = "") {
-                return this.fb.group({
-                  tipoAccion: this.fb.group({
-                    accion: [i, [t.kI.required]],
-                    detalle: this.getValidatorsRequired(i),
-                  }),
-                });
-              }
-              initProblemaQuePresenta(i = "") {
-                return this.fb.group({
-                  tipoProblema: this.fb.group({
-                    problema: [i, [t.kI.required]],
-                    detalle: this.getValidatorsRequired(i),
-                  }),
-                });
-              }
-              initEncargadosTareasDelHogar(i = "") {
-                return this.fb.group({
-                  encargado: this.fb.group({
-                    miembro: [i, [t.kI.required]],
-                    detalle: this.getValidatorsRequired(i),
-                  }),
-                  porcentaje: ["", [t.kI.required]],
-                });
-              }
-              initFamiliaNuclear() {
-                return this.fb.group({
-                  parentesco: ["", [t.kI.required]],
-                  nombres: ["", [t.kI.required]],
-                  apellidos: ["", [t.kI.required]],
-                  edad: ["", [t.kI.required]],
-                  estadoCivil: ["", [t.kI.required]],
-                  nivelEducacion: ["", [t.kI.required]],
-                  viveoFallecido: ["", [t.kI.required]],
-                  viveConElPostulante: ["", [t.kI.required]],
-                  situacionLaboral: ["", [t.kI.required]],
-                });
-              }
-              initActividadX(i = "") {
-                return this.fb.group({
-                  actividad: [i, [t.kI.required]],
-                  necesita: ["", [t.kI.required]],
-                });
-              }
-              initActividadesApoyoEconomico() {
-                this.listTipoApoyoEconomico.forEach((i) =>
-                  this.arrayActividadesApoyoEconomico.push(
-                    this.initActividadX(i)
-                  )
-                );
-              }
-              addActividadApoyo() {
-                this.arrayActividadesApoyoEconomico.push(this.initActividadX());
-              }
-              deletActiviadaApoyo(i) {
-                this.arrayActividadesApoyoEconomico.removeAt(i);
-              }
-              addFamiliarNuclear() {
-                this.arrayFamiliaNuclear.push(this.initFamiliaNuclear());
-              }
-              deleteFamiliarNuclear(i) {
-                this.arrayFamiliaNuclear.removeAt(i);
-              }
-              changeFinanciadoPor(i, o = 0) {
-                if (
-                  (console.log(
-                    this.arrayActividades.controls[o].get("financiado.detalle")
-                  ),
+                    }),
+                    universidadAlaQuePostula: this.fb.group({
+                      universidad: ["", [t.kI.required]],
+                      carrera: ["", [t.kI.required]],
+                    }),
+                    fortalezasCualidadesPostulante: ["", [t.kI.required]],
+                    ayudaProcesoPostulación: ["", [t.kI.required]],
+                    accionesApoyo: this.fb.array([], t.kI.required),
+                    eleccionUniCarrera: this.fb.group({
+                      motivo: ["", [t.kI.required]],
+                      estaDeAcuerdo: ["", [t.kI.required]],
+                      detalle: [""],
+                    }),
+                    beneficioEconomico: this.fb.group({
+                      fueAcreedor: ["", [t.kI.required]],
+                      tipoBeneficio: this.fb.group({
+                        beneficio: [""],
+                        detalle: [""],
+                      }),
+                    }),
+                    preparacionPreUniversitaria: this.fb.group({
+                      tuvo: ["", [t.kI.required]],
+                      aCargo: this.fb.group({
+                        periodo: [""],
+                        pagadoPor: [""],
+                        detalle: [""],
+                      }),
+                    }),
+                    actividadesExtracademicas: this.fb.array([], t.kI.required),
+                    direccionVivienda: [""],
+                    coordenadasVivienda: [{ value: "", disabled: !1 }],
+                    tiempoTraslado: [""],
+                    familiaNuclear: this.fb.array([this.initFamiliaNuclear()]),
+                    tareasQueApoyaElPostulante: this.fb.array(
+                      [],
+                      t.kI.required
+                    ),
+                    horasDiariasApoyoTareasDelHogarPostulante: [
+                      "",
+                      [t.kI.required],
+                    ],
+                    encargadosTareasDelHogar: this.fb.array([], t.kI.required),
+                    actividadesApoyoEconomico: this.fb.array([]),
+                    principalesReglasCasa: ["", [t.kI.required]],
+                    significadoEducacion: this.fb.array([], t.kI.required),
+                    accionesConcretas: this.fb.group({
+                      accion: ["", [t.kI.required]],
+                      detalle: [""],
+                    }),
+                    situacionComplicada: this.fb.group({
+                      rpta: ["", [t.kI.required]],
+                      detalle: [""],
+                    }),
+                    problemasQuePresenta: this.fb.array([], t.kI.required),
+                    estrategiasResolverProblema: ["", [t.kI.required]],
+                    fortalezasFamiliares: this.fb.group({
+                      rpta: ["", [t.kI.required]],
+                      detalle: [""],
+                    }),
+                    momentoEnFamilia: this.fb.group({
+                      rpta: ["", [t.kI.required]],
+                      detalle: [""],
+                    }),
+                    reorganizacionTareas: this.fb.group({
+                      rpta: ["", [t.kI.required]],
+                      detalle: [""],
+                    }),
+                  });
+                }
+                addActividad(i, o = "", d = "", r = "") {
                   console.log(i),
-                  this.objActividades.otros === i.target.value)
-                )
-                  return (
+                    this.arrayActividades.push(
+                      this.initActividadExtracademica(i, o, d, r)
+                    );
+                }
+                initActividadExtracademica(i = "", o = "", d = "", r = "") {
+                  return this.fb.group({
+                    tipoActividad: this.fb.group({
+                      actividad: [i, [t.kI.required]],
+                      detalle: this.getValidatorsRequired(i, o),
+                    }),
+                    financiado: this.fb.group({
+                      financiadoPor: [d, [t.kI.required]],
+                      detalle: this.getValidatorsRequired(d, r),
+                    }),
+                  });
+                }
+                addSignificadoEducacion(i, o = "") {
+                  this.arraySignificadoEducacion.length < 2 &&
+                    this.arraySignificadoEducacion.push(
+                      this.initSignificadoEducacion(i, o)
+                    );
+                }
+                initSignificadoEducacion(i = "", o = "") {
+                  return this.fb.group({
+                    significado: this.fb.group({
+                      rpta: [i, [t.kI.required]],
+                      detalle: this.getValidatorsRequired(i, o),
+                    }),
+                  });
+                }
+                changeUbigeo() {
+                  const i =
+                    this.cuestionarioForm.controls.ubigeo.valueChanges.subscribe(
+                      (o) => {
+                        console.log(o);
+                        const d = ["Lima", "Callao"];
+                        if (o.length) {
+                          const r = [
+                              "direccionVivienda",
+                              "coordenadasVivienda",
+                              "tiempoTraslado",
+                            ],
+                            g = o[0].split("-").map((p) => p.trim());
+                          if ("Lima" === g[0] && d.includes(g[1]))
+                            return (
+                              r.forEach((p) => {
+                                this.getControl(p)?.addValidators(
+                                  t.kI.required
+                                ),
+                                  this.getControl(p)?.updateValueAndValidity({
+                                    emitEvent: !1,
+                                  });
+                              }),
+                              void (this.isFromLima = !0)
+                            );
+                          r.forEach((p) => {
+                            this.getControl(p)?.clearValidators(),
+                              this.getControl(p)?.updateValueAndValidity({
+                                emitEvent: !1,
+                              }),
+                              this.getControl(p)?.setValue("", {
+                                emitEvent: !1,
+                              });
+                          }),
+                            (this.isFromLima = !1);
+                        } else this.isFromLima = !1;
+                      }
+                    );
+                  i || this.subscriptions.push(i);
+                }
+                addTareaHogar(i, o = "") {
+                  console.log(i),
+                    this.arrayTareasHogar.push(this.initTareasDelHogar(i, o));
+                }
+                initTareasDelHogar(i = "", o = "") {
+                  return this.fb.group({
+                    tipoTarea: this.fb.group({
+                      tarea: [i, [t.kI.required]],
+                      detalle: this.getValidatorsRequired(i, o),
+                    }),
+                  });
+                }
+                addAccionApoyo(i, o = "") {
+                  console.log(i),
+                    this.arrayAccionesApoyo.length < 3 &&
+                      this.arrayAccionesApoyo.push(this.initAccionApoyo(i, o));
+                }
+                addProblemasQuePresenta(i, o = "") {
+                  console.log(i),
+                    this.arrayProblemasQuePresenta.push(
+                      this.initProblemaQuePresenta(i, o)
+                    );
+                }
+                initProblemaQuePresenta(i = "", o = "") {
+                  return this.fb.group({
+                    tipoProblema: this.fb.group({
+                      problema: [i, [t.kI.required]],
+                      detalle: this.getValidatorsRequired(i, o),
+                    }),
+                  });
+                }
+                addEncargadoTarea(i, o = "", d = "") {
+                  console.log(i),
+                    this.arrayEncargadoTarea.push(
+                      this.initEncargadosTareasDelHogar(i, o, d)
+                    );
+                }
+                initEncargadosTareasDelHogar(i = "", o = "", d = "") {
+                  return this.fb.group({
+                    encargado: this.fb.group({
+                      miembro: [i, [t.kI.required]],
+                      detalle: this.getValidatorsRequired(i, o),
+                    }),
+                    porcentaje: [d, [t.kI.required]],
+                  });
+                }
+                deleteActividad(i) {
+                  const o = this.arrayActividades.value.findIndex(
+                    (d) => d.tipoActividad.actividad === i.value
+                  );
+                  o >= 0 && this.arrayActividades.removeAt(o);
+                }
+                deleteSignificadoEducacion(i) {
+                  const o = this.arraySignificadoEducacion.value.findIndex(
+                    (d) => d.significado.rpta === i.value
+                  );
+                  o >= 0 && this.arraySignificadoEducacion.removeAt(o);
+                }
+                deleteTareaHogar(i) {
+                  const o = this.arrayTareasHogar.value.findIndex(
+                    (d) => d.tipoTarea.tarea === i.value
+                  );
+                  o >= 0 && this.arrayTareasHogar.removeAt(o);
+                }
+                deleteAccionApoyo(i) {
+                  const o = this.arrayAccionesApoyo.value.findIndex(
+                    (d) => d.tipoAccion.accion === i.value
+                  );
+                  o >= 0 && this.arrayAccionesApoyo.removeAt(o);
+                }
+                deleteProblemaQuePresenta(i) {
+                  const o = this.arrayProblemasQuePresenta.value.findIndex(
+                    (d) => d.tipoProblema.problema === i.value
+                  );
+                  o >= 0 && this.arrayProblemasQuePresenta.removeAt(o);
+                }
+                deleteEncargadoTarea(i) {
+                  const o = this.arrayEncargadoTarea.value.findIndex(
+                    (d) => d.encargado.miembro === i.value
+                  );
+                  o >= 0 && this.arrayEncargadoTarea.removeAt(o);
+                }
+                clearActividades() {
+                  this.arrayActividades.value.forEach(() =>
+                    this.arrayActividades.removeAt(0)
+                  );
+                }
+                clearAccionApoyo() {
+                  this.arrayAccionesApoyo.value.forEach(() =>
+                    this.arrayAccionesApoyo.removeAt(0)
+                  );
+                }
+                clearProblemasQuePresenta() {
+                  this.arrayProblemasQuePresenta.value.forEach(() =>
+                    this.arrayProblemasQuePresenta.removeAt(0)
+                  );
+                }
+                clearSignificadoEducacion() {
+                  this.arraySignificadoEducacion.value.forEach(() =>
+                    this.arraySignificadoEducacion.removeAt(0)
+                  );
+                }
+                clearTareasHogar() {
+                  this.arrayTareasHogar.value.forEach(() =>
+                    this.arrayTareasHogar.removeAt(0)
+                  );
+                }
+                clearResponsablesTarea() {
+                  this.arrayEncargadoTarea.value.forEach(() =>
+                    this.arrayEncargadoTarea.removeAt(0)
+                  );
+                }
+                initAccionApoyo(i = "", o = "") {
+                  return this.fb.group({
+                    tipoAccion: this.fb.group({
+                      accion: [i, [t.kI.required]],
+                      detalle: this.getValidatorsRequired(i, o),
+                    }),
+                  });
+                }
+                initFamiliaNuclear() {
+                  return this.fb.group({
+                    parentesco: ["", [t.kI.required]],
+                    nombres: ["", [t.kI.required]],
+                    apellidos: ["", [t.kI.required]],
+                    edad: ["", [t.kI.required]],
+                    estadoCivil: ["", [t.kI.required]],
+                    nivelEducacion: ["", [t.kI.required]],
+                    viveoFallecido: ["", [t.kI.required]],
+                    viveConElPostulante: ["", [t.kI.required]],
+                    situacionLaboral: ["", [t.kI.required]],
+                  });
+                }
+                initActividadX(i = "", o = "") {
+                  return this.fb.group({
+                    actividad: [i, [t.kI.required]],
+                    necesita: [o, [t.kI.required]],
+                  });
+                }
+                initActividadesApoyoEconomico(i = []) {
+                  i.forEach((o) => this.addActividadApoyo(o));
+                }
+                initActividadesApoyoEconomicoLS(i = []) {
+                  i.forEach(({ actividad: o, necesita: d }) =>
+                    this.addActividadApoyo(o, d)
+                  );
+                }
+                addActividadApoyo(i = "", o = "") {
+                  this.arrayActividadesApoyoEconomico.push(
+                    this.initActividadX(i, o)
+                  );
+                }
+                deletActiviadaApoyo(i) {
+                  this.arrayActividadesApoyoEconomico.removeAt(i);
+                }
+                addFamiliarNuclear() {
+                  this.arrayFamiliaNuclear.push(this.initFamiliaNuclear());
+                }
+                deleteFamiliarNuclear(i) {
+                  this.arrayFamiliaNuclear.removeAt(i);
+                }
+                changeFinanciadoPor(i, o = 0) {
+                  if (
+                    (console.log(
+                      this.arrayActividades.controls[o].get(
+                        "financiado.detalle"
+                      )
+                    ),
+                    console.log(i),
+                    this.objActividades.otros === i.target.value)
+                  )
+                    return (
+                      this.arrayActividades.controls[o]
+                        .get("financiado.detalle")
+                        ?.addValidators(t.kI.required),
+                      void this.arrayActividades.controls[o]
+                        .get("financiado.detalle")
+                        ?.updateValueAndValidity({ emitEvent: !1 })
+                    );
+                  this.arrayActividades.controls[o]
+                    .get("financiado.detalle")
+                    ?.clearValidators(),
                     this.arrayActividades.controls[o]
                       .get("financiado.detalle")
-                      ?.addValidators(t.kI.required),
-                    void this.arrayActividades.controls[o]
+                      ?.updateValueAndValidity({ emitEvent: !1 }),
+                    this.arrayActividades.controls[o]
                       .get("financiado.detalle")
-                      ?.updateValueAndValidity({ emitEvent: !1 })
-                  );
-                this.arrayActividades.controls[o]
-                  .get("financiado.detalle")
-                  ?.clearValidators(),
-                  this.arrayActividades.controls[o]
-                    .get("financiado.detalle")
-                    ?.updateValueAndValidity({ emitEvent: !1 }),
-                  this.arrayActividades.controls[o]
-                    .get("financiado.detalle")
-                    ?.setValue("", { emitEvent: !1 }),
-                  console.log(
-                    this.arrayActividades.controls[o].get("financiado.detalle")
-                  );
-              }
-              getValidatorsRequired(i = "") {
-                return this.objActividades.otros === i
-                  ? ["", [t.kI.required]]
-                  : [""];
-              }
-              get arraySignificadoEducacion() {
-                return this.cuestionarioForm.get("significadoEducacion");
-              }
-              get arrayAccionesApoyo() {
-                return this.cuestionarioForm.get("accionesApoyo");
-              }
-              get arrayProblemasQuePresenta() {
-                return this.cuestionarioForm.get("problemasQuePresenta");
-              }
-              get arrayActividades() {
-                return this.cuestionarioForm.get("actividadesExtracademicas");
-              }
-              get arrayFamiliaNuclear() {
-                return this.cuestionarioForm.get("familiaNuclear");
-              }
-              get arrayTareasHogar() {
-                return this.cuestionarioForm.get("tareasQueApoyaElPostulante");
-              }
-              get arrayEncargadoTarea() {
-                return this.cuestionarioForm.get("encargadosTareasDelHogar");
-              }
-              get arrayActividadesApoyoEconomico() {
-                return this.cuestionarioForm.get("actividadesApoyoEconomico");
-              }
-              getControl(i) {
-                return this.cuestionarioForm.get(i);
-              }
-              openDialogErrorform() {
-                const i = this.modalService.open(Ce.b, { backdrop: "static" });
-                (i.componentInstance.title = "IMPORTANTE!!! Campos Requeridos"),
-                  (i.componentInstance.message =
-                    "Por favor, ingresar todos los campos requeridos."),
-                  (i.componentInstance.icon = "warning"),
-                  (i.componentInstance.showBtnCancel = !1),
-                  (i.componentInstance.textBtnSuccess = "Aceptar"),
-                  i.result.then((o) => {
-                    console.log(o);
-                  });
-              }
-              openMaps() {
-                this.modalService
-                  .open(ei, { backdrop: "static", keyboard: !1 })
-                  .result.then((o) => {
-                    console.log(o);
-                    const d = o[0];
-                    this.getControl("coordenadasVivienda")?.setValue(
-                      JSON.stringify(d)
+                      ?.setValue("", { emitEvent: !1 }),
+                    console.log(
+                      this.arrayActividades.controls[o].get(
+                        "financiado.detalle"
+                      )
                     );
-                  });
-              }
-              submitForm() {
-                if (this.cuestionarioForm.invalid)
-                  this.openDialogErrorform(),
-                    this.cuestionarioForm.markAllAsTouched();
-                else {
-                  const i = this.modalService.open(Ce.b, {
+                }
+                getValidatorsRequired(i = "", o = "") {
+                  return this.objActividades.otros === i
+                    ? [o, [t.kI.required]]
+                    : [o];
+                }
+                get arraySignificadoEducacion() {
+                  return this.cuestionarioForm.get("significadoEducacion");
+                }
+                get arrayAccionesApoyo() {
+                  return this.cuestionarioForm.get("accionesApoyo");
+                }
+                get arrayProblemasQuePresenta() {
+                  return this.cuestionarioForm.get("problemasQuePresenta");
+                }
+                get arrayActividades() {
+                  return this.cuestionarioForm.get("actividadesExtracademicas");
+                }
+                get arrayFamiliaNuclear() {
+                  return this.cuestionarioForm.get("familiaNuclear");
+                }
+                get arrayTareasHogar() {
+                  return this.cuestionarioForm.get(
+                    "tareasQueApoyaElPostulante"
+                  );
+                }
+                get arrayEncargadoTarea() {
+                  return this.cuestionarioForm.get("encargadosTareasDelHogar");
+                }
+                get arrayActividadesApoyoEconomico() {
+                  return this.cuestionarioForm.get("actividadesApoyoEconomico");
+                }
+                getControl(i) {
+                  return this.cuestionarioForm.get(i);
+                }
+                openDialogErrorform() {
+                  const i = this.modalService.open(ye.b, {
                     backdrop: "static",
                   });
-                  (i.componentInstance.title = "\xa1Muchas Gracias!"),
+                  (i.componentInstance.title =
+                    "IMPORTANTE!!! Campos Requeridos"),
                     (i.componentInstance.message =
-                      "Los datos del cuestionario fueron registrados con \xe9xito"),
-                    (i.componentInstance.modalHeader = !1),
-                    (i.componentInstance.titleSuccess = !0),
+                      "Por favor, ingresar todos los campos requeridos."),
+                    (i.componentInstance.icon = "warning"),
                     (i.componentInstance.showBtnCancel = !1),
+                    (i.componentInstance.textBtnSuccess = "Aceptar"),
                     i.result.then((o) => {
                       console.log(o);
                     });
                 }
-              }
-            }
-            return (
-              (_.ɵfac = function (i) {
-                return new (i || _)(e.Y36(t.qu), e.Y36(F.FF));
-              }),
-              (_.ɵcmp = e.Xpm({
-                type: _,
-                selectors: [["app-questionary-bcp"]],
-                decls: 329,
-                vars: 195,
-                consts: [
-                  [1, "container"],
-                  [1, "card", "mt-3"],
-                  [1, "head-cuestionario"],
-                  [1, "head-cuestionario__title"],
-                  [
-                    "src",
-                    "assets/images/cuestionario/head-bcp.svg",
-                    "alt",
-                    "",
-                    "srcset",
-                    "",
-                    1,
-                    "head-cuestionario__img",
-                  ],
-                  [1, "card-body"],
-                  [1, "row"],
-                  [1, "col", "mb-3", "p-3", "hero-cuestionario"],
-                  [1, "color-orange"],
-                  [1, "d-flex", "flex-disposicion"],
-                  [1, "bloq-text"],
-                  [
-                    "href",
-                    "https://www.leyes.congreso.gob.pe/Documentos/Leyes/29733.pdf",
-                    "target",
-                    "_blank",
-                    1,
-                    "color-azul",
-                    "txt-underline",
-                  ],
-                  [1, "textLightIt", "cursiva", "color-azul"],
-                  [
-                    "src",
-                    "assets/images/cuestionario/descrip-img.svg",
-                    "alt",
-                    "",
-                    "srcset",
-                    "",
-                    1,
-                    "right-img",
-                  ],
-                  ["autocomplete", "off", 3, "formGroup"],
-                  ["formCuestionario", "ngForm"],
-                  [
-                    "formGroupName",
-                    "lenguaMaterna",
-                    1,
-                    "col-sm-12",
-                    "col-md-6",
-                  ],
-                  [1, "mb-3"],
-                  [3, "numero", "descripcion", "for"],
-                  [
-                    "formControlName",
-                    "lengua",
-                    "id",
-                    "lengMat",
-                    1,
-                    "form-select",
-                  ],
-                  ["value", "", "disabled", "", "hidden", ""],
-                  [3, "value", 4, "ngFor", "ngForOf"],
-                  [4, "ngIf"],
-                  [1, "col-sm-12", "col-md-6"],
-                  [3, "numero", "descripcion", "textoAdicional", "for"],
-                  [
-                    "placeholder",
-                    "-Seleccionar-",
-                    "formControlName",
-                    "ubigeo",
-                    3,
-                    "multiple",
-                    "maxSelectedItems",
-                    "closeOnSelect",
-                    "change",
-                  ],
-                  ["formGroupName", "responsable", 1, "row"],
-                  [
-                    "formControlName",
-                    "nombresApellidos",
-                    "type",
-                    "text",
-                    "id",
-                    "nombApeResponsable",
-                    "placeholder",
-                    "Nombres y apellidos completos",
-                    1,
-                    "form-control",
-                  ],
-                  [
-                    "formControlName",
-                    "dni",
-                    "numbersOnly",
-                    "",
-                    "type",
-                    "text",
-                    "id",
-                    "dniResponsable",
-                    "placeholder",
-                    "Nro. DNI",
-                    1,
-                    "form-control",
-                  ],
-                  ["formGroupName", "postulante", 1, "row"],
-                  [
-                    "formControlName",
-                    "nombresApellidos",
-                    "type",
-                    "text",
-                    "id",
-                    "nombApePostulante",
-                    "placeholder",
-                    "Nombres y apellidos completos",
-                    1,
-                    "form-control",
-                  ],
-                  [
-                    "formControlName",
-                    "dni",
-                    "numbersOnly",
-                    "",
-                    "type",
-                    "text",
-                    "id",
-                    "dniPostulante",
-                    "placeholder",
-                    "Nro. DNI",
-                    1,
-                    "form-control",
-                  ],
-                  [1, "col-sm-12", "col-md-12"],
-                  ["formGroupName", "parentesco", 1, "row"],
-                  [
-                    "formControlName",
-                    "tipo",
-                    "id",
-                    "parentesco",
-                    1,
-                    "form-select",
-                  ],
-                  ["class", "col-sm-12 col-md-6", 4, "ngIf"],
-                  ["formGroupName", "universidadAlaQuePostula", 1, "row"],
-                  [
-                    "formControlName",
-                    "universidad",
-                    "id",
-                    "universidad",
-                    1,
-                    "form-select",
-                  ],
-                  [
-                    "formControlName",
-                    "carrera",
-                    "type",
-                    "text",
-                    "id",
-                    "carrera",
-                    1,
-                    "form-control",
-                  ],
-                  [
-                    "formControlName",
-                    "fortalezasCualidadesPostulante",
-                    "id",
-                    "fortalezasCualidadesPostulante",
-                    "rows",
-                    "5",
-                    1,
-                    "form-control",
-                  ],
-                  [
-                    "formControlName",
-                    "ayudaProcesoPostulaci\xf3n",
-                    "rows",
-                    "5",
-                    1,
-                    "form-control",
-                  ],
-                  [1, "col-sm-12", "col-md-8"],
-                  [
-                    "placeholder",
-                    "-Seleccionar-",
-                    "id",
-                    "accionesApoyo",
-                    3,
-                    "multiple",
-                    "maxSelectedItems",
-                    "closeOnSelect",
-                    "add",
-                    "remove",
-                    "clear",
-                  ],
-                  ["formArrayName", "accionesApoyo"],
-                  ["class", "row", 3, "formGroupName", 4, "ngFor", "ngForOf"],
-                  ["formGroupName", "eleccionUniCarrera", 1, "row"],
-                  ["formControlName", "motivo", "rows", "5", 1, "form-control"],
-                  [
-                    "formControlName",
-                    "estaDeAcuerdo",
-                    1,
-                    "form-select",
-                    "mb-2",
-                  ],
-                  ["value", "Si"],
-                  ["value", "No"],
-                  ["value", "No precisa"],
-                  ["formGroupName", "beneficioEconomico", 1, "row"],
-                  ["formControlName", "fueAcreedor", 1, "form-select"],
-                  [
-                    "formGroupName",
-                    "tipoBeneficio",
-                    "class",
-                    "col-sm-12 col-md-12",
-                    4,
-                    "ngIf",
-                  ],
-                  ["formGroupName", "preparacionPreUniversitaria", 1, "row"],
-                  ["formControlName", "tuvo", 1, "form-select"],
-                  [
-                    "formGroupName",
-                    "aCargo",
-                    "class",
-                    "col-sm-12 col-md-12",
-                    4,
-                    "ngIf",
-                  ],
-                  [
-                    "placeholder",
-                    "-Seleccionar-",
-                    3,
-                    "multiple",
-                    "closeOnSelect",
-                    "add",
-                    "remove",
-                    "clear",
-                  ],
-                  ["formArrayName", "actividadesExtracademicas"],
-                  ["class", "row", 4, "ngIf"],
-                  ["formArrayName", "familiaNuclear"],
-                  [1, "table-responsive", "col-sm-12", "col-md-12", "mb-1"],
-                  [1, "table"],
-                  ["scope", "col", 3, "min-width", 4, "ngFor", "ngForOf"],
-                  [3, "formGroupName", 4, "ngFor", "ngForOf"],
-                  [1, "d-flex", "justify-content-between"],
-                  [1, "btn", "btn-outline-success", "mt-1", "mb-3", 3, "click"],
-                  [1, "mdi", "mdi-plus"],
-                  [1, "mdi", "mdi-arrow-right"],
-                  ["formArrayName", "tareasQueApoyaElPostulante"],
-                  [
-                    "formControlName",
-                    "horasDiariasApoyoTareasDelHogarPostulante",
-                    "id",
-                    "horasHogar",
-                    1,
-                    "form-select",
-                  ],
-                  ["formArrayName", "encargadosTareasDelHogar"],
-                  [1, "col-sm-12", "col-md-12", "mb-3"],
-                  ["formArrayName", "actividadesApoyoEconomico"],
-                  [1, "table-responsive", "col-sm-12", "col-md-12", "mb-3"],
-                  ["scope", "col", 4, "ngFor", "ngForOf"],
-                  [
-                    "formControlName",
-                    "principalesReglasCasa",
-                    "rows",
-                    "5",
-                    1,
-                    "form-control",
-                  ],
-                  [
-                    "placeholder",
-                    "-Seleccionar-",
-                    3,
-                    "multiple",
-                    "maxSelectedItems",
-                    "closeOnSelect",
-                    "add",
-                    "remove",
-                    "clear",
-                  ],
-                  ["formArrayName", "significadoEducacion"],
-                  ["formGroupName", "accionesConcretas"],
-                  ["formControlName", "accion", 1, "form-select"],
-                  ["formGroupName", "situacionComplicada"],
-                  ["formControlName", "rpta", 1, "form-select"],
-                  ["formArrayName", "problemasQuePresenta"],
-                  [3, "numero", "descripcion"],
-                  [
-                    "formControlName",
-                    "estrategiasResolverProblema",
-                    "rows",
-                    "5",
-                    1,
-                    "form-control",
-                  ],
-                  ["formGroupName", "fortalezasFamiliares"],
-                  ["formGroupName", "momentoEnFamilia"],
-                  ["formGroupName", "reorganizacionTareas"],
-                  [1, "btn-cuestionario", 3, "click"],
-                  [1, "text-submit"],
-                  [
-                    "width",
-                    "24px",
-                    "src",
-                    "assets/images/cuestionario/arrow-btn.svg",
-                  ],
-                  [3, "value"],
-                  ["class", "text-danger mt-1", 4, "ngIf"],
-                  [1, "text-danger", "mt-1"],
-                  ["for", "detalle"],
-                  [
-                    "formControlName",
-                    "detalle",
-                    "type",
-                    "text",
-                    "id",
-                    "detalle",
-                    "placeholder",
-                    "Especificar lengua",
-                    1,
-                    "form-control",
-                  ],
-                  [
-                    "formControlName",
-                    "detalle",
-                    "type",
-                    "text",
-                    "id",
-                    "detalleParentesco",
-                    "placeholder",
-                    "Especificar parentesco",
-                    1,
-                    "form-control",
-                  ],
-                  [1, "row", 3, "formGroupName"],
-                  [1, "col-sm-3", "col-md-6"],
-                  ["formGroupName", "tipoAccion", 1, "mb-3"],
-                  [
-                    "type",
-                    "text",
-                    "formControlName",
-                    "detalle",
-                    "placeholder",
-                    "especificar acci\xf3n",
-                    1,
-                    "form-control",
-                  ],
-                  [
-                    "formControlName",
-                    "detalle",
-                    "rows",
-                    "5",
-                    1,
-                    "form-control",
-                  ],
-                  [
-                    "formGroupName",
-                    "tipoBeneficio",
-                    1,
-                    "col-sm-12",
-                    "col-md-12",
-                  ],
-                  [
-                    "formControlName",
-                    "beneficio",
-                    "id",
-                    "selecBene",
-                    1,
-                    "form-select",
-                  ],
-                  [
-                    "formControlName",
-                    "detalle",
-                    "type",
-                    "text",
-                    "id",
-                    "detalle",
-                    "placeholder",
-                    "Especificar beneficio",
-                    1,
-                    "form-control",
-                  ],
-                  ["formGroupName", "aCargo", 1, "col-sm-12", "col-md-12"],
-                  [
-                    "formControlName",
-                    "pagadoPor",
-                    "id",
-                    "selecBene",
-                    1,
-                    "form-select",
-                  ],
-                  ["formControlName", "periodo", 1, "form-select"],
-                  [
-                    "formControlName",
-                    "detalle",
-                    "type",
-                    "text",
-                    "id",
-                    "detalle",
-                    "placeholder",
-                    "Especificar detalle",
-                    1,
-                    "form-control",
-                  ],
-                  [1, "col-sm-3", "col-md-3"],
-                  ["formGroupName", "tipoActividad", 1, "mb-3"],
-                  [1, "col-sm-3", "col-md-4"],
-                  ["formGroupName", "financiado", 1, "mb-3"],
-                  ["for", "financiado"],
-                  [
-                    "formControlName",
-                    "financiadoPor",
-                    "id",
-                    "financiado",
-                    1,
-                    "form-select",
-                    3,
-                    "change",
-                  ],
-                  ["tipoFinancimiento", ""],
-                  [
-                    "type",
-                    "text",
-                    "formControlName",
-                    "detalle",
-                    "placeholder",
-                    "especificar actividad",
-                    1,
-                    "form-control",
-                  ],
-                  ["for", ""],
-                  [
-                    "formControlName",
-                    "detalle",
-                    "type",
-                    "text",
-                    1,
-                    "form-control",
-                  ],
-                  [
-                    "formControlName",
-                    "direccionVivienda",
-                    "type",
-                    "text",
-                    "placeholder",
-                    "direcci\xf3n completa de vivienda",
-                    1,
-                    "form-control",
-                  ],
-                  [1, "col-sm-12", "col-md-4"],
-                  ["for", "mapa"],
-                  [
-                    "formControlName",
-                    "coordenadasVivienda",
-                    "type",
-                    "text",
-                    "id",
-                    "mapa",
-                    "placeholder",
-                    "coordenadas",
-                    1,
-                    "form-control",
-                    3,
-                    "readonly",
-                  ],
-                  [1, "col-sm-12", "col-md-4", "align-self-end", "mb-3"],
-                  [
-                    "type",
-                    "button",
-                    1,
-                    "btn",
-                    "btn-outline-success",
-                    3,
-                    "click",
-                  ],
-                  [1, "mdi", "mdi-map-marker"],
-                  ["formControlName", "tiempoTraslado", 1, "form-select"],
-                  ["scope", "col"],
-                  [3, "formGroupName"],
-                  [
-                    "formControlName",
-                    "parentesco",
-                    "placeholder",
-                    "Parentesco",
-                    "type",
-                    "text",
-                    1,
-                    "form-control",
-                  ],
-                  [
-                    "formControlName",
-                    "nombres",
-                    "placeholder",
-                    "Nombres",
-                    "type",
-                    "text",
-                    1,
-                    "form-control",
-                  ],
-                  [
-                    "formControlName",
-                    "apellidos",
-                    "placeholder",
-                    "Apellidos",
-                    "type",
-                    "text",
-                    1,
-                    "form-control",
-                  ],
-                  [
-                    "formControlName",
-                    "edad",
-                    "numbersOnly",
-                    "",
-                    "placeholder",
-                    "Edad",
-                    "type",
-                    "text",
-                    1,
-                    "form-control",
-                  ],
-                  ["formControlName", "estadoCivil", 1, "form-select"],
-                  ["formControlName", "nivelEducacion", 1, "form-select"],
-                  [2, "max-width", "200px"],
-                  ["formControlName", "viveoFallecido", 1, "form-select"],
-                  ["formControlName", "viveConElPostulante", 1, "form-select"],
-                  ["formControlName", "situacionLaboral", 1, "form-select"],
-                  [1, "btn", "btn-outline-danger", "btn-icon", 3, "click"],
-                  [1, "btn-icon-prepend", "feather", "icon-trash-2"],
-                  ["formGroupName", "tipoTarea", 1, "mb-3"],
-                  [
-                    "type",
-                    "text",
-                    "formControlName",
-                    "detalle",
-                    "placeholder",
-                    "especificar tarea",
-                    1,
-                    "form-control",
-                  ],
-                  ["formGroupName", "encargado", 1, "mb-3"],
-                  ["for", "porcResp"],
-                  [
-                    "formControlName",
-                    "porcentaje",
-                    "id",
-                    "porcResp",
-                    1,
-                    "form-select",
-                  ],
-                  [
-                    "type",
-                    "text",
-                    "formControlName",
-                    "detalle",
-                    "placeholder",
-                    "especificar responsable",
-                    1,
-                    "form-control",
-                  ],
-                  [4, "ngIf", "ngIfElse"],
-                  ["lblApoyoEconomico", ""],
-                  ["formControlName", "necesita", 1, "form-select"],
-                  [
-                    "formControlName",
-                    "actividad",
-                    "type",
-                    "text",
-                    "placeholder",
-                    "Especificar actividad",
-                    1,
-                    "form-control",
-                  ],
-                  ["formGroupName", "significado", 1, "mb-3"],
-                  ["for", "detalleSignificado"],
-                  [
-                    "type",
-                    "text",
-                    "formControlName",
-                    "detalle",
-                    "placeholder",
-                    "especificar significado",
-                    "id",
-                    "detalleSignificado",
-                    1,
-                    "form-control",
-                  ],
-                  ["formGroupName", "tipoProblema", 1, "mb-3"],
-                  [
-                    "type",
-                    "text",
-                    "formControlName",
-                    "detalle",
-                    "placeholder",
-                    "especificar problema",
-                    1,
-                    "form-control",
-                  ],
-                ],
-                template: function (i, o) {
+                openMaps() {
+                  this.modalService
+                    .open(ii, { backdrop: "static", keyboard: !1 })
+                    .result.then((o) => {
+                      console.log(o);
+                      const d = o[0];
+                      this.getControl("coordenadasVivienda")?.setValue(
+                        JSON.stringify(d)
+                      );
+                    });
+                }
+                submitForm() {
                   if (
-                    (1 & i &&
-                      (e.TgZ(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h1", 3),
-                      e._uU(4),
-                      e.qZA(),
-                      e._UZ(5, "img", 4),
-                      e.qZA(),
-                      e.TgZ(6, "div", 5)(7, "div", 6)(8, "div", 7)(9, "h2", 8),
-                      e._uU(
-                        10,
-                        " Estimado padre/madre de familia y/o apoderado(a) "
-                      ),
-                      e.qZA(),
-                      e.TgZ(11, "p"),
-                      e._uU(
-                        12,
-                        " A continuaci\xf3n encontrar\xe1n una serie de preguntas que requerimos respondan con total transparencia y sinceridad. Estas preguntas tienen car\xe1cter de declaraci\xf3n jurada. No hay respuestas correctas o incorrectas. El objetivo de las mismas es poder conocer a las familias de nuestros postulantes como parte del Proceso de Selecci\xf3n al Programa. "
-                      ),
-                      e.qZA(),
-                      e.TgZ(13, "div", 9)(14, "div", 10)(15, "p"),
-                      e._uU(
-                        16,
-                        " Si tuvieran alguna dificultad para la comprensi\xf3n o redacci\xf3n de sus ideas por escrito, le recomendamos pedirle ayuda a un familiar o comunicarse con el equipo de IPFE al "
-                      ),
-                      e.TgZ(17, "b"),
-                      e._uU(18, "tel\xe9fono (01) 739 0570"),
-                      e.qZA(),
-                      e._uU(19, ". "),
-                      e.qZA(),
-                      e.TgZ(20, "p"),
-                      e._uU(
-                        21,
-                        " Las respuestas a estas preguntas no influyen de ninguna manera en el proceso de selecci\xf3n o posible asignaci\xf3n del beneficio. "
-                      ),
-                      e.qZA(),
-                      e.TgZ(22, "p"),
-                      e._uU(
-                        23,
-                        " Esta informaci\xf3n ser\xe1 tratada con total confidencialidad de acuerdo a la "
-                      ),
-                      e.TgZ(24, "a", 11),
-                      e._uU(
-                        25,
-                        "Ley de Protecci\xf3n de Datos Personales N\xb0 29733."
-                      ),
-                      e.qZA()(),
-                      e.TgZ(26, "p"),
-                      e._uU(
-                        27,
-                        " Les agradecemos de antemano por el tiempo y honestidad brindada. "
-                      ),
-                      e.qZA(),
-                      e._UZ(28, "br"),
-                      e.TgZ(29, "p"),
-                      e._uU(30, "Atentamente,"),
-                      e.qZA(),
-                      e.TgZ(31, "p", 12)(32, "b"),
-                      e._uU(33, "Programa de Becas BCP"),
-                      e.qZA()(),
-                      e._UZ(34, "br"),
-                      e.TgZ(35, "p", 8)(36, "b"),
-                      e._uU(37, "(*) Importante:"),
-                      e.qZA(),
-                      e._uU(
-                        38,
-                        " Es necesario que la persona que responda el cuestionario sea el/la principal cuidador(a) del/la postulante. "
-                      ),
-                      e.qZA()(),
-                      e._UZ(39, "img", 13),
-                      e.qZA()()(),
-                      e.TgZ(40, "div", 6)(41, "form", 14, 15)(43, "div", 6)(
-                        44,
-                        "div",
-                        16
-                      )(45, "div", 17),
-                      e._UZ(46, "app-label-form", 18),
-                      e.TgZ(47, "select", 19)(48, "option", 20),
-                      e._uU(49, "-Seleccionar-"),
-                      e.qZA(),
-                      e.YNc(50, Ko, 2, 2, "option", 21),
-                      e.qZA(),
-                      e.YNc(51, e_, 2, 1, "ng-container", 22),
-                      e.qZA(),
-                      e.YNc(52, __, 7, 1, "ng-container", 22),
-                      e.qZA(),
-                      e.TgZ(53, "div", 23)(54, "div", 17),
-                      e._UZ(55, "app-label-form", 24),
-                      e.TgZ(56, "ng-select", 25),
-                      e.NdJ("change", function (r) {
-                        return o.changeUbigeo(r);
+                    ((this.btnSubmitStatus = !0), this.cuestionarioForm.invalid)
+                  )
+                    this.openDialogErrorform(),
+                      this.cuestionarioForm.markAllAsTouched(),
+                      setTimeout(() => {
+                        this.btnSubmitStatus = !1;
+                      }, 1e3);
+                  else {
+                    const i = this.modalService.open(ye.b, {
+                      backdrop: "static",
+                    });
+                    (i.componentInstance.title = "\xa1Muchas Gracias!"),
+                      (i.componentInstance.message =
+                        "Los datos del cuestionario fueron registrados con \xe9xito"),
+                      (i.componentInstance.modalHeader = !1),
+                      (i.componentInstance.titleSuccess = !0),
+                      (i.componentInstance.showBtnCancel = !1),
+                      i.result.then((o) => {
+                        console.log(o);
                       }),
-                      e.YNc(57, a_, 2, 2, "ng-option", 21),
-                      e.qZA(),
-                      e.YNc(58, r_, 2, 1, "ng-container", 22),
-                      e.qZA()()(),
-                      e.TgZ(59, "div", 26)(60, "div", 23)(61, "div", 17),
-                      e._UZ(62, "app-label-form", 18)(63, "input", 27),
-                      e.YNc(64, t_, 2, 1, "ng-container", 22),
-                      e.qZA()(),
-                      e.TgZ(65, "div", 23)(66, "div", 17),
-                      e._UZ(67, "app-label-form", 18)(68, "input", 28),
-                      e.YNc(69, s_, 5, 4, "ng-container", 22),
-                      e.qZA()()(),
-                      e.TgZ(70, "div", 29)(71, "div", 23)(72, "div", 17),
-                      e._UZ(73, "app-label-form", 18)(74, "input", 30),
-                      e.YNc(75, l_, 2, 1, "ng-container", 22),
-                      e.qZA()(),
-                      e.TgZ(76, "div", 23)(77, "div", 17),
-                      e._UZ(78, "app-label-form", 18)(79, "input", 31),
-                      e.YNc(80, C_, 5, 4, "ng-container", 22),
-                      e.qZA()(),
-                      e.TgZ(81, "div", 32)(82, "div", 33)(83, "div", 23)(
-                        84,
-                        "div",
-                        17
-                      ),
-                      e._UZ(85, "app-label-form", 18),
-                      e.TgZ(86, "select", 34)(87, "option", 20),
-                      e._uU(88, "-Seleccionar-"),
-                      e.qZA(),
-                      e.YNc(89, y_, 2, 2, "option", 21),
-                      e.qZA(),
-                      e.YNc(90, T_, 2, 1, "ng-container", 22),
-                      e.qZA()(),
-                      e.TgZ(91, "div", 23),
-                      e.YNc(92, M_, 5, 4, "ng-container", 35),
-                      e.qZA()()()(),
-                      e.TgZ(93, "div", 36)(94, "div", 23)(95, "div", 17),
-                      e._UZ(96, "app-label-form", 18),
-                      e.TgZ(97, "select", 37)(98, "option", 20),
-                      e._uU(99, "-Seleccionar-"),
-                      e.qZA(),
-                      e.YNc(100, S_, 2, 2, "option", 21),
-                      e.qZA(),
-                      e.YNc(101, E_, 2, 1, "ng-container", 22),
-                      e.qZA()(),
-                      e.TgZ(102, "div", 23)(103, "div", 17),
-                      e._UZ(104, "app-label-form", 18)(105, "input", 38),
-                      e.YNc(106, q_, 2, 1, "ng-container", 22),
-                      e.qZA()()(),
-                      e.TgZ(107, "div", 6)(108, "div", 32)(109, "div", 17),
-                      e._UZ(110, "app-label-form", 18)(111, "textarea", 39),
-                      e.YNc(112, w_, 2, 1, "ng-container", 22),
-                      e.qZA()()(),
-                      e.TgZ(113, "div", 6)(114, "div", 32)(115, "div", 17),
-                      e._UZ(116, "app-label-form", 18)(117, "textarea", 40),
-                      e.YNc(118, H_, 2, 1, "ng-container", 22),
-                      e.qZA()()(),
-                      e.TgZ(119, "div", 6)(120, "div", 41)(121, "div", 17),
-                      e._UZ(122, "app-label-form", 24),
-                      e.TgZ(123, "ng-select", 42),
-                      e.NdJ("add", function (r) {
-                        return o.addAccionApoyo(r);
-                      })("remove", function (r) {
-                        return o.deleteAccionApoyo(r);
-                      })("clear", function () {
-                        return o.clearAccionApoyo();
-                      }),
-                      e.YNc(124, Z_, 2, 2, "ng-option", 21),
-                      e.qZA(),
-                      e.YNc(125, O_, 2, 1, "ng-container", 22),
-                      e.qZA()()(),
-                      e.ynx(126, 43),
-                      e.YNc(127, J_, 2, 2, "div", 44),
-                      e.BQk(),
-                      e.TgZ(128, "div", 45)(129, "div", 23)(130, "div", 17),
-                      e._UZ(131, "app-label-form", 18)(132, "textarea", 46),
-                      e.YNc(133, j_, 2, 1, "ng-container", 22),
-                      e.qZA()(),
-                      e.TgZ(134, "div", 23)(135, "div", 17),
-                      e._UZ(136, "app-label-form", 18),
-                      e.TgZ(137, "select", 47)(138, "option", 20),
-                      e._uU(139, "-Seleccionar-"),
-                      e.qZA(),
-                      e.TgZ(140, "option", 48),
-                      e._uU(141, "S\xed"),
-                      e.qZA(),
-                      e.TgZ(142, "option", 49),
-                      e._uU(143, "No"),
-                      e.qZA(),
-                      e.TgZ(144, "option", 50),
-                      e._uU(145, "No precisa"),
-                      e.qZA()(),
-                      e.YNc(146, Y_, 2, 1, "ng-container", 22),
-                      e.YNc(147, G_, 4, 3, "ng-container", 22),
-                      e.qZA()()(),
-                      e.TgZ(148, "div", 51)(149, "div", 23)(150, "div", 17),
-                      e._UZ(151, "app-label-form", 18),
-                      e.TgZ(152, "select", 52)(153, "option", 20),
-                      e._uU(154, "-Seleccionar-"),
-                      e.qZA(),
-                      e.YNc(155, $_, 2, 2, "option", 21),
-                      e.qZA(),
-                      e.YNc(156, K_, 2, 1, "ng-container", 22),
-                      e.qZA()(),
-                      e.YNc(157, da, 10, 5, "div", 53),
-                      e.qZA(),
-                      e.TgZ(158, "div", 54)(159, "div", 23)(160, "div", 17),
-                      e._UZ(161, "app-label-form", 18),
-                      e.TgZ(162, "select", 55)(163, "option", 20),
-                      e._uU(164, "-Seleccionar-"),
-                      e.qZA(),
-                      e.YNc(165, ra, 2, 2, "option", 21),
-                      e.qZA(),
-                      e.YNc(166, ta, 2, 1, "ng-container", 22),
-                      e.qZA()(),
-                      e.YNc(167, va, 17, 9, "div", 56),
-                      e.qZA(),
-                      e.TgZ(168, "div", 6)(169, "div", 32)(170, "div", 17),
-                      e._UZ(171, "app-label-form", 24),
-                      e.TgZ(172, "ng-select", 57),
-                      e.NdJ("add", function (r) {
-                        return o.addActividad(r);
-                      })("remove", function (r) {
-                        return o.deleteActividad(r);
-                      })("clear", function () {
-                        return o.clearActividades();
-                      }),
-                      e.YNc(173, fa, 2, 2, "ng-option", 21),
-                      e.qZA(),
-                      e.YNc(174, Ca, 3, 0, "ng-container", 22),
-                      e.qZA()()(),
-                      e.TgZ(175, "div", 58),
-                      e.YNc(176, xa, 17, 6, "div", 44),
-                      e.qZA(),
-                      e.YNc(177, wa, 6, 5, "div", 59),
-                      e.YNc(178, Za, 11, 2, "div", 59),
-                      e.YNc(179, ka, 7, 5, "div", 59),
-                      e.TgZ(180, "div", 17),
-                      e._UZ(181, "app-label-form", 18),
-                      e.qZA(),
-                      e.ynx(182, 60),
-                      e.TgZ(183, "div", 61)(184, "table", 62)(185, "thead")(
-                        186,
-                        "tr"
-                      ),
-                      e.YNc(187, Na, 2, 3, "th", 63),
-                      e._UZ(188, "th"),
-                      e.qZA()(),
-                      e.TgZ(189, "tbody"),
-                      e.YNc(190, bd, 44, 16, "tr", 64),
-                      e.qZA()()(),
-                      e.TgZ(191, "div", 65)(192, "button", 66),
-                      e.NdJ("click", function () {
-                        return o.addFamiliarNuclear();
-                      }),
-                      e._UZ(193, "i", 67),
-                      e._uU(194, " Agregar familiar "),
-                      e.qZA(),
-                      e.TgZ(195, "p", 8),
-                      e._uU(196, " Revisar campos a la derecha "),
-                      e._UZ(197, "i", 68),
-                      e.qZA()(),
-                      e.BQk(),
-                      e.TgZ(198, "div", 6)(199, "div", 32)(200, "div", 17),
-                      e._UZ(201, "app-label-form", 24),
-                      e.TgZ(202, "ng-select", 57),
-                      e.NdJ("add", function (r) {
-                        return o.addTareaHogar(r);
-                      })("remove", function (r) {
-                        return o.deleteTareaHogar(r);
-                      })("clear", function () {
-                        return o.clearTareasHogar();
-                      }),
-                      e.YNc(203, sd, 2, 2, "ng-option", 21),
-                      e.qZA(),
-                      e.YNc(204, cd, 3, 0, "ng-container", 22),
-                      e.qZA()()(),
-                      e.ynx(205, 69),
-                      e.YNc(206, vd, 2, 2, "div", 44),
-                      e.BQk(),
-                      e.TgZ(207, "div", 6)(208, "div", 32)(209, "div", 17),
-                      e._UZ(210, "app-label-form", 18),
-                      e.TgZ(211, "select", 70)(212, "option", 20),
-                      e._uU(213, "-Seleccionar-"),
-                      e.qZA(),
-                      e.YNc(214, fd, 2, 2, "option", 21),
-                      e.qZA(),
-                      e.YNc(215, yd, 2, 1, "ng-container", 22),
-                      e.qZA()()(),
-                      e.TgZ(216, "div", 6)(217, "div", 32)(218, "div", 17),
-                      e._UZ(219, "app-label-form", 24),
-                      e.TgZ(220, "ng-select", 57),
-                      e.NdJ("add", function (r) {
-                        return o.addEncargadoTarea(r);
-                      })("remove", function (r) {
-                        return o.deleteEncargadoTarea(r);
-                      })("clear", function () {
-                        return o.clearResponsablesTarea();
-                      }),
-                      e.YNc(221, Ad, 2, 2, "ng-option", 21),
-                      e.qZA(),
-                      e.YNc(222, Td, 3, 0, "ng-container", 22),
-                      e.qZA()()(),
-                      e.ynx(223, 71),
-                      e.YNc(224, xd, 15, 5, "div", 44),
-                      e.BQk(),
-                      e.TgZ(225, "div", 6)(226, "div", 72),
-                      e._UZ(227, "app-label-form", 24),
-                      e.qZA()(),
-                      e.ynx(228, 73),
-                      e.TgZ(229, "div", 74)(230, "table", 62)(231, "thead")(
-                        232,
-                        "tr"
-                      ),
-                      e.YNc(233, qd, 2, 1, "th", 75),
-                      e._UZ(234, "th"),
-                      e.qZA()(),
-                      e.TgZ(235, "tbody"),
-                      e.YNc(236, kd, 13, 6, "tr", 64),
-                      e.qZA()(),
-                      e.TgZ(237, "button", 66),
-                      e.NdJ("click", function () {
-                        return o.addActividadApoyo();
-                      }),
-                      e._UZ(238, "i", 67),
-                      e._uU(239, " Agregar otra actividad "),
-                      e.qZA()(),
-                      e.BQk(),
-                      e.TgZ(240, "div", 6)(241, "div", 32)(242, "div", 17),
-                      e._UZ(243, "app-label-form", 24)(244, "textarea", 76),
-                      e.YNc(245, Jd, 2, 1, "ng-container", 22),
-                      e.qZA()()(),
-                      e.TgZ(246, "div", 6)(247, "div", 32)(248, "div", 17),
-                      e._UZ(249, "app-label-form", 24),
-                      e.TgZ(250, "ng-select", 77),
-                      e.NdJ("add", function (r) {
-                        return o.addSignificadoEducacion(r);
-                      })("remove", function (r) {
-                        return o.deleteSignificadoEducacion(r);
-                      })("clear", function () {
-                        return o.clearSignificadoEducacion();
-                      }),
-                      e.YNc(251, Dd, 2, 2, "ng-option", 21),
-                      e.qZA(),
-                      e.YNc(252, jd, 3, 0, "ng-container", 22),
-                      e.qZA()()(),
-                      e.TgZ(253, "div", 78),
-                      e.YNc(254, Vd, 4, 2, "div", 44),
-                      e.qZA(),
-                      e.ynx(255, 79),
-                      e.TgZ(256, "div", 6)(257, "div", 32)(258, "div", 17),
-                      e._UZ(259, "app-label-form", 24),
-                      e.TgZ(260, "select", 80)(261, "option", 20),
-                      e._uU(262, "-Seleccionar-"),
-                      e.qZA(),
-                      e.YNc(263, Gd, 2, 2, "option", 21),
-                      e.qZA(),
-                      e.YNc(264, Wd, 2, 1, "ng-container", 22),
-                      e.qZA()()(),
-                      e.YNc(265, er, 6, 3, "div", 59),
-                      e.BQk(),
-                      e.ynx(266, 81),
-                      e.TgZ(267, "div", 6)(268, "div", 32)(269, "div", 17),
-                      e._UZ(270, "app-label-form", 24),
-                      e.TgZ(271, "select", 82)(272, "option", 20),
-                      e._uU(273, "-Seleccionar-"),
-                      e.qZA(),
-                      e.YNc(274, ir, 2, 2, "option", 21),
-                      e.qZA(),
-                      e.YNc(275, _r, 2, 1, "ng-container", 22),
-                      e.qZA()()(),
-                      e.YNc(276, rr, 6, 3, "div", 59),
-                      e.BQk(),
-                      e.TgZ(277, "div", 6)(278, "div", 41)(279, "div", 17),
-                      e._UZ(280, "app-label-form", 24),
-                      e.TgZ(281, "ng-select", 57),
-                      e.NdJ("add", function (r) {
-                        return o.addProblemasQuePresenta(r);
-                      })("remove", function (r) {
-                        return o.deleteProblemaQuePresenta(r);
-                      })("clear", function () {
-                        return o.clearProblemasQuePresenta();
-                      }),
-                      e.YNc(282, ur, 2, 2, "ng-option", 21),
-                      e.qZA(),
-                      e.YNc(283, gr, 2, 1, "ng-container", 22),
-                      e.qZA()()(),
-                      e.ynx(284, 83),
-                      e.YNc(285, sr, 2, 2, "div", 44),
-                      e.BQk(),
-                      e.TgZ(286, "div", 6)(287, "div", 32)(288, "div", 17),
-                      e._UZ(289, "app-label-form", 84)(290, "textarea", 85),
-                      e.YNc(291, lr, 2, 1, "ng-container", 22),
-                      e.qZA()()(),
-                      e.ynx(292, 86),
-                      e.TgZ(293, "div", 6)(294, "div", 32)(295, "div", 17),
-                      e._UZ(296, "app-label-form", 24),
-                      e.TgZ(297, "select", 82)(298, "option", 20),
-                      e._uU(299, "-Seleccionar-"),
-                      e.qZA(),
-                      e.YNc(300, mr, 2, 2, "option", 21),
-                      e.qZA(),
-                      e.YNc(301, vr, 2, 1, "ng-container", 22),
-                      e.qZA()()(),
-                      e.YNc(302, yr, 6, 3, "div", 59),
-                      e.BQk(),
-                      e.ynx(303, 87),
-                      e.TgZ(304, "div", 6)(305, "div", 32)(306, "div", 17),
-                      e._UZ(307, "app-label-form", 24),
-                      e.TgZ(308, "select", 82)(309, "option", 20),
-                      e._uU(310, "-Seleccionar-"),
-                      e.qZA(),
-                      e.YNc(311, Ar, 2, 2, "option", 21),
-                      e.qZA(),
-                      e.YNc(312, Pr, 2, 1, "ng-container", 22),
-                      e.qZA()()(),
-                      e.YNc(313, Sr, 6, 3, "div", 59),
-                      e.BQk(),
-                      e.ynx(314, 88),
-                      e.TgZ(315, "div", 6)(316, "div", 32)(317, "div", 17),
-                      e._UZ(318, "app-label-form", 24),
-                      e.TgZ(319, "select", 82)(320, "option", 20),
-                      e._uU(321, "-Seleccionar-"),
-                      e.qZA(),
-                      e.YNc(322, Ir, 2, 2, "option", 21),
-                      e.qZA(),
-                      e.YNc(323, xr, 2, 1, "ng-container", 22),
-                      e.qZA()()(),
-                      e.YNc(324, wr, 6, 3, "div", 59),
-                      e.BQk(),
-                      e.TgZ(325, "button", 89),
-                      e.NdJ("click", function () {
-                        return o.submitForm();
-                      }),
-                      e.TgZ(326, "span", 90),
-                      e._uU(327, "ENVIAR"),
-                      e.qZA(),
-                      e._UZ(328, "img", 91),
-                      e.qZA()()()()()()),
-                    2 & i)
-                  ) {
-                    const d = e.MAs(42);
-                    let r,
-                      u,
-                      g,
-                      n,
-                      p,
-                      m,
-                      s,
-                      c,
-                      f,
-                      T,
-                      I,
-                      E,
-                      x,
-                      q,
-                      z,
-                      w,
-                      D,
-                      j,
-                      U,
-                      Y,
-                      R,
-                      V,
-                      G,
-                      $,
-                      W;
-                    e.xp6(4),
-                      e.Oqu(o.title),
-                      e.xp6(37),
-                      e.Q6J("formGroup", o.cuestionarioForm),
-                      e.xp6(5),
-                      e.Q6J("numero", o.objPregunta.uno.nro)(
-                        "descripcion",
-                        o.objPregunta.uno.descripcion
-                      )("for", o.objPregunta.uno.for),
+                      setTimeout(() => {
+                        this.btnSubmitStatus = !1;
+                      }, 2e3);
+                  }
+                }
+                initLoadDataForm() {
+                  const i = localStorage.getItem("cuestionario");
+                  if (i) {
+                    const o = JSON.parse(i),
+                      r = o.familiaNuclear.length;
+                    if (r > 1)
+                      for (let n = 0; n < r - 1; n++) this.addFamiliarNuclear();
+                    this.initActividadesApoyoEconomicoLS(
+                      o.actividadesApoyoEconomico
+                    ),
+                      o.accionesApoyo
+                        .map(({ tipoAccion: n }) => ({
+                          accion: n.accion,
+                          detalle: n.detalle,
+                        }))
+                        .forEach(({ accion: n, detalle: s }) => {
+                          this.listaAccionesSelected.push(n),
+                            this.addAccionApoyo(n, s);
+                        }),
+                      o.actividadesExtracademicas
+                        .map(({ tipoActividad: n, financiado: s }) => ({
+                          actividad: n.actividad,
+                          detalle: n.detalle,
+                          financiadoPor: s.financiadoPor,
+                          detalleFinanciamiento: s.detalle,
+                        }))
+                        .forEach(
+                          ({
+                            actividad: n,
+                            detalle: s,
+                            financiadoPor: y,
+                            detalleFinanciamiento: L,
+                          }) => {
+                            this.listaActividadesExtracademicasSelected.push(n),
+                              this.addActividad(n, s, y, L);
+                          }
+                        ),
+                      o.tareasQueApoyaElPostulante
+                        .map(({ tipoTarea: n }) => ({
+                          tarea: n.tarea,
+                          detalle: n.detalle,
+                        }))
+                        .forEach(({ tarea: n, detalle: s }) => {
+                          this.listaTareasHogarSelected.push(n),
+                            this.addTareaHogar(n, s);
+                        }),
+                      o.encargadosTareasDelHogar
+                        .map(({ encargado: n, porcentaje: s }) => ({
+                          miembro: n.miembro,
+                          detalle: n.detalle,
+                          porcentaje: s,
+                        }))
+                        .forEach(
+                          ({ miembro: n, detalle: s, porcentaje: y }) => {
+                            this.listaResponsablesSelected.push(n),
+                              this.addEncargadoTarea(n, s, y);
+                          }
+                        ),
+                      o.significadoEducacion
+                        .map(({ significado: n }) => ({
+                          rpta: n.rpta,
+                          detalle: n.detalle,
+                        }))
+                        .forEach(({ rpta: n, detalle: s }) => {
+                          this.listaSignificadosSelected.push(n),
+                            this.addSignificadoEducacion(n, s);
+                        }),
+                      o.problemasQuePresenta
+                        .map(({ tipoProblema: n }) => ({
+                          problema: n.problema,
+                          detalle: n.detalle,
+                        }))
+                        .forEach(({ problema: n, detalle: s }) => {
+                          this.listaProblemasSelected.push(n),
+                            this.addProblemasQuePresenta(n, s);
+                        }),
+                      this.cuestionarioForm.patchValue(o);
+                  } else
+                    this.initActividadesApoyoEconomico(
+                      this.listTipoApoyoEconomico
+                    );
+                  this.cuestionarioForm.valueChanges
+                    .pipe((0, N.b)((o) => console.log(o)))
+                    .subscribe((o) =>
+                      localStorage.setItem("cuestionario", JSON.stringify(o))
+                    );
+                }
+                addRequired() {}
+              }
+              return (
+                (_.ɵfac = function (i) {
+                  return new (i || _)(e.Y36(t.qu), e.Y36(k.FF));
+                }),
+                (_.ɵcmp = e.Xpm({
+                  type: _,
+                  selectors: [["app-questionary-bcp"]],
+                  decls: 331,
+                  vars: 218,
+                  consts: [
+                    [1, "container"],
+                    [1, "card", "mt-3"],
+                    [1, "head-cuestionario"],
+                    [1, "head-cuestionario__title"],
+                    [
+                      "src",
+                      "assets/images/cuestionario/head-bcp.svg",
+                      "alt",
+                      "",
+                      "srcset",
+                      "",
+                      1,
+                      "head-cuestionario__img",
+                    ],
+                    [1, "card-body"],
+                    [1, "row"],
+                    [1, "col", "mb-3", "p-3", "hero-cuestionario"],
+                    [1, "color-orange"],
+                    [1, "d-flex", "flex-disposicion"],
+                    [1, "bloq-text"],
+                    [
+                      "href",
+                      "mailto:EncuentroPadresBCP@ipfe.org.pe",
+                      "target",
+                      "_blank",
+                      1,
+                      "color-azul",
+                      "txt-underline",
+                    ],
+                    [
+                      "href",
+                      "https://www.leyes.congreso.gob.pe/Documentos/Leyes/29733.pdf",
+                      "target",
+                      "_blank",
+                      1,
+                      "color-azul",
+                      "txt-underline",
+                    ],
+                    [1, "textLightIt", "cursiva", "color-azul"],
+                    [
+                      "src",
+                      "assets/images/cuestionario/descrip-img.svg",
+                      "alt",
+                      "",
+                      "srcset",
+                      "",
+                      1,
+                      "right-img",
+                    ],
+                    ["autocomplete", "off", 3, "formGroup"],
+                    ["formCuestionario", "ngForm"],
+                    [
+                      "formGroupName",
+                      "lenguaMaterna",
+                      1,
+                      "col-sm-12",
+                      "col-md-6",
+                    ],
+                    [1, "mb-3"],
+                    [3, "numero", "descripcion", "for"],
+                    [
+                      "formControlName",
+                      "lengua",
+                      "id",
+                      "lengMat",
+                      1,
+                      "form-select",
+                    ],
+                    ["value", "", "disabled", "", "hidden", ""],
+                    [3, "value", 4, "ngFor", "ngForOf"],
+                    [4, "ngIf"],
+                    [1, "col-sm-12", "col-md-6"],
+                    [3, "numero", "descripcion", "textoAdicional", "for"],
+                    [
+                      "placeholder",
+                      "-Seleccionar-",
+                      "formControlName",
+                      "ubigeo",
+                      3,
+                      "multiple",
+                      "maxSelectedItems",
+                      "closeOnSelect",
+                    ],
+                    ["formGroupName", "responsable", 1, "row"],
+                    [
+                      "formControlName",
+                      "nombresApellidos",
+                      "type",
+                      "text",
+                      "id",
+                      "nombApeResponsable",
+                      "placeholder",
+                      "Nombres y apellidos completos",
+                      1,
+                      "form-control",
+                    ],
+                    [
+                      "formControlName",
+                      "dni",
+                      "numbersOnly",
+                      "",
+                      "type",
+                      "text",
+                      "id",
+                      "dniResponsable",
+                      "placeholder",
+                      "Nro. DNI",
+                      1,
+                      "form-control",
+                    ],
+                    ["formGroupName", "postulante", 1, "row"],
+                    [
+                      "formControlName",
+                      "nombresApellidos",
+                      "type",
+                      "text",
+                      "id",
+                      "nombApePostulante",
+                      "placeholder",
+                      "Nombres y apellidos completos",
+                      1,
+                      "form-control",
+                    ],
+                    [
+                      "formControlName",
+                      "dni",
+                      "numbersOnly",
+                      "",
+                      "type",
+                      "text",
+                      "id",
+                      "dniPostulante",
+                      "placeholder",
+                      "Nro. DNI",
+                      1,
+                      "form-control",
+                    ],
+                    [1, "col-sm-12", "col-md-12"],
+                    ["formGroupName", "parentesco", 1, "row"],
+                    [
+                      "formControlName",
+                      "tipo",
+                      "id",
+                      "parentesco",
+                      1,
+                      "form-select",
+                    ],
+                    ["class", "col-sm-12 col-md-6", 4, "ngIf"],
+                    ["formGroupName", "universidadAlaQuePostula", 1, "row"],
+                    [
+                      "formControlName",
+                      "universidad",
+                      "id",
+                      "universidad",
+                      1,
+                      "form-select",
+                    ],
+                    [
+                      "formControlName",
+                      "carrera",
+                      "type",
+                      "text",
+                      "id",
+                      "carrera",
+                      1,
+                      "form-control",
+                    ],
+                    [
+                      "formControlName",
+                      "fortalezasCualidadesPostulante",
+                      "id",
+                      "fortalezasCualidadesPostulante",
+                      "rows",
+                      "5",
+                      1,
+                      "form-control",
+                    ],
+                    [
+                      "formControlName",
+                      "ayudaProcesoPostulaci\xf3n",
+                      "rows",
+                      "5",
+                      1,
+                      "form-control",
+                    ],
+                    [1, "col-sm-12", "col-md-8"],
+                    [
+                      "placeholder",
+                      "-Seleccionar-",
+                      "id",
+                      "accionesApoyo",
+                      3,
+                      "multiple",
+                      "maxSelectedItems",
+                      "closeOnSelect",
+                      "ngModel",
+                      "ngModelOptions",
+                      "add",
+                      "remove",
+                      "clear",
+                      "ngModelChange",
+                    ],
+                    ["formArrayName", "accionesApoyo"],
+                    ["class", "row", 3, "formGroupName", 4, "ngFor", "ngForOf"],
+                    ["formGroupName", "eleccionUniCarrera", 1, "row"],
+                    [
+                      "formControlName",
+                      "motivo",
+                      "rows",
+                      "5",
+                      1,
+                      "form-control",
+                    ],
+                    [
+                      "formControlName",
+                      "estaDeAcuerdo",
+                      1,
+                      "form-select",
+                      "mb-2",
+                    ],
+                    ["value", "Si"],
+                    ["value", "No"],
+                    ["value", "No precisa"],
+                    ["formGroupName", "beneficioEconomico", 1, "row"],
+                    ["formControlName", "fueAcreedor", 1, "form-select"],
+                    [
+                      "formGroupName",
+                      "tipoBeneficio",
+                      "class",
+                      "col-sm-12 col-md-12",
+                      4,
+                      "ngIf",
+                    ],
+                    ["formGroupName", "preparacionPreUniversitaria", 1, "row"],
+                    ["formControlName", "tuvo", 1, "form-select"],
+                    [
+                      "formGroupName",
+                      "aCargo",
+                      "class",
+                      "col-sm-12 col-md-12",
+                      4,
+                      "ngIf",
+                    ],
+                    [
+                      "placeholder",
+                      "-Seleccionar-",
+                      3,
+                      "multiple",
+                      "closeOnSelect",
+                      "ngModel",
+                      "ngModelOptions",
+                      "add",
+                      "remove",
+                      "clear",
+                      "ngModelChange",
+                    ],
+                    ["formArrayName", "actividadesExtracademicas"],
+                    ["class", "row", 4, "ngIf"],
+                    ["formArrayName", "familiaNuclear"],
+                    [1, "table-responsive", "col-sm-12", "col-md-12", "mb-1"],
+                    [1, "table"],
+                    ["scope", "col", 3, "min-width", 4, "ngFor", "ngForOf"],
+                    [3, "formGroupName", 4, "ngFor", "ngForOf"],
+                    [1, "d-flex", "justify-content-between"],
+                    [
+                      1,
+                      "btn",
+                      "btn-outline-success",
+                      "mt-1",
+                      "mb-3",
+                      3,
+                      "click",
+                    ],
+                    [1, "mdi", "mdi-plus"],
+                    [1, "mdi", "mdi-arrow-right"],
+                    ["formArrayName", "tareasQueApoyaElPostulante"],
+                    [
+                      "formControlName",
+                      "horasDiariasApoyoTareasDelHogarPostulante",
+                      "id",
+                      "horasHogar",
+                      1,
+                      "form-select",
+                    ],
+                    ["formArrayName", "encargadosTareasDelHogar"],
+                    [1, "col-sm-12", "col-md-12", "mb-3"],
+                    ["formArrayName", "actividadesApoyoEconomico"],
+                    [1, "table-responsive", "col-sm-12", "col-md-12", "mb-3"],
+                    ["scope", "col", 4, "ngFor", "ngForOf"],
+                    [
+                      "formControlName",
+                      "principalesReglasCasa",
+                      "rows",
+                      "5",
+                      1,
+                      "form-control",
+                    ],
+                    [
+                      "placeholder",
+                      "-Seleccionar-",
+                      3,
+                      "multiple",
+                      "maxSelectedItems",
+                      "closeOnSelect",
+                      "ngModel",
+                      "ngModelOptions",
+                      "add",
+                      "remove",
+                      "clear",
+                      "ngModelChange",
+                    ],
+                    ["formArrayName", "significadoEducacion"],
+                    ["formGroupName", "accionesConcretas"],
+                    ["formControlName", "accion", 1, "form-select"],
+                    ["formGroupName", "situacionComplicada"],
+                    ["formControlName", "rpta", 1, "form-select"],
+                    ["formArrayName", "problemasQuePresenta"],
+                    [3, "numero", "descripcion"],
+                    [
+                      "formControlName",
+                      "estrategiasResolverProblema",
+                      "rows",
+                      "5",
+                      1,
+                      "form-control",
+                    ],
+                    ["formGroupName", "fortalezasFamiliares"],
+                    ["formGroupName", "momentoEnFamilia"],
+                    ["formGroupName", "reorganizacionTareas"],
+                    [1, "btn-cuestionario", 3, "disabled", "ngClass", "click"],
+                    [
+                      "class",
+                      "spinner-grow spinner-grow-sm spinner--mr-2",
+                      "role",
+                      "status",
+                      "aria-hidden",
+                      "true",
+                      4,
+                      "ngIf",
+                    ],
+                    [1, "text-submit"],
+                    [
+                      "width",
+                      "24px",
+                      "src",
+                      "assets/images/cuestionario/arrow-btn.svg",
+                    ],
+                    [3, "value"],
+                    ["class", "text-danger mt-1", 4, "ngIf"],
+                    [1, "text-danger", "mt-1"],
+                    ["for", "detalle"],
+                    [
+                      "formControlName",
+                      "detalle",
+                      "type",
+                      "text",
+                      "id",
+                      "detalle",
+                      "placeholder",
+                      "Especificar lengua",
+                      1,
+                      "form-control",
+                    ],
+                    [
+                      "formControlName",
+                      "detalle",
+                      "type",
+                      "text",
+                      "id",
+                      "detalleParentesco",
+                      "placeholder",
+                      "Especificar parentesco",
+                      1,
+                      "form-control",
+                    ],
+                    [1, "row", 3, "formGroupName"],
+                    [1, "col-sm-3", "col-md-6"],
+                    ["formGroupName", "tipoAccion", 1, "mb-3"],
+                    [
+                      "type",
+                      "text",
+                      "formControlName",
+                      "detalle",
+                      "placeholder",
+                      "especificar acci\xf3n",
+                      1,
+                      "form-control",
+                    ],
+                    [
+                      "formControlName",
+                      "detalle",
+                      "rows",
+                      "5",
+                      1,
+                      "form-control",
+                    ],
+                    [
+                      "formGroupName",
+                      "tipoBeneficio",
+                      1,
+                      "col-sm-12",
+                      "col-md-12",
+                    ],
+                    [
+                      "formControlName",
+                      "beneficio",
+                      "id",
+                      "selecBene",
+                      1,
+                      "form-select",
+                    ],
+                    [
+                      "formControlName",
+                      "detalle",
+                      "type",
+                      "text",
+                      "id",
+                      "detalle",
+                      "placeholder",
+                      "Especificar beneficio",
+                      1,
+                      "form-control",
+                    ],
+                    ["formGroupName", "aCargo", 1, "col-sm-12", "col-md-12"],
+                    [
+                      "formControlName",
+                      "pagadoPor",
+                      "id",
+                      "selecBene",
+                      1,
+                      "form-select",
+                    ],
+                    ["formControlName", "periodo", 1, "form-select"],
+                    [
+                      "formControlName",
+                      "detalle",
+                      "type",
+                      "text",
+                      "id",
+                      "detalle",
+                      "placeholder",
+                      "Especificar detalle",
+                      1,
+                      "form-control",
+                    ],
+                    [1, "col-sm-3", "col-md-3"],
+                    ["formGroupName", "tipoActividad", 1, "mb-3"],
+                    [1, "col-sm-3", "col-md-4"],
+                    ["formGroupName", "financiado", 1, "mb-3"],
+                    ["for", "financiado"],
+                    [
+                      "formControlName",
+                      "financiadoPor",
+                      "id",
+                      "financiado",
+                      1,
+                      "form-select",
+                      3,
+                      "change",
+                    ],
+                    ["tipoFinancimiento", ""],
+                    [
+                      "type",
+                      "text",
+                      "formControlName",
+                      "detalle",
+                      "placeholder",
+                      "especificar actividad",
+                      1,
+                      "form-control",
+                    ],
+                    ["for", ""],
+                    [
+                      "formControlName",
+                      "detalle",
+                      "type",
+                      "text",
+                      1,
+                      "form-control",
+                    ],
+                    [
+                      "formControlName",
+                      "direccionVivienda",
+                      "type",
+                      "text",
+                      "placeholder",
+                      "direcci\xf3n completa de vivienda",
+                      1,
+                      "form-control",
+                    ],
+                    [1, "col-sm-12", "col-md-4"],
+                    ["for", "mapa"],
+                    [
+                      "formControlName",
+                      "coordenadasVivienda",
+                      "type",
+                      "text",
+                      "id",
+                      "mapa",
+                      "placeholder",
+                      "coordenadas",
+                      1,
+                      "form-control",
+                      3,
+                      "readonly",
+                    ],
+                    [1, "col-sm-12", "col-md-4", "align-self-end", "mb-3"],
+                    [
+                      "type",
+                      "button",
+                      1,
+                      "btn",
+                      "btn-outline-success",
+                      3,
+                      "click",
+                    ],
+                    [1, "mdi", "mdi-map-marker"],
+                    ["formControlName", "tiempoTraslado", 1, "form-select"],
+                    ["scope", "col"],
+                    [3, "formGroupName"],
+                    [
+                      "formControlName",
+                      "parentesco",
+                      "placeholder",
+                      "Parentesco",
+                      "type",
+                      "text",
+                      1,
+                      "form-control",
+                    ],
+                    [
+                      "formControlName",
+                      "nombres",
+                      "placeholder",
+                      "Nombres",
+                      "type",
+                      "text",
+                      1,
+                      "form-control",
+                    ],
+                    [
+                      "formControlName",
+                      "apellidos",
+                      "placeholder",
+                      "Apellidos",
+                      "type",
+                      "text",
+                      1,
+                      "form-control",
+                    ],
+                    [
+                      "formControlName",
+                      "edad",
+                      "numbersOnly",
+                      "",
+                      "placeholder",
+                      "Edad",
+                      "type",
+                      "text",
+                      1,
+                      "form-control",
+                    ],
+                    ["formControlName", "estadoCivil", 1, "form-select"],
+                    ["formControlName", "nivelEducacion", 1, "form-select"],
+                    [2, "max-width", "200px"],
+                    ["formControlName", "viveoFallecido", 1, "form-select"],
+                    [
+                      "formControlName",
+                      "viveConElPostulante",
+                      1,
+                      "form-select",
+                    ],
+                    ["formControlName", "situacionLaboral", 1, "form-select"],
+                    [1, "btn", "btn-outline-danger", "btn-icon", 3, "click"],
+                    [1, "btn-icon-prepend", "feather", "icon-trash-2"],
+                    ["formGroupName", "tipoTarea", 1, "mb-3"],
+                    [
+                      "type",
+                      "text",
+                      "formControlName",
+                      "detalle",
+                      "placeholder",
+                      "especificar tarea",
+                      1,
+                      "form-control",
+                    ],
+                    ["formGroupName", "encargado", 1, "mb-3"],
+                    ["for", "porcResp"],
+                    [
+                      "formControlName",
+                      "porcentaje",
+                      "id",
+                      "porcResp",
+                      1,
+                      "form-select",
+                    ],
+                    [
+                      "type",
+                      "text",
+                      "formControlName",
+                      "detalle",
+                      "placeholder",
+                      "especificar responsable",
+                      1,
+                      "form-control",
+                    ],
+                    [4, "ngIf", "ngIfElse"],
+                    ["lblApoyoEconomico", ""],
+                    ["formControlName", "necesita", 1, "form-select"],
+                    [
+                      "formControlName",
+                      "actividad",
+                      "type",
+                      "text",
+                      "placeholder",
+                      "Especificar actividad",
+                      1,
+                      "form-control",
+                    ],
+                    ["formGroupName", "significado", 1, "mb-3"],
+                    ["for", "detalleSignificado"],
+                    [
+                      "type",
+                      "text",
+                      "formControlName",
+                      "detalle",
+                      "placeholder",
+                      "especificar significado",
+                      "id",
+                      "detalleSignificado",
+                      1,
+                      "form-control",
+                    ],
+                    ["formGroupName", "tipoProblema", 1, "mb-3"],
+                    [
+                      "type",
+                      "text",
+                      "formControlName",
+                      "detalle",
+                      "placeholder",
+                      "especificar problema",
+                      1,
+                      "form-control",
+                    ],
+                    [
+                      "role",
+                      "status",
+                      "aria-hidden",
+                      "true",
+                      1,
+                      "spinner-grow",
+                      "spinner-grow-sm",
+                      "spinner--mr-2",
+                    ],
+                  ],
+                  template: function (i, o) {
+                    if (
+                      (1 & i &&
+                        (e.TgZ(0, "div", 0)(1, "div", 1)(2, "div", 2)(
+                          3,
+                          "h1",
+                          3
+                        ),
+                        e._uU(4),
+                        e.qZA(),
+                        e._UZ(5, "img", 4),
+                        e.qZA(),
+                        e.TgZ(6, "div", 5)(7, "div", 6)(8, "div", 7)(
+                          9,
+                          "h2",
+                          8
+                        ),
+                        e._uU(
+                          10,
+                          " Estimado padre/madre de familia y/o apoderado(a) "
+                        ),
+                        e.qZA(),
+                        e.TgZ(11, "p"),
+                        e._uU(
+                          12,
+                          " A continuaci\xf3n encontrar\xe1n una serie de preguntas que requerimos respondan con total transparencia y sinceridad. Estas preguntas tienen car\xe1cter de declaraci\xf3n jurada. No hay respuestas correctas o incorrectas. El objetivo de las mismas es poder conocer a las familias de nuestros postulantes como parte del Proceso de Selecci\xf3n al Programa. "
+                        ),
+                        e.qZA(),
+                        e.TgZ(13, "div", 9)(14, "div", 10)(15, "p"),
+                        e._uU(
+                          16,
+                          " Si tuvieran alguna dificultad para la comprensi\xf3n o redacci\xf3n de sus ideas por escrito, le recomendamos pedirle ayuda a un familiar o comunicarse con el equipo de IPFE al "
+                        ),
+                        e.TgZ(17, "b"),
+                        e._uU(
+                          18,
+                          "tel\xe9fono (01) 739 0570 anexos 107 o 109 y al correo: "
+                        ),
+                        e.TgZ(19, "a", 11),
+                        e._uU(20, "EncuentroPadresBCP@ipfe.org.pe"),
+                        e.qZA()()(),
+                        e.TgZ(21, "p"),
+                        e._uU(
+                          22,
+                          " Las respuestas a estas preguntas no influyen de ninguna manera en el proceso de selecci\xf3n o posible asignaci\xf3n del beneficio. "
+                        ),
+                        e.qZA(),
+                        e.TgZ(23, "p"),
+                        e._uU(
+                          24,
+                          " Esta informaci\xf3n ser\xe1 tratada con total confidencialidad de acuerdo a la "
+                        ),
+                        e.TgZ(25, "a", 12),
+                        e._uU(
+                          26,
+                          "Ley de Protecci\xf3n de Datos Personales N\xb0 29733."
+                        ),
+                        e.qZA()(),
+                        e.TgZ(27, "p"),
+                        e._uU(
+                          28,
+                          " Les agradecemos de antemano por el tiempo y honestidad brindada. "
+                        ),
+                        e.qZA(),
+                        e._UZ(29, "br"),
+                        e.TgZ(30, "p"),
+                        e._uU(31, "Atentamente,"),
+                        e.qZA(),
+                        e.TgZ(32, "p", 13)(33, "b"),
+                        e._uU(34, "Programa de Becas BCP"),
+                        e.qZA()(),
+                        e._UZ(35, "br"),
+                        e.TgZ(36, "p", 8)(37, "b"),
+                        e._uU(38, "(*) Importante:"),
+                        e.qZA(),
+                        e._uU(
+                          39,
+                          " Es necesario que la persona que responda el cuestionario sea el/la principal cuidador(a) del/la postulante. "
+                        ),
+                        e.qZA()(),
+                        e._UZ(40, "img", 14),
+                        e.qZA()()(),
+                        e.TgZ(41, "div", 6)(42, "form", 15, 16)(44, "div", 6)(
+                          45,
+                          "div",
+                          17
+                        )(46, "div", 18),
+                        e._UZ(47, "app-label-form", 19),
+                        e.TgZ(48, "select", 20)(49, "option", 21),
+                        e._uU(50, "-Seleccionar-"),
+                        e.qZA(),
+                        e.YNc(51, Xo, 2, 2, "option", 22),
+                        e.qZA(),
+                        e.YNc(52, i_, 2, 1, "ng-container", 23),
+                        e.qZA(),
+                        e.YNc(53, a_, 7, 1, "ng-container", 23),
+                        e.qZA(),
+                        e.TgZ(54, "div", 24)(55, "div", 18),
+                        e._UZ(56, "app-label-form", 25),
+                        e.TgZ(57, "ng-select", 26),
+                        e.YNc(58, d_, 2, 2, "ng-option", 22),
+                        e.qZA(),
+                        e.YNc(59, u_, 2, 1, "ng-container", 23),
+                        e.qZA()()(),
+                        e.TgZ(60, "div", 27)(61, "div", 24)(62, "div", 18),
+                        e._UZ(63, "app-label-form", 19)(64, "input", 28),
+                        e.YNc(65, g_, 2, 1, "ng-container", 23),
+                        e.qZA()(),
+                        e.TgZ(66, "div", 24)(67, "div", 18),
+                        e._UZ(68, "app-label-form", 19)(69, "input", 29),
+                        e.YNc(70, c_, 5, 4, "ng-container", 23),
+                        e.qZA()()(),
+                        e.TgZ(71, "div", 30)(72, "div", 24)(73, "div", 18),
+                        e._UZ(74, "app-label-form", 19)(75, "input", 31),
+                        e.YNc(76, m_, 2, 1, "ng-container", 23),
+                        e.qZA()(),
+                        e.TgZ(77, "div", 24)(78, "div", 18),
+                        e._UZ(79, "app-label-form", 19)(80, "input", 32),
+                        e.YNc(81, y_, 5, 4, "ng-container", 23),
+                        e.qZA()(),
+                        e.TgZ(82, "div", 33)(83, "div", 34)(84, "div", 24)(
+                          85,
+                          "div",
+                          18
+                        ),
+                        e._UZ(86, "app-label-form", 19),
+                        e.TgZ(87, "select", 35)(88, "option", 21),
+                        e._uU(89, "-Seleccionar-"),
+                        e.qZA(),
+                        e.YNc(90, A_, 2, 2, "option", 22),
+                        e.qZA(),
+                        e.YNc(91, M_, 2, 1, "ng-container", 23),
+                        e.qZA()(),
+                        e.TgZ(92, "div", 24),
+                        e.YNc(93, L_, 5, 4, "ng-container", 36),
+                        e.qZA()()()(),
+                        e.TgZ(94, "div", 37)(95, "div", 24)(96, "div", 18),
+                        e._UZ(97, "app-label-form", 19),
+                        e.TgZ(98, "select", 38)(99, "option", 21),
+                        e._uU(100, "-Seleccionar-"),
+                        e.qZA(),
+                        e.YNc(101, E_, 2, 2, "option", 22),
+                        e.qZA(),
+                        e.YNc(102, x_, 2, 1, "ng-container", 23),
+                        e.qZA()(),
+                        e.TgZ(103, "div", 24)(104, "div", 18),
+                        e._UZ(105, "app-label-form", 19)(106, "input", 39),
+                        e.YNc(107, z_, 2, 1, "ng-container", 23),
+                        e.qZA()()(),
+                        e.TgZ(108, "div", 6)(109, "div", 33)(110, "div", 18),
+                        e._UZ(111, "app-label-form", 19)(112, "textarea", 40),
+                        e.YNc(113, Q_, 2, 1, "ng-container", 23),
+                        e.qZA()()(),
+                        e.TgZ(114, "div", 6)(115, "div", 33)(116, "div", 18),
+                        e._UZ(117, "app-label-form", 19)(118, "textarea", 41),
+                        e.YNc(119, Z_, 2, 1, "ng-container", 23),
+                        e.qZA()()(),
+                        e.TgZ(120, "div", 6)(121, "div", 42)(122, "div", 18),
+                        e._UZ(123, "app-label-form", 25),
+                        e.TgZ(124, "ng-select", 43),
+                        e.NdJ("add", function (r) {
+                          return o.addAccionApoyo(r);
+                        })("remove", function (r) {
+                          return o.deleteAccionApoyo(r);
+                        })("clear", function () {
+                          return o.clearAccionApoyo();
+                        })("ngModelChange", function (r) {
+                          return (o.listaAccionesSelected = r);
+                        }),
+                        e.YNc(125, O_, 2, 2, "ng-option", 22),
+                        e.qZA(),
+                        e.YNc(126, F_, 2, 1, "ng-container", 23),
+                        e.qZA()()(),
+                        e.ynx(127, 44),
+                        e.YNc(128, D_, 2, 2, "div", 45),
+                        e.BQk(),
+                        e.TgZ(129, "div", 46)(130, "div", 24)(131, "div", 18),
+                        e._UZ(132, "app-label-form", 19)(133, "textarea", 47),
+                        e.YNc(134, U_, 2, 1, "ng-container", 23),
+                        e.qZA()(),
+                        e.TgZ(135, "div", 24)(136, "div", 18),
+                        e._UZ(137, "app-label-form", 19),
+                        e.TgZ(138, "select", 48)(139, "option", 21),
+                        e._uU(140, "-Seleccionar-"),
+                        e.qZA(),
+                        e.TgZ(141, "option", 49),
+                        e._uU(142, "S\xed"),
+                        e.qZA(),
+                        e.TgZ(143, "option", 50),
+                        e._uU(144, "No"),
+                        e.qZA(),
+                        e.TgZ(145, "option", 51),
+                        e._uU(146, "No precisa"),
+                        e.qZA()(),
+                        e.YNc(147, R_, 2, 1, "ng-container", 23),
+                        e.YNc(148, $_, 4, 3, "ng-container", 23),
+                        e.qZA()()(),
+                        e.TgZ(149, "div", 52)(150, "div", 24)(151, "div", 18),
+                        e._UZ(152, "app-label-form", 19),
+                        e.TgZ(153, "select", 53)(154, "option", 21),
+                        e._uU(155, "-Seleccionar-"),
+                        e.qZA(),
+                        e.YNc(156, W_, 2, 2, "option", 22),
+                        e.qZA(),
+                        e.YNc(157, X_, 2, 1, "ng-container", 23),
+                        e.qZA()(),
+                        e.YNc(158, ra, 10, 5, "div", 54),
+                        e.qZA(),
+                        e.TgZ(159, "div", 55)(160, "div", 24)(161, "div", 18),
+                        e._UZ(162, "app-label-form", 19),
+                        e.TgZ(163, "select", 56)(164, "option", 21),
+                        e._uU(165, "-Seleccionar-"),
+                        e.qZA(),
+                        e.YNc(166, ua, 2, 2, "option", 22),
+                        e.qZA(),
+                        e.YNc(167, ga, 2, 1, "ng-container", 23),
+                        e.qZA()(),
+                        e.YNc(168, fa, 17, 9, "div", 57),
+                        e.qZA(),
+                        e.TgZ(169, "div", 6)(170, "div", 33)(171, "div", 18),
+                        e._UZ(172, "app-label-form", 25),
+                        e.TgZ(173, "ng-select", 58),
+                        e.NdJ("add", function (r) {
+                          return o.addActividad(r);
+                        })("remove", function (r) {
+                          return o.deleteActividad(r);
+                        })("clear", function () {
+                          return o.clearActividades();
+                        })("ngModelChange", function (r) {
+                          return (o.listaActividadesExtracademicasSelected = r);
+                        }),
+                        e.YNc(174, Ca, 2, 2, "ng-option", 22),
+                        e.qZA(),
+                        e.YNc(175, ya, 3, 0, "ng-container", 23),
+                        e.qZA()()(),
+                        e.TgZ(176, "div", 59),
+                        e.YNc(177, qa, 17, 6, "div", 45),
+                        e.qZA(),
+                        e.YNc(178, Qa, 6, 5, "div", 60),
+                        e.YNc(179, Oa, 11, 2, "div", 60),
+                        e.YNc(180, Na, 7, 5, "div", 60),
+                        e.TgZ(181, "div", 18),
+                        e._UZ(182, "app-label-form", 19),
+                        e.qZA(),
+                        e.ynx(183, 61),
+                        e.TgZ(184, "div", 62)(185, "table", 63)(186, "thead")(
+                          187,
+                          "tr"
+                        ),
+                        e.YNc(188, Ja, 2, 3, "th", 64),
+                        e._UZ(189, "th"),
+                        e.qZA()(),
+                        e.TgZ(190, "tbody"),
+                        e.YNc(191, sd, 44, 16, "tr", 65),
+                        e.qZA()()(),
+                        e.TgZ(192, "div", 66)(193, "button", 67),
+                        e.NdJ("click", function () {
+                          return o.addFamiliarNuclear();
+                        }),
+                        e._UZ(194, "i", 68),
+                        e._uU(195, " Agregar familiar "),
+                        e.qZA(),
+                        e.TgZ(196, "p", 8),
+                        e._uU(197, " Revisar campos a la derecha "),
+                        e._UZ(198, "i", 69),
+                        e.qZA()(),
+                        e.BQk(),
+                        e.TgZ(199, "div", 6)(200, "div", 33)(201, "div", 18),
+                        e._UZ(202, "app-label-form", 25),
+                        e.TgZ(203, "ng-select", 58),
+                        e.NdJ("add", function (r) {
+                          return o.addTareaHogar(r);
+                        })("remove", function (r) {
+                          return o.deleteTareaHogar(r);
+                        })("clear", function () {
+                          return o.clearTareasHogar();
+                        })("ngModelChange", function (r) {
+                          return (o.listaTareasHogarSelected = r);
+                        }),
+                        e.YNc(204, cd, 2, 2, "ng-option", 22),
+                        e.qZA(),
+                        e.YNc(205, ld, 3, 0, "ng-container", 23),
+                        e.qZA()()(),
+                        e.ynx(206, 70),
+                        e.YNc(207, fd, 2, 2, "div", 45),
+                        e.BQk(),
+                        e.TgZ(208, "div", 6)(209, "div", 33)(210, "div", 18),
+                        e._UZ(211, "app-label-form", 19),
+                        e.TgZ(212, "select", 71)(213, "option", 21),
+                        e._uU(214, "-Seleccionar-"),
+                        e.qZA(),
+                        e.YNc(215, Cd, 2, 2, "option", 22),
+                        e.qZA(),
+                        e.YNc(216, Ad, 2, 1, "ng-container", 23),
+                        e.qZA()()(),
+                        e.TgZ(217, "div", 6)(218, "div", 33)(219, "div", 18),
+                        e._UZ(220, "app-label-form", 25),
+                        e.TgZ(221, "ng-select", 58),
+                        e.NdJ("add", function (r) {
+                          return o.addEncargadoTarea(r);
+                        })("remove", function (r) {
+                          return o.deleteEncargadoTarea(r);
+                        })("clear", function () {
+                          return o.clearResponsablesTarea();
+                        })("ngModelChange", function (r) {
+                          return (o.listaResponsablesSelected = r);
+                        }),
+                        e.YNc(222, Td, 2, 2, "ng-option", 22),
+                        e.qZA(),
+                        e.YNc(223, Md, 3, 0, "ng-container", 23),
+                        e.qZA()()(),
+                        e.ynx(224, 72),
+                        e.YNc(225, qd, 15, 5, "div", 45),
+                        e.BQk(),
+                        e.TgZ(226, "div", 6)(227, "div", 73),
+                        e._UZ(228, "app-label-form", 25),
+                        e.qZA()(),
+                        e.ynx(229, 74),
+                        e.TgZ(230, "div", 75)(231, "table", 63)(232, "thead")(
+                          233,
+                          "tr"
+                        ),
+                        e.YNc(234, zd, 2, 1, "th", 76),
+                        e._UZ(235, "th"),
+                        e.qZA()(),
+                        e.TgZ(236, "tbody"),
+                        e.YNc(237, Nd, 13, 6, "tr", 65),
+                        e.qZA()(),
+                        e.TgZ(238, "button", 67),
+                        e.NdJ("click", function () {
+                          return o.addActividadApoyo();
+                        }),
+                        e._UZ(239, "i", 68),
+                        e._uU(240, " Agregar otra actividad "),
+                        e.qZA()(),
+                        e.BQk(),
+                        e.TgZ(241, "div", 6)(242, "div", 33)(243, "div", 18),
+                        e._UZ(244, "app-label-form", 25)(245, "textarea", 77),
+                        e.YNc(246, Dd, 2, 1, "ng-container", 23),
+                        e.qZA()()(),
+                        e.TgZ(247, "div", 6)(248, "div", 33)(249, "div", 18),
+                        e._UZ(250, "app-label-form", 25),
+                        e.TgZ(251, "ng-select", 78),
+                        e.NdJ("add", function (r) {
+                          return o.addSignificadoEducacion(r);
+                        })("remove", function (r) {
+                          return o.deleteSignificadoEducacion(r);
+                        })("clear", function () {
+                          return o.clearSignificadoEducacion();
+                        })("ngModelChange", function (r) {
+                          return (o.listaSignificadosSelected = r);
+                        }),
+                        e.YNc(252, jd, 2, 2, "ng-option", 22),
+                        e.qZA(),
+                        e.YNc(253, Ud, 3, 0, "ng-container", 23),
+                        e.qZA()()(),
+                        e.TgZ(254, "div", 79),
+                        e.YNc(255, Gd, 2, 2, "div", 45),
+                        e.qZA(),
+                        e.ynx(256, 80),
+                        e.TgZ(257, "div", 6)(258, "div", 33)(259, "div", 18),
+                        e._UZ(260, "app-label-form", 25),
+                        e.TgZ(261, "select", 81)(262, "option", 21),
+                        e._uU(263, "-Seleccionar-"),
+                        e.qZA(),
+                        e.YNc(264, $d, 2, 2, "option", 22),
+                        e.qZA(),
+                        e.YNc(265, Kd, 2, 1, "ng-container", 23),
+                        e.qZA()()(),
+                        e.YNc(266, ir, 6, 3, "div", 60),
+                        e.BQk(),
+                        e.ynx(267, 82),
+                        e.TgZ(268, "div", 6)(269, "div", 33)(270, "div", 18),
+                        e._UZ(271, "app-label-form", 25),
+                        e.TgZ(272, "select", 83)(273, "option", 21),
+                        e._uU(274, "-Seleccionar-"),
+                        e.qZA(),
+                        e.YNc(275, or, 2, 2, "option", 22),
+                        e.qZA(),
+                        e.YNc(276, ar, 2, 1, "ng-container", 23),
+                        e.qZA()()(),
+                        e.YNc(277, ur, 6, 3, "div", 60),
+                        e.BQk(),
+                        e.TgZ(278, "div", 6)(279, "div", 42)(280, "div", 18),
+                        e._UZ(281, "app-label-form", 25),
+                        e.TgZ(282, "ng-select", 58),
+                        e.NdJ("add", function (r) {
+                          return o.addProblemasQuePresenta(r);
+                        })("remove", function (r) {
+                          return o.deleteProblemaQuePresenta(r);
+                        })("clear", function () {
+                          return o.clearProblemasQuePresenta();
+                        })("ngModelChange", function (r) {
+                          return (o.listaProblemasSelected = r);
+                        }),
+                        e.YNc(283, tr, 2, 2, "ng-option", 22),
+                        e.qZA(),
+                        e.YNc(284, nr, 2, 1, "ng-container", 23),
+                        e.qZA()()(),
+                        e.ynx(285, 84),
+                        e.YNc(286, cr, 2, 2, "div", 45),
+                        e.BQk(),
+                        e.TgZ(287, "div", 6)(288, "div", 33)(289, "div", 18),
+                        e._UZ(290, "app-label-form", 85)(291, "textarea", 86),
+                        e.YNc(292, mr, 2, 1, "ng-container", 23),
+                        e.qZA()()(),
+                        e.ynx(293, 87),
+                        e.TgZ(294, "div", 6)(295, "div", 33)(296, "div", 18),
+                        e._UZ(297, "app-label-form", 25),
+                        e.TgZ(298, "select", 83)(299, "option", 21),
+                        e._uU(300, "-Seleccionar-"),
+                        e.qZA(),
+                        e.YNc(301, hr, 2, 2, "option", 22),
+                        e.qZA(),
+                        e.YNc(302, fr, 2, 1, "ng-container", 23),
+                        e.qZA()()(),
+                        e.YNc(303, Ar, 6, 3, "div", 60),
+                        e.BQk(),
+                        e.ynx(304, 88),
+                        e.TgZ(305, "div", 6)(306, "div", 33)(307, "div", 18),
+                        e._UZ(308, "app-label-form", 25),
+                        e.TgZ(309, "select", 83)(310, "option", 21),
+                        e._uU(311, "-Seleccionar-"),
+                        e.qZA(),
+                        e.YNc(312, Tr, 2, 2, "option", 22),
+                        e.qZA(),
+                        e.YNc(313, Pr, 2, 1, "ng-container", 23),
+                        e.qZA()()(),
+                        e.YNc(314, Er, 6, 3, "div", 60),
+                        e.BQk(),
+                        e.ynx(315, 89),
+                        e.TgZ(316, "div", 6)(317, "div", 33)(318, "div", 18),
+                        e._UZ(319, "app-label-form", 25),
+                        e.TgZ(320, "select", 83)(321, "option", 21),
+                        e._uU(322, "-Seleccionar-"),
+                        e.qZA(),
+                        e.YNc(323, Ir, 2, 2, "option", 22),
+                        e.qZA(),
+                        e.YNc(324, qr, 2, 1, "ng-container", 23),
+                        e.qZA()()(),
+                        e.YNc(325, Qr, 6, 3, "div", 60),
+                        e.BQk(),
+                        e.TgZ(326, "button", 90),
+                        e.NdJ("click", function () {
+                          return o.submitForm();
+                        }),
+                        e.YNc(327, Hr, 1, 0, "span", 91),
+                        e.TgZ(328, "span", 92),
+                        e._uU(329, "ENVIAR"),
+                        e.qZA(),
+                        e._UZ(330, "img", 93),
+                        e.qZA()()()()()()),
+                      2 & i)
+                    ) {
+                      const d = e.MAs(43);
+                      let r,
+                        u,
+                        g,
+                        p,
+                        b,
+                        h,
+                        l,
+                        n,
+                        s,
+                        y,
+                        L,
+                        I,
+                        x,
+                        q,
+                        z,
+                        w,
+                        U,
+                        Y,
+                        R,
+                        V,
+                        G,
+                        $,
+                        W,
+                        K,
+                        X;
                       e.xp6(4),
-                      e.Q6J("ngForOf", o.lenguajes),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        (null == (r = o.getControl("lenguaMaterna.lengua"))
-                          ? null
-                          : r.invalid) &&
+                        e.Oqu(o.title),
+                        e.xp6(38),
+                        e.Q6J("formGroup", o.cuestionarioForm),
+                        e.xp6(5),
+                        e.Q6J("numero", o.objPregunta.uno.nro)(
+                          "descripcion",
+                          o.objPregunta.uno.descripcion
+                        )("for", o.objPregunta.uno.for),
+                        e.xp6(4),
+                        e.Q6J("ngForOf", o.lenguajes),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
                           (null == (r = o.getControl("lenguaMaterna.lengua"))
                             ? null
-                            : r.touched)
-                      ),
-                      e.xp6(1),
-                      e.Q6J("ngIf", o.hasLenguaje),
-                      e.xp6(3),
-                      e.Q6J("numero", o.objPregunta.unoUno.nro)(
-                        "descripcion",
-                        o.objPregunta.unoUno.descripcion
-                      )("textoAdicional", o.objPregunta.unoUno.datoAdicional)(
-                        "for",
-                        o.objPregunta.unoUno.for
-                      ),
-                      e.xp6(1),
-                      e.Q6J("multiple", !0)("maxSelectedItems", 1)(
-                        "closeOnSelect",
-                        !0
-                      ),
-                      e.xp6(1),
-                      e.Q6J("ngForOf", o.lstUbigeo),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        (null == (u = o.getControl("ubigeo"))
-                          ? null
-                          : u.invalid) &&
+                            : r.invalid) &&
+                            (null == (r = o.getControl("lenguaMaterna.lengua"))
+                              ? null
+                              : r.touched)
+                        ),
+                        e.xp6(1),
+                        e.Q6J("ngIf", o.hasLenguaje),
+                        e.xp6(3),
+                        e.Q6J("numero", o.objPregunta.unoUno.nro)(
+                          "descripcion",
+                          o.objPregunta.unoUno.descripcion
+                        )("textoAdicional", o.objPregunta.unoUno.datoAdicional)(
+                          "for",
+                          o.objPregunta.unoUno.for
+                        ),
+                        e.xp6(1),
+                        e.Q6J("multiple", !0)("maxSelectedItems", 1)(
+                          "closeOnSelect",
+                          !0
+                        ),
+                        e.xp6(1),
+                        e.Q6J("ngForOf", o.lstUbigeo),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
                           (null == (u = o.getControl("ubigeo"))
                             ? null
-                            : u.touched)
-                      ),
-                      e.xp6(4),
-                      e.Q6J("numero", o.objPregunta.dos.nro)(
-                        "descripcion",
-                        o.objPregunta.dos.descripcion
-                      )("for", o.objPregunta.dos.for),
-                      e.xp6(2),
-                      e.Q6J(
-                        "ngIf",
-                        (null ==
-                        (g = o.getControl("responsable.nombresApellidos"))
-                          ? null
-                          : g.invalid) &&
+                            : u.invalid) &&
+                            (null == (u = o.getControl("ubigeo"))
+                              ? null
+                              : u.touched)
+                        ),
+                        e.xp6(4),
+                        e.Q6J("numero", o.objPregunta.dos.nro)(
+                          "descripcion",
+                          o.objPregunta.dos.descripcion
+                        )("for", o.objPregunta.dos.for),
+                        e.xp6(2),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
                           (g = o.getControl("responsable.nombresApellidos"))
                             ? null
-                            : g.touched)
-                      ),
-                      e.xp6(3),
-                      e.Q6J("numero", o.objPregunta.tres.nro)(
-                        "descripcion",
-                        o.objPregunta.tres.descripcion
-                      )("for", o.objPregunta.tres.for),
-                      e.xp6(2),
-                      e.Q6J(
-                        "ngIf",
-                        (null == (n = o.getControl("responsable.dni"))
-                          ? null
-                          : n.invalid) &&
-                          (null == (n = o.getControl("responsable.dni"))
+                            : g.invalid) &&
+                            (null ==
+                            (g = o.getControl("responsable.nombresApellidos"))
+                              ? null
+                              : g.touched)
+                        ),
+                        e.xp6(3),
+                        e.Q6J("numero", o.objPregunta.tres.nro)(
+                          "descripcion",
+                          o.objPregunta.tres.descripcion
+                        )("for", o.objPregunta.tres.for),
+                        e.xp6(2),
+                        e.Q6J(
+                          "ngIf",
+                          (null == (p = o.getControl("responsable.dni"))
                             ? null
-                            : n.touched)
-                      ),
-                      e.xp6(4),
-                      e.Q6J("numero", o.objPregunta.cinco.nro)(
-                        "descripcion",
-                        o.objPregunta.cinco.descripcion
-                      )("for", o.objPregunta.cinco.for),
-                      e.xp6(2),
-                      e.Q6J(
-                        "ngIf",
-                        (null ==
-                        (p = o.getControl("postulante.nombresApellidos"))
-                          ? null
-                          : p.invalid) &&
+                            : p.invalid) &&
+                            (null == (p = o.getControl("responsable.dni"))
+                              ? null
+                              : p.touched)
+                        ),
+                        e.xp6(4),
+                        e.Q6J("numero", o.objPregunta.cinco.nro)(
+                          "descripcion",
+                          o.objPregunta.cinco.descripcion
+                        )("for", o.objPregunta.cinco.for),
+                        e.xp6(2),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
-                          (p = o.getControl("postulante.nombresApellidos"))
+                          (b = o.getControl("postulante.nombresApellidos"))
                             ? null
-                            : p.touched)
-                      ),
-                      e.xp6(3),
-                      e.Q6J("numero", o.objPregunta.seis.nro)(
-                        "descripcion",
-                        o.objPregunta.seis.descripcion
-                      )("for", o.objPregunta.seis.for),
-                      e.xp6(2),
-                      e.Q6J(
-                        "ngIf",
-                        (null == (m = o.getControl("postulante.dni"))
-                          ? null
-                          : m.invalid) &&
-                          (null == (m = o.getControl("postulante.dni"))
+                            : b.invalid) &&
+                            (null ==
+                            (b = o.getControl("postulante.nombresApellidos"))
+                              ? null
+                              : b.touched)
+                        ),
+                        e.xp6(3),
+                        e.Q6J("numero", o.objPregunta.seis.nro)(
+                          "descripcion",
+                          o.objPregunta.seis.descripcion
+                        )("for", o.objPregunta.seis.for),
+                        e.xp6(2),
+                        e.Q6J(
+                          "ngIf",
+                          (null == (h = o.getControl("postulante.dni"))
                             ? null
-                            : m.touched)
-                      ),
-                      e.xp6(5),
-                      e.Q6J("numero", o.objPregunta.cuatro.nro)(
-                        "descripcion",
-                        o.objPregunta.cuatro.descripcion
-                      )("for", o.objPregunta.cuatro.for),
-                      e.xp6(4),
-                      e.Q6J("ngForOf", o.listParentesco),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        (null ==
-                        (s = o.getControl("postulante.parentesco.tipo"))
-                          ? null
-                          : s.invalid) &&
+                            : h.invalid) &&
+                            (null == (h = o.getControl("postulante.dni"))
+                              ? null
+                              : h.touched)
+                        ),
+                        e.xp6(5),
+                        e.Q6J("numero", o.objPregunta.cuatro.nro)(
+                          "descripcion",
+                          o.objPregunta.cuatro.descripcion
+                        )("for", o.objPregunta.cuatro.for),
+                        e.xp6(4),
+                        e.Q6J("ngForOf", o.listParentesco),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
-                          (s = o.getControl("postulante.parentesco.tipo"))
+                          (l = o.getControl("postulante.parentesco.tipo"))
                             ? null
-                            : s.touched)
-                      ),
-                      e.xp6(2),
-                      e.Q6J("ngIf", o.hasParentesco),
-                      e.xp6(4),
-                      e.Q6J("numero", o.objPregunta.siete.nro)(
-                        "descripcion",
-                        o.objPregunta.siete.descripcion
-                      )("for", o.objPregunta.siete.for),
-                      e.xp6(4),
-                      e.Q6J("ngForOf", o.universidades),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        (null ==
-                        (c = o.getControl(
-                          "universidadAlaQuePostula.universidad"
-                        ))
-                          ? null
-                          : c.invalid) &&
+                            : l.invalid) &&
+                            (null ==
+                            (l = o.getControl("postulante.parentesco.tipo"))
+                              ? null
+                              : l.touched)
+                        ),
+                        e.xp6(2),
+                        e.Q6J("ngIf", o.hasParentesco),
+                        e.xp6(4),
+                        e.Q6J("numero", o.objPregunta.siete.nro)(
+                          "descripcion",
+                          o.objPregunta.siete.descripcion
+                        )("for", o.objPregunta.siete.for),
+                        e.xp6(4),
+                        e.Q6J("ngForOf", o.universidades),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
-                          (c = o.getControl(
+                          (n = o.getControl(
                             "universidadAlaQuePostula.universidad"
                           ))
                             ? null
-                            : c.touched)
-                      ),
-                      e.xp6(3),
-                      e.Q6J("numero", o.objPregunta.sieteUno.nro)(
-                        "descripcion",
-                        o.objPregunta.sieteUno.descripcion
-                      )("for", o.objPregunta.sieteUno.for),
-                      e.xp6(2),
-                      e.Q6J(
-                        "ngIf",
-                        (null ==
-                        (f = o.getControl("universidadAlaQuePostula.carrera"))
-                          ? null
-                          : f.invalid) &&
+                            : n.invalid) &&
+                            (null ==
+                            (n = o.getControl(
+                              "universidadAlaQuePostula.universidad"
+                            ))
+                              ? null
+                              : n.touched)
+                        ),
+                        e.xp6(3),
+                        e.Q6J("numero", o.objPregunta.sieteUno.nro)(
+                          "descripcion",
+                          o.objPregunta.sieteUno.descripcion
+                        )("for", o.objPregunta.sieteUno.for),
+                        e.xp6(2),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
-                          (f = o.getControl("universidadAlaQuePostula.carrera"))
+                          (s = o.getControl("universidadAlaQuePostula.carrera"))
                             ? null
-                            : f.touched)
-                      ),
-                      e.xp6(4),
-                      e.Q6J("numero", o.objPregunta.ocho.nro)(
-                        "descripcion",
-                        o.objPregunta.ocho.descripcion
-                      )("for", o.objPregunta.ocho.for),
-                      e.xp6(2),
-                      e.Q6J(
-                        "ngIf",
-                        (null ==
-                        (T = o.getControl("fortalezasCualidadesPostulante"))
-                          ? null
-                          : T.invalid) &&
+                            : s.invalid) &&
+                            (null ==
+                            (s = o.getControl(
+                              "universidadAlaQuePostula.carrera"
+                            ))
+                              ? null
+                              : s.touched)
+                        ),
+                        e.xp6(4),
+                        e.Q6J("numero", o.objPregunta.ocho.nro)(
+                          "descripcion",
+                          o.objPregunta.ocho.descripcion
+                        )("for", o.objPregunta.ocho.for),
+                        e.xp6(2),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
-                          (T = o.getControl("fortalezasCualidadesPostulante"))
+                          (y = o.getControl("fortalezasCualidadesPostulante"))
                             ? null
-                            : T.touched)
-                      ),
-                      e.xp6(4),
-                      e.Q6J("numero", o.objPregunta.nueve.nro)(
-                        "descripcion",
-                        o.objPregunta.nueve.descripcion
-                      )("for", o.objPregunta.nueve.for),
-                      e.xp6(2),
-                      e.Q6J(
-                        "ngIf",
-                        (null ==
-                        (I = o.getControl("ayudaProcesoPostulaci\xf3n"))
-                          ? null
-                          : I.invalid) &&
+                            : y.invalid) &&
+                            (null ==
+                            (y = o.getControl("fortalezasCualidadesPostulante"))
+                              ? null
+                              : y.touched)
+                        ),
+                        e.xp6(4),
+                        e.Q6J("numero", o.objPregunta.nueve.nro)(
+                          "descripcion",
+                          o.objPregunta.nueve.descripcion
+                        )("for", o.objPregunta.nueve.for),
+                        e.xp6(2),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
-                          (I = o.getControl("ayudaProcesoPostulaci\xf3n"))
+                          (L = o.getControl("ayudaProcesoPostulaci\xf3n"))
                             ? null
-                            : I.touched)
-                      ),
-                      e.xp6(4),
-                      e.Q6J("numero", o.objPregunta.diez.nro)(
-                        "descripcion",
-                        o.objPregunta.diez.descripcion
-                      )("textoAdicional", o.objPregunta.diez.datoAdicional)(
-                        "for",
-                        o.objPregunta.diez.for
-                      ),
-                      e.xp6(1),
-                      e.Q6J("multiple", !0)("maxSelectedItems", 3)(
-                        "closeOnSelect",
-                        !1
-                      ),
-                      e.xp6(1),
-                      e.Q6J("ngForOf", o.listApoyo),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        (null == (E = o.getControl("accionesApoyo"))
-                          ? null
-                          : E.invalid) &&
-                          (null == (E = o.getControl("accionesApoyo"))
+                            : L.invalid) &&
+                            (null ==
+                            (L = o.getControl("ayudaProcesoPostulaci\xf3n"))
+                              ? null
+                              : L.touched)
+                        ),
+                        e.xp6(4),
+                        e.Q6J("numero", o.objPregunta.diez.nro)(
+                          "descripcion",
+                          o.objPregunta.diez.descripcion
+                        )("textoAdicional", o.objPregunta.diez.datoAdicional)(
+                          "for",
+                          o.objPregunta.diez.for
+                        ),
+                        e.xp6(1),
+                        e.Q6J("multiple", !0)("maxSelectedItems", 3)(
+                          "closeOnSelect",
+                          !1
+                        )("ngModel", o.listaAccionesSelected)(
+                          "ngModelOptions",
+                          e.DdM(210, H)
+                        ),
+                        e.xp6(1),
+                        e.Q6J("ngForOf", o.listApoyo),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
+                          (null == (I = o.getControl("accionesApoyo"))
                             ? null
-                            : E.touched)
-                      ),
-                      e.xp6(2),
-                      e.Q6J("ngForOf", o.arrayAccionesApoyo.controls),
-                      e.xp6(4),
-                      e.Q6J("numero", o.objPregunta.once.nro)(
-                        "descripcion",
-                        o.objPregunta.once.descripcion
-                      )("for", o.objPregunta.once.for),
-                      e.xp6(2),
-                      e.Q6J(
-                        "ngIf",
-                        (null == (x = o.getControl("eleccionUniCarrera.motivo"))
-                          ? null
-                          : x.invalid) &&
+                            : I.invalid) &&
+                            (null == (I = o.getControl("accionesApoyo"))
+                              ? null
+                              : I.touched)
+                        ),
+                        e.xp6(2),
+                        e.Q6J("ngForOf", o.arrayAccionesApoyo.controls),
+                        e.xp6(4),
+                        e.Q6J("numero", o.objPregunta.once.nro)(
+                          "descripcion",
+                          o.objPregunta.once.descripcion
+                        )("for", o.objPregunta.once.for),
+                        e.xp6(2),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
                           (x = o.getControl("eleccionUniCarrera.motivo"))
                             ? null
-                            : x.touched)
-                      ),
-                      e.xp6(3),
-                      e.Q6J("numero", o.objPregunta.onceUno.nro)(
-                        "descripcion",
-                        o.objPregunta.onceUno.descripcion
-                      )("for", o.objPregunta.onceUno.for),
-                      e.xp6(10),
-                      e.Q6J(
-                        "ngIf",
-                        (null ==
-                        (q = o.getControl("eleccionUniCarrera.estaDeAcuerdo"))
-                          ? null
-                          : q.invalid) &&
+                            : x.invalid) &&
+                            (null ==
+                            (x = o.getControl("eleccionUniCarrera.motivo"))
+                              ? null
+                              : x.touched)
+                        ),
+                        e.xp6(3),
+                        e.Q6J("numero", o.objPregunta.onceUno.nro)(
+                          "descripcion",
+                          o.objPregunta.onceUno.descripcion
+                        )("for", o.objPregunta.onceUno.for),
+                        e.xp6(10),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
                           (q = o.getControl("eleccionUniCarrera.estaDeAcuerdo"))
                             ? null
-                            : q.touched)
-                      ),
-                      e.xp6(1),
-                      e.Q6J("ngIf", o.hasDeAcuerdo),
-                      e.xp6(4),
-                      e.Q6J("numero", o.objPregunta.doce.nro)(
-                        "descripcion",
-                        o.objPregunta.doce.descripcion
-                      )("for", o.objPregunta.doce.for),
-                      e.xp6(4),
-                      e.Q6J("ngForOf", o.beneficios),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        (null ==
-                        (z = o.getControl("beneficioEconomico.fueAcreedor"))
-                          ? null
-                          : z.invalid) &&
+                            : q.invalid) &&
+                            (null ==
+                            (q = o.getControl(
+                              "eleccionUniCarrera.estaDeAcuerdo"
+                            ))
+                              ? null
+                              : q.touched)
+                        ),
+                        e.xp6(1),
+                        e.Q6J("ngIf", o.hasDeAcuerdo),
+                        e.xp6(4),
+                        e.Q6J("numero", o.objPregunta.doce.nro)(
+                          "descripcion",
+                          o.objPregunta.doce.descripcion
+                        )("for", o.objPregunta.doce.for),
+                        e.xp6(4),
+                        e.Q6J("ngForOf", o.beneficios),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
                           (z = o.getControl("beneficioEconomico.fueAcreedor"))
                             ? null
-                            : z.touched)
-                      ),
-                      e.xp6(1),
-                      e.Q6J("ngIf", o.hasBeneficio),
-                      e.xp6(4),
-                      e.Q6J("numero", o.objPregunta.trece.nro)(
-                        "descripcion",
-                        o.objPregunta.trece.descripcion
-                      )("for", o.objPregunta.trece.for),
-                      e.xp6(4),
-                      e.Q6J("ngForOf", o.listPreparacion),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        (null ==
-                        (w = o.getControl("preparacionPreUniversitaria.tuvo"))
-                          ? null
-                          : w.invalid) &&
+                            : z.invalid) &&
+                            (null ==
+                            (z = o.getControl("beneficioEconomico.fueAcreedor"))
+                              ? null
+                              : z.touched)
+                        ),
+                        e.xp6(1),
+                        e.Q6J("ngIf", o.hasBeneficio),
+                        e.xp6(4),
+                        e.Q6J("numero", o.objPregunta.trece.nro)(
+                          "descripcion",
+                          o.objPregunta.trece.descripcion
+                        )("for", o.objPregunta.trece.for),
+                        e.xp6(4),
+                        e.Q6J("ngForOf", o.listPreparacion),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
                           (w = o.getControl("preparacionPreUniversitaria.tuvo"))
                             ? null
-                            : w.touched)
-                      ),
-                      e.xp6(1),
-                      e.Q6J("ngIf", o.hasPreparacion),
-                      e.xp6(4),
-                      e.Q6J("numero", o.objPregunta.catorce.nro)(
-                        "descripcion",
-                        o.objPregunta.catorce.descripcion
-                      )("textoAdicional", o.objPregunta.catorce.datoAdicional)(
-                        "for",
-                        o.objPregunta.catorce.for
-                      ),
-                      e.xp6(1),
-                      e.Q6J("multiple", !0)("closeOnSelect", !1),
-                      e.xp6(1),
-                      e.Q6J("ngForOf", o.actividadesExtracademicas),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        o.arrayActividades.controls.length < 1 && d.submitted
-                      ),
-                      e.xp6(2),
-                      e.Q6J("ngForOf", o.arrayActividades.controls),
-                      e.xp6(1),
-                      e.Q6J("ngIf", o.isFromLima),
-                      e.xp6(1),
-                      e.Q6J("ngIf", o.isFromLima),
-                      e.xp6(1),
-                      e.Q6J("ngIf", o.isFromLima),
-                      e.xp6(2),
-                      e.Q6J("numero", o.objPregunta.dieciocho.nro)(
-                        "descripcion",
-                        o.objPregunta.dieciocho.descripcion
-                      )("for", o.objPregunta.dieciocho.for),
-                      e.xp6(6),
-                      e.Q6J("ngForOf", o.displayedColumns),
-                      e.xp6(3),
-                      e.Q6J("ngForOf", o.arrayFamiliaNuclear.controls),
-                      e.xp6(11),
-                      e.Q6J("numero", o.objPregunta.veinte.nro)(
-                        "descripcion",
-                        o.objPregunta.veinte.descripcion
-                      )("textoAdicional", o.objPregunta.veinte.datoAdicional)(
-                        "for",
-                        o.objPregunta.veinte.for
-                      ),
-                      e.xp6(1),
-                      e.Q6J("multiple", !0)("closeOnSelect", !1),
-                      e.xp6(1),
-                      e.Q6J("ngForOf", o.listTareaHogar),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        o.arrayTareasHogar.controls.length < 1 && d.submitted
-                      ),
-                      e.xp6(2),
-                      e.Q6J("ngForOf", o.arrayTareasHogar.controls),
-                      e.xp6(4),
-                      e.Q6J("numero", o.objPregunta.veinteUno.nro)(
-                        "descripcion",
-                        o.objPregunta.veinteUno.descripcion
-                      )("for", o.objPregunta.veinteUno.for),
-                      e.xp6(4),
-                      e.Q6J("ngForOf", o.listNroHorasDeApoyo),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        (null ==
-                        (D = o.getControl(
-                          "horasDiariasApoyoTareasDelHogarPostulante"
-                        ))
-                          ? null
-                          : D.invalid) &&
+                            : w.invalid) &&
+                            (null ==
+                            (w = o.getControl(
+                              "preparacionPreUniversitaria.tuvo"
+                            ))
+                              ? null
+                              : w.touched)
+                        ),
+                        e.xp6(1),
+                        e.Q6J("ngIf", o.hasPreparacion),
+                        e.xp6(4),
+                        e.Q6J("numero", o.objPregunta.catorce.nro)(
+                          "descripcion",
+                          o.objPregunta.catorce.descripcion
+                        )(
+                          "textoAdicional",
+                          o.objPregunta.catorce.datoAdicional
+                        )("for", o.objPregunta.catorce.for),
+                        e.xp6(1),
+                        e.Q6J("multiple", !0)("closeOnSelect", !1)(
+                          "ngModel",
+                          o.listaActividadesExtracademicasSelected
+                        )("ngModelOptions", e.DdM(211, H)),
+                        e.xp6(1),
+                        e.Q6J("ngForOf", o.actividadesExtracademicas),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
+                          o.arrayActividades.controls.length < 1 && d.submitted
+                        ),
+                        e.xp6(2),
+                        e.Q6J("ngForOf", o.arrayActividades.controls),
+                        e.xp6(1),
+                        e.Q6J("ngIf", o.isFromLima),
+                        e.xp6(1),
+                        e.Q6J("ngIf", o.isFromLima),
+                        e.xp6(1),
+                        e.Q6J("ngIf", o.isFromLima),
+                        e.xp6(2),
+                        e.Q6J("numero", o.objPregunta.dieciocho.nro)(
+                          "descripcion",
+                          o.objPregunta.dieciocho.descripcion
+                        )("for", o.objPregunta.dieciocho.for),
+                        e.xp6(6),
+                        e.Q6J("ngForOf", o.displayedColumns),
+                        e.xp6(3),
+                        e.Q6J("ngForOf", o.arrayFamiliaNuclear.controls),
+                        e.xp6(11),
+                        e.Q6J("numero", o.objPregunta.veinte.nro)(
+                          "descripcion",
+                          o.objPregunta.veinte.descripcion
+                        )("textoAdicional", o.objPregunta.veinte.datoAdicional)(
+                          "for",
+                          o.objPregunta.veinte.for
+                        ),
+                        e.xp6(1),
+                        e.Q6J("multiple", !0)("closeOnSelect", !1)(
+                          "ngModel",
+                          o.listaTareasHogarSelected
+                        )("ngModelOptions", e.DdM(212, H)),
+                        e.xp6(1),
+                        e.Q6J("ngForOf", o.listTareaHogar),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
+                          o.arrayTareasHogar.controls.length < 1 && d.submitted
+                        ),
+                        e.xp6(2),
+                        e.Q6J("ngForOf", o.arrayTareasHogar.controls),
+                        e.xp6(4),
+                        e.Q6J("numero", o.objPregunta.veinteUno.nro)(
+                          "descripcion",
+                          o.objPregunta.veinteUno.descripcion
+                        )("for", o.objPregunta.veinteUno.for),
+                        e.xp6(4),
+                        e.Q6J("ngForOf", o.listNroHorasDeApoyo),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
-                          (D = o.getControl(
+                          (U = o.getControl(
                             "horasDiariasApoyoTareasDelHogarPostulante"
                           ))
                             ? null
-                            : D.touched)
-                      ),
-                      e.xp6(4),
-                      e.Q6J("numero", o.objPregunta.veintiuno.nro)(
-                        "descripcion",
-                        o.objPregunta.veintiuno.descripcion
-                      )(
-                        "textoAdicional",
-                        o.objPregunta.veintiuno.datoAdicional
-                      )("for", o.objPregunta.veintiuno.for),
-                      e.xp6(1),
-                      e.Q6J("multiple", !0)("closeOnSelect", !1),
-                      e.xp6(1),
-                      e.Q6J("ngForOf", o.listEncargados),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        o.arrayEncargadoTarea.controls.length < 1 && d.submitted
-                      ),
-                      e.xp6(2),
-                      e.Q6J("ngForOf", o.arrayEncargadoTarea.controls),
-                      e.xp6(3),
-                      e.Q6J("numero", o.objPregunta.veinticuatro.nro)(
-                        "descripcion",
-                        o.objPregunta.veinticuatro.descripcion
-                      )(
-                        "textoAdicional",
-                        o.objPregunta.veinticuatro.datoAdicional
-                      )("for", o.objPregunta.veinticuatro.for),
-                      e.xp6(6),
-                      e.Q6J("ngForOf", o.displayedColumnsApoyoEcon),
-                      e.xp6(3),
-                      e.Q6J(
-                        "ngForOf",
-                        o.arrayActividadesApoyoEconomico.controls
-                      ),
-                      e.xp6(7),
-                      e.Q6J("numero", o.objPregunta.veinticinco.nro)(
-                        "descripcion",
-                        o.objPregunta.veinticinco.descripcion
-                      )(
-                        "textoAdicional",
-                        o.objPregunta.veinticinco.datoAdicional
-                      )("for", o.objPregunta.veinticinco.for),
-                      e.xp6(2),
-                      e.Q6J(
-                        "ngIf",
-                        (null == (j = o.getControl("principalesReglasCasa"))
-                          ? null
-                          : j.invalid) &&
-                          (null == (j = o.getControl("principalesReglasCasa"))
+                            : U.invalid) &&
+                            (null ==
+                            (U = o.getControl(
+                              "horasDiariasApoyoTareasDelHogarPostulante"
+                            ))
+                              ? null
+                              : U.touched)
+                        ),
+                        e.xp6(4),
+                        e.Q6J("numero", o.objPregunta.veintiuno.nro)(
+                          "descripcion",
+                          o.objPregunta.veintiuno.descripcion
+                        )(
+                          "textoAdicional",
+                          o.objPregunta.veintiuno.datoAdicional
+                        )("for", o.objPregunta.veintiuno.for),
+                        e.xp6(1),
+                        e.Q6J("multiple", !0)("closeOnSelect", !1)(
+                          "ngModel",
+                          o.listaResponsablesSelected
+                        )("ngModelOptions", e.DdM(213, H)),
+                        e.xp6(1),
+                        e.Q6J("ngForOf", o.listEncargados),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
+                          o.arrayEncargadoTarea.controls.length < 1 &&
+                            d.submitted
+                        ),
+                        e.xp6(2),
+                        e.Q6J("ngForOf", o.arrayEncargadoTarea.controls),
+                        e.xp6(3),
+                        e.Q6J("numero", o.objPregunta.veinticuatro.nro)(
+                          "descripcion",
+                          o.objPregunta.veinticuatro.descripcion
+                        )(
+                          "textoAdicional",
+                          o.objPregunta.veinticuatro.datoAdicional
+                        )("for", o.objPregunta.veinticuatro.for),
+                        e.xp6(6),
+                        e.Q6J("ngForOf", o.displayedColumnsApoyoEcon),
+                        e.xp6(3),
+                        e.Q6J(
+                          "ngForOf",
+                          o.arrayActividadesApoyoEconomico.controls
+                        ),
+                        e.xp6(7),
+                        e.Q6J("numero", o.objPregunta.veinticinco.nro)(
+                          "descripcion",
+                          o.objPregunta.veinticinco.descripcion
+                        )(
+                          "textoAdicional",
+                          o.objPregunta.veinticinco.datoAdicional
+                        )("for", o.objPregunta.veinticinco.for),
+                        e.xp6(2),
+                        e.Q6J(
+                          "ngIf",
+                          (null == (Y = o.getControl("principalesReglasCasa"))
                             ? null
-                            : j.touched)
-                      ),
-                      e.xp6(4),
-                      e.Q6J("numero", o.objPregunta.veintiseis.nro)(
-                        "descripcion",
-                        o.objPregunta.veintiseis.descripcion
-                      )(
-                        "textoAdicional",
-                        o.objPregunta.veintiseis.datoAdicional
-                      )("for", o.objPregunta.veintiseis.for),
-                      e.xp6(1),
-                      e.Q6J("multiple", !0)("maxSelectedItems", 2)(
-                        "closeOnSelect",
-                        !1
-                      ),
-                      e.xp6(1),
-                      e.Q6J("ngForOf", o.listSignificaEducacion),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        o.arraySignificadoEducacion.controls.length < 1 &&
-                          d.submitted
-                      ),
-                      e.xp6(2),
-                      e.Q6J("ngForOf", o.arraySignificadoEducacion.controls),
-                      e.xp6(5),
-                      e.Q6J("numero", o.objPregunta.treinta.nro)(
-                        "descripcion",
-                        o.objPregunta.treinta.descripcion
-                      )("textoAdicional", o.objPregunta.treinta.datoAdicional)(
-                        "for",
-                        o.objPregunta.treinta.for
-                      ),
-                      e.xp6(4),
-                      e.Q6J("ngForOf", o.lstOpcionesStandar),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        (null == (U = o.getControl("accionesConcretas.accion"))
-                          ? null
-                          : U.invalid) &&
+                            : Y.invalid) &&
+                            (null == (Y = o.getControl("principalesReglasCasa"))
+                              ? null
+                              : Y.touched)
+                        ),
+                        e.xp6(4),
+                        e.Q6J("numero", o.objPregunta.veintiseis.nro)(
+                          "descripcion",
+                          o.objPregunta.veintiseis.descripcion
+                        )(
+                          "textoAdicional",
+                          o.objPregunta.veintiseis.datoAdicional
+                        )("for", o.objPregunta.veintiseis.for),
+                        e.xp6(1),
+                        e.Q6J("multiple", !0)("maxSelectedItems", 2)(
+                          "closeOnSelect",
+                          !1
+                        )("ngModel", o.listaSignificadosSelected)(
+                          "ngModelOptions",
+                          e.DdM(214, H)
+                        ),
+                        e.xp6(1),
+                        e.Q6J("ngForOf", o.listSignificaEducacion),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
+                          o.arraySignificadoEducacion.controls.length < 1 &&
+                            d.submitted
+                        ),
+                        e.xp6(2),
+                        e.Q6J("ngForOf", o.arraySignificadoEducacion.controls),
+                        e.xp6(5),
+                        e.Q6J("numero", o.objPregunta.treinta.nro)(
+                          "descripcion",
+                          o.objPregunta.treinta.descripcion
+                        )(
+                          "textoAdicional",
+                          o.objPregunta.treinta.datoAdicional
+                        )("for", o.objPregunta.treinta.for),
+                        e.xp6(4),
+                        e.Q6J("ngForOf", o.lstOpcionesStandar),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
-                          (U = o.getControl("accionesConcretas.accion"))
+                          (R = o.getControl("accionesConcretas.accion"))
                             ? null
-                            : U.touched)
-                      ),
-                      e.xp6(1),
-                      e.Q6J("ngIf", o.hasAcciones),
-                      e.xp6(5),
-                      e.Q6J("numero", o.objPregunta.veintisiete.nro)(
-                        "descripcion",
-                        o.objPregunta.veintisiete.descripcion
-                      )(
-                        "textoAdicional",
-                        o.objPregunta.veintisiete.datoAdicional
-                      )("for", o.objPregunta.veintisiete.for),
-                      e.xp6(4),
-                      e.Q6J("ngForOf", o.lstOpcionesStandar),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        (null == (Y = o.getControl("situacionComplicada.rpta"))
-                          ? null
-                          : Y.invalid) &&
+                            : R.invalid) &&
+                            (null ==
+                            (R = o.getControl("accionesConcretas.accion"))
+                              ? null
+                              : R.touched)
+                        ),
+                        e.xp6(1),
+                        e.Q6J("ngIf", o.hasAcciones),
+                        e.xp6(5),
+                        e.Q6J("numero", o.objPregunta.veintisiete.nro)(
+                          "descripcion",
+                          o.objPregunta.veintisiete.descripcion
+                        )(
+                          "textoAdicional",
+                          o.objPregunta.veintisiete.datoAdicional
+                        )("for", o.objPregunta.veintisiete.for),
+                        e.xp6(4),
+                        e.Q6J("ngForOf", o.lstOpcionesStandar),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
-                          (Y = o.getControl("situacionComplicada.rpta"))
+                          (V = o.getControl("situacionComplicada.rpta"))
                             ? null
-                            : Y.touched)
-                      ),
-                      e.xp6(1),
-                      e.Q6J("ngIf", o.hasSituacionComplicada),
-                      e.xp6(4),
-                      e.Q6J("numero", o.objPregunta.treintayUno.nro)(
-                        "descripcion",
-                        o.objPregunta.treintayUno.descripcion
-                      )(
-                        "textoAdicional",
-                        o.objPregunta.treintayUno.datoAdicional
-                      )("for", o.objPregunta.treintayUno.for),
-                      e.xp6(1),
-                      e.Q6J("multiple", !0)("closeOnSelect", !1),
-                      e.xp6(1),
-                      e.Q6J("ngForOf", o.lstTipoProblemas),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        (null == (R = o.getControl("problemasQuePresenta"))
-                          ? null
-                          : R.invalid) &&
-                          (null == (R = o.getControl("problemasQuePresenta"))
+                            : V.invalid) &&
+                            (null ==
+                            (V = o.getControl("situacionComplicada.rpta"))
+                              ? null
+                              : V.touched)
+                        ),
+                        e.xp6(1),
+                        e.Q6J("ngIf", o.hasSituacionComplicada),
+                        e.xp6(4),
+                        e.Q6J("numero", o.objPregunta.treintayUno.nro)(
+                          "descripcion",
+                          o.objPregunta.treintayUno.descripcion
+                        )(
+                          "textoAdicional",
+                          o.objPregunta.treintayUno.datoAdicional
+                        )("for", o.objPregunta.treintayUno.for),
+                        e.xp6(1),
+                        e.Q6J("multiple", !0)("closeOnSelect", !1)(
+                          "ngModel",
+                          o.listaProblemasSelected
+                        )("ngModelOptions", e.DdM(215, H)),
+                        e.xp6(1),
+                        e.Q6J("ngForOf", o.lstTipoProblemas),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
+                          (null == (G = o.getControl("problemasQuePresenta"))
                             ? null
-                            : R.touched)
-                      ),
-                      e.xp6(2),
-                      e.Q6J("ngForOf", o.arrayProblemasQuePresenta.controls),
-                      e.xp6(4),
-                      e.Q6J("numero", o.objPregunta.treintayCuatro.nro)(
-                        "descripcion",
-                        o.objPregunta.treintayCuatro.descripcion
-                      ),
-                      e.xp6(2),
-                      e.Q6J(
-                        "ngIf",
-                        (null ==
-                        (V = o.getControl("estrategiasResolverProblema"))
-                          ? null
-                          : V.invalid) &&
+                            : G.invalid) &&
+                            (null == (G = o.getControl("problemasQuePresenta"))
+                              ? null
+                              : G.touched)
+                        ),
+                        e.xp6(2),
+                        e.Q6J("ngForOf", o.arrayProblemasQuePresenta.controls),
+                        e.xp6(4),
+                        e.Q6J("numero", o.objPregunta.treintayCuatro.nro)(
+                          "descripcion",
+                          o.objPregunta.treintayCuatro.descripcion
+                        ),
+                        e.xp6(2),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
-                          (V = o.getControl("estrategiasResolverProblema"))
+                          ($ = o.getControl("estrategiasResolverProblema"))
                             ? null
-                            : V.touched)
-                      ),
-                      e.xp6(5),
-                      e.Q6J("numero", o.objPregunta.treintayDos.nro)(
-                        "descripcion",
-                        o.objPregunta.treintayDos.descripcion
-                      )(
-                        "textoAdicional",
-                        o.objPregunta.treintayDos.datoAdicional
-                      )("for", o.objPregunta.treintayDos.for),
-                      e.xp6(4),
-                      e.Q6J("ngForOf", o.lstOpcionesStandar),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        (null == (G = o.getControl("fortalezasFamiliares.rpta"))
-                          ? null
-                          : G.invalid) &&
+                            : $.invalid) &&
+                            (null ==
+                            ($ = o.getControl("estrategiasResolverProblema"))
+                              ? null
+                              : $.touched)
+                        ),
+                        e.xp6(5),
+                        e.Q6J("numero", o.objPregunta.treintayDos.nro)(
+                          "descripcion",
+                          o.objPregunta.treintayDos.descripcion
+                        )(
+                          "textoAdicional",
+                          o.objPregunta.treintayDos.datoAdicional
+                        )("for", o.objPregunta.treintayDos.for),
+                        e.xp6(4),
+                        e.Q6J("ngForOf", o.lstOpcionesStandar),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
-                          (G = o.getControl("fortalezasFamiliares.rpta"))
+                          (W = o.getControl("fortalezasFamiliares.rpta"))
                             ? null
-                            : G.touched)
-                      ),
-                      e.xp6(1),
-                      e.Q6J("ngIf", o.hasFortalezaFamiliar),
-                      e.xp6(5),
-                      e.Q6J("numero", o.objPregunta.veintinueve.nro)(
-                        "descripcion",
-                        o.objPregunta.veintinueve.descripcion
-                      )(
-                        "textoAdicional",
-                        o.objPregunta.veintinueve.datoAdicional
-                      )("for", o.objPregunta.veintinueve.for),
-                      e.xp6(4),
-                      e.Q6J("ngForOf", o.lstOpcionesStandar),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        (null == ($ = o.getControl("momentoEnFamilia.rpta"))
-                          ? null
-                          : $.invalid) &&
-                          (null == ($ = o.getControl("momentoEnFamilia.rpta"))
+                            : W.invalid) &&
+                            (null ==
+                            (W = o.getControl("fortalezasFamiliares.rpta"))
+                              ? null
+                              : W.touched)
+                        ),
+                        e.xp6(1),
+                        e.Q6J("ngIf", o.hasFortalezaFamiliar),
+                        e.xp6(5),
+                        e.Q6J("numero", o.objPregunta.veintinueve.nro)(
+                          "descripcion",
+                          o.objPregunta.veintinueve.descripcion
+                        )(
+                          "textoAdicional",
+                          o.objPregunta.veintinueve.datoAdicional
+                        )("for", o.objPregunta.veintinueve.for),
+                        e.xp6(4),
+                        e.Q6J("ngForOf", o.lstOpcionesStandar),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
+                          (null == (K = o.getControl("momentoEnFamilia.rpta"))
                             ? null
-                            : $.touched)
-                      ),
-                      e.xp6(1),
-                      e.Q6J("ngIf", o.hasMomentoFamilia),
-                      e.xp6(5),
-                      e.Q6J("numero", o.objPregunta.treintayTres.nro)(
-                        "descripcion",
-                        o.objPregunta.treintayTres.descripcion
-                      )(
-                        "textoAdicional",
-                        o.objPregunta.treintayTres.datoAdicional
-                      )("for", o.objPregunta.treintayTres.for),
-                      e.xp6(4),
-                      e.Q6J("ngForOf", o.lstReorganizacion),
-                      e.xp6(1),
-                      e.Q6J(
-                        "ngIf",
-                        (null == (W = o.getControl("reorganizacionTareas.rpta"))
-                          ? null
-                          : W.invalid) &&
+                            : K.invalid) &&
+                            (null == (K = o.getControl("momentoEnFamilia.rpta"))
+                              ? null
+                              : K.touched)
+                        ),
+                        e.xp6(1),
+                        e.Q6J("ngIf", o.hasMomentoFamilia),
+                        e.xp6(5),
+                        e.Q6J("numero", o.objPregunta.treintayTres.nro)(
+                          "descripcion",
+                          o.objPregunta.treintayTres.descripcion
+                        )(
+                          "textoAdicional",
+                          o.objPregunta.treintayTres.datoAdicional
+                        )("for", o.objPregunta.treintayTres.for),
+                        e.xp6(4),
+                        e.Q6J("ngForOf", o.lstReorganizacion),
+                        e.xp6(1),
+                        e.Q6J(
+                          "ngIf",
                           (null ==
-                          (W = o.getControl("reorganizacionTareas.rpta"))
+                          (X = o.getControl("reorganizacionTareas.rpta"))
                             ? null
-                            : W.touched)
-                      ),
-                      e.xp6(1),
-                      e.Q6J("ngIf", o.hasReorganizarTareas);
-                  }
-                },
-                dependencies: [
-                  C.sg,
-                  C.O5,
-                  t._Y,
-                  t.YN,
-                  t.Kr,
-                  t.Fj,
-                  t.EJ,
-                  t.JJ,
-                  t.JL,
-                  t.sg,
-                  t.u,
-                  t.x0,
-                  t.CE,
-                  Yo,
-                  Se,
-                  $o.X,
-                  Wo,
-                ],
-                styles: [
-                  '@import"https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;400&display=swap";[_nghost-%COMP%]{font-family:Flexo-regular,sans-serif}.txt-underline[_ngcontent-%COMP%]{text-decoration:underline}.form-select[_ngcontent-%COMP%], .form-control[_ngcontent-%COMP%], .ng-select[_ngcontent-%COMP%]   .ng-select-container[_ngcontent-%COMP%]{border:1px solid black}label[_ngcontent-%COMP%]{color:#000;font-weight:500}.hero-cuestionario[_ngcontent-%COMP%]{line-height:1.2}.hero-cuestionario[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin-bottom:18px}.hero-cuestionario[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{font-size:1.3125rem;margin-bottom:1rem;font-family:Flexo-light,sans-serif}.color-orange[_ngcontent-%COMP%]{color:#ff4d00}.color-azul[_ngcontent-%COMP%]{color:#002d74}.cursiva[_ngcontent-%COMP%]{font-style:italic}.textLightIt[_ngcontent-%COMP%]{font-family:Flexo-lightIt,sans-serif}.head-cuestionario[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between;align-items:center;color:#fff;background-color:#002d74;flex-direction:column}@media (min-width: 48rem){.head-cuestionario[_ngcontent-%COMP%]{flex-direction:row}}.head-cuestionario__title[_ngcontent-%COMP%]{font-style:italic;font-size:2.25rem;font-family:Flexo-mediumit,sans-serif;margin-left:1.5rem;order:1;margin-bottom:1rem}@media (min-width: 48rem){.head-cuestionario__title[_ngcontent-%COMP%]{order:0;margin-bottom:0}}.head-cuestionario__img[_ngcontent-%COMP%]{max-width:416px;max-height:136px;margin:2rem 0;order:0}@media (min-width: 48rem){.head-cuestionario__img[_ngcontent-%COMP%]{order:1}}.flex-disposicion[_ngcontent-%COMP%]{flex-direction:column}@media (min-width: 48rem){.flex-disposicion[_ngcontent-%COMP%]{flex-direction:row}}.bloq-text[_ngcontent-%COMP%]{margin-top:1rem}.right-img[_ngcontent-%COMP%]{max-width:151px;max-height:297px;align-self:center;justify-self:center}@media (min-width: 48rem){.right-img[_ngcontent-%COMP%]{max-width:251px}}@media (min-width: 62rem){.right-img[_ngcontent-%COMP%]{max-width:351px}}.btn-cuestionario[_ngcontent-%COMP%]{background:url(./assets/images/cuestionario/btn-bg.svg) no-repeat;background-position:center;color:#fff;font-family:Flexo-bold,sans-serif;font-size:1.125rem;display:inline-block;padding:2rem;border:none}.text-submit[_ngcontent-%COMP%]{margin-right:.5rem}',
-                ],
-              })),
-              _
-            );
-          })(),
-        },
-        { path: "", redirectTo: "cuestionario", pathMatch: "full" },
-      ];
-      let Hr = (() => {
-        class _ {}
-        return (
-          (_.ɵfac = function (i) {
-            return new (i || _)();
-          }),
-          (_.ɵmod = e.oAB({ type: _ })),
-          (_.ɵinj = e.cJS({ imports: [ae.Bz.forChild(Qr), ae.Bz] })),
-          _
-        );
-      })();
-      var Zr = b(2276);
+                            : X.invalid) &&
+                            (null ==
+                            (X = o.getControl("reorganizacionTareas.rpta"))
+                              ? null
+                              : X.touched)
+                        ),
+                        e.xp6(1),
+                        e.Q6J("ngIf", o.hasReorganizarTareas),
+                        e.xp6(1),
+                        e.Q6J("disabled", o.btnSubmitStatus)(
+                          "ngClass",
+                          e.VKq(216, Zr, o.btnSubmitStatus)
+                        ),
+                        e.xp6(1),
+                        e.Q6J("ngIf", o.btnSubmitStatus);
+                    }
+                  },
+                  dependencies: [
+                    C.mk,
+                    C.sg,
+                    C.O5,
+                    t._Y,
+                    t.YN,
+                    t.Kr,
+                    t.Fj,
+                    t.EJ,
+                    t.JJ,
+                    t.JL,
+                    t.On,
+                    t.sg,
+                    t.u,
+                    t.x0,
+                    t.CE,
+                    Ro,
+                    Ee,
+                    Wo.X,
+                    Ko,
+                  ],
+                  styles: [
+                    '@import"https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;400&display=swap";[_nghost-%COMP%]{font-family:Flexo-regular,sans-serif}.txt-underline[_ngcontent-%COMP%]{text-decoration:underline}.form-select[_ngcontent-%COMP%], .form-control[_ngcontent-%COMP%], .ng-select[_ngcontent-%COMP%]   .ng-select-container[_ngcontent-%COMP%]{border:1px solid black}label[_ngcontent-%COMP%]{color:#000;font-weight:500}.hero-cuestionario[_ngcontent-%COMP%]{line-height:1.2}.hero-cuestionario[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]{margin-bottom:18px}.hero-cuestionario[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%]{font-size:1.3125rem;margin-bottom:1rem;font-family:Flexo-light,sans-serif}.color-orange[_ngcontent-%COMP%]{color:#ff4d00}.color-azul[_ngcontent-%COMP%]{color:#002d74}.cursiva[_ngcontent-%COMP%]{font-style:italic}.textLightIt[_ngcontent-%COMP%]{font-family:Flexo-lightIt,sans-serif}.head-cuestionario[_ngcontent-%COMP%]{width:100%;display:flex;justify-content:space-between;align-items:center;color:#fff;background-color:#002d74;flex-direction:column}@media (min-width: 48rem){.head-cuestionario[_ngcontent-%COMP%]{flex-direction:row}}.head-cuestionario__title[_ngcontent-%COMP%]{font-style:italic;font-size:2.25rem;font-family:Flexo-mediumit,sans-serif;margin-left:1.5rem;order:1;margin-bottom:1rem}@media (min-width: 48rem){.head-cuestionario__title[_ngcontent-%COMP%]{order:0;margin-bottom:0}}.head-cuestionario__img[_ngcontent-%COMP%]{max-width:416px;max-height:136px;margin:2rem 0;order:0}@media (min-width: 48rem){.head-cuestionario__img[_ngcontent-%COMP%]{order:1}}.flex-disposicion[_ngcontent-%COMP%]{flex-direction:column}@media (min-width: 48rem){.flex-disposicion[_ngcontent-%COMP%]{flex-direction:row}}.bloq-text[_ngcontent-%COMP%]{margin-top:1rem}.right-img[_ngcontent-%COMP%]{max-width:151px;max-height:297px;align-self:center;justify-self:center}@media (min-width: 48rem){.right-img[_ngcontent-%COMP%]{max-width:251px}}@media (min-width: 62rem){.right-img[_ngcontent-%COMP%]{max-width:351px}}.btn-cuestionario[_ngcontent-%COMP%]{background:url(./assets/images/cuestionario/btn-bg.svg) no-repeat;background-position:center;color:#fff;font-family:Flexo-bold,sans-serif;font-size:1.125rem;display:inline-block;padding:2rem;border:none}.btn-cuestionario--disabled[_ngcontent-%COMP%]{background:url(./assets/images/cuestionario/btn-submit-disabled.svg) no-repeat;background-position:center;color:#cdcdcd}.spinner--mr-2[_ngcontent-%COMP%]{margin-right:5px}.text-submit[_ngcontent-%COMP%]{margin-right:.5rem}',
+                  ],
+                })),
+                _
+              );
+            })(),
+          },
+          { path: "", redirectTo: "cuestionario", pathMatch: "full" },
+        ];
       let Br = (() => {
         class _ {}
         return (
@@ -24428,8 +24681,20 @@
             return new (i || _)();
           }),
           (_.ɵmod = e.oAB({ type: _ })),
+          (_.ɵinj = e.cJS({ imports: [de.Bz.forChild(Or), de.Bz] })),
+          _
+        );
+      })();
+      var Fr = c(2276);
+      let kr = (() => {
+        class _ {}
+        return (
+          (_.ɵfac = function (i) {
+            return new (i || _)();
+          }),
+          (_.ɵmod = e.oAB({ type: _ })),
           (_.ɵinj = e.cJS({
-            imports: [C.ez, t.u5, t.UX, $e, K.JF, K.Ed, Go, F.IJ, Zr.m, Hr],
+            imports: [C.ez, t.u5, t.UX, We, ee.JF, ee.Ed, $o, k.IJ, Fr.m, Br],
           })),
           _
         );
